@@ -1,0 +1,1764 @@
+<Proof_Obligations>
+<Define name="B definitions" merge="=">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx" merge="-">
+<Attr>
+<Pos l="19" c="1" s="10"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="20" c="14" s="1"/>
+</Attr>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:1:1" typref="3603043417">
+<Attr>
+<Pos l="20" c="5" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="20" c="17" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:1:2:1" typref="2701647786">
+<Attr>
+<Pos l="20" c="16" s="1"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value="4294967295" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:1:2:2" typref="2701647786">
+<Attr>
+<Pos l="20" c="19" s="10"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="21" c="14" s="1"/>
+</Attr>
+<Id value="uint16_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:2:1" typref="3603043417">
+<Attr>
+<Pos l="21" c="5" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="21" c="17" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:2:2:1" typref="2701647786">
+<Attr>
+<Pos l="21" c="16" s="1"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value="65535" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:2:2:2" typref="2701647786">
+<Attr>
+<Pos l="21" c="19" s="5"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="22" c="13" s="1"/>
+</Attr>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:3:1" typref="3603043417">
+<Attr>
+<Pos l="22" c="5" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="22" c="16" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:3:2:1" typref="2701647786">
+<Attr>
+<Pos l="22" c="15" s="1"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value="255" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:3:2:2" typref="2701647786">
+<Attr>
+<Pos l="22" c="18" s="3"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="24" c="11" s="1"/>
+</Attr>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:4:1" typref="2701647786">
+<Attr>
+<Pos l="24" c="5" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:4:2" typref="3603043417">
+<Attr>
+<Pos l="24" c="13" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="25" c="12" s="1"/>
+</Attr>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:5:1" typref="2701647786">
+<Attr>
+<Pos l="25" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:5:2" typref="3603043417">
+<Attr>
+<Pos l="25" c="14" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" c="16" s="1"/>
+</Attr>
+<Id value="MAX_UINT32" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:6:1" typref="2701647786">
+<Attr>
+<Pos l="27" c="5" s="10"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:6:2" typref="3603043417">
+<Attr>
+<Pos l="27" c="18" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="28" c="16" s="1"/>
+</Attr>
+<Id value="MAX_UINT16" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:7:1" typref="2701647786">
+<Attr>
+<Pos l="28" c="5" s="10"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint16_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:7:2" typref="3603043417">
+<Attr>
+<Pos l="28" c="18" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="29" c="15" s="1"/>
+</Attr>
+<Id value="MAX_UINT8" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:8:1" typref="2701647786">
+<Attr>
+<Pos l="29" c="5" s="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:8:2" typref="3603043417">
+<Attr>
+<Pos l="29" c="17" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="31" c="11" s="1"/>
+</Attr>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:9:1" typref="2701647786">
+<Attr>
+<Pos l="31" c="5" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="31" c="14" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:9:2:1" typref="2701647786">
+<Attr>
+<Pos l="31" c="13" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="MAX_UINT8" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:9:2:2" typref="2701647786">
+<Attr>
+<Pos l="31" c="16" s="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="32" c="12" s="1"/>
+</Attr>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:10:1" typref="2701647786">
+<Attr>
+<Pos l="32" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="32" c="15" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:10:2:1" typref="2701647786">
+<Attr>
+<Pos l="32" c="14" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="MAX_UINT8" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:10:2:2" typref="2701647786">
+<Attr>
+<Pos l="32" c="17" s="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos l="34" c="11" s="2"/>
+</Attr>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:11:1" typref="2701647786">
+<Attr>
+<Pos l="34" c="5" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:11:2" typref="2701647786">
+<Attr>
+<Pos l="34" c="14" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="35" c="11" s="1"/>
+</Attr>
+<Id value="SBOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:12:1" typref="3603043417">
+<Attr>
+<Pos l="35" c="5" s="5"/>
+</Attr>
+</Id>
+<Nary_Exp typref="3603043417" op="{">
+<Attr>
+<Pos l="35" c="13" s="1"/>
+</Attr>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:12:2:1" typref="2701647786">
+<Attr>
+<Pos l="35" c="15" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:12:2:2" typref="2701647786">
+<Attr>
+<Pos l="35" c="22" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos l="36" c="11" s="2"/>
+</Attr>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:13:1" typref="2701647786">
+<Attr>
+<Pos l="36" c="5" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal value="2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:13:2" typref="2701647786">
+<Attr>
+<Pos l="36" c="14" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos l="37" c="12" s="2"/>
+</Attr>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:14:1" typref="2701647786">
+<Attr>
+<Pos l="37" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal value="2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:14:2" typref="2701647786">
+<Attr>
+<Pos l="37" c="15" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="39" c="16" s="1"/>
+</Attr>
+<Id value="MAX_UINT32" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:15:1" typref="2701647786">
+<Attr>
+<Pos l="39" c="5" s="10"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal value="4294967295" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:15:2" typref="2701647786">
+<Attr>
+<Pos l="39" c="18" s="10"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="40" c="16" s="1"/>
+</Attr>
+<Id value="MAX_UINT16" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:16:1" typref="2701647786">
+<Attr>
+<Pos l="40" c="5" s="10"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal value="65535" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:16:2" typref="2701647786">
+<Attr>
+<Pos l="40" c="18" s="5"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="41" c="15" s="1"/>
+</Attr>
+<Id value="MAX_UINT8" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:17:1" typref="2701647786">
+<Attr>
+<Pos l="41" c="5" s="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal value="255" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:17:2" typref="2701647786">
+<Attr>
+<Pos l="41" c="17" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="43" c="18" s="1"/>
+</Attr>
+<Id value="Convert_Bool" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:18:1" typref="1713257412">
+<Attr>
+<Pos l="43" c="5" s="12"/>
+</Attr>
+</Id>
+<Nary_Exp typref="1713257412" op="{">
+<Attr>
+<Pos l="43" c="20" s="1"/>
+</Attr>
+<Binary_Exp typref="2553059925" op="|->">
+<Attr>
+<Pos l="43" c="27" s="3"/>
+</Attr>
+<Boolean_Literal value="TRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:18:2:1:1" typref="2043437594">
+<Attr>
+<Pos l="43" c="22" s="4"/>
+</Attr>
+</Boolean_Literal>
+<Id value="STRUE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:18:2:1:2" typref="2701647786">
+<Attr>
+<Pos l="43" c="31" s="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp typref="2553059925" op="|->">
+<Attr>
+<Pos l="43" c="44" s="3"/>
+</Attr>
+<Boolean_Literal value="FALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:18:2:2:1" typref="2043437594">
+<Attr>
+<Pos l="43" c="38" s="5"/>
+</Attr>
+</Boolean_Literal>
+<Id value="SFALSE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:3:1:18:2:2:2" typref="2701647786">
+<Attr>
+<Pos l="43" c="48" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="seext" merge="-">
+<Attr>
+<Pos l="44" c="1" s="10"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="45" c="18" s="1"/>
+</Attr>
+<Id value="Convert_Bool" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:1:1" typref="1713257412">
+<Attr>
+<Pos l="45" c="5" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp typref="169563541" op="+->">
+<Attr>
+<Pos l="45" c="25" s="3"/>
+</Attr>
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:1:2:1" typref="4282494527">
+<Attr>
+<Pos l="45" c="20" s="4"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:1:2:2" typref="3603043417">
+<Attr>
+<Pos l="45" c="29" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="46" c="18" s="1"/>
+</Attr>
+<Id value="Convert_Bool" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:2:1" typref="1713257412">
+<Attr>
+<Pos l="46" c="5" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp typref="169563541" op="+->">
+<Attr>
+<Pos l="46" c="25" s="3"/>
+</Attr>
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:2:2:1" typref="4282494527">
+<Attr>
+<Pos l="46" c="20" s="4"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint16_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:2:2:2" typref="3603043417">
+<Attr>
+<Pos l="46" c="29" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="47" c="18" s="1"/>
+</Attr>
+<Id value="Convert_Bool" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:3:1" typref="1713257412">
+<Attr>
+<Pos l="47" c="5" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp typref="169563541" op="+->">
+<Attr>
+<Pos l="47" c="25" s="3"/>
+</Attr>
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:3:2:1" typref="4282494527">
+<Attr>
+<Pos l="47" c="20" s="4"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:5:1:3:2:2" typref="3603043417">
+<Attr>
+<Pos l="47" c="29" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="mchcst" merge="="/>
+<Define name="aprp" merge="-">
+<Attr>
+<Pos l="5" c="1" s="4"/>
+</Attr>
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Attr>
+<Pos l="23" c="1" s="10"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="25" c="17" s="1"/>
+</Attr>
+<Id value="mbc_board_id" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:1:1" typref="2701647786">
+<Attr>
+<Pos l="25" c="5" s="12"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:1:2" typref="3603043417">
+<Attr>
+<Pos l="25" c="18" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" c="25" s="1"/>
+</Attr>
+<Id value="OP_IMove_moveForward" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:2:1" typref="2701647786">
+<Attr>
+<Pos l="27" c="5" s="20"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:2:2" typref="3603043417">
+<Attr>
+<Pos l="27" c="26" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="28" c="18" s="1"/>
+</Attr>
+<Id value="OP_IMove_turn" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:3:1" typref="2701647786">
+<Attr>
+<Pos l="28" c="5" s="13"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:3:2" typref="3603043417">
+<Attr>
+<Pos l="28" c="19" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="29" c="70" s="1"/>
+</Attr>
+<Id value="OP_IMove_avoid_enableCollisionDetection_disableCollisionDetection" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:4:1" typref="2701647786">
+<Attr>
+<Pos l="29" c="5" s="65"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:4:2" typref="3603043417">
+<Attr>
+<Pos l="29" c="71" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="33" c="21" s="1"/>
+</Attr>
+<Id value="max_board_output" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:5:1" typref="2701647786">
+<Attr>
+<Pos l="33" c="5" s="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:5:2" typref="3603043417">
+<Attr>
+<Pos l="33" c="22" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="36" c="24" s="1"/>
+</Attr>
+<Id value="SimSquare_cycle_def" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:6:1" typref="2701647786">
+<Attr>
+<Pos l="36" c="5" s="19"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:6:2" typref="3603043417">
+<Attr>
+<Pos l="36" c="25" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="37" c="11" s="1"/>
+</Attr>
+<Id value="linear" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:7:1" typref="2701647786">
+<Attr>
+<Pos l="37" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:7:2" typref="3603043417">
+<Attr>
+<Pos l="37" c="12" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="38" c="12" s="1"/>
+</Attr>
+<Id value="angular" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:8:1" typref="2701647786">
+<Attr>
+<Pos l="38" c="5" s="7"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:8:2" typref="3603043417">
+<Attr>
+<Pos l="38" c="13" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="41" c="11" s="1"/>
+</Attr>
+<Id value="linear" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:1" typref="2701647786">
+<Attr>
+<Pos l="41" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="41" c="13" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:2:1" typref="2701647786">
+<Attr>
+<Pos l="41" c="12" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="max_board_output" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:2:2" typref="2701647786">
+<Attr>
+<Pos l="41" c="15" s="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="42" c="12" s="1"/>
+</Attr>
+<Id value="angular" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:1" typref="2701647786">
+<Attr>
+<Pos l="42" c="5" s="7"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="42" c="14" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:2:1" typref="2701647786">
+<Attr>
+<Pos l="42" c="13" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="max_board_output" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:2:2" typref="2701647786">
+<Attr>
+<Pos l="42" c="16" s="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="abs" merge="="/>
+<Define name="inv" merge="="/>
+<Define name="ass" merge="="/>
+<Define name="imlprp" merge="-">
+<Exp_Comparison op="=">
+<Id value="mbc_board_id" typref="2701647786">
+<Attr>
+<Pos l="11" c="5" s="12"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="11" c="5" s="12"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="1" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:1:1" typref="2701647786">
+<Attr>
+<Pos l="11" c="20" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="OP_IMove_moveForward" typref="2701647786">
+<Attr>
+<Pos l="13" c="5" s="20"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="13" c="5" s="20"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="0" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:2:1" typref="2701647786">
+<Attr>
+<Pos l="13" c="28" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="OP_IMove_turn" typref="2701647786">
+<Attr>
+<Pos l="14" c="5" s="13"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="14" c="5" s="13"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="1" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:3:1" typref="2701647786">
+<Attr>
+<Pos l="14" c="21" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="OP_IMove_avoid_enableCollisionDetection_disableCollisionDetection" typref="2701647786">
+<Attr>
+<Pos l="15" c="5" s="65"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="15" c="5" s="65"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="2" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:4:1" typref="2701647786">
+<Attr>
+<Pos l="15" c="73" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="max_board_output" typref="2701647786">
+<Attr>
+<Pos l="18" c="5" s="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="18" c="5" s="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:5:1" typref="2701647786">
+<Attr>
+<Pos l="18" c="24" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="SimSquare_cycle_def" typref="2701647786">
+<Attr>
+<Pos l="21" c="5" s="19"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="21" c="5" s="19"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="1" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:6:1" typref="2701647786">
+<Attr>
+<Pos l="21" c="27" s="1"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="linear" typref="2701647786">
+<Attr>
+<Pos l="22" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="22" c="5" s="6"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:7:1" typref="2701647786">
+<Attr>
+<Pos l="22" c="14" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="angular" typref="2701647786">
+<Attr>
+<Pos l="23" c="5" s="7"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Attr>
+<Pos l="23" c="5" s="7"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+<Integer_Literal value="64" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:8:1" typref="2701647786">
+<Attr>
+<Pos l="23" c="15" s="2"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Define>
+<Define name="imprp" merge="="/>
+<Define name="imext" merge="="/>
+<Proof_Obligation>
+<Comment>Valuation dans une implantation</Comment>
+<Tag>ValuesLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="imprp"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:1" typref="1975560364">
+<Attr>
+<Pos l="6" c="5" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value="INIT" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:1" typref="3073128471">
+<Attr>
+<Pos l="6" c="14" s="4"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_1" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:2" typref="3073128471">
+<Attr>
+<Pos l="6" c="20" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_2" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:3" typref="3073128471">
+<Attr>
+<Pos l="6" c="28" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="EXEC_3" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:4" typref="3073128471">
+<Attr>
+<Pos l="6" c="36" s="6"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+<Id value="FINAL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:2:1:2:5" typref="3073128471">
+<Attr>
+<Pos l="6" c="44" s="5"/>
+<B0Type>
+<Id value="STATE"/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Nary_Pred>
+</Hypothesis>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="25" c="17" s="1"/>
+</Attr>
+<Integer_Literal value="1" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:1:1," typref="2701647786">
+<Attr>
+<Pos l="11" c="20" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:1:2" typref="3603043417">
+<Attr>
+<Pos l="25" c="18" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="27" c="25" s="1"/>
+</Attr>
+<Integer_Literal value="0" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:2:1," typref="2701647786">
+<Attr>
+<Pos l="13" c="28" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:2:2" typref="3603043417">
+<Attr>
+<Pos l="27" c="26" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="29" c="70" s="1"/>
+</Attr>
+<Integer_Literal value="2" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:4:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:4:1," typref="2701647786">
+<Attr>
+<Pos l="15" c="73" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:4:2" typref="3603043417">
+<Attr>
+<Pos l="29" c="71" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="33" c="21" s="1"/>
+</Attr>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:5:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:5:1," typref="2701647786">
+<Attr>
+<Pos l="18" c="24" s="3"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint8_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:5:2" typref="3603043417">
+<Attr>
+<Pos l="33" c="22" s="7"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="36" c="24" s="1"/>
+</Attr>
+<Integer_Literal value="1" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:6:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:6:1," typref="2701647786">
+<Attr>
+<Pos l="21" c="27" s="1"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:6:2" typref="3603043417">
+<Attr>
+<Pos l="36" c="25" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="37" c="11" s="1"/>
+</Attr>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:7:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:7:1," typref="2701647786">
+<Attr>
+<Pos l="22" c="14" s="3"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:7:2" typref="3603043417">
+<Attr>
+<Pos l="37" c="12" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="38" c="12" s="1"/>
+</Attr>
+<Integer_Literal value="64" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:8:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:8:1," typref="2701647786">
+<Attr>
+<Pos l="23" c="15" s="2"/>
+</Attr>
+</Integer_Literal>
+<Id value="uint32_t" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:8:2" typref="3603043417">
+<Attr>
+<Pos l="38" c="13" s="8"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="41" c="11" s="1"/>
+</Attr>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:7:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:1," typref="2701647786">
+<Attr>
+<Pos l="22" c="14" s="3"/>
+</Attr>
+</Integer_Literal>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="41" c="13" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:2:1" typref="2701647786">
+<Attr>
+<Pos l="41" c="12" s="1"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:5:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:9:2:2," typref="2701647786">
+<Attr>
+<Pos l="18" c="24" s="3"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Valuation is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="42" c="12" s="1"/>
+</Attr>
+<Integer_Literal value="64" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:8:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:1," typref="2701647786">
+<Attr>
+<Pos l="23" c="15" s="2"/>
+</Attr>
+</Integer_Literal>
+<Binary_Exp typref="3603043417" op="..">
+<Attr>
+<Pos l="42" c="14" s="2"/>
+</Attr>
+<Integer_Literal value="0" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:2:1" typref="2701647786">
+<Attr>
+<Pos l="42" c="13" s="1"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value="127" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:3:5:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:4:1:10:2:2," typref="2701647786">
+<Attr>
+<Pos l="18" c="24" s="3"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State passList="Force(0),?" methodList="pr" proofState="Proved(0)"/>
+<iapa>
+<status value="Unproved"/>
+</iapa>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une implantation</Comment>
+<Tag>Initialisation</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imprp"/>
+<Hypothesis/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\Square\bdp\user_ctx_i.bxml:1:5:1:1"/>
+</Type>
+<Type id="1975560364">
+<Unary_Exp op="POW">
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:6:1:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="3073128471">
+<Id value="STATE" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:6:2:1"/>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:6:3:1"/>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\user_ctx.bxml:1:6:4:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="1713257412">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:1:1:1:1"/>
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:2:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:3:1"/>
+</Type>
+<Type id="2553059925">
+<Binary_Exp op="*">
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:4:1:1"/>
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:4:1:2"/>
+</Binary_Exp>
+</Type>
+<Type id="2043437594">
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:5:1"/>
+</Type>
+<Type id="169563541">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:6:1:1:1:1"/>
+<Id value="INTEGER" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:6:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="4282494527">
+<Unary_Exp op="POW">
+<Id value="BOOL" tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/Square/bdp\g_types.bxml:1:6:7:1:1"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

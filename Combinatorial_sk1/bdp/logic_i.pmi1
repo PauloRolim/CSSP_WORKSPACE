@@ -1,0 +1,44 @@
+﻿THEORY BalanceX IS
+  logic_i,8,0,0,0,0,0,0;
+  Operation_user_logic,8,0,0,0,0,0,0
+END
+&
+THEORY ProofState IS
+  Unproved;
+  Unproved;
+  Unproved;
+  Unproved;
+  Unproved;
+  Unproved;
+  Unproved;
+  Unproved
+END
+&
+THEORY MethodList IS
+  pr;
+  pr;
+  pr;
+  pr;
+  ?;
+  ?;
+  ?;
+  ?
+END
+&
+THEORY PassList IS
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0);
+  Force(0),(?;0)
+END
+&
+THEORY ManForms 
+END
+&
+THEORY Version IS
+  PRVersion("svn")(CLT == "svn")
+END

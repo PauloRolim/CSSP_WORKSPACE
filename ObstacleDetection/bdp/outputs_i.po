@@ -1,0 +1,90 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.14,(_f(5) & _f(6) => _f(20));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.13,(_f(5) & _f(6) => _f(19));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.12,(_f(5) & _f(6) => _f(18));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.11,(_f(5) & _f(6) => _f(17));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.10,(_f(5) & _f(6) => _f(16));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.9,(_f(5) & _f(6) => _f(15));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.8,(_f(5) & _f(6) => _f(14));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.7,(_f(5) & _f(6) => _f(13));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.6,(_f(5) & _f(6) => _f(12));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.5,(_f(5) & _f(6) => _f(11));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.4,(_f(5) & _f(6) => _f(10));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.3,(_f(5) & _f(6) => _f(9));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.2,(_f(5) & _f(6) => _f(8));
+_f(1) & _f(2) & _f(4) & _f(3) & WellDefinedness_write_outputs.1,(_f(5) & _f(6) => _f(7));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.16,(_f(5) & _f(6) => _f(22));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.15,(_f(5) & _f(6) => _f(21));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.14,(_f(5) & _f(6) => _f(20));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.13,(_f(5) & _f(6) => _f(19));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.12,(_f(5) & _f(6) => _f(18));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.11,(_f(5) & _f(6) => _f(17));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.10,(_f(5) & _f(6) => _f(16));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.9,(_f(5) & _f(6) => _f(15));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.8,(_f(5) & _f(6) => _f(14));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.7,(_f(5) & _f(6) => _f(13));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.6,(_f(5) & _f(6) => _f(12));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.5,(_f(5) & _f(6) => _f(11));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.4,(_f(5) & _f(6) => _f(10));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.3,(_f(5) & _f(6) => _f(9));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.2,(_f(5) & _f(6) => _f(8));
+_f(1) & _f(2) & _f(4) & _f(3) & write_outputs.1,(_f(5) & _f(6) => _f(7))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((uint32_t) = (((0) .. (4294967295)))) & ((uint16_t) = (((0) .. (65535)))) & ((uint8_t) = (((0) .. (255)))) & ((STRUE) : (uint8_t)) & ((SFALSE) : (uint8_t)) & ((MAX_UINT32) : (uint32_t)) & ((MAX_UINT16) : (uint16_t)) & ((MAX_UINT8) : (uint8_t)) & ((STRUE) : (((0) .. (MAX_UINT8)))) & ((SFALSE) : (((0) .. (MAX_UINT8)))) & not(STRUE = SFALSE) & ((SBOOL) = (({STRUE}\/{SFALSE}))) & (STRUE <= 2) & (SFALSE <= 2) & ((MAX_UINT32) = (4294967295)) & ((MAX_UINT16) = (65535)) & ((MAX_UINT8) = (255)) & ((Convert_Bool) = (({((TRUE) |-> (STRUE))}\/{((FALSE) |-> (SFALSE))}))) & ((NB_MODULES) : (uint8_t)) & ((NB_INPUTS) : (uint8_t)) & ((NB_OUTPUTS) : (uint8_t)) & (NB_MODULES <= MAX_NB_MODULES) & (NB_INPUTS <= MAX_NB_INPUTS) & (NB_OUTPUTS <= MAX_NB_OUTPUTS) & ((NB_MODULES) = (1)) & ((NB_INPUTS) = (1)) & ((NB_OUTPUTS) = (8)) & module_secu_ids : ((0) .. (0)) +-> uint32_t & dom(module_secu_ids) = ((0) .. (0)) & ((module_secu_ids) : (((((0) .. (0))) --> (uint32_t)))) & module_nb_inputs : ((0) .. (0)) +-> uint8_t & dom(module_nb_inputs) = ((0) .. (0)) & ((module_nb_inputs) : (((((0) .. (0))) --> (uint8_t)))) & module_nb_outputs : ((0) .. (0)) +-> uint8_t & dom(module_nb_outputs) = ((0) .. (0)) & ((module_nb_outputs) : (((((0) .. (0))) --> (uint8_t)))) & input_module_ids : ((0) .. (19)) +-> uint8_t & dom(input_module_ids) = ((0) .. (19)) & ((input_module_ids) : (((((0) .. (19))) --> (uint8_t)))) & input_local_ids : ((0) .. (19)) +-> uint8_t & dom(input_local_ids) = ((0) .. (19)) & ((input_local_ids) : (((((0) .. (19))) --> (uint8_t)))) & output_module_ids : ((0) .. (7)) +-> uint8_t & dom(output_module_ids) = ((0) .. (7)) & ((output_module_ids) : (((((0) .. (7))) --> (uint8_t)))) & output_local_ids : ((0) .. (7)) +-> uint8_t & dom(output_local_ids) = ((0) .. (7)) & ((output_local_ids) : (((((0) .. (7))) --> (uint8_t))));
+btrue;
+((ms_tick) : (uint32_t)) & ((o_MovementI_move) : (uint8_t)) & ((o_MovementI_move_lv_0) : (uint8_t)) & ((o_MovementI_move_lv_1) : (uint8_t)) & ((o_MovementI_move_lv_2) : (uint8_t)) & ((o_MovementI_move_av_0) : (uint8_t)) & ((o_MovementI_move_av_1) : (uint8_t)) & ((o_MovementI_move_av_2) : (uint8_t)) & ((o_MovementI_stop) : (uint8_t)) & ((Convert_Bool) : (((BOOL) +-> (uint8_t)))) & ((Convert_Bool) : (((BOOL) +-> (uint16_t)))) & ((Convert_Bool) : (((BOOL) +-> (uint32_t))));
+((lsb$1) : (uint8_t));
+"Precondition predicate";
+((0) : (uint8_t));
+(0 +1 <= NB_OUTPUTS);
+((1) : (uint8_t));
+(1 +1 <= NB_OUTPUTS);
+((2) : (uint8_t));
+(2 +1 <= NB_OUTPUTS);
+((3) : (uint8_t));
+(3 +1 <= NB_OUTPUTS);
+((4) : (uint8_t));
+(4 +1 <= NB_OUTPUTS);
+((5) : (uint8_t));
+(5 +1 <= NB_OUTPUTS);
+((6) : (uint8_t));
+(6 +1 <= NB_OUTPUTS);
+((7) : (uint8_t));
+(7 +1 <= NB_OUTPUTS);
+((input_id) : (uint8_t)) & (input_id +1 <= NB_INPUTS) & ((state) : (uint8_t));
+((state$1) : (uint8_t));
+((output_id) : (uint8_t)) & (output_id +1 <= NB_OUTPUTS) & ((state) : (uint8_t));
+((out) : (uint32_t));
+((tag) : (uint8_t)) & ((value) : (uint8_t));
+((o_MovementI_stop$1) : (uint8_t));
+((o_MovementI_move_av_2$1) : (uint8_t));
+((o_MovementI_move_av_1$1) : (uint8_t));
+((o_MovementI_move_av_0$1) : (uint8_t));
+((o_MovementI_move_lv_2$1) : (uint8_t));
+((o_MovementI_move_lv_1$1) : (uint8_t));
+((o_MovementI_move_lv_0$1) : (uint8_t));
+((o_MovementI_move$1) : (uint8_t));
+((po) : (uint8_t));
+(o_MovementI_move +1 <= NB_OUTPUTS);
+((o_MovementI_move) : (uint8_t));
+(o_MovementI_move_lv_0 +1 <= NB_OUTPUTS);
+((o_MovementI_move_lv_0) : (uint8_t));
+(o_MovementI_move_lv_1 +1 <= NB_OUTPUTS);
+((o_MovementI_move_lv_1) : (uint8_t));
+(o_MovementI_move_lv_2 +1 <= NB_OUTPUTS);
+((o_MovementI_move_lv_2) : (uint8_t));
+(o_MovementI_move_av_0 +1 <= NB_OUTPUTS);
+((o_MovementI_move_av_0) : (uint8_t));
+(o_MovementI_move_av_1 +1 <= NB_OUTPUTS);
+((o_MovementI_move_av_1) : (uint8_t));
+(o_MovementI_move_av_2 +1 <= NB_OUTPUTS);
+((o_MovementI_move_av_2) : (uint8_t));
+(o_MovementI_stop +1 <= NB_OUTPUTS);
+((o_MovementI_stop) : (uint8_t))
+END
+&
+THEORY EnumerateX
+END

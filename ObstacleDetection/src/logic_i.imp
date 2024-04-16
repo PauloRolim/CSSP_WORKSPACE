@@ -1,0 +1,315 @@
+IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types,
+    g_operators,
+    io_constants,
+    lchip_interface,
+    user_ctx,
+    inputs
+    
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    o_MovementI_move,
+    o_MovementI_move_lv_0,
+    o_MovementI_move_lv_1,
+    o_MovementI_move_lv_2,
+    o_MovementI_move_av_0,
+    o_MovementI_move_av_1,
+    o_MovementI_move_av_2,
+    o_MovementI_stop,
+    
+    smstate,
+    MBC,
+    
+    cycle_timer,
+    first_time
+INVARIANT
+    o_MovementI_move : uint8_t &
+    o_MovementI_move_lv_0 : uint8_t &
+    o_MovementI_move_lv_1 : uint8_t &
+    o_MovementI_move_lv_2 : uint8_t &
+    o_MovementI_move_av_0 : uint8_t &
+    o_MovementI_move_av_1 : uint8_t &
+    o_MovementI_move_av_2 : uint8_t &
+    o_MovementI_stop : uint8_t  &
+    
+    smstate:STATE &
+    MBC:uint32_t &
+    
+    cycle_timer:uint32_t &
+    first_time: BOOL
+INITIALISATION
+    o_MovementI_move := IO_OFF;
+    o_MovementI_move_lv_0 := IO_OFF;
+    o_MovementI_move_lv_1 := IO_OFF;
+    o_MovementI_move_lv_2 := IO_OFF;
+    o_MovementI_move_av_0 := IO_OFF;
+    o_MovementI_move_av_1 := IO_OFF;
+    o_MovementI_move_av_2 := IO_OFF;
+    o_MovementI_stop := IO_OFF;
+    
+    smstate := INIT;
+    MBC := 0;
+    
+    cycle_timer := 0;
+    first_time := TRUE
+LOCAL_OPERATIONS
+    reset_outputs = 
+    BEGIN
+        o_MovementI_move      :: uint8_t ||
+        o_MovementI_move_lv_0 :: uint8_t ||
+        o_MovementI_move_lv_1 :: uint8_t ||
+        o_MovementI_move_lv_2 :: uint8_t ||
+        o_MovementI_move_av_0 :: uint8_t ||
+        o_MovementI_move_av_1 :: uint8_t ||
+        o_MovementI_move_av_2 :: uint8_t ||
+        o_MovementI_stop      :: uint8_t
+    END;
+    
+    move(l_lv, l_av) = 
+    PRE l_lv:uint32_t & l_lv:0..7 & l_av:uint32_t & l_av:0..7
+    THEN
+        o_MovementI_move      :: uint8_t ||
+        o_MovementI_move_lv_0 :: uint8_t ||
+        o_MovementI_move_lv_1 :: uint8_t ||
+        o_MovementI_move_lv_2 :: uint8_t ||
+        o_MovementI_move_av_0 :: uint8_t ||
+        o_MovementI_move_av_1 :: uint8_t ||
+        o_MovementI_move_av_2 :: uint8_t        
+    END;
+    
+    stop = 
+    BEGIN
+        o_MovementI_stop :: uint8_t
+    END;
+    
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
+    PRE nn:uint32_t & nn:0..7 
+        & o2:uint8_t & o1:uint8_t & o0:uint8_t
+    THEN
+        o2::uint8_t
+        || o1::uint8_t
+        || o0::uint8_t
+    END;
+    
+    
+    elapsed <-- since(timer) = 
+    PRE timer:uint32_t & elapsed:uint32_t
+    THEN
+        elapsed::uint32_t
+    END;
+    
+    state_machine = 
+    PRE 
+        MBC     : uint32_t & 
+        smstate : STATE &
+        cycle_timer : uint32_t &
+        lv:uint32_t & lv:0..7 &
+        av:uint32_t & av:0..7 &
+        o_MovementI_move      : uint8_t &
+        o_MovementI_move_lv_0 : uint8_t &
+        o_MovementI_move_lv_1 : uint8_t &
+        o_MovementI_move_lv_2 : uint8_t &
+        o_MovementI_move_av_0 : uint8_t &
+        o_MovementI_move_av_1 : uint8_t &
+        o_MovementI_move_av_2 : uint8_t &
+        o_MovementI_stop : uint8_t 
+    THEN
+        o_MovementI_move      :: uint8_t ||
+        o_MovementI_move_lv_0 :: uint8_t ||
+        o_MovementI_move_lv_1 :: uint8_t ||
+        o_MovementI_move_lv_2 :: uint8_t ||
+        o_MovementI_move_av_0 :: uint8_t ||
+        o_MovementI_move_av_1 :: uint8_t ||
+        o_MovementI_move_av_2 :: uint8_t ||
+        o_MovementI_stop      :: uint8_t ||
+        smstate :: STATE ||
+        MBC     :: uint32_t ||
+        cycle_timer :: uint32_t ||
+        first_time :: BOOL        
+    END
+    
+OPERATIONS
+    reset_outputs = 
+    BEGIN
+        o_MovementI_move := IO_OFF;
+        o_MovementI_move_lv_0 := IO_OFF;
+        o_MovementI_move_lv_1 := IO_OFF;
+        o_MovementI_move_lv_2 := IO_OFF;
+        o_MovementI_move_av_0 := IO_OFF;
+        o_MovementI_move_av_1 := IO_OFF;
+        o_MovementI_move_av_2 := IO_OFF;
+        o_MovementI_stop := IO_OFF
+    END;
+    
+    stop = 
+    BEGIN
+        o_MovementI_stop := IO_ON
+    END;
+    
+    move(l_lv, l_av) = 
+    BEGIN
+        o_MovementI_move := IO_ON;
+        o_MovementI_move_lv_2,
+        o_MovementI_move_lv_1,
+        o_MovementI_move_lv_0 <-- nat_3_bits_to_bin_3_bits(l_lv);
+        o_MovementI_move_av_2,
+        o_MovementI_move_av_1,
+        o_MovementI_move_av_0 <-- nat_3_bits_to_bin_3_bits(l_av)
+    END;
+    
+    // Transforms 3 bits unsigned integers into 3 bits
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
+    BEGIN
+        o2:(o2:uint8_t);
+        o1:(o1:uint8_t);
+        o0:(o0:uint8_t);
+        
+        VAR o_aux IN
+            o_aux:(o_aux:uint32_t);
+            
+            o_aux := nn mod 2;
+            IF (o_aux = 0) THEN 
+                o0 := IO_OFF
+            ELSE
+                o0 := IO_ON
+            END;
+                        
+            o_aux := (nn / 2);
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o1 := IO_OFF
+            ELSE
+                o1 := IO_ON
+            END;
+            
+            o_aux := (nn / 4);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o2 := IO_OFF
+            ELSE
+                o2 := IO_ON
+            END
+        END
+    END;
+    
+    elapsed <-- since(timer) = 
+    BEGIN
+        elapsed:(elapsed:uint32_t);
+        VAR local_time IN 
+            local_time:(local_time:uint32_t);
+            
+            local_time <-- get_ms_tick;
+            elapsed := sub_uint32(local_time, timer)
+        END        
+    END;
+    
+    state_machine = 
+    BEGIN
+        IF smstate = INIT THEN 
+            move(lv,0);
+            smstate := EXEC_1
+        ELSIF smstate = EXEC_1 THEN
+            VAR local_obstacle IN 
+                local_obstacle:(local_obstacle:uint8_t);
+                
+                local_obstacle <-- get_i_ObstacleI_obstacle; 
+                IF local_obstacle = IO_ON THEN
+                    MBC <-- get_ms_tick;
+                    stop;
+                    move(0,av);
+                    
+                    smstate := EXEC_2
+                ELSIF local_obstacle = IO_OFF THEN 
+                    smstate := EXEC_1
+                ELSE skip
+                END
+            END
+        ELSIF smstate = EXEC_2 THEN
+            VAR since_value IN 
+                since_value:(since_value:uint32_t);
+                
+                since_value <-- since(MBC);
+                VAR pi_div_av IN
+                    pi_div_av:(pi_div_av:uint32_t);
+                    pi_div_av := pi / av;
+                    IF since_value < pi_div_av THEN
+                        smstate := EXEC_2
+                    ELSIF pi_div_av <= since_value THEN
+                        move(lv,0);
+                        smstate := EXEC_1
+                    ELSE skip
+                    END   
+                END
+            END
+        ELSE skip
+        END
+    END;    
+    
+    user_logic = 
+    BEGIN
+        IF first_time = TRUE THEN
+            reset_outputs;
+            state_machine;
+            cycle_timer <-- get_ms_tick;
+            first_time := FALSE
+        ELSE
+            VAR time_elapsed, cycle_duration IN 
+                time_elapsed:(time_elapsed:uint32_t);
+                cycle_duration:(cycle_duration:uint32_t);
+                
+                time_elapsed <-- since(cycle_timer);
+                cycle_duration := mul_uint32(SimSMovement_cycle_def,cycle_unit);
+                
+                IF (cycle_duration <= time_elapsed) THEN
+                    reset_outputs;
+                    state_machine;
+                    cycle_timer <-- get_ms_tick
+                END
+            END
+        END
+    END;
+    
+    po <-- get_o_MovementI_move =
+    BEGIN
+        po := o_MovementI_move
+    END;
+    
+    po <-- get_o_MovementI_move_lv_0 =
+    BEGIN
+        po := o_MovementI_move_lv_0
+    END;
+    
+    po <-- get_o_MovementI_move_lv_1 =
+    BEGIN
+        po := o_MovementI_move_lv_1
+    END;
+    
+    po <-- get_o_MovementI_move_lv_2 =
+    BEGIN
+        po := o_MovementI_move_lv_2
+    END;
+    
+    po <-- get_o_MovementI_move_av_0 =
+    BEGIN
+        po := o_MovementI_move_av_0
+    END;
+    
+    po <-- get_o_MovementI_move_av_1 =
+    BEGIN
+        po := o_MovementI_move_av_1
+    END;
+    
+    po <-- get_o_MovementI_move_av_2 =
+    BEGIN
+        po := o_MovementI_move_av_2
+    END;
+    
+    po <-- get_o_MovementI_stop =
+    BEGIN
+        po := o_MovementI_stop
+    END
+END

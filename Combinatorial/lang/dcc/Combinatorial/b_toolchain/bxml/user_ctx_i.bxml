@@ -1,0 +1,19 @@
+<Machine name='user_ctx_i' type='implementation'>
+<Abstraction>user_ctx</Abstraction>
+<Sees>
+<Attr>
+<Pos l='7' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='8' c='5' s='7'/>
+</Attr>
+<Name>g_types</Name>
+</Referenced_Machine>
+</Sees>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos/>
+
+</Machine>

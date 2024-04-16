@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/kernel_app/link_to_kernel.c
+link_to_kernel.h
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/kernel_app/link_to_kernel.h
+stdio.h
+-
+sys/time.h
+-
+
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/kernel_app/link_to_kernel.h
+stdint.h
+-
+stdbool.h
+-
+link_to_kernel_addr.h
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/kernel_app/link_to_kernel_addr.h
+../replica_2/c4b_safety_variables.h
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/replica_2/c4b_safety_variables.h
+
+C:/CSSP/CSSP_WORKSPACE/CSSP/simu/src/kernel_app/link_to_kernel_addr.h
+

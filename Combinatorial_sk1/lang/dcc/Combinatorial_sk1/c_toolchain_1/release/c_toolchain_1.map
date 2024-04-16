@@ -1,0 +1,644 @@
+
+Microchip PIC32 Memory-Usage Report
+
+kseg0 Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+      Total kseg0_program_mem used  :           0           0  <1% of 0x1000
+
+kseg1 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_boot_mem used  :           0           0  <1% of 0x490
+        --------------------------------------------------------------------------
+         Total Program Memory used  :           0           0  <1% of 0x1490
+        --------------------------------------------------------------------------
+
+
+kseg1 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_data_mem used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0xa0000008              0           0  Reserved for heap 
+stack                   0xa0000020          0xfd8        4056  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_info    0x00000000      0x9e3 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_abbrev  0x00000000       0xa9 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_aranges
+                0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_line    0x00000000      0x190 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_info    0x00000000       0xfc C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_abbrev  0x00000000       0x2a C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_aranges
+                0x00000000       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_ranges  0x00000000       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_line    0x00000000       0xaa C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_frame   0x00000000       0x2c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_info    0x00000000      0x3f9 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_abbrev  0x00000000       0x75 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_aranges
+                0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_line    0x00000000      0x110 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_info    0x00000000      0x1dc C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_abbrev  0x00000000       0x44 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_aranges
+                0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_line    0x00000000       0xbd C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_info    0x00000000      0x4f9 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_abbrev  0x00000000       0x83 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_aranges
+                0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_line    0x00000000      0x11e C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_info    0x00000000      0x19a C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_abbrev  0x00000000       0x37 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_aranges
+                0x00000000       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_ranges  0x00000000       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_line    0x00000000       0xa1 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_frame   0x00000000       0x30 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_info    0x00000000      0x91c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_abbrev  0x00000000       0xeb C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_aranges
+                0x00000000       0xc8 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_ranges  0x00000000       0xb8 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_line    0x00000000      0x1d8 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_frame   0x00000000      0x280 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_info    0x00000000      0x6fb C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_abbrev  0x00000000      0x105 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_aranges
+                0x00000000       0x68 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_ranges  0x00000000       0x58 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_line    0x00000000      0x177 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_frame   0x00000000      0x130 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_info    0x00000000      0x1d6 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_abbrev  0x00000000       0x6b C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_aranges
+                0x00000000       0x28 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_ranges  0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_line    0x00000000      0x124 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_frame   0x00000000       0x4c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_info    0x00000000      0x59a C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_abbrev  0x00000000       0xca C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_aranges
+                0x00000000       0x30 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_ranges  0x00000000       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_line    0x00000000      0x13b C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_frame   0x00000000       0x6c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_info    0x00000000      0x1b0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_abbrev  0x00000000       0x37 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_aranges
+                0x00000000       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_ranges  0x00000000       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_line    0x00000000       0xab C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_frame   0x00000000       0x2c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_info    0x00000000      0x19c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_abbrev  0x00000000       0x37 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_aranges
+                0x00000000       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_ranges  0x00000000       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_line    0x00000000       0xa1 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_frame   0x00000000       0x2c C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+kseg1_boot_mem   0x9d001970         0x00000490
+kseg0_program_mem 0x9d000000         0x00001000         xr
+kseg1_data_mem   0xa0000000         0x00001000         w !x
+kseg0_application_program_mem 0x9d01b49c         0x00062b64         xr
+kseg1_application_data_mem 0xa00083fc         0x00017c04         w !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+LOAD C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x00000000                _min_heap_size = 0x0
+
+/DISCARD/
+ *(.debug_info)
+ *(.debug_abbrev)
+ *(.debug_aranges)
+ *(.debug_line)
+ *(.debug_frame)
+ *(.debug_ranges)
+ *(.comment)
+ *(.reginfo)
+
+.dinit          0x9d01b49c       0x10
+                0x9d01b49c                _reset = .
+ *(.dinit)
+ .dinit         0x9d01b49c       0x10 data_init
+
+.R_U_S_CST__USER_STRUCT_SAFETY_VARIABLES_SIZE_MINUS_1
+                0x9d0123e4        0x4
+ *(.ru_s_cst__user_struct_safety_variables_size_minus_1)
+ .ru_s_cst__user_struct_safety_variables_size_minus_1
+                0x9d0123e4        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+                0x9d0123e4                struct_safety_variables_size_minus_1
+
+.R_U_S_CST__MODULE_SECU_IDS
+                0x9d0123e8        0x4
+ *(.ru_s_cst__module_secu_ids)
+ .ru_s_cst__module_secu_ids
+                0x9d0123e8        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123e8                r2__module_secu_ids_ptr
+
+.R_U_S_CST__MODULE_NB_INPUTS
+                0x9d0123ec        0x4
+ *(.ru_s_cst__module_nb_inputs)
+ .ru_s_cst__module_nb_inputs
+                0x9d0123ec        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123ec                r2__module_nb_inputs_ptr
+
+.R_U_S_CST__MODULE_NB_OUTPUTS
+                0x9d0123f0        0x4
+ *(.ru_s_cst__module_nb_outputs)
+ .ru_s_cst__module_nb_outputs
+                0x9d0123f0        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123f0                r2__module_nb_outputs_ptr
+
+.R_U_S_CST__INPUT_MODULE_IDS
+                0x9d0123f4        0x4
+ *(.ru_s_cst__input_module_ids)
+ .ru_s_cst__input_module_ids
+                0x9d0123f4        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123f4                r2__input_module_ids_ptr
+
+.R_U_S_CST__INPUT_LOCAL_IDS
+                0x9d0123f8        0x4
+ *(.ru_s_cst__input_local_ids)
+ .ru_s_cst__input_local_ids
+                0x9d0123f8        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123f8                r2__input_local_ids_ptr
+
+.R_U_S_CST__OUTPUT_MODULE_IDS
+                0x9d0123fc        0x4
+ *(.ru_s_cst__output_module_ids)
+ .ru_s_cst__output_module_ids
+                0x9d0123fc        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d0123fc                r2__output_module_ids_ptr
+
+.R_U_S_CST__OUTPUT_LOCAL_IDS
+                0x9d012400        0x4
+ *(.ru_s_cst__output_local_ids)
+ .ru_s_cst__output_local_ids
+                0x9d012400        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012400                r2__output_local_ids_ptr
+
+.R_U_S_CST__NB_MODULES
+                0x9d012404        0x4
+ *(.ru_s_cst__NB_MODULES)
+ .ru_s_cst__NB_MODULES
+                0x9d012404        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012404                r2__NB_MODULES_ptr
+
+.R_U_S_CST__NB_INPUTS
+                0x9d012408        0x4
+ *(.ru_s_cst__NB_INPUTS)
+ .ru_s_cst__NB_INPUTS
+                0x9d012408        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012408                r2__NB_INPUTS_ptr
+
+.R_U_S_CST__NB_OUTPUTS
+                0x9d01240c        0x4
+ *(.ru_s_cst__NB_OUTPUTS)
+ .ru_s_cst__NB_OUTPUTS
+                0x9d01240c        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d01240c                r2__NB_OUTPUTS_ptr
+
+.R2_U_PTR__user_component__initialisation
+                0x9d012434        0x4
+ *(.r2_u_ptr__user_component__initialisation_ptr)
+ .r2_u_ptr__user_component__initialisation_ptr
+                0x9d012434        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012434                r2__user_component__initialisation_ptr
+
+.R2_U_PTR__user_app
+                0x9d012438        0x4
+ *(.r2_u_ptr__user_app_ptr)
+ .r2_u_ptr__user_app_ptr
+                0x9d012438        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012438                r2__user_app_ptr
+
+.R2_U_PTR__user_consistency_error_detection_test
+                0x9d01243c        0x4
+ *(.r2_u_ptr__user_consistency_error_detection_test_ptr)
+ .r2_u_ptr__user_consistency_error_detection_test_ptr
+                0x9d01243c        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d01243c                r2__user_consistency_error_detection_test_ptr
+
+.R2_U_PTR__user_configuration__initialisation
+                0x9d012428        0x4
+ *(.r2_u_ptr__user_configuration__initialisation_ptr)
+ .r2_u_ptr__user_configuration__initialisation_ptr
+                0x9d012428        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012428                r2__user_configuration__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables__initialisation
+                0x9d01242c        0x4
+ *(.r2_u_ptr__user_safety_variables__initialisation_ptr)
+ .r2_u_ptr__user_safety_variables__initialisation_ptr
+                0x9d01242c        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d01242c                r2__user_safety_variables__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables_array
+                0x9d012430        0x4
+ *(.r2_u_ptr__user_safety_variables_array_ptr)
+ .r2_u_ptr__user_safety_variables_array_ptr
+                0x9d012430        0x4 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d012430                r2__user_safety_variables_array_ptr
+
+.NR_S_CST       0x9d01b4ac        0x0
+ *(.nr_s_cst)
+ *(.nr_s_cst.*)
+                0x9d01b4ac                . = ALIGN (0x4)
+
+.NR_NS_CST      0x9d01b4ac        0x0
+ *(.nr_ns_cst)
+ *(.nr_ns_cst.*)
+                0x9d01b4ac                . = ALIGN (0x4)
+
+.NR_S_FN        0x9d01b4ac       0x20
+ *(.nr_s_fn)
+ .nr_s_fn       0x9d01b4ac       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+                0x9d01b4ac                safety_variables__initialisation
+ *(.nr_s_fn.*)
+                0x9d01b4cc                . = ALIGN (0x4)
+
+.NR_NS_FN       0x9d01b4cc        0x0
+ *(.nr_ns_fn)
+ *(.nr_ns_fn.*)
+                0x9d01b4cc                . = ALIGN (0x4)
+                0x9d01b4cc                _end_section = .
+
+.NR_S_VAR       0xa00083fc        0x0
+ *(.nr_s_var)
+ *(.nr_s_var.*)
+                0xa00083fc                . = ALIGN (0x4)
+
+.NR_NS_VAR      0xa00083fc        0x0
+ *(.nr_ns_var)
+ *(.nr_ns_var.*)
+                0xa00083fc                . = ALIGN (0x4)
+
+.R_CST          0x9d01b4cc       0x54
+                0x9d01b4d0                . = ALIGN (0x8)
+ *fill*         0x9d01b4cc        0x4 
+ *(.r_cst)
+ .r_cst         0x9d01b4d0       0x50 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+                0x9d01b4d0                global_constants
+ *(.r_cst.*)
+                0x9d01b520                . = ALIGN (0x8)
+
+.R2_CST         0x9d01b520        0x0
+ *(.r2_cst)
+ *(.r2_cst.*)
+                0x9d01b520                . = ALIGN (0x8)
+
+.R2_FN          0x9d01b520      0xff8
+ *(.r2_fn)
+ .r2_fn         0x9d01b520       0x38 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+                0x9d01b520                g_types__initialisation
+ .r2_fn         0x9d01b558      0x8b0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+                0x9d01b558                inputs__initialisation
+                0x9d01b754                read_inputs
+                0x9d01b9ac                get_board_0_I1
+                0x9d01b9e0                get_board_0_I2
+                0x9d01ba18                get_board_0_I3
+                0x9d01ba50                get_board_0_I4
+                0x9d01ba88                get_board_0_I5
+                0x9d01bac0                get_board_0_I6
+                0x9d01baf8                get_board_0_I7
+                0x9d01bb30                get_board_0_I8
+                0x9d01bb68                get_board_0_I9
+                0x9d01bba0                get_board_0_I10
+                0x9d01bbd8                get_board_0_I11
+                0x9d01bc10                get_board_0_I12
+                0x9d01bc48                get_board_0_I13
+                0x9d01bc80                get_board_0_I14
+                0x9d01bcb8                get_board_0_I15
+                0x9d01bcf0                get_board_0_I16
+                0x9d01bd28                get_board_0_I17
+                0x9d01bd60                get_board_0_I18
+                0x9d01bd98                get_board_0_I19
+                0x9d01bdd0                get_board_0_I20
+ .r2_fn         0x9d01be08      0x430 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+                0x9d01be08                logic__initialisation
+                0x9d01bee8                user_logic
+                0x9d01c078                get_board_0_O1
+                0x9d01c0b0                get_board_0_O2
+                0x9d01c0e8                get_board_0_O3
+                0x9d01c120                get_board_0_O4
+                0x9d01c158                get_board_0_O5
+                0x9d01c190                get_board_0_O6
+                0x9d01c1c8                get_board_0_O7
+                0x9d01c200                get_board_0_O8
+ .r2_fn         0x9d01c238      0x1c8 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+                0x9d01c238                outputs__initialisation
+                0x9d01c258                write_outputs
+ .r2_fn         0x9d01c400       0xd8 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+                0x9d01c400                user_component__initialisation
+                0x9d01c454                user_app
+                0x9d01c4a0                user_consistency_error_detection_test
+ .r2_fn         0x9d01c4d8       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+                0x9d01c4d8                user_configuration__initialisation
+ .r2_fn         0x9d01c4f8       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+                0x9d01c4f8                user_ctx__initialisation
+ *(.r2_fn.*)
+                0x9d01c518                . = ALIGN (0x8)
+
+.R2_CHK_VAR     0xa00083fc       0x24
+ *(.r2_chk_var)
+ .r2_chk_var    0xa00083fc       0x20 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+                0xa00083fc                safety_variables
+ *(.r2_chk_var.*)
+                0xa0008420                . = ALIGN (0x8)
+ *fill*         0xa000841c        0x4 
+
+.R2_NCHK_VAR    0xa0008420        0x0
+ *(.r2_nchk_var)
+ .r2_nchk_var   0xa0008420        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+                0xa0008420                no_checked_variables
+ *(.r2_nchk_var.*)
+                0xa0008420                . = ALIGN (0x8)
+
+.R1_CST         0x9d01c518        0x0
+ *(.r1_cst)
+ *(.r1_cst.*)
+                0x9d01c518                . = ALIGN (0x8)
+
+.R1_FN          0x9d01c518    0x61ae8
+                0x9d07e000                _end_r1_fn = (ORIGIN (kseg0_application_program_mem) + 0x62b64)
+                [0x9d07e000]                _end_r1_fn = (_end_r1_fn - 0x0)
+                0x9d07e000                . = _end_r1_fn
+ *fill*         0x9d01c518    0x61ae8 
+
+.R1_CHK_VAR     0xa0008420       0x28
+                0xa0008444                . = (. + SIZEOF (.R2_CHK_VAR))
+ *fill*         0xa0008420       0x24 
+                0xa0008448                . = ALIGN (0x8)
+ *fill*         0xa0008444        0x4 
+
+.R1_NCHK_VAR    0xa0008448        0x0
+                0xa0008448                . = (. + SIZEOF (.R2_NCHK_VAR))
+                0xa0008448                . = ALIGN (0x8)
+
+.FREE_FLASH_SPACE
+                0x9d07e000        0x0
+                0x9d07e000                _end_flash_space = (ORIGIN (kseg0_application_program_mem) + 0x62b64)
+                0x9d07e000                . = _end_flash_space
+                0x9d07e000                . = ALIGN (0x8)
+
+.FREE_RAM_SPACE
+                0xa0008448    0x17bb8
+                0xa0020000                _end_ram_space = (ORIGIN (kseg1_application_data_mem) + 0x17c04)
+                0xa0020000                . = _end_ram_space
+ *fill*         0xa0008448    0x17bb8 
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+START GROUP
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libsupc++.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a
+END GROUP
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+OUTPUT(C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\release/c_toolchain_1.elf elf32-tradlittlemips)
+LOAD stack
+LOAD data_init
+
+.debug_str      0x00000000        0x0
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_str     0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.gnu.attributes
+                0x00000000       0x10
+ .gnu.attributes
+                0x00000000       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .gnu.attributes
+                0x00000010       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+ .gnu.attributes
+                0x00000020       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+ .gnu.attributes
+                0x00000030       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .gnu.attributes
+                0x00000040       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .gnu.attributes
+                0x00000050       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+ .gnu.attributes
+                0x00000060       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+ .gnu.attributes
+                0x00000070       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+ .gnu.attributes
+                0x00000080       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+ .gnu.attributes
+                0x00000090       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+ .gnu.attributes
+                0x000000a0       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .gnu.attributes
+                0x000000b0       0x10 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.stack          0xa0000020       0x10
+ .stack         0xa0000020       0x10 stack
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\user_component_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\outputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\logic_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\inputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\g_types_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:/CSSP/CSSP_WORKSPACE/Combinatorial_sk1/lang/dcc\Combinatorial_sk1\c_toolchain_1\build\kernel_app\link_to_kernel.o

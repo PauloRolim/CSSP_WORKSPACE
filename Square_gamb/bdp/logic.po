@@ -1,0 +1,9 @@
+THEORY ProofList
+END
+&
+THEORY Formulas
+END
+&
+THEORY EnumerateX IS
+STATE == {INIT,EXEC_1,EXEC_2,EXEC_3,FINAL}
+END

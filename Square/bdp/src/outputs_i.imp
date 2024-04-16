@@ -1,0 +1,43 @@
+﻿/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    outputs_i
+REFINES
+    outputs
+SEES
+    g_types ,
+    lchip_interface ,
+    logic ,
+    user_configuration
+OPERATIONS
+    write_outputs =
+    VAR
+        lsb
+    IN
+        lsb : ( lsb : uint8_t ) ;
+
+        lsb <-- get_board_0_O1 ;
+                write_global_output ( 0 , lsb ) ;
+
+                lsb <-- get_board_0_O2 ;
+                write_global_output ( 1 , lsb ) ;
+
+                lsb <-- get_board_0_O3 ;
+                write_global_output ( 2 , lsb ) ;
+
+                lsb <-- get_board_0_O4 ;
+                write_global_output ( 3 , lsb ) ;
+
+                lsb <-- get_board_0_O5 ;
+                write_global_output ( 4 , lsb ) ;
+
+                lsb <-- get_board_0_O6 ;
+                write_global_output ( 5 , lsb ) ;
+
+                lsb <-- get_board_0_O7 ;
+                write_global_output ( 6 , lsb ) ;
+
+                lsb <-- get_board_0_O8 ;
+                write_global_output ( 7 , lsb )
+    END
+END

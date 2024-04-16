@@ -1,0 +1,940 @@
+IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types,
+    g_operators,
+    io_constants,
+    lchip_interface,
+    user_ctx,
+    inputs
+    
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    // Board outputs
+    board_0_O1,
+    board_0_O2,
+    board_0_O3,
+    board_0_O4,
+    board_0_O5,
+    board_0_O6,
+    board_0_O7,
+    board_0_O8,
+    
+    // Translation variables
+    current_time, // Counts time according to the master clock
+    my_clock,     // stores the last signal (IO_ON or IO_OFF) received
+    smstate,      // Current state 
+    first_time,
+    
+    // Model variables
+    SimSquare_cycle_timer,
+    C_,
+    D_,
+    segment,
+    DTurning_clock,
+    
+    
+    // Model Inputs
+    i_IObject_collisionDetected,
+    
+    // Model Outputs
+    o_IMove_moveForward,
+    o_IMove_moveForward_linear_0,
+    o_IMove_moveForward_linear_1,
+    o_IMove_moveForward_linear_2,
+    o_IMove_moveForward_linear_3,
+    o_IMove_moveForward_linear_4,
+    o_IMove_moveForward_linear_5,
+    o_IMove_moveForward_linear_6,
+    o_IMove_turn,
+    o_IMove_turn_angular_0,
+    o_IMove_turn_angular_1,
+    o_IMove_turn_angular_2,
+    o_IMove_turn_angular_3,
+    o_IMove_turn_angular_4,
+    o_IMove_turn_angular_5,
+    o_IMove_turn_angular_6,
+    o_IMove_avoid,
+    o_IMove_enableCollisionDetection,
+    o_IMove_disableCollisionDetection,
+    o_IObject_stop
+    
+INVARIANT
+    // Board outputs
+    board_0_O1 : uint8_t &
+    board_0_O2 : uint8_t &
+    board_0_O3 : uint8_t &
+    board_0_O4 : uint8_t &
+    board_0_O5 : uint8_t &
+    board_0_O6 : uint8_t &
+    board_0_O7 : uint8_t &
+    board_0_O8 : uint8_t &
+    
+    // Translation variables
+    current_time:uint32_t &
+    my_clock: uint8_t &
+    smstate:STATE &
+    first_time: BOOL &
+    
+    // Model variables
+    SimSquare_cycle_timer:uint32_t &
+    C_:uint32_t &
+    D_:uint32_t &
+    segment:uint32_t &
+    DTurning_clock:uint32_t &
+    
+    
+    // Model Inputs
+    i_IObject_collisionDetected: uint8_t &
+    
+    // Model Outputs
+    o_IMove_moveForward: uint8_t &
+    o_IMove_moveForward_linear_0: uint8_t &
+    o_IMove_moveForward_linear_1: uint8_t &
+    o_IMove_moveForward_linear_2: uint8_t &
+    o_IMove_moveForward_linear_3: uint8_t &
+    o_IMove_moveForward_linear_4: uint8_t &
+    o_IMove_moveForward_linear_5: uint8_t &
+    o_IMove_moveForward_linear_6: uint8_t &
+    o_IMove_turn: uint8_t &
+    o_IMove_turn_angular_0: uint8_t &
+    o_IMove_turn_angular_1: uint8_t &
+    o_IMove_turn_angular_2: uint8_t &
+    o_IMove_turn_angular_3: uint8_t &
+    o_IMove_turn_angular_4: uint8_t &
+    o_IMove_turn_angular_5: uint8_t &
+    o_IMove_turn_angular_6: uint8_t &
+    o_IMove_avoid: uint8_t &
+    o_IMove_enableCollisionDetection: uint8_t &
+    o_IMove_disableCollisionDetection: uint8_t &
+    o_IObject_stop: uint8_t
+    
+INITIALISATION
+    // Board outputs
+    board_0_O1 := IO_OFF;
+    board_0_O2 := IO_OFF;
+    board_0_O3 := IO_OFF;
+    board_0_O4 := IO_OFF;
+    board_0_O5 := IO_OFF;
+    board_0_O6 := IO_OFF;
+    board_0_O7 := IO_OFF;
+    board_0_O8 := IO_OFF;
+    
+    // Translation variables
+    current_time := 0;
+    my_clock := IO_OFF;
+    smstate := INIT;
+    first_time := TRUE;
+    
+    // Model variables
+    SimSquare_cycle_timer := 0;
+    C_ := 0;
+    D_ := 0;
+    segment := 0;
+    DTurning_clock := 0;
+    
+    // Model Inputs
+    i_IObject_collisionDetected := IO_OFF;
+    
+    // Model Outputs
+    o_IMove_moveForward := IO_OFF;
+    o_IMove_moveForward_linear_0 := IO_OFF;
+    o_IMove_moveForward_linear_1 := IO_OFF;
+    o_IMove_moveForward_linear_2 := IO_OFF;
+    o_IMove_moveForward_linear_3 := IO_OFF;
+    o_IMove_moveForward_linear_4 := IO_OFF;
+    o_IMove_moveForward_linear_5 := IO_OFF;
+    o_IMove_moveForward_linear_6 := IO_OFF;
+    o_IMove_turn := IO_OFF;
+    o_IMove_turn_angular_0 := IO_OFF;
+    o_IMove_turn_angular_1 := IO_OFF;
+    o_IMove_turn_angular_2 := IO_OFF;
+    o_IMove_turn_angular_3 := IO_OFF;
+    o_IMove_turn_angular_4 := IO_OFF;
+    o_IMove_turn_angular_5 := IO_OFF;
+    o_IMove_turn_angular_6 := IO_OFF;
+    o_IMove_avoid := IO_OFF;
+    o_IMove_enableCollisionDetection := IO_OFF;
+    o_IMove_disableCollisionDetection := IO_OFF;
+    o_IObject_stop := IO_OFF
+    
+LOCAL_OPERATIONS
+    
+    ////////////////////////////////////////
+    // Translation operations
+    ////////////////////////////////////////
+    read_master_clock = 
+    BEGIN
+        current_time::uint32_t ||
+        my_clock::uint8_t
+    END;
+    
+    execute_model_cycle = 
+    BEGIN 
+        // Translation variables
+        my_clock:: uint8_t ||
+        smstate::STATE ||
+        first_time:: BOOL ||
+        
+        // Model variables
+        SimSquare_cycle_timer::uint32_t ||
+        C_::uint32_t ||
+        D_::uint32_t ||
+        segment::uint32_t ||
+        DTurning_clock::uint32_t ||
+        
+        // Operations
+        o_IMove_moveForward      :: uint8_t ||
+        o_IMove_moveForward_linear_0 :: uint8_t ||
+        o_IMove_moveForward_linear_1 :: uint8_t ||
+        o_IMove_moveForward_linear_2 :: uint8_t ||
+        o_IMove_moveForward_linear_3 :: uint8_t ||
+        o_IMove_moveForward_linear_4 :: uint8_t ||
+        o_IMove_moveForward_linear_5 :: uint8_t ||
+        o_IMove_moveForward_linear_6 :: uint8_t ||
+        o_IMove_turn      :: uint8_t ||
+        o_IMove_turn_angular_0 :: uint8_t ||
+        o_IMove_turn_angular_1 :: uint8_t ||
+        o_IMove_turn_angular_2 :: uint8_t ||
+        o_IMove_turn_angular_3 :: uint8_t ||
+        o_IMove_turn_angular_4 :: uint8_t ||
+        o_IMove_turn_angular_5 :: uint8_t ||
+        o_IMove_turn_angular_6 :: uint8_t ||
+        o_IMove_avoid :: uint8_t ||
+        o_IMove_enableCollisionDetection :: uint8_t ||
+        o_IMove_disableCollisionDetection :: uint8_t ||
+        o_IObject_stop :: uint8_t
+    END;
+    
+    elapsed <-- since(timer) = 
+    PRE timer:uint32_t & elapsed:uint32_t
+    THEN
+        elapsed::uint32_t
+    END;
+    
+    // Logical and (&)
+    result <-- land(pp,qq) = 
+    PRE pp:BOOL & qq:BOOL & result:BOOL
+    THEN
+        result::BOOL
+    END;
+    
+    // Logical or (or)
+    result <-- lor(pp,qq) = 
+    PRE pp:BOOL & qq:BOOL & result:BOOL
+    THEN
+        result::BOOL
+    END;
+    
+    // Logical not (not)
+    result <-- lnot(pp) = 
+    PRE pp:BOOL & result:BOOL
+    THEN
+        result::BOOL
+    END;
+    
+    // Debug function
+    write_output(nn) = 
+    PRE nn:uint32_t & nn:0..max_board_output
+    THEN
+        board_0_O1      :: uint8_t ||
+        board_0_O2      :: uint8_t ||
+        board_0_O3      :: uint8_t ||
+        board_0_O4      :: uint8_t ||
+        board_0_O5      :: uint8_t ||
+        board_0_O6      :: uint8_t ||
+        board_0_O7      :: uint8_t ||
+        board_0_O8      :: uint8_t
+    END;
+    
+    ////////////////////////////////////////
+    // Translation model specific operations
+    ////////////////////////////////////////
+    
+    reset_cycle_timers = 
+    BEGIN 
+        SimSquare_cycle_timer::uint32_t
+    END;
+    
+    reset_outputs = 
+    BEGIN
+        board_0_O1      :: uint8_t ||
+        board_0_O2      :: uint8_t ||
+        board_0_O3      :: uint8_t ||
+        board_0_O4      :: uint8_t ||
+        board_0_O5      :: uint8_t ||
+        board_0_O6      :: uint8_t ||
+        board_0_O7      :: uint8_t ||
+        board_0_O8      :: uint8_t
+    END;
+    
+    read_model_inputs = 
+    BEGIN
+        i_IObject_collisionDetected :: uint8_t
+    END;
+    
+    write_model_outputs = 
+    BEGIN
+        board_0_O1      :: uint8_t ||
+        board_0_O2      :: uint8_t ||
+        board_0_O3      :: uint8_t ||
+        board_0_O4      :: uint8_t ||
+        board_0_O5      :: uint8_t ||
+        board_0_O6      :: uint8_t ||
+        board_0_O7      :: uint8_t ||
+        board_0_O8      :: uint8_t
+    END;
+    
+    state_machine = 
+    BEGIN 
+        // Translation variables
+        my_clock:: uint8_t ||
+        smstate::STATE ||
+        first_time:: BOOL ||
+        
+        // Model variables
+        SimSquare_cycle_timer::uint32_t ||
+        C_::uint32_t ||
+        D_::uint32_t ||
+        segment::uint32_t ||
+        DTurning_clock::uint32_t ||
+        
+        // Operations
+        o_IMove_moveForward      :: uint8_t ||
+        o_IMove_moveForward_linear_0 :: uint8_t ||
+        o_IMove_moveForward_linear_1 :: uint8_t ||
+        o_IMove_moveForward_linear_2 :: uint8_t ||
+        o_IMove_moveForward_linear_3 :: uint8_t ||
+        o_IMove_moveForward_linear_4 :: uint8_t ||
+        o_IMove_moveForward_linear_5 :: uint8_t ||
+        o_IMove_moveForward_linear_6 :: uint8_t ||
+        o_IMove_turn      :: uint8_t ||
+        o_IMove_turn_angular_0 :: uint8_t ||
+        o_IMove_turn_angular_1 :: uint8_t ||
+        o_IMove_turn_angular_2 :: uint8_t ||
+        o_IMove_turn_angular_3 :: uint8_t ||
+        o_IMove_turn_angular_4 :: uint8_t ||
+        o_IMove_turn_angular_5 :: uint8_t ||
+        o_IMove_turn_angular_6 :: uint8_t ||
+        o_IMove_avoid :: uint8_t ||
+        o_IMove_enableCollisionDetection :: uint8_t ||
+        o_IMove_disableCollisionDetection :: uint8_t ||
+        o_IObject_stop :: uint8_t
+    END;
+    
+    branching_condition_1 = 
+    BEGIN 
+        // Translation variables
+        my_clock:: uint8_t ||
+        smstate::STATE ||
+        first_time:: BOOL ||
+        
+        // Model variables
+        SimSquare_cycle_timer::uint32_t ||
+        C_::uint32_t ||
+        D_::uint32_t ||
+        segment::uint32_t ||
+        DTurning_clock::uint32_t ||
+        
+        // Operations
+        o_IMove_moveForward      :: uint8_t ||
+        o_IMove_moveForward_linear_0 :: uint8_t ||
+        o_IMove_moveForward_linear_1 :: uint8_t ||
+        o_IMove_moveForward_linear_2 :: uint8_t ||
+        o_IMove_moveForward_linear_3 :: uint8_t ||
+        o_IMove_moveForward_linear_4 :: uint8_t ||
+        o_IMove_moveForward_linear_5 :: uint8_t ||
+        o_IMove_moveForward_linear_6 :: uint8_t ||
+        o_IMove_turn      :: uint8_t ||
+        o_IMove_turn_angular_0 :: uint8_t ||
+        o_IMove_turn_angular_1 :: uint8_t ||
+        o_IMove_turn_angular_2 :: uint8_t ||
+        o_IMove_turn_angular_3 :: uint8_t ||
+        o_IMove_turn_angular_4 :: uint8_t ||
+        o_IMove_turn_angular_5 :: uint8_t ||
+        o_IMove_turn_angular_6 :: uint8_t ||
+        o_IMove_avoid :: uint8_t ||
+        o_IMove_enableCollisionDetection :: uint8_t ||
+        o_IMove_disableCollisionDetection :: uint8_t ||
+        o_IObject_stop :: uint8_t
+    END;
+    
+    o6, o5, o4, o3, o2, o1, o0 <-- nat_7_bits_to_bin_7_bits(nn) = 
+    PRE nn:uint32_t & nn:0..max_board_output 
+        & o6:uint8_t & o5:uint8_t & o4:uint8_t & o3:uint8_t
+        & o2:uint8_t & o1:uint8_t & o0:uint8_t
+    THEN
+        o6::uint8_t
+        || o5::uint8_t
+        || o4::uint8_t
+        || o3::uint8_t
+        || o2::uint8_t
+        || o1::uint8_t
+        || o0::uint8_t
+    END;
+    
+    
+    ////////////////////////////////////////
+    // Model operations
+    ////////////////////////////////////////
+    
+    moveForward(l_linear) = 
+    PRE l_linear:uint32_t & l_linear:0..max_board_output
+    THEN
+        o_IMove_moveForward      :: uint8_t ||
+        o_IMove_moveForward_linear_0 :: uint8_t ||
+        o_IMove_moveForward_linear_1 :: uint8_t ||
+        o_IMove_moveForward_linear_2 :: uint8_t ||
+        o_IMove_moveForward_linear_3 :: uint8_t ||
+        o_IMove_moveForward_linear_4 :: uint8_t ||
+        o_IMove_moveForward_linear_5 :: uint8_t ||
+        o_IMove_moveForward_linear_6 :: uint8_t
+    END;
+    
+    turn(l_angular) = 
+    PRE l_angular:uint32_t & l_angular:0..max_board_output
+    THEN
+        o_IMove_turn      :: uint8_t ||
+        o_IMove_turn_angular_0 :: uint8_t ||
+        o_IMove_turn_angular_1 :: uint8_t ||
+        o_IMove_turn_angular_2 :: uint8_t ||
+        o_IMove_turn_angular_3 :: uint8_t ||
+        o_IMove_turn_angular_4 :: uint8_t ||
+        o_IMove_turn_angular_5 :: uint8_t ||
+        o_IMove_turn_angular_6 :: uint8_t
+    END;
+    
+    avoid = 
+    BEGIN
+        o_IMove_avoid :: uint8_t
+    END;
+    
+    enableCollisionDetection = 
+    BEGIN
+        o_IMove_enableCollisionDetection :: uint8_t
+    END;
+    
+    disableCollisionDetection = 
+    BEGIN
+        o_IMove_disableCollisionDetection :: uint8_t
+    END;
+    
+    stop = 
+    BEGIN
+        o_IObject_stop :: uint8_t
+    END
+    
+    
+OPERATIONS
+    
+    user_logic = 
+    BEGIN
+        read_master_clock;
+        
+        IF first_time = TRUE THEN
+            execute_model_cycle;
+            first_time := FALSE
+        ELSE
+            VAR since_value IN 
+                since_value:(since_value:uint32_t);
+                
+                since_value <-- since(SimSquare_cycle_timer);
+                
+                IF since_value < SimSquare_cycle_def THEN
+                    skip
+                ELSE execute_model_cycle
+                END
+            END
+        END
+    END;
+    
+    ////////////////////////////////////////
+    // Translation operations
+    ////////////////////////////////////////
+    
+    read_master_clock = 
+    BEGIN
+        VAR master_clock IN
+            master_clock:(master_clock:uint8_t);
+            
+            master_clock <-- get_board_0_I1;
+            
+            IF master_clock = my_clock THEN
+                skip
+            ELSE
+                current_time := add_uint32(current_time, 1);
+                my_clock := master_clock
+            END                
+        END
+    END;
+    
+    execute_model_cycle = 
+    BEGIN 
+        reset_cycle_timers;
+        reset_outputs;
+        read_model_inputs;
+        state_machine;
+        write_model_outputs
+    END;
+    
+    elapsed <-- since(timer) = 
+    BEGIN
+        elapsed:(elapsed:uint32_t);
+        VAR local_time IN 
+            local_time:(local_time:uint32_t);
+            
+            local_time := current_time;
+            elapsed := sub_uint32(local_time, timer)
+        END        
+    END;
+    
+    // Logical and (&)
+    result <-- land(pp,qq) = 
+    BEGIN
+        result := FALSE;
+        IF (pp = TRUE) THEN 
+            IF (qq = TRUE) THEN
+                result := TRUE
+            END
+        END
+    END;
+    
+    // Logical or (or)
+    result <-- lor(pp,qq) = 
+    BEGIN
+        result := TRUE;
+        IF (pp = FALSE) THEN 
+            IF (qq = FALSE) THEN
+                result := FALSE
+            END
+        END
+    END;
+    
+    // Logical not (not)
+    result <-- lnot(pp) = 
+    BEGIN
+        result := FALSE;
+        IF (pp = FALSE) THEN 
+            result := TRUE
+        END
+    END;
+    
+    // Debug function
+    write_output(nn) =
+    BEGIN
+        board_0_O7,
+        board_0_O6,
+        board_0_O5,
+        board_0_O4,
+        board_0_O3,
+        board_0_O2,
+        board_0_O1 <-- nat_7_bits_to_bin_7_bits(nn)
+    END;
+    
+    ////////////////////////////////////////
+    // Translation model specific operations
+    ////////////////////////////////////////
+    
+    reset_cycle_timers = 
+    BEGIN 
+        SimSquare_cycle_timer := current_time
+    END;
+    
+    reset_outputs = 
+    BEGIN
+        // Board Outputs
+        board_0_O1 := IO_OFF;
+        board_0_O2 := IO_OFF;
+        board_0_O3 := IO_OFF;
+        board_0_O4 := IO_OFF;
+        board_0_O5 := IO_OFF;
+        board_0_O6 := IO_OFF;
+        board_0_O7 := IO_OFF;
+        board_0_O8 := IO_OFF;
+        
+        // Model Outputs
+        o_IMove_moveForward := IO_OFF;
+        o_IMove_moveForward_linear_0 := IO_OFF;
+        o_IMove_moveForward_linear_1 := IO_OFF;
+        o_IMove_moveForward_linear_2 := IO_OFF;
+        o_IMove_moveForward_linear_3 := IO_OFF;
+        o_IMove_moveForward_linear_4 := IO_OFF;
+        o_IMove_moveForward_linear_5 := IO_OFF;
+        o_IMove_moveForward_linear_6 := IO_OFF;
+        o_IMove_turn := IO_OFF;
+        o_IMove_turn_angular_0 := IO_OFF;
+        o_IMove_turn_angular_1 := IO_OFF;
+        o_IMove_turn_angular_2 := IO_OFF;
+        o_IMove_turn_angular_3 := IO_OFF;
+        o_IMove_turn_angular_4 := IO_OFF;
+        o_IMove_turn_angular_5 := IO_OFF;
+        o_IMove_turn_angular_6 := IO_OFF;
+        o_IMove_avoid := IO_OFF;
+        o_IMove_enableCollisionDetection := IO_OFF;
+        o_IMove_disableCollisionDetection := IO_OFF;
+        o_IObject_stop := IO_OFF
+    END;
+    
+    read_model_inputs = 
+    BEGIN
+        i_IObject_collisionDetected <-- get_board_0_I2
+    END;
+    
+    write_model_outputs = 
+    
+    BEGIN
+        IF mbc_board_id = OP_IMove_moveForward THEN
+            board_0_O1 := o_IMove_moveForward;
+            board_0_O2 := o_IMove_moveForward_linear_0;
+            board_0_O3 := o_IMove_moveForward_linear_1;
+            board_0_O4 := o_IMove_moveForward_linear_2;
+            board_0_O5 := o_IMove_moveForward_linear_3;
+            board_0_O6 := o_IMove_moveForward_linear_4;
+            board_0_O7 := o_IMove_moveForward_linear_5;
+            board_0_O8 := o_IMove_moveForward_linear_6
+        ELSIF mbc_board_id = OP_IMove_turn THEN
+            board_0_O1 := o_IMove_turn;
+            board_0_O2 := o_IMove_turn_angular_0;
+            board_0_O3 := o_IMove_turn_angular_1;
+            board_0_O4 := o_IMove_turn_angular_2;
+            board_0_O5 := o_IMove_turn_angular_3;
+            board_0_O6 := o_IMove_turn_angular_4;
+            board_0_O7 := o_IMove_turn_angular_5;
+            board_0_O8 := o_IMove_turn_angular_6
+        ELSIF mbc_board_id = OP_IMove_avoid_enableCollisionDetection_disableCollisionDetection THEN
+            board_0_O1 := o_IObject_stop;
+            board_0_O2 := o_IMove_avoid;
+            board_0_O3 := o_IMove_enableCollisionDetection;
+            board_0_O4 := o_IMove_disableCollisionDetection;
+            board_0_O5 := IO_OFF;
+            board_0_O6 := IO_OFF;
+            board_0_O7 := IO_OFF;
+            board_0_O8 := IO_OFF
+        ELSE skip
+        END
+    END;
+    
+    state_machine = 
+    BEGIN
+        IF smstate = INIT THEN 
+            C_ := current_time;
+            segment := 0;
+            moveForward(linear);
+            enableCollisionDetection;
+            
+            branching_condition_1
+        ELSIF smstate = EXEC_1 THEN
+            VAR since_DTurning_clock IN 
+                since_DTurning_clock:(since_DTurning_clock:uint32_t);
+                
+                since_DTurning_clock <-- since(DTurning_clock);
+                IF (since_DTurning_clock < 2) THEN
+                    smstate := EXEC_1
+                ELSIF (since_DTurning_clock = 2) THEN
+                    C_ := current_time;
+                    moveForward(linear);
+                    enableCollisionDetection;
+                    
+                    branching_condition_1
+                END
+            END
+        ELSIF smstate = EXEC_2 THEN
+            branching_condition_1
+        ELSIF smstate = EXEC_3 THEN
+            VAR since_D_ IN 
+                since_D_:(since_D_:uint32_t);
+                
+                since_D_ <-- since(D_);
+                IF (since_D_ < 2) THEN
+                    smstate := EXEC_3
+                ELSIF (2 <= since_D_) THEN
+                    enableCollisionDetection;
+                    
+                    branching_condition_1
+                END
+            END
+        ELSIF smstate = FINAL THEN
+            skip    
+        ELSE skip
+        END
+    END;    
+    
+    branching_condition_1 = 
+    BEGIN 
+        VAR since_C_ IN 
+            since_C_:(since_C_:uint32_t);
+            
+            since_C_ <-- since(C_);
+            
+            // Calculating branching conditions
+            VAR boolean_literal_1, boolean_literal_2,
+                condition_1, condition_2, condition_3, 
+                condition_4, 
+                condition_4_1, condition_4_1_1, 
+                condition_4_2, condition_4_2_1, 
+                condition_4_3, condition_4_3_1  
+            IN
+                boolean_literal_1:(boolean_literal_1:BOOL);
+                boolean_literal_2:(boolean_literal_2:BOOL);
+                condition_1:(condition_1:BOOL);
+                condition_2:(condition_2:BOOL);
+                condition_3:(condition_3:BOOL);
+                condition_4:(condition_4:BOOL);
+                condition_4_1:(condition_4_1:BOOL);
+                condition_4_1_1:(condition_4_1_1:BOOL);
+                condition_4_2:(condition_4_2:BOOL);
+                condition_4_2_1:(condition_4_2_1:BOOL);
+                condition_4_3:(condition_4_3:BOOL);
+                condition_4_3_1:(condition_4_3_1:BOOL);
+                
+                // condition_1
+                // since(C)==5 & segment < 4
+                boolean_literal_1 := bool(since_C_ = 5);
+                boolean_literal_2 := bool(segment < 4);
+                condition_1 <-- land(boolean_literal_1, boolean_literal_2);
+                
+                // condition_2
+                // since(C)==5 & segment == 4
+                boolean_literal_1 := bool(since_C_ = 5);
+                boolean_literal_2 := bool(segment = 4);
+                condition_2 <-- land(boolean_literal_1, boolean_literal_2);
+                
+                // condition_3
+                // $collisionDetected & since(C)<3
+                boolean_literal_1 := bool(i_IObject_collisionDetected = IO_ON);
+                boolean_literal_2 := bool(segment < 3);
+                condition_3 <-- land(boolean_literal_1, boolean_literal_2);
+                
+                
+                // condition_4
+                
+                // condition_4_1
+                // not(since(C)==5 & segment < 4)
+                boolean_literal_1 := bool(since_C_ = 5);
+                boolean_literal_2 := bool(segment < 4);
+                condition_4_1 <-- land(boolean_literal_1, boolean_literal_2);
+                condition_4_1 <-- lnot(condition_4_1);
+                
+                // condition_4_2
+                // not(since(C)==5 & segment == 4)
+                boolean_literal_1 := bool(since_C_ = 5);
+                boolean_literal_2 := bool(segment = 4);
+                condition_4_2 <-- land(boolean_literal_1, boolean_literal_2);
+                condition_4_2 <-- lnot(condition_4_2);
+                
+                // condition_4_3
+                // not($collisionDetected & since(C)<3)
+                boolean_literal_1 := bool(i_IObject_collisionDetected = IO_ON);
+                boolean_literal_2 := bool(segment < 3);
+                condition_4_3 <-- land(boolean_literal_1, boolean_literal_2);
+                condition_4_3 <-- lnot(condition_4_3);
+                
+                // condition_4
+                // condition_4_1 & condition_4_2 & condition_4_3
+                condition_4 <-- land(condition_4_1, condition_4_2);
+                condition_4 <-- land(condition_4, condition_4_3);
+                
+                IF condition_1 = TRUE THEN
+                    disableCollisionDetection;
+                    segment := add_uint32(segment,1);
+                    stop;
+                    turn(angular);
+                    DTurning_clock := current_time;
+                    
+                    VAR since_DTurning_clock IN 
+                        since_DTurning_clock:(since_DTurning_clock:uint32_t);
+                        
+                        since_DTurning_clock <-- since(DTurning_clock);
+                        IF (since_DTurning_clock < 2) THEN
+                            smstate := EXEC_1
+                        END
+                    END
+                ELSIF condition_2 = TRUE THEN
+                    stop;
+                    smstate := FINAL
+                ELSIF condition_3 = TRUE THEN
+                    disableCollisionDetection;
+                    avoid;
+                    D_ := current_time;
+                    
+                    VAR since_D_ IN 
+                        since_D_:(since_D_:uint32_t);
+                        
+                        since_D_ <-- since(D_);
+                        IF (since_D_ < 2) THEN
+                            smstate := EXEC_3
+                        END
+                    END
+                ELSIF condition_4 = TRUE THEN
+                    smstate := EXEC_2
+                END
+            END
+            
+        END    
+    END;
+    
+    // Transforms 7 bits unsigned integers into 7 bits
+    o6, o5, o4, o3, o2, o1, o0 <-- nat_7_bits_to_bin_7_bits(nn) = 
+    BEGIN
+        o6:(o6:uint8_t);
+        o5:(o5:uint8_t);
+        o4:(o4:uint8_t);
+        o3:(o3:uint8_t);
+        o2:(o2:uint8_t);
+        o1:(o1:uint8_t);
+        o0:(o0:uint8_t);
+        
+        VAR o_aux IN
+            o_aux:(o_aux:uint32_t);
+            
+            o_aux := nn mod 2;
+            IF (o_aux = 0) THEN 
+                o0 := IO_OFF
+            ELSE
+                o0 := IO_ON
+            END;
+            
+            o_aux := (nn / 2);
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o1 := IO_OFF
+            ELSE
+                o1 := IO_ON
+            END;
+            
+            o_aux := (nn / 4);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o2 := IO_OFF
+            ELSE
+                o2 := IO_ON
+            END;
+            
+            o_aux := (nn / 8);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o3 := IO_OFF
+            ELSE
+                o3 := IO_ON
+            END;
+            
+            o_aux := (nn / 16);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o4 := IO_OFF
+            ELSE
+                o4 := IO_ON
+            END;
+            
+            o_aux := (nn / 32);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o5 := IO_OFF
+            ELSE
+                o5 := IO_ON
+            END;
+            
+            o_aux := (nn / 64);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o6 := IO_OFF
+            ELSE
+                o6 := IO_ON
+            END
+        END
+    END;
+    
+    ////////////////////////////////////////
+    // Model operations
+    ////////////////////////////////////////
+    
+    moveForward(l_linear) = 
+    BEGIN
+        o_IMove_moveForward := IO_ON;
+        o_IMove_moveForward_linear_6,        
+        o_IMove_moveForward_linear_5,
+        o_IMove_moveForward_linear_4,
+        o_IMove_moveForward_linear_3, 
+        o_IMove_moveForward_linear_2,
+        o_IMove_moveForward_linear_1, 
+        o_IMove_moveForward_linear_0 <-- nat_7_bits_to_bin_7_bits(l_linear)
+    END;
+    
+    turn(l_angular) = 
+    BEGIN
+        o_IMove_turn := IO_ON;
+        o_IMove_turn_angular_6,        
+        o_IMove_turn_angular_5,
+        o_IMove_turn_angular_4,
+        o_IMove_turn_angular_3, 
+        o_IMove_turn_angular_2,
+        o_IMove_turn_angular_1, 
+        o_IMove_turn_angular_0 <-- nat_7_bits_to_bin_7_bits(l_angular)
+    END;
+    
+    avoid = 
+    BEGIN
+        o_IMove_avoid := IO_ON
+    END;
+    
+    enableCollisionDetection = 
+    BEGIN
+        o_IMove_enableCollisionDetection := IO_ON
+    END;
+    
+    disableCollisionDetection = 
+    BEGIN
+        o_IMove_disableCollisionDetection := IO_ON
+    END;
+    
+    stop = 
+    BEGIN
+        o_IObject_stop := IO_ON
+    END;
+    
+    ////////////////////////////////////////
+    // CSSP Operations
+    ////////////////////////////////////////
+    
+    po <-- get_board_0_O1 =
+    BEGIN
+        po := board_0_O1
+    END;
+    
+    po <-- get_board_0_O2 =
+    BEGIN
+        po := board_0_O2
+    END;
+    
+    po <-- get_board_0_O3 =
+    BEGIN
+        po := board_0_O3
+    END;
+    
+    po <-- get_board_0_O4 =
+    BEGIN
+        po := board_0_O4
+    END;
+    
+    po <-- get_board_0_O5 =
+    BEGIN
+        po := board_0_O5
+    END;
+    
+    po <-- get_board_0_O6 =
+    BEGIN
+        po := board_0_O6
+    END;
+    
+    po <-- get_board_0_O7 =
+    BEGIN
+        po := board_0_O7
+    END;
+    
+    po <-- get_board_0_O8 =
+    BEGIN
+        po := board_0_O8
+    END
+END

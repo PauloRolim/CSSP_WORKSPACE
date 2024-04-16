@@ -1,0 +1,3889 @@
+<Proof_Obligations>
+<Define name="B definitions" merge="=">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx" merge="=">
+<Attr>
+<Pos s="10" l="19" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="20" c="14"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:1:1" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="20" c="5"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="20" c="17"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:1:2:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="20" c="16"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:1:2:2" value="4294967295" typref="2701647786">
+<Attr>
+<Pos s="10" l="20" c="19"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="21" c="14"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:2:1" value="uint16_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="21" c="5"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="21" c="17"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:2:2:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="21" c="16"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:2:2:2" value="65535" typref="2701647786">
+<Attr>
+<Pos s="5" l="21" c="19"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="22" c="13"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:3:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="22" c="5"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="22" c="16"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:3:2:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="22" c="15"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:3:2:2" value="255" typref="2701647786">
+<Attr>
+<Pos s="3" l="22" c="18"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="24" c="11"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:4:1" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="24" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:4:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="24" c="13"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="25" c="12"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:5:1" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="25" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:5:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="25" c="14"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="27" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:6:1" value="MAX_UINT32" typref="2701647786">
+<Attr>
+<Pos s="10" l="27" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:6:2" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="27" c="18"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="28" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:7:1" value="MAX_UINT16" typref="2701647786">
+<Attr>
+<Pos s="10" l="28" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:7:2" value="uint16_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="28" c="18"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="29" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:8:1" value="MAX_UINT8" typref="2701647786">
+<Attr>
+<Pos s="9" l="29" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:8:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="29" c="17"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="11"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:9:1" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="31" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="31" c="14"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:9:2:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="31" c="13"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:9:2:2" value="MAX_UINT8" typref="2701647786">
+<Attr>
+<Pos s="9" l="31" c="16"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="32" c="12"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:10:1" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="32" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="32" c="15"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:10:2:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="32" c="14"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:10:2:2" value="MAX_UINT8" typref="2701647786">
+<Attr>
+<Pos s="9" l="32" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos s="2" l="34" c="11"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:11:1" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="34" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:11:2" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="34" c="14"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="35" c="11"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:12:1" value="SBOOL" typref="3603043417">
+<Attr>
+<Pos s="5" l="35" c="5"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="3603043417">
+<Attr>
+<Pos s="1" l="35" c="13"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:12:2:1" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="35" c="15"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:12:2:2" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="35" c="22"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos s="2" l="36" c="11"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:13:1" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="36" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:13:2" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="36" c="14"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos s="2" l="37" c="12"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:14:1" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="37" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:14:2" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="37" c="15"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="39" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:15:1" value="MAX_UINT32" typref="2701647786">
+<Attr>
+<Pos s="10" l="39" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:15:2" value="4294967295" typref="2701647786">
+<Attr>
+<Pos s="10" l="39" c="18"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="40" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:16:1" value="MAX_UINT16" typref="2701647786">
+<Attr>
+<Pos s="10" l="40" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:16:2" value="65535" typref="2701647786">
+<Attr>
+<Pos s="5" l="40" c="18"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="41" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:17:1" value="MAX_UINT8" typref="2701647786">
+<Attr>
+<Pos s="9" l="41" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:17:2" value="255" typref="2701647786">
+<Attr>
+<Pos s="3" l="41" c="17"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="43" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:18:1" value="Convert_Bool" typref="1713257412">
+<Attr>
+<Pos s="12" l="43" c="5"/>
+</Attr>
+</Id>
+<Nary_Exp op="{" typref="1713257412">
+<Attr>
+<Pos s="1" l="43" c="20"/>
+</Attr>
+<Binary_Exp op="|->" typref="2553059925">
+<Attr>
+<Pos s="3" l="43" c="27"/>
+</Attr>
+<Boolean_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:18:2:1:1" value="TRUE" typref="2043437594">
+<Attr>
+<Pos s="4" l="43" c="22"/>
+</Attr>
+</Boolean_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:18:2:1:2" value="STRUE" typref="2701647786">
+<Attr>
+<Pos s="5" l="43" c="31"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+<Binary_Exp op="|->" typref="2553059925">
+<Attr>
+<Pos s="3" l="43" c="44"/>
+</Attr>
+<Boolean_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:18:2:2:1" value="FALSE" typref="2043437594">
+<Attr>
+<Pos s="5" l="43" c="38"/>
+</Attr>
+</Boolean_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:3:1:18:2:2:2" value="SFALSE" typref="2701647786">
+<Attr>
+<Pos s="6" l="43" c="48"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos s="10" l="22" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="23" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:1:1" value="NB_MODULES" typref="2701647786">
+<Attr>
+<Pos s="10" l="23" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="23" c="18"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="24" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:2:1" value="NB_INPUTS" typref="2701647786">
+<Attr>
+<Pos s="9" l="24" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="24" c="17"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="25" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:3:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="25" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:3:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="25" c="18"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos s="2" l="26" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:4:1" value="NB_MODULES" typref="2701647786">
+<Attr>
+<Pos s="10" l="26" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:4:2" value="MAX_NB_MODULES" typref="2701647786">
+<Attr>
+<Pos s="14" l="26" c="19"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos s="2" l="27" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:5:1" value="NB_INPUTS" typref="2701647786">
+<Attr>
+<Pos s="9" l="27" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:5:2" value="MAX_NB_INPUTS" typref="2701647786">
+<Attr>
+<Pos s="13" l="27" c="18"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=">
+<Attr>
+<Pos s="2" l="28" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:6:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="28" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:6:2" value="MAX_NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="14" l="28" c="19"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="29" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:7:1" value="NB_MODULES" typref="2701647786">
+<Attr>
+<Pos s="10" l="29" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:7:2" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="29" c="18"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="30" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:8:1" value="NB_INPUTS" typref="2701647786">
+<Attr>
+<Pos s="9" l="30" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:8:2" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="30" c="17"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos s="1" l="31" c="16"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:9:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="31" c="5"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:9:2" value="8" typref="2701647786">
+<Attr>
+<Pos s="1" l="31" c="18"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="21"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:10:1" value="module_secu_ids" typref="103245008">
+<Attr>
+<Pos s="15" l="33" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="33" c="28"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="33" c="24"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:10:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="33" c="23"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:10:2:1:2" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="33" c="26"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:10:2:2" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="33" c="32"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="34" c="22"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:11:1" value="module_nb_inputs" typref="103245008">
+<Attr>
+<Pos s="16" l="34" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="34" c="29"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="34" c="25"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:11:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="34" c="24"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:11:2:1:2" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="34" c="27"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:11:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="34" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="35" c="23"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:12:1" value="module_nb_outputs" typref="103245008">
+<Attr>
+<Pos s="17" l="35" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="35" c="30"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="35" c="26"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:12:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="25"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:12:2:1:2" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="28"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:12:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="35" c="34"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="37" c="22"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:13:1" value="input_module_ids" typref="103245008">
+<Attr>
+<Pos s="16" l="37" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="37" c="30"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="37" c="25"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:13:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="37" c="24"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:13:2:1:2" value="19" typref="2701647786">
+<Attr>
+<Pos s="2" l="37" c="27"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:13:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="37" c="34"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="38" c="21"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:14:1" value="input_local_ids" typref="103245008">
+<Attr>
+<Pos s="15" l="38" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="38" c="29"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="38" c="24"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:14:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="23"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:14:2:1:2" value="19" typref="2701647786">
+<Attr>
+<Pos s="2" l="38" c="26"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:14:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="38" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="40" c="23"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:15:1" value="output_module_ids" typref="103245008">
+<Attr>
+<Pos s="17" l="40" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="40" c="30"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="40" c="26"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:15:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="40" c="25"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:15:2:1:2" value="7" typref="2701647786">
+<Attr>
+<Pos s="1" l="40" c="28"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:15:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="40" c="34"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="41" c="22"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:16:1" value="output_local_ids" typref="103245008">
+<Attr>
+<Pos s="16" l="41" c="5"/>
+<B0Type>
+<Binary_Exp op="-->">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op="-->" typref="3083833907">
+<Attr>
+<Pos s="3" l="41" c="29"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos s="2" l="41" c="25"/>
+</Attr>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:16:2:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="41" c="24"/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:16:2:1:2" value="7" typref="2701647786">
+<Attr>
+<Pos s="1" l="41" c="27"/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:3:1:16:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="41" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="seext" merge="=">
+<Attr>
+<Pos s="9" l="10" c="1"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="11" c="13"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:3:1:1" initialTag="ms_tick" value="ms_tick" typref="2701647786">
+<Attr>
+<Pos s="7" l="11" c="5"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:3:1:2" initialTag="uint32_t" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="11" c="15"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Attr>
+<Pos s="9" l="18" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison initialTag="((o_MovementI_move) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="19" c="22"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:1:1" value="o_MovementI_move" typref="2701647786">
+<Attr>
+<Pos s="16" l="19" c="5"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="19" c="24"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_lv_0) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="20" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:2:1" value="o_MovementI_move_lv_0" typref="2701647786">
+<Attr>
+<Pos s="21" l="20" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="20" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_lv_1) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="21" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:3:1" value="o_MovementI_move_lv_1" typref="2701647786">
+<Attr>
+<Pos s="21" l="21" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:3:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="21" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_lv_2) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="22" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:4:1" value="o_MovementI_move_lv_2" typref="2701647786">
+<Attr>
+<Pos s="21" l="22" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:4:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="22" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_av_0) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="23" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:5:1" value="o_MovementI_move_av_0" typref="2701647786">
+<Attr>
+<Pos s="21" l="23" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:5:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="23" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_av_1) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="24" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:6:1" value="o_MovementI_move_av_1" typref="2701647786">
+<Attr>
+<Pos s="21" l="24" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:6:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="24" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_move_av_2) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="25" c="31"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:7:1" value="o_MovementI_move_av_2" typref="2701647786">
+<Attr>
+<Pos s="21" l="25" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:7:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="25" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison initialTag="((o_MovementI_stop) : (uint8_t))" op=":">
+<Attr>
+<Pos s="1" l="26" c="26"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:8:1" value="o_MovementI_stop" typref="2701647786">
+<Attr>
+<Pos s="16" l="26" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:3:1:8:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="26" c="28"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+<Attr>
+<Pos s="10" l="44" c="1"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="45" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:1:1" value="Convert_Bool" typref="1713257412">
+<Attr>
+<Pos s="12" l="45" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->" typref="169563541">
+<Attr>
+<Pos s="3" l="45" c="25"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:1:2:1" value="BOOL" typref="4282494527">
+<Attr>
+<Pos s="4" l="45" c="20"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:1:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="45" c="29"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="46" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:2:1" value="Convert_Bool" typref="1713257412">
+<Attr>
+<Pos s="12" l="46" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->" typref="169563541">
+<Attr>
+<Pos s="3" l="46" c="25"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:2:2:1" value="BOOL" typref="4282494527">
+<Attr>
+<Pos s="4" l="46" c="20"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:2:2:2" value="uint16_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="46" c="29"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="65535"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="47" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:3:1" value="Convert_Bool" typref="1713257412">
+<Attr>
+<Pos s="12" l="47" c="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="+->" typref="169563541">
+<Attr>
+<Pos s="3" l="47" c="25"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:3:2:1" value="BOOL" typref="4282494527">
+<Attr>
+<Pos s="4" l="47" c="20"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="1"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:5:1:3:2:2" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="47" c="29"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="mchcst" merge="="/>
+<Define name="aprp" merge="="/>
+<Define name="abs" merge="="/>
+<Define name="inv" merge="="/>
+<Define name="ass" merge="="/>
+<Define name="imlprp" merge="="/>
+<Define name="imprp" merge="="/>
+<Define name="imext" merge="="/>
+<Proof_Obligation>
+<Comment>Valuation dans une implantation</Comment>
+<Tag>ValuesLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="imprp"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une implantation</Comment>
+<Tag>Initialisation</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une implantation / Precondition</Comment>
+<Tag>write_outputs</Tag>
+<Tag>PRECONDITION</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une implantation</Comment>
+<Tag>write_outputs</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="17" c="20"/>
+</Attr>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:1,,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1" value="lsb" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="3" l="17" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="17" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="23" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="23" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="26" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="26" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="3" typref="2701647786">
+<Attr>
+<Pos s="1" l="29" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="3" typref="2701647786">
+<Attr>
+<Pos s="1" l="29" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="4" typref="2701647786">
+<Attr>
+<Pos s="1" l="32" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="4" typref="2701647786">
+<Attr>
+<Pos s="1" l="32" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="5" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="5" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="6" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="6" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="7" typref="2701647786">
+<Attr>
+<Pos s="1" l="41" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="2"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="7" typref="2701647786">
+<Attr>
+<Pos s="1" l="41" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>print_global_inputs</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>read_global_input</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="22" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:1:1" value="input_id" typref="2701647786">
+<Attr>
+<Pos s="8" l="22" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="22" c="20"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="23" c="18"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:2:1" value="input_id" typref="2701647786">
+<Attr>
+<Pos s="8" l="23" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:2:2" value="NB_INPUTS" typref="2701647786">
+<Attr>
+<Pos s="9" l="23" c="20"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="24" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:3:1" value="state" typref="2701647786">
+<Attr>
+<Pos s="5" l="24" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:3:1:3:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="24" c="17"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:4:1:1:1" value="state" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="5" l="26" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:2:4:1:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="26" c="18"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>write_global_output</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1" value="output_id" typref="2701647786">
+<Attr>
+<Pos s="9" l="31" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1" value="output_id" typref="2701647786">
+<Attr>
+<Pos s="9" l="32" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="33" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:3:1" value="state" typref="2701647786">
+<Attr>
+<Pos s="5" l="33" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:3:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="33" c="17"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_ms_tick</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="40" c="13"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:4:2:1:1" value="out" typref="2701647786">
+<Attr>
+<Pos s="3" l="40" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:4:2:1:2" value="uint32_t" typref="3603043417">
+<Attr>
+<Pos s="8" l="40" c="15"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="4294967295"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>print_uint8</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="47" c="13"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:5:2:1:1:1" value="tag" typref="2701647786">
+<Attr>
+<Pos s="3" l="47" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:5:2:1:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="47" c="15"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="48" c="15"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:5:2:1:2:1" value="value" typref="2701647786">
+<Attr>
+<Pos s="5" l="48" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:5:2:1:2:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="48" c="17"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>user_logic</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis/>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:8:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:8:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:8:1:1" value="o_MovementI_stop" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="16" l="46" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:8:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="46" c="33"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:7:1:1" value="o_MovementI_move_av_2" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="45" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:7:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="45" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:6:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:6:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:6:1:1" value="o_MovementI_move_av_1" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="44" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:6:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="44" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:5:1:1" value="o_MovementI_move_av_0" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="43" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:5:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="43" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="6">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:4:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:4:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:4:1:1" value="o_MovementI_move_lv_2" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="42" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:4:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="42" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="7">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:3:1:1" value="o_MovementI_move_lv_1" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="41" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:3:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="41" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="8">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:2:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:2:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:2:1:1" value="o_MovementI_move_lv_0" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="21" l="40" c="13"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:2:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="40" c="38"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="9">
+<Exp_Comparison op=":">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:1:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:1:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:1:1:1" value="o_MovementI_move" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="16" l="39" c="9"/>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:1:1:1:1:2:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="39" c="29"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="51" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="51" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="51" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_lv_0</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="58" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="58" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="58" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_lv_1</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="65" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="65" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="65" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_lv_2</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="72" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="72" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="72" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_av_0</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="79" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="79" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="79" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_av_1</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="86" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="86" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="86" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_move_av_2</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="93" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="93" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="93" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations des machines vues dans une implantation</Comment>
+<Tag>get_o_MovementI_stop</Tag>
+<Tag>OPERATIONS</Tag>
+<Tag>EXTENDED_SEES</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="100" c="20"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:2:1:1" value="po" typref="2701647786">
+<Attr>
+<Pos s="2" l="100" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="100" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Hypothesis>
+<Local_Hyp num="1">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imprp"/>
+<Hypothesis/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Operations dans une implementation</Comment>
+<Tag>WellDefinedness_write_outputs</Tag>
+<Tag>INVARIANT</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Hypothesis>
+<Nary_Pred op="&amp;"/>
+</Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="17" c="20"/>
+</Attr>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:1," value="lsb" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="3" l="17" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="17" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1" value="o_MovementI_move" typref="2701647786">
+<Attr>
+<Pos s="2" l="43" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:2:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:2:1:1" value="o_MovementI_move" typref="2701647786">
+<Attr>
+<Pos s="2" l="43" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1" value="o_MovementI_move_lv_0" typref="2701647786">
+<Attr>
+<Pos s="2" l="50" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:4:1:1" value="o_MovementI_move_lv_0" typref="2701647786">
+<Attr>
+<Pos s="2" l="50" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="6">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1" value="o_MovementI_move_lv_1" typref="2701647786">
+<Attr>
+<Pos s="2" l="57" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="7">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:4:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:6:1:1" value="o_MovementI_move_lv_1" typref="2701647786">
+<Attr>
+<Pos s="2" l="57" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="8">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1" value="o_MovementI_move_lv_2" typref="2701647786">
+<Attr>
+<Pos s="2" l="64" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="9">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:5:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:8:1:1" value="o_MovementI_move_lv_2" typref="2701647786">
+<Attr>
+<Pos s="2" l="64" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="10">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1" value="o_MovementI_move_av_0" typref="2701647786">
+<Attr>
+<Pos s="2" l="71" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="11">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:6:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:10:1:1" value="o_MovementI_move_av_0" typref="2701647786">
+<Attr>
+<Pos s="2" l="71" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="12">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1" value="o_MovementI_move_av_1" typref="2701647786">
+<Attr>
+<Pos s="2" l="78" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="13">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:7:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:12:1:1" value="o_MovementI_move_av_1" typref="2701647786">
+<Attr>
+<Pos s="2" l="78" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="14">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1" value="o_MovementI_move_av_2" typref="2701647786">
+<Attr>
+<Pos s="2" l="85" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="15">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:8:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:14:1:1" value="o_MovementI_move_av_2" typref="2701647786">
+<Attr>
+<Pos s="2" l="85" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="16">
+<Exp_Comparison op="&lt;">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1" value="o_MovementI_stop" typref="2701647786">
+<Attr>
+<Pos s="2" l="92" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="17">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:3:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:2:2,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:3:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:5:9:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:16:1:1" value="o_MovementI_stop" typref="2701647786">
+<Attr>
+<Pos s="2" l="92" c="17"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:17:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="18">
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" l="17" c="20"/>
+</Attr>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:1,,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:1:1" value="lsb" suffix="1" typref="2701647786">
+<Attr>
+<Pos s="3" l="17" c="9"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:1:2:1:2" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="17" c="22"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="19">
+<Nary_Pred op="&amp;"/>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="0" typref="2701647786">
+<Attr>
+<Pos s="1" l="20" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:3:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="23" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="1" typref="2701647786">
+<Attr>
+<Pos s="1" l="23" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:5:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="26" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="2" typref="2701647786">
+<Attr>
+<Pos s="1" l="26" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:7:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="3" typref="2701647786">
+<Attr>
+<Pos s="1" l="29" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="3" typref="2701647786">
+<Attr>
+<Pos s="1" l="29" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:9:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="4" typref="2701647786">
+<Attr>
+<Pos s="1" l="32" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="4" typref="2701647786">
+<Attr>
+<Pos s="1" l="32" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:11:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="5" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="5" typref="2701647786">
+<Attr>
+<Pos s="1" l="35" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:13:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="31" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="6" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:1:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="uint8_t" typref="3603043417">
+<Attr>
+<Pos s="7" l="31" c="21"/>
+<B0Type>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Integer_Literal value="255"/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="19"/>
+<Ref_Hyp num="18"/>
+</Nary_Pred>
+<Exp_Comparison op="&lt;" goalTag="Precondition predicate">
+<Attr>
+<Pos s="1" l="32" c="19"/>
+</Attr>
+<Integer_Literal tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:2:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1,C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:1:1,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="6" typref="2701647786">
+<Attr>
+<Pos s="1" l="38" c="37"/>
+</Attr>
+</Integer_Literal>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:5:3:2:1:2:2,C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:4:1:1:1:2:1:15:1:1" value="NB_OUTPUTS" typref="2701647786">
+<Attr>
+<Pos s="10" l="32" c="21"/>
+<B0Type>
+<Id value="INTEGER"/>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2701647786">
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:5:1:1" value="INTEGER"/>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="C:\Atelier_B_cssp_4.5.4\LCHIP_WORKSPACE\ObstacleDetection\bdp\outputs_i.bxml:1:5:2:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="1713257412">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:1:1:1:1" value="BOOL"/>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:1:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:2:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:3:1" value="INTEGER"/>
+</Type>
+<Type id="2553059925">
+<Binary_Exp op="*">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:4:1:1" value="BOOL"/>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:4:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="2043437594">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:5:1" value="BOOL"/>
+</Type>
+<Type id="169563541">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:6:1:1:1:1" value="BOOL"/>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:6:1:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="4282494527">
+<Unary_Exp op="POW">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\g_types.bxml:1:6:7:1:1" value="BOOL"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:6:1:1" value="INTEGER"/>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\lchip_interface.bxml:1:6:2:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:6:1:1" value="INTEGER"/>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\logic.bxml:1:6:2:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:1:1" value="INTEGER"/>
+</Type>
+<Type id="103245008">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:2:1:1:1" value="INTEGER"/>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:2:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:3:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="3083833907">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:4:1:1:1:1" value="INTEGER"/>
+<Id tag="C:/Atelier_B_cssp_4.5.4/LCHIP_WORKSPACE/ObstacleDetection/bdp\user_configuration.bxml:1:5:4:1:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

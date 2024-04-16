@@ -1,0 +1,1115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations version="1.0" xmlns="https://www.atelierb.eu/Formats/pog">
+<Define hash="920242389" name="B definitions">
+<Exp_Comparison op="=">
+<Id value="NAT" typref="0"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal value="0" typref="1"/>
+<Id value="MAXINT" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT" typref="0"/>
+<Binary_Exp op=".." typref="0">
+<Id value="MININT" typref="1"/>
+<Id value="MAXINT" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="1031181707" name="ctx">
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:1:1" value="uint32_t" typref="0"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:1:2:1" value="0" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:1:2:2" value="4294967295" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:2:1" value="uint16_t" typref="0"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:2:2:1" value="0" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:2:2:2" value="65535" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:3:1" value="uint8_t" typref="0"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:3:2:1" value="0" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:3:2:2" value="255" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:4:1" value="STRUE" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:4:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:5:1" value="SFALSE" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:5:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:6:1" value="MAX_UINT32" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:6:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:7:1" value="MAX_UINT16" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:7:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:8:1" value="MAX_UINT8" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:8:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:9:1" value="STRUE" typref="1"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:9:2:1" value="0" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:9:2:2" value="MAX_UINT8" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:10:1" value="SFALSE" typref="1"/>
+<Binary_Exp op=".." typref="0">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:10:2:1" value="0" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:10:2:2" value="MAX_UINT8" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:11:1" value="STRUE" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:11:2" value="SFALSE" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:12:1" value="SBOOL" typref="0"/>
+<Nary_Exp op="{" typref="0">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:12:2:1" value="STRUE" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:12:2:2" value="SFALSE" typref="1"/>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:13:1" value="STRUE" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:13:2" value="2" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:14:1" value="SFALSE" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:14:2" value="2" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:15:1" value="MAX_UINT32" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:15:2" value="4294967295" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:16:1" value="MAX_UINT16" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:16:2" value="65535" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:17:1" value="MAX_UINT8" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:17:2" value="255" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:18:1" value="Convert_Bool" typref="2"/>
+<Nary_Exp op="{" typref="2">
+<Binary_Exp op="|->" typref="3">
+<Boolean_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:18:2:1:1" value="TRUE" typref="4"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:18:2:1:2" value="STRUE" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="|->" typref="3">
+<Boolean_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:18:2:2:1" value="FALSE" typref="4"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:3:1:18:2:2:2" value="SFALSE" typref="1"/>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:1:1" value="bitwise_sll_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:1:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:1:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:1:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:2:1" value="bitwise_srl_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:2:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:2:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:2:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:3:1" value="bitwise_not_uint32" typref="7"/>
+<Binary_Exp op="-->" typref="8">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:3:2:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:3:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:4:1" value="bitwise_and_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:4:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:4:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:4:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:5:1" value="bitwise_xor_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:5:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:5:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:5:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:6:1" value="bitwise_or_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:6:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:6:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:6:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:7:1" value="bitwise_sll_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:7:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:7:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:7:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:8:1" value="bitwise_srl_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:8:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:8:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:8:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:9:1" value="bitwise_not_uint16" typref="7"/>
+<Binary_Exp op="-->" typref="8">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:9:2:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:9:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:10:1" value="bitwise_and_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:10:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:10:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:10:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:11:1" value="bitwise_xor_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:11:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:11:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:11:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:12:1" value="bitwise_or_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:12:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:12:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:12:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:13:1" value="bitwise_sll_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:13:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:13:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:13:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:14:1" value="bitwise_srl_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:14:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:14:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:14:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:15:1" value="bitwise_not_uint8" typref="7"/>
+<Binary_Exp op="-->" typref="8">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:15:2:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:15:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:16:1" value="bitwise_and_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:16:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:16:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:16:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:17:1" value="bitwise_xor_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:17:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:17:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:17:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:18:1" value="bitwise_or_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:18:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:18:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:18:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:19:1" value="add_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:19:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:19:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:19:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:20:1" value="sub_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:20:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:20:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:20:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:21:1" value="mul_uint32" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:21:2:1:1" value="uint32_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:21:2:1:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:21:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:22:1" value="add_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:22:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:22:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:22:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:23:1" value="sub_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:23:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:23:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:23:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:24:1" value="mul_uint16" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:24:2:1:1" value="uint16_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:24:2:1:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:24:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:25:1" value="add_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:25:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:25:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:25:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:26:1" value="sub_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:26:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:26:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:26:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:27:1" value="mul_uint8" typref="5"/>
+<Binary_Exp op="-->" typref="6">
+<Binary_Exp op="*s" typref="7">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:27:2:1:1" value="uint8_t" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:27:2:1:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:27:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:1" value="bitwise_sll_uint32" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:2:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:3:1:2:1" value="MAX_UINT32" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:28:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:1" value="bitwise_sll_uint16" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:2:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:3:1:2:1" value="MAX_UINT16" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:29:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:1" value="bitwise_sll_uint8" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:2:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:3:1:2:1" value="MAX_UINT8" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:30:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:1" value="bitwise_srl_uint32" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:2:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="/i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:3:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:3:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:31:2:3:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:1" value="bitwise_srl_uint16" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:2:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="/i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:3:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:3:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:32:2:3:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:1" value="bitwise_srl_uint8" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:2:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="/i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:3:1:1" value="x1" typref="1"/>
+<Binary_Exp op="**i" typref="1">
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:3:1:2:1" value="2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:33:2:3:1:2:2" value="x2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:1" value="add_uint32" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:2:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:2:1:2:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:3:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:3:1:1:2" value="x2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:3:1:2:1" value="MAX_UINT32" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:34:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:1" value="sub_uint32" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:2:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:2:1:2:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="-i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:1:2" value="x2" typref="1"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:2" value="MAX_UINT32" typref="1"/>
+</Binary_Exp>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:2" value="1" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:2:1" value="MAX_UINT32" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:35:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:1" value="mul_uint32" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:2:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:2:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:2:1:2:1" value="x2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:2:1:2:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:3:1:1:1" value="x1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:3:1:1:2" value="x2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:3:1:2:1" value="MAX_UINT32" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:36:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:1" value="add_uint16" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:2:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:2:1:2:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:3:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:3:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:3:1:2:1" value="MAX_UINT16" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:37:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:1" value="sub_uint16" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:2:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:2:1:2:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="-i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:2" value="MAX_UINT16" typref="1"/>
+</Binary_Exp>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:2" value="1" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:2:1" value="MAX_UINT16" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:38:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:1" value="mul_uint16" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:2:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:2:1:2:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:3:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:3:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:3:1:2:1" value="MAX_UINT16" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:39:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:1" value="add_uint8" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:2:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:3:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:3:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:3:1:2:1" value="MAX_UINT8" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:40:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:1" value="sub_uint8" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:2:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="+i" typref="1">
+<Binary_Exp op="-i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:2" value="MAX_UINT8" typref="1"/>
+</Binary_Exp>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:2" value="1" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:2:1" value="MAX_UINT8" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:41:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:1" value="mul_uint8" typref="5"/>
+<Quantified_Exp type="%" typref="5">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:2:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:2:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:2:1:2:1" value="y2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:2:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp op="mod" typref="1">
+<Binary_Exp op="*i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:3:1:1:1" value="y1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:3:1:1:2" value="y2" typref="1"/>
+</Binary_Exp>
+<Binary_Exp op="+i" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:3:1:2:1" value="MAX_UINT8" typref="1"/>
+<Integer_Literal tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:42:2:3:1:2:2" value="1" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Quantified_Pred type="!">
+<Variables>
+<Id value="ui1" typref="1"/>
+<Id value="ui2" typref="1"/>
+</Variables>
+<Body>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:1:1:1" value="ui1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:1:1:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:1:2:1" value="ui2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:1:2:2" value="uint16_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="&lt;=i">
+<Binary_Exp op="(" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:1" value="bitwise_and_uint16" typref="5"/>
+<Binary_Exp op="|->" typref="9">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:2:1" value="ui1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:2:2" value="ui2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:43:2:1:2:2" value="ui2" typref="1"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+<Quantified_Pred type="!">
+<Variables>
+<Id value="ui1" typref="1"/>
+<Id value="ui2" typref="1"/>
+</Variables>
+<Body>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:1:1:1" value="ui1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:1:2:1" value="ui2" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:1:2:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="&lt;=i">
+<Binary_Exp op="(" typref="1">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:1" value="bitwise_and_uint32" typref="5"/>
+<Binary_Exp op="|->" typref="9">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:2:1" value="ui1" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:2:2" value="ui2" typref="1"/>
+</Binary_Exp>
+</Binary_Exp>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_operators.bxml:1:3:1:44:2:1:2:2" value="ui2" typref="1"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:1:1" value="TIME" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:2:1" value="IO_STATE" typref="0"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:3:1" value="IO_ON" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:3:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:4:1" value="IO_OFF" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:4:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:5:1" value="IO_ON" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:5:2" value="IO_OFF" typref="1"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:6:1" value="IO_ON" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:6:2" value="IO_STATE" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:7:1" value="IO_OFF" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\io_constants.bxml:1:4:1:7:2" value="IO_STATE" typref="0"/>
+</Exp_Comparison>
+</Define>
+<Define hash="1105990695" name="seext">
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\lchip_interface.bxml:1:3:1:1" value="ms_tick" typref="1"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\lchip_interface.bxml:1:3:1:2" value="uint32_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:1:1" value="Convert_Bool" typref="2"/>
+<Binary_Exp op="+->" typref="10">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:1:2:1" value="BOOL" typref="11"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:1:2:2" value="uint8_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:2:1" value="Convert_Bool" typref="2"/>
+<Binary_Exp op="+->" typref="10">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:2:2:1" value="BOOL" typref="11"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:2:2:2" value="uint16_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:3:1" value="Convert_Bool" typref="2"/>
+<Binary_Exp op="+->" typref="10">
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:3:2:1" value="BOOL" typref="11"/>
+<Id tag="C:/CSSP/CSSP_WORKSPACE/Combinatorial_1/bdp\g_types.bxml:1:5:1:3:2:2" value="uint32_t" typref="0"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="lprp"/>
+<Define hash="0" name="inprp"/>
+<Define hash="0" name="inext"/>
+<Define hash="2752690022" name="inv">
+<Exp_Comparison op=":">
+<Id tag="C:\CSSP\CSSP_WORKSPACE\Combinatorial_1\bdp\logic.bxml:1:3:1:1:1" value="board_0_O1" typref="1"/>
+<Id tag="C:\CSSP\CSSP_WORKSPACE\Combinatorial_1\bdp\logic.bxml:1:3:1:1:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id tag="C:\CSSP\CSSP_WORKSPACE\Combinatorial_1\bdp\logic.bxml:1:3:1:2:1" value="board_0_O2" typref="1"/>
+<Id tag="C:\CSSP\CSSP_WORKSPACE\Combinatorial_1\bdp\logic.bxml:1:3:1:2:2" value="uint8_t" typref="0"/>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="ass"/>
+<Define hash="0" name="cst"/>
+<Define hash="0" name="sets"/>
+<TypeInfos>
+<Type id="0">
+<Unary_Exp op="POW">
+<Id value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="1">
+<Id value="INTEGER"/>
+</Type>
+<Type id="2">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="4">
+<Id value="BOOL"/>
+</Type>
+<Type id="5">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="6">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="7">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="8">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="9">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="10">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="11">
+<Unary_Exp op="POW">
+<Id value="BOOL"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

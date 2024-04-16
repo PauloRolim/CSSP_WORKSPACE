@@ -1,0 +1,585 @@
+<Machine name='inputs_i' type='implementation'>
+<Abstraction>inputs</Abstraction>
+<Sees>
+<Attr>
+<Pos l='7' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='8' c='5' s='7'/>
+</Attr>
+<Name>g_types</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='9' c='5' s='12'/>
+</Attr>
+<Name>io_constants</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='10' c='5' s='19'/>
+</Attr>
+<Name>lchip_configuration</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='11' c='5' s='15'/>
+</Attr>
+<Name>lchip_interface</Name>
+</Referenced_Machine>
+</Sees>
+<Concrete_Variables>
+<Attr>
+<Pos l='14' c='1' s='18'/>
+</Attr>
+<Id value='i_Obstacle_position_r' typref='2701647786'>
+<Attr>
+<Pos l='15' c='5' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='i_Obstacle_position_l' typref='2701647786'>
+<Attr>
+<Pos l='16' c='9' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='i_Detection_neighbours' typref='2701647786'>
+<Attr>
+<Pos l='17' c='9' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='i_Comm_asnwer' typref='2701647786'>
+<Attr>
+<Pos l='18' c='9' s='13'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Concrete_Variables>
+<Invariant>
+<Attr>
+<Pos l='19' c='1' s='9'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='20' c='27' s='1'/>
+</Attr>
+<Id value='i_Obstacle_position_r' typref='2701647786'>
+<Attr>
+<Pos l='20' c='5' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='3603043417'>
+<Attr>
+<Pos l='20' c='29' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='31' s='1'/>
+</Attr>
+<Id value='i_Obstacle_position_l' typref='2701647786'>
+<Attr>
+<Pos l='21' c='9' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='3603043417'>
+<Attr>
+<Pos l='21' c='33' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='32' s='1'/>
+</Attr>
+<Id value='i_Detection_neighbours' typref='2701647786'>
+<Attr>
+<Pos l='22' c='9' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='3603043417'>
+<Attr>
+<Pos l='22' c='34' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='23' c='23' s='1'/>
+</Attr>
+<Id value='i_Comm_asnwer' typref='2701647786'>
+<Attr>
+<Pos l='23' c='9' s='13'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='3603043417'>
+<Attr>
+<Pos l='23' c='25' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='24' c='1' s='14'/>
+</Attr>
+<Nary_Sub op=';'>
+<Assignement_Sub>
+<Attr>
+<Pos l='25' c='27' s='2'/>
+</Attr>
+<Variables>
+<Id value='i_Obstacle_position_r' typref='2701647786'>
+<Attr>
+<Pos l='25' c='5' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='IO_OFF' typref='2701647786'>
+<Attr>
+<Pos l='25' c='30' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='26' c='31' s='2'/>
+</Attr>
+<Variables>
+<Id value='i_Obstacle_position_l' typref='2701647786'>
+<Attr>
+<Pos l='26' c='9' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='IO_OFF' typref='2701647786'>
+<Attr>
+<Pos l='26' c='34' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='27' c='32' s='2'/>
+</Attr>
+<Variables>
+<Id value='i_Detection_neighbours' typref='2701647786'>
+<Attr>
+<Pos l='27' c='9' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='IO_OFF' typref='2701647786'>
+<Attr>
+<Pos l='27' c='35' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='28' c='23' s='2'/>
+</Attr>
+<Variables>
+<Id value='i_Comm_asnwer' typref='2701647786'>
+<Attr>
+<Pos l='28' c='9' s='13'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='IO_OFF' typref='2701647786'>
+<Attr>
+<Pos l='28' c='26' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Nary_Sub>
+</Initialisation>
+<Operations>
+<Operation name='read_inputs'>
+<Attr>
+<Pos l='30' c='5' s='11' endLine='36'/>
+</Attr>
+<Body>
+<Nary_Sub op=';'>
+<Operation_Call>
+<Attr>
+<Pos l='32' c='31' s='3'/>
+</Attr>
+<Name>
+<Id value='read_global_input'>
+<Attr>
+<Pos l='32' c='35' s='17'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='32' c='53' s='1'/>
+</Attr>
+</Integer_Literal>
+</Input_Parameters>
+<Output_Parameters>
+<Id value='i_Obstacle_position_r' typref='2701647786'>
+<Attr>
+<Pos l='32' c='9' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+</Operation_Call>
+<Operation_Call>
+<Attr>
+<Pos l='33' c='39' s='3'/>
+</Attr>
+<Name>
+<Id value='read_global_input'>
+<Attr>
+<Pos l='33' c='43' s='17'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='33' c='61' s='1'/>
+</Attr>
+</Integer_Literal>
+</Input_Parameters>
+<Output_Parameters>
+<Id value='i_Obstacle_position_l' typref='2701647786'>
+<Attr>
+<Pos l='33' c='17' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+</Operation_Call>
+<Operation_Call>
+<Attr>
+<Pos l='34' c='40' s='3'/>
+</Attr>
+<Name>
+<Id value='read_global_input'>
+<Attr>
+<Pos l='34' c='44' s='17'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='34' c='62' s='1'/>
+</Attr>
+</Integer_Literal>
+</Input_Parameters>
+<Output_Parameters>
+<Id value='i_Detection_neighbours' typref='2701647786'>
+<Attr>
+<Pos l='34' c='17' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+</Operation_Call>
+<Operation_Call>
+<Attr>
+<Pos l='35' c='31' s='3'/>
+</Attr>
+<Name>
+<Id value='read_global_input'>
+<Attr>
+<Pos l='35' c='35' s='17'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='35' c='53' s='1'/>
+</Attr>
+</Integer_Literal>
+</Input_Parameters>
+<Output_Parameters>
+<Id value='i_Comm_asnwer' typref='2701647786'>
+<Attr>
+<Pos l='35' c='17' s='13'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+</Operation_Call>
+</Nary_Sub>
+</Body>
+</Operation>
+<Operation name='get_i_Obstacle_position_r'>
+<Attr>
+<Pos l='38' c='5' s='2' endLine='41'/>
+</Attr>
+<Output_Parameters>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='38' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='40' c='20' s='2'/>
+</Attr>
+<Variables>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='40' c='17' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='i_Obstacle_position_r' typref='2701647786'>
+<Attr>
+<Pos l='40' c='23' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='get_i_Obstacle_position_l'>
+<Attr>
+<Pos l='43' c='9' s='2' endLine='46'/>
+</Attr>
+<Output_Parameters>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='43' c='9' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='45' c='20' s='2'/>
+</Attr>
+<Variables>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='45' c='17' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='i_Obstacle_position_l' typref='2701647786'>
+<Attr>
+<Pos l='45' c='23' s='21'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='get_i_Detection_neighbours'>
+<Attr>
+<Pos l='48' c='9' s='2' endLine='51'/>
+</Attr>
+<Output_Parameters>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='48' c='9' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='50' c='20' s='2'/>
+</Attr>
+<Variables>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='50' c='17' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='i_Detection_neighbours' typref='2701647786'>
+<Attr>
+<Pos l='50' c='23' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='get_i_Comm_asnwer'>
+<Attr>
+<Pos l='53' c='9' s='2' endLine='56'/>
+</Attr>
+<Output_Parameters>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='53' c='9' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Output_Parameters>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='55' c='20' s='2'/>
+</Attr>
+<Variables>
+<Id value='po' typref='2701647786'>
+<Attr>
+<Pos l='55' c='17' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='i_Comm_asnwer' typref='2701647786'>
+<Attr>
+<Pos l='55' c='23' s='13'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='3603043417'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

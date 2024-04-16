@@ -1,0 +1,364 @@
+IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types,
+    g_operators,
+    io_constants,
+    lchip_interface,
+    user_ctx,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    o_Movement_move,
+	o_Movement_move_lv_1,
+	o_Movement_move_lv_2,
+	o_Movement_move_lv_3,
+	o_Movement_move_av_1,
+	o_Movement_move_av_2,
+	o_Movement_move_av_3,
+	o_Comm_question,
+	
+	smstate,
+    MBC,
+    
+    cycle_timer,
+    first_time,
+    
+    ms_tick_cycle,
+    s_tick_cycle,
+    tick  
+	
+INVARIANT
+    o_Movement_move : uint8_t &
+	o_Movement_move_lv_1 : uint8_t &
+	o_Movement_move_lv_2 : uint8_t &
+	o_Movement_move_lv_3 : uint8_t &
+	o_Movement_move_av_1 : uint8_t &
+	o_Movement_move_av_2 : uint8_t &
+	o_Movement_move_av_3 : uint8_t &
+	o_Comm_question : uint8_t &
+	
+	smstate:STATE &
+    MBC:uint32_t &
+    
+    cycle_timer:uint32_t &
+    first_time: BOOL &
+    
+    ms_tick_cycle : uint32_t &
+    s_tick_cycle  : uint32_t &
+    tick          : uint32_t  
+    
+INITIALISATION
+    o_Movement_move := IO_OFF;
+	o_Movement_move_lv_1 := IO_OFF;
+	o_Movement_move_lv_2 := IO_OFF;
+	o_Movement_move_lv_3 := IO_OFF;
+	o_Movement_move_av_1 := IO_OFF;
+	o_Movement_move_av_2 := IO_OFF;
+	o_Movement_move_av_3 := IO_OFF;
+	o_Comm_question := IO_OFF;
+	
+	smstate := INIT;
+    MBC := 0;
+    
+    cycle_timer := 0;
+    first_time := TRUE;
+    
+    ms_tick_cycle := 0;
+    s_tick_cycle  := 0;
+    tick          := 0
+    
+LOCAL_OPERATIONS
+    
+    reset_outputs = 
+    BEGIN
+        o_Movement_move :: uint8_t ||
+	    o_Movement_move_lv_1 :: uint8_t ||
+	    o_Movement_move_lv_2 :: uint8_t ||
+	    o_Movement_move_lv_3 :: uint8_t ||
+	    o_Movement_move_av_1 :: uint8_t ||
+	    o_Movement_move_av_2 :: uint8_t ||
+	    o_Movement_move_av_3 :: uint8_t ||
+	    o_Comm_question :: uint8_t
+    END;
+     
+    move(l_lv, l_av) = 
+    PRE l_lv:uint32_t & l_lv:0..7 & l_av:uint32_t & l_av:0..7
+    THEN
+        o_Movement_move      :: uint8_t ||
+        o_Movement_move_lv_1 :: uint8_t ||
+        o_Movement_move_lv_2 :: uint8_t ||
+        o_Movement_move_lv_3 :: uint8_t ||
+        o_Movement_move_av_1 :: uint8_t ||
+        o_Movement_move_av_2 :: uint8_t ||
+        o_Movement_move_av_3 :: uint8_t        
+    END;
+    
+    stop =
+    BEGIN
+        o_Movement_move :: uint8_t      ||
+        o_Movement_move_lv_1 :: uint8_t ||
+	    o_Movement_move_lv_2 :: uint8_t ||
+	    o_Movement_move_lv_3 :: uint8_t ||
+	    o_Movement_move_av_1 :: uint8_t ||
+	    o_Movement_move_av_2 :: uint8_t ||
+	    o_Movement_move_av_3 :: uint8_t 
+    END;
+    
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
+    PRE nn:uint32_t & nn:0..7 
+        & o2:uint8_t & o1:uint8_t & o0:uint8_t
+    THEN
+        o2::uint8_t
+        || o1::uint8_t
+        || o0::uint8_t
+    END;
+    
+    elapsed <-- since(timer) = 
+    PRE timer:uint32_t & elapsed:uint32_t
+    THEN
+        elapsed::uint32_t
+    END;
+    
+    state_machine = 
+    PRE 
+        MBC     : uint32_t & 
+        smstate : STATE &
+        cycle_timer : uint32_t &
+        lv:uint32_t & lv:0..7 &
+        av:uint32_t & av:0..7 &
+        o_Movement_move      : uint8_t &
+        o_Movement_move_lv_1 : uint8_t &
+        o_Movement_move_lv_2 : uint8_t &
+        o_Movement_move_lv_3 : uint8_t &
+        o_Movement_move_av_1 : uint8_t &
+        o_Movement_move_av_2 : uint8_t &
+        o_Movement_move_av_3 : uint8_t &
+        o_Comm_question : uint8_t 
+    THEN
+        o_Movement_move      :: uint8_t ||
+        o_Movement_move_lv_1 :: uint8_t ||
+        o_Movement_move_lv_2 :: uint8_t ||
+        o_Movement_move_lv_3 :: uint8_t ||
+        o_Movement_move_av_1 :: uint8_t ||
+        o_Movement_move_av_2 :: uint8_t ||
+        o_Movement_move_av_3 :: uint8_t ||
+        o_Comm_question :: uint8_t || 
+        smstate :: STATE ||
+        MBC     :: uint32_t ||
+        cycle_timer :: uint32_t ||
+        first_time :: BOOL        
+    END;
+    
+    communication =
+    PRE ms_tick_cycle : uint32_t &
+        s_tick_cycle  : uint32_t &
+        tick          : uint32_t  
+    THEN
+        ms_tick_cycle :: uint32_t ||
+        s_tick_cycle  :: uint32_t ||
+        tick          :: uint32_t
+    END    
+	
+OPERATIONS
+    reset_outputs =
+    BEGIN
+        o_Movement_move := IO_OFF;
+	    o_Movement_move_lv_1 := IO_OFF;
+	    o_Movement_move_lv_2 := IO_OFF;
+	    o_Movement_move_lv_3 := IO_OFF;
+	    o_Movement_move_av_1 := IO_OFF;
+	    o_Movement_move_av_2 := IO_OFF;
+	    o_Movement_move_av_3 := IO_OFF;
+	    o_Comm_question := IO_OFF
+    END;
+    
+        
+    move(l_lv, l_av) = //terceiro parametro boleano de esqueda ou direita
+    BEGIN
+       o_Movement_move := IO_ON;     
+       o_Movement_move_lv_1, 
+       o_Movement_move_lv_2, 
+       o_Movement_move_lv_3 <-- nat_3_bits_to_bin_3_bits(l_lv);
+       o_Movement_move_av_1, 
+       o_Movement_move_av_2, 
+       o_Movement_move_av_3 <-- nat_3_bits_to_bin_3_bits(l_av)  
+    END;    
+    
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) =
+    BEGIN
+       o2:(o2:uint8_t);
+       o1:(o1:uint8_t);
+       o0:(o0:uint8_t); 
+       
+       VAR o_aux IN o_aux:(o_aux:uint32_t);
+           
+            o_aux := nn mod 2;
+            IF (o_aux = 0) THEN 
+                o0 := IO_OFF
+            ELSE
+                o0 := IO_ON
+            END;
+                        
+            o_aux := (nn / 2);
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o1 := IO_OFF
+            ELSE
+                o1 := IO_ON
+            END;
+            
+            o_aux := (nn / 4);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o2 := IO_OFF
+            ELSE
+                o2 := IO_ON
+            END
+      
+       END    
+    END;    
+    
+    stop =
+    BEGIN
+      o_Movement_move := IO_OFF;
+      o_Movement_move_lv_1 := IO_OFF;
+	  o_Movement_move_lv_2 := IO_OFF;
+	  o_Movement_move_lv_3 := IO_OFF;
+	  o_Movement_move_av_1 := IO_OFF;
+	  o_Movement_move_av_2 := IO_OFF;
+	  o_Movement_move_av_3 := IO_OFF
+    END;    
+    
+    elapsed <-- since(timer) = 
+    BEGIN
+        elapsed:(elapsed:uint32_t);
+        VAR local_time IN 
+            local_time:(local_time:uint32_t);
+            
+            local_time <-- get_ms_tick;
+            elapsed := sub_uint32(local_time, timer)
+        END        
+    END;    
+    
+    state_machine =
+    BEGIN
+        IF smstate = INIT THEN 
+           move(lv,0);
+           smstate := EXEC_1
+        ELSIF smstate = EXEC_1 THEN
+            VAR local_obstacle_l, local_obstacle_r IN
+                
+                local_obstacle_l:(local_obstacle_l:uint8_t);
+                local_obstacle_r:(local_obstacle_r:uint8_t);
+                
+                local_obstacle_l <-- get_i_Obstacle_position_l;
+                local_obstacle_r <-- get_i_Obstacle_position_r;
+                
+                IF local_obstacle_l = IO_ON THEN //quando o obstaculo estiver na esquerda
+                   MBC <-- get_ms_tick;
+                   stop;
+                   move(0,av); //mover para o lado direito, ainda nao implementado
+                   smstate:= EXEC_2
+                ELSIF local_obstacle_r = IO_ON THEN //quando o obstaculo estiver na direita
+                   MBC <-- get_ms_tick;
+                   stop;
+                   move(0,av); //mover para o lado esquerdo, ainda nao implementado
+                   smstate:= EXEC_2
+                ELSIF local_obstacle_l = IO_OFF THEN
+                      smstate:= EXEC_1 //ver se isso ta de acordo com o desenho da maquina de estados
+                ELSIF local_obstacle_r = IO_OFF THEN
+                      smstate:= EXEC_1  //ver se isso ta de acordo com o desenho da maquina de estados
+                ELSE 
+                      smstate:= INIT  
+                END   
+            END      
+        END        
+    END;    
+    
+    communication = 
+        BEGIN 
+            ms_tick_cycle <-- get_ms_tick;
+            s_tick_cycle := ms_tick_cycle / MBC;
+            tick := s_tick_cycle mod 2;
+            
+            IF tick = 0 THEN
+               o_Comm_question := IO_ON
+            ELSE
+               o_Comm_question := IO_OFF 
+            END   
+        END;
+    
+    user_logic = 
+        BEGIN
+           
+             IF first_time = TRUE THEN
+                reset_outputs;
+                state_machine;
+                cycle_timer <-- get_ms_tick;
+                first_time := FALSE
+            ELSE
+                VAR time_elapsed, cycle_duration IN 
+                    time_elapsed:(time_elapsed:uint32_t);
+                    cycle_duration:(cycle_duration:uint32_t);
+                
+                    time_elapsed <-- since(cycle_timer);
+                    cycle_duration := mul_uint32(SimSMovement_cycle_def,cycle_unit);
+                
+                    IF (cycle_duration <= time_elapsed) THEN
+                        reset_outputs;
+                   
+                        state_machine;
+                        cycle_timer <-- get_ms_tick
+                    END
+                END
+            END     
+        END;
+    
+/////////////////////
+// CSSP OPERATIONS //
+/////////////////////
+
+    po <-- get_o_Movement_move =
+	BEGIN
+		po := o_Movement_move
+	END;
+
+	po <-- get_o_Movement_move_lv_1 =
+	BEGIN
+		po := o_Movement_move_lv_1
+	END;
+
+	po <-- get_o_Movement_move_lv_2 =
+	BEGIN
+		po := o_Movement_move_lv_2
+	END;
+
+	po <-- get_o_Movement_move_lv_3 =
+	BEGIN
+		po := o_Movement_move_lv_3
+	END;
+
+	po <-- get_o_Movement_move_av_1 =
+	BEGIN
+		po := o_Movement_move_av_1
+	END;
+
+	po <-- get_o_Movement_move_av_2 =
+	BEGIN
+		po := o_Movement_move_av_2
+	END;
+
+	po <-- get_o_Movement_move_av_3 =
+	BEGIN
+		po := o_Movement_move_av_3
+	END;
+
+	po <-- get_o_Comm_question =
+	BEGIN
+		po := o_Comm_question
+	END
+END

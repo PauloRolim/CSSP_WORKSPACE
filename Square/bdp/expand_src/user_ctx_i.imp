@@ -1,0 +1,25 @@
+﻿IMPLEMENTATION
+    user_ctx_i
+REFINES
+    user_ctx
+
+    // pragma CONSTANTS
+SEES
+    g_types
+VALUES
+    // Multiple boards control
+    mbc_board_id = 2 ;
+
+    OP_IMove_moveForward = 0 ;
+    OP_IMove_turn = 1 ;
+    OP_IMove_avoid_enableCollisionDetection_disableCollisionDetection = 2 ;
+
+    // Translation constants
+    max_board_output = 127 ;
+
+    // Model Constants
+    SimSquare_cycle_def = 1 ;
+    linear = 127 ;
+    angular = 64
+
+END

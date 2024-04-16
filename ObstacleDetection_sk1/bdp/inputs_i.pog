@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations version="1.0" xmlns="https://www.atelierb.eu/Formats/pog">
+<Define hash="920242389" name="B definitions">
+<Exp_Comparison op="=">
+<Id typref="0" value="NAT"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0"/>
+<Id typref="1" value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="INT"/>
+<Binary_Exp typref="0" op="..">
+<Id typref="1" value="MININT"/>
+<Id typref="1" value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="2677222010" name="ctx">
+<Exp_Comparison op="=">
+<Id typref="0" value="uint32_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:1:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:1:2:1"/>
+<Integer_Literal typref="1" value="4294967295" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:1:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="uint16_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:2:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:2:2:1"/>
+<Integer_Literal typref="1" value="65535" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:2:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:3:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:3:2:1"/>
+<Integer_Literal typref="1" value="255" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:3:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:4:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:4:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:5:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:5:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_UINT32" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:6:1"/>
+<Id typref="0" value="uint32_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:6:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_UINT16" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:7:1"/>
+<Id typref="0" value="uint16_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:7:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_UINT8" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:8:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:8:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:9:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:9:2:1"/>
+<Id typref="1" value="MAX_UINT8" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:9:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:10:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:10:2:1"/>
+<Id typref="1" value="MAX_UINT8" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:10:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:11:1"/>
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:11:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="SBOOL" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:12:1"/>
+<Nary_Exp typref="0" op="{">
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:12:2:1"/>
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:12:2:2"/>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:13:1"/>
+<Integer_Literal typref="1" value="2" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:13:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:14:1"/>
+<Integer_Literal typref="1" value="2" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:14:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_UINT32" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:15:1"/>
+<Integer_Literal typref="1" value="4294967295" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:15:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_UINT16" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:16:1"/>
+<Integer_Literal typref="1" value="65535" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:16:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_UINT8" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:17:1"/>
+<Integer_Literal typref="1" value="255" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:17:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="2" value="Convert_Bool" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:18:1"/>
+<Nary_Exp typref="2" op="{">
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal typref="4" value="TRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:18:2:1:1"/>
+<Id typref="1" value="STRUE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:18:2:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal typref="4" value="FALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:18:2:2:1"/>
+<Id typref="1" value="SFALSE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:3:1:18:2:2:2"/>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="TIME" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:1:1"/>
+<Id typref="0" value="uint32_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="IO_STATE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:2:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:2:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="IO_ON" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:3:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:3:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="IO_OFF" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:4:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id typref="1" value="IO_ON" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:5:1"/>
+<Id typref="1" value="IO_OFF" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:5:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="IO_ON" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:6:1"/>
+<Id typref="0" value="IO_STATE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:6:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="IO_OFF" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:7:1"/>
+<Id typref="0" value="IO_STATE" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\io_constants.bxml:1:4:1:7:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_NB_MODULES" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:1:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_NB_INPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:2:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:2:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" value="MAX_NB_OUTPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:3:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:3:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_NB_MODULES" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:4:1"/>
+<Integer_Literal typref="1" value="1" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:4:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_NB_INPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:5:1"/>
+<Integer_Literal typref="1" value="20" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:5:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" value="MAX_NB_OUTPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:6:1"/>
+<Integer_Literal typref="1" value="8" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_configuration.bxml:1:3:1:6:2"/>
+</Exp_Comparison>
+</Define>
+<Define hash="1105990695" name="seext">
+<Exp_Comparison op=":">
+<Id typref="1" value="ms_tick" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:3:1:1"/>
+<Id typref="0" value="uint32_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:3:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" value="Convert_Bool" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:1:1"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" value="BOOL" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:1:2:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:1:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" value="Convert_Bool" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:2:1"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" value="BOOL" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:2:2:1"/>
+<Id typref="0" value="uint16_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:2:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" value="Convert_Bool" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:3:1"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" value="BOOL" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:3:2:1"/>
+<Id typref="0" value="uint32_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\g_types.bxml:1:5:1:3:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="mchcst"/>
+<Define hash="0" name="aprp"/>
+<Define hash="644891285" name="abs">
+<Exp_Comparison op=":">
+<Id typref="1" value="i_ObstacleI_obstacle" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\inputs.bxml:1:3:1:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\inputs.bxml:1:3:1:2"/>
+</Exp_Comparison>
+</Define>
+<Define hash="2801153243" name="inv">
+<Exp_Comparison op="=">
+<Id typref="1" value="i_ObstacleI_obstacle" tag="C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:3:1"/>
+<Id suffix="1" typref="1" value="i_ObstacleI_obstacle" tag="C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:3:1"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id suffix="1" typref="1" value="i_ObstacleI_obstacle" tag="C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:4:1:1,"/>
+<Id typref="0" value="uint8_t" tag="C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:4:1:2"/>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="ass"/>
+<Define hash="0" name="sets"/>
+<Define hash="0" name="imlprp"/>
+<Define hash="0" name="imprp"/>
+<Define hash="0" name="imext"/>
+<Proof_Obligation goalHash="1222325590">
+<Tag>Operation_read_inputs</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:2:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:2:1"/>
+<Id typref="1" value="MAX_NB_INPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Id suffix="1" typref="1" value="i_ObstacleI_obstacle" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:3:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:3:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op=":">
+<Id suffix="1" typref="1" value="state" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Nary_Pred op="or">
+<Exp_Comparison op="=">
+<Id suffix="1" typref="1" value="state" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,"/>
+<Id typref="1" value="IO_ON" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" typref="1" value="state" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,"/>
+<Id typref="1" value="IO_OFF" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:2:1"/>
+<Id typref="0" value="uint8_t" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" value="0" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:2:1"/>
+<Id typref="1" value="MAX_NB_INPUTS" tag="C:/CSSP/CSSP_WORKSPACE/ObstacleDetection_sk1/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,C:\CSSP\CSSP_WORKSPACE\ObstacleDetection_sk1\bdp\inputs_i.bxml:1:6:1:1:1:1:1"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State proofState="Proved(0)" methodList="pr" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="0">
+<Unary_Exp op="POW">
+<Id value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="1">
+<Id value="INTEGER"/>
+</Type>
+<Type id="2">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="4">
+<Id value="BOOL"/>
+</Type>
+<Type id="5">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="6">
+<Unary_Exp op="POW">
+<Id value="BOOL"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

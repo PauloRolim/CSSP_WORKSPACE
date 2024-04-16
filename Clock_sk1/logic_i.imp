@@ -1,0 +1,127 @@
+IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types,
+    g_operators,
+    io_constants,
+    lchip_interface,
+    user_ctx,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    O1,
+	O2,
+	O3,
+	O4,
+	O5,
+	O6,
+	O7,
+	O8
+INVARIANT
+    O1 : uint8_t &
+	O2 : uint8_t &
+	O3 : uint8_t &
+	O4 : uint8_t &
+	O5 : uint8_t &
+	O6 : uint8_t &
+	O7 : uint8_t &
+	O8 : uint8_t
+INITIALISATION
+    O1 := IO_OFF;
+	O2 := IO_OFF;
+	O3 := IO_OFF;
+	O4 := IO_OFF;
+	O5 := IO_OFF;
+	O6 := IO_OFF;
+	O7 := IO_OFF;
+	O8 := IO_OFF
+OPERATIONS
+    user_logic = 
+    BEGIN
+        VAR ms_tick_cycle, s_tick_cycle, tick, 
+            ms_tick_cycle2, s_tick_cycle2, tick2 IN
+
+            ms_tick_cycle: (ms_tick_cycle: uint32_t);
+            s_tick_cycle: (s_tick_cycle: uint32_t);
+            tick:(tick: uint32_t);
+            
+            ms_tick_cycle2:(ms_tick_cycle2: uint32_t);
+            s_tick_cycle2: (s_tick_cycle2: uint32_t);
+            tick2: (tick2: uint32_t);
+            
+            ms_tick_cycle <-- get_ms_tick;
+            s_tick_cycle := ms_tick_cycle / delta_t;
+            tick := s_tick_cycle mod 2;
+
+            ms_tick_cycle2 <-- get_ms_tick;
+            s_tick_cycle2 := ms_tick_cycle2 / delta_t1;
+            tick2 := s_tick_cycle2 mod 2; 
+            
+            
+            IF tick = 0 THEN
+               O1 := IO_ON
+            ELSE
+               O1 := IO_OFF
+            END;
+            
+           
+            
+            
+            IF tick2 <= 0 THEN
+               O2 := IO_ON 
+            ELSE    
+               O2 := IO_OFF
+            END
+            
+            /*IF board_0_O1 = IO_OFF THEN
+                board_0_O2 := IO_ON
+            ELSE  
+                board_0_O2 := IO_OFF
+            END */
+            
+        END
+    END;
+
+    po <-- get_O1 =
+	BEGIN
+		po := O1
+	END;
+
+	po <-- get_O2 =
+	BEGIN
+		po := O2
+	END;
+
+	po <-- get_O3 =
+	BEGIN
+		po := O3
+	END;
+
+	po <-- get_O4 =
+	BEGIN
+		po := O4
+	END;
+
+	po <-- get_O5 =
+	BEGIN
+		po := O5
+	END;
+
+	po <-- get_O6 =
+	BEGIN
+		po := O6
+	END;
+
+	po <-- get_O7 =
+	BEGIN
+		po := O7
+	END;
+
+	po <-- get_O8 =
+	BEGIN
+		po := O8
+	END
+END

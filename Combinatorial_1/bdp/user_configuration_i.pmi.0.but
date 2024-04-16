@@ -1,0 +1,1 @@
+﻿Flag(FileOn("user_configuration_i.pmi.0.res")) & Set(toto | {0}\/{1}\/{2} = 0..2)

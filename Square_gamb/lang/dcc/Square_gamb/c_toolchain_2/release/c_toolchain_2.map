@@ -1,0 +1,646 @@
+
+Microchip PIC32 Memory-Usage Report
+
+kseg0 Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+      Total kseg0_program_mem used  :           0           0  <1% of 0x1000
+
+kseg1 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_boot_mem used  :           0           0  <1% of 0x490
+        --------------------------------------------------------------------------
+         Total Program Memory used  :           0           0  <1% of 0x1490
+        --------------------------------------------------------------------------
+
+
+kseg1 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_data_mem used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0xa0000008              0           0  Reserved for heap 
+stack                   0xa0000020          0xfd8        4056  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .debug_info    0x00000000      0xef9 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .debug_abbrev  0x00000000       0xbf C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .debug_aranges
+                0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .debug_line    0x00000000      0x186 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_info    0x00000000       0xf7 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_abbrev  0x00000000       0x2a C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_aranges
+                0x00000000       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_ranges  0x00000000       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_line    0x00000000       0x9e C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_frame   0x00000000       0x2c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .debug_info    0x00000000      0x502 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .debug_abbrev  0x00000000       0x75 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .debug_aranges
+                0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .debug_line    0x00000000      0x104 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .debug_info    0x00000000      0x1d7 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .debug_abbrev  0x00000000       0x44 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .debug_aranges
+                0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .debug_line    0x00000000       0xb1 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .debug_info    0x00000000      0x911 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .debug_abbrev  0x00000000       0x99 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .debug_aranges
+                0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .debug_line    0x00000000      0x120 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_info    0x00000000      0x195 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_abbrev  0x00000000       0x37 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_aranges
+                0x00000000       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_ranges  0x00000000       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_line    0x00000000       0x95 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_frame   0x00000000       0x30 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_info    0x00000000      0xd34 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_abbrev  0x00000000      0x101 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_aranges
+                0x00000000       0xc8 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_ranges  0x00000000       0xb8 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_line    0x00000000      0x1da C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_frame   0x00000000      0x280 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_info    0x00000000     0x10e6 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_abbrev  0x00000000      0x211 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_aranges
+                0x00000000      0x108 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_ranges  0x00000000       0xf8 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_line    0x00000000      0x303 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_frame   0x00000000      0x394 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_info    0x00000000      0x1d1 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_abbrev  0x00000000       0x6b C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_aranges
+                0x00000000       0x28 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_ranges  0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_line    0x00000000      0x118 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_frame   0x00000000       0x4c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_info    0x00000000      0x9b2 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_abbrev  0x00000000       0xe0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_aranges
+                0x00000000       0x30 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_ranges  0x00000000       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_line    0x00000000      0x13d C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_frame   0x00000000       0x6c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_info    0x00000000      0x1ab C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_abbrev  0x00000000       0x37 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_aranges
+                0x00000000       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_ranges  0x00000000       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_line    0x00000000       0x9f C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_frame   0x00000000       0x2c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .reginfo       0x00000000       0x18 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_info    0x00000000      0x197 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_abbrev  0x00000000       0x37 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_aranges
+                0x00000000       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_ranges  0x00000000       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_line    0x00000000       0x95 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .comment       0x00000000       0x3c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+ .debug_frame   0x00000000       0x2c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+kseg1_boot_mem   0x9d001970         0x00000490
+kseg0_program_mem 0x9d000000         0x00001000         xr
+kseg1_data_mem   0xa0000000         0x00001000         w !x
+kseg0_application_program_mem 0x9d019444         0x00064bbc         xr
+kseg1_application_data_mem 0xa00083c4         0x00017c3c         w !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+LOAD C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x00000000                _min_heap_size = 0x0
+
+/DISCARD/
+ *(.debug_info)
+ *(.debug_abbrev)
+ *(.debug_aranges)
+ *(.debug_line)
+ *(.debug_frame)
+ *(.debug_ranges)
+ *(.comment)
+ *(.reginfo)
+
+.dinit          0x9d019444       0x10
+                0x9d019444                _reset = .
+ *(.dinit)
+ .dinit         0x9d019444       0x10 data_init
+
+.R_U_S_CST__USER_STRUCT_SAFETY_VARIABLES_SIZE_MINUS_1
+                0x9d011f28        0x4
+ *(.ru_s_cst__user_struct_safety_variables_size_minus_1)
+ .ru_s_cst__user_struct_safety_variables_size_minus_1
+                0x9d011f28        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+                0x9d011f28                struct_safety_variables_size_minus_1
+
+.R_U_S_CST__MODULE_SECU_IDS
+                0x9d011f2c        0x4
+ *(.ru_s_cst__module_secu_ids)
+ .ru_s_cst__module_secu_ids
+                0x9d011f2c        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f2c                r2__module_secu_ids_ptr
+
+.R_U_S_CST__MODULE_NB_INPUTS
+                0x9d011f30        0x4
+ *(.ru_s_cst__module_nb_inputs)
+ .ru_s_cst__module_nb_inputs
+                0x9d011f30        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f30                r2__module_nb_inputs_ptr
+
+.R_U_S_CST__MODULE_NB_OUTPUTS
+                0x9d011f34        0x4
+ *(.ru_s_cst__module_nb_outputs)
+ .ru_s_cst__module_nb_outputs
+                0x9d011f34        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f34                r2__module_nb_outputs_ptr
+
+.R_U_S_CST__INPUT_MODULE_IDS
+                0x9d011f38        0x4
+ *(.ru_s_cst__input_module_ids)
+ .ru_s_cst__input_module_ids
+                0x9d011f38        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f38                r2__input_module_ids_ptr
+
+.R_U_S_CST__INPUT_LOCAL_IDS
+                0x9d011f3c        0x4
+ *(.ru_s_cst__input_local_ids)
+ .ru_s_cst__input_local_ids
+                0x9d011f3c        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f3c                r2__input_local_ids_ptr
+
+.R_U_S_CST__OUTPUT_MODULE_IDS
+                0x9d011f40        0x4
+ *(.ru_s_cst__output_module_ids)
+ .ru_s_cst__output_module_ids
+                0x9d011f40        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f40                r2__output_module_ids_ptr
+
+.R_U_S_CST__OUTPUT_LOCAL_IDS
+                0x9d011f44        0x4
+ *(.ru_s_cst__output_local_ids)
+ .ru_s_cst__output_local_ids
+                0x9d011f44        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f44                r2__output_local_ids_ptr
+
+.R_U_S_CST__NB_MODULES
+                0x9d011f48        0x4
+ *(.ru_s_cst__NB_MODULES)
+ .ru_s_cst__NB_MODULES
+                0x9d011f48        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f48                r2__NB_MODULES_ptr
+
+.R_U_S_CST__NB_INPUTS
+                0x9d011f4c        0x4
+ *(.ru_s_cst__NB_INPUTS)
+ .ru_s_cst__NB_INPUTS
+                0x9d011f4c        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f4c                r2__NB_INPUTS_ptr
+
+.R_U_S_CST__NB_OUTPUTS
+                0x9d011f50        0x4
+ *(.ru_s_cst__NB_OUTPUTS)
+ .ru_s_cst__NB_OUTPUTS
+                0x9d011f50        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f50                r2__NB_OUTPUTS_ptr
+
+.R2_U_PTR__user_component__initialisation
+                0x9d011f78        0x4
+ *(.r2_u_ptr__user_component__initialisation_ptr)
+ .r2_u_ptr__user_component__initialisation_ptr
+                0x9d011f78        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f78                r2__user_component__initialisation_ptr
+
+.R2_U_PTR__user_app
+                0x9d011f7c        0x4
+ *(.r2_u_ptr__user_app_ptr)
+ .r2_u_ptr__user_app_ptr
+                0x9d011f7c        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f7c                r2__user_app_ptr
+
+.R2_U_PTR__user_consistency_error_detection_test
+                0x9d011f80        0x4
+ *(.r2_u_ptr__user_consistency_error_detection_test_ptr)
+ .r2_u_ptr__user_consistency_error_detection_test_ptr
+                0x9d011f80        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f80                r2__user_consistency_error_detection_test_ptr
+
+.R2_U_PTR__user_configuration__initialisation
+                0x9d011f6c        0x4
+ *(.r2_u_ptr__user_configuration__initialisation_ptr)
+ .r2_u_ptr__user_configuration__initialisation_ptr
+                0x9d011f6c        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f6c                r2__user_configuration__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables__initialisation
+                0x9d011f70        0x4
+ *(.r2_u_ptr__user_safety_variables__initialisation_ptr)
+ .r2_u_ptr__user_safety_variables__initialisation_ptr
+                0x9d011f70        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f70                r2__user_safety_variables__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables_array
+                0x9d011f74        0x4
+ *(.r2_u_ptr__user_safety_variables_array_ptr)
+ .r2_u_ptr__user_safety_variables_array_ptr
+                0x9d011f74        0x4 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+                0x9d011f74                r2__user_safety_variables_array_ptr
+
+.NR_S_CST       0x9d019454        0x0
+ *(.nr_s_cst)
+ *(.nr_s_cst.*)
+                0x9d019454                . = ALIGN (0x4)
+
+.NR_NS_CST      0x9d019454        0x0
+ *(.nr_ns_cst)
+ *(.nr_ns_cst.*)
+                0x9d019454                . = ALIGN (0x4)
+
+.NR_S_FN        0x9d019454       0x20
+ *(.nr_s_fn)
+ .nr_s_fn       0x9d019454       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+                0x9d019454                safety_variables__initialisation
+ *(.nr_s_fn.*)
+                0x9d019474                . = ALIGN (0x4)
+
+.NR_NS_FN       0x9d019474        0x0
+ *(.nr_ns_fn)
+ *(.nr_ns_fn.*)
+                0x9d019474                . = ALIGN (0x4)
+                0x9d019474                _end_section = .
+
+.NR_S_VAR       0xa00083c4        0x0
+ *(.nr_s_var)
+ *(.nr_s_var.*)
+                0xa00083c4                . = ALIGN (0x4)
+
+.NR_NS_VAR      0xa00083c4        0x0
+ *(.nr_ns_var)
+ *(.nr_ns_var.*)
+                0xa00083c4                . = ALIGN (0x4)
+
+.R_CST          0x9d019474       0x64
+                0x9d019478                . = ALIGN (0x8)
+ *fill*         0x9d019474        0x4 
+ *(.r_cst)
+ .r_cst         0x9d019478       0x60 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+                0x9d019478                global_constants
+ *(.r_cst.*)
+                0x9d0194d8                . = ALIGN (0x8)
+
+.R2_CST         0x9d0194d8        0x0
+ *(.r2_cst)
+ *(.r2_cst.*)
+                0x9d0194d8                . = ALIGN (0x8)
+
+.R2_FN          0x9d0194d8     0x22e8
+ *(.r2_fn)
+ .r2_fn         0x9d0194d8       0x38 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+                0x9d0194d8                g_types__initialisation
+ .r2_fn         0x9d019510      0x8b0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+                0x9d019510                inputs__initialisation
+                0x9d01970c                read_inputs
+                0x9d019964                get_board_0_I1
+                0x9d019998                get_board_0_I2
+                0x9d0199d0                get_board_0_I3
+                0x9d019a08                get_board_0_I4
+                0x9d019a40                get_board_0_I5
+                0x9d019a78                get_board_0_I6
+                0x9d019ab0                get_board_0_I7
+                0x9d019ae8                get_board_0_I8
+                0x9d019b20                get_board_0_I9
+                0x9d019b58                get_board_0_I10
+                0x9d019b90                get_board_0_I11
+                0x9d019bc8                get_board_0_I12
+                0x9d019c00                get_board_0_I13
+                0x9d019c38                get_board_0_I14
+                0x9d019c70                get_board_0_I15
+                0x9d019ca8                get_board_0_I16
+                0x9d019ce0                get_board_0_I17
+                0x9d019d18                get_board_0_I18
+                0x9d019d50                get_board_0_I19
+                0x9d019d88                get_board_0_I20
+ .r2_fn         0x9d019dc0     0x171c C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+                0x9d019dc0                logic__initialisation
+                0x9d01a114                user_logic
+                0x9d01b31c                get_board_0_O1
+                0x9d01b354                get_board_0_O2
+                0x9d01b38c                get_board_0_O3
+                0x9d01b3c4                get_board_0_O4
+                0x9d01b3fc                get_board_0_O5
+                0x9d01b434                get_board_0_O6
+                0x9d01b46c                get_board_0_O7
+                0x9d01b4a4                get_board_0_O8
+ .r2_fn         0x9d01b4dc      0x1c8 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+                0x9d01b4dc                outputs__initialisation
+                0x9d01b4fc                write_outputs
+ .r2_fn         0x9d01b6a4       0xd8 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+                0x9d01b6a4                user_component__initialisation
+                0x9d01b6f8                user_app
+                0x9d01b744                user_consistency_error_detection_test
+ .r2_fn         0x9d01b77c       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+                0x9d01b77c                user_configuration__initialisation
+ .r2_fn         0x9d01b79c       0x20 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+                0x9d01b79c                user_ctx__initialisation
+ *(.r2_fn.*)
+                0x9d01b7c0                . = ALIGN (0x8)
+ *fill*         0x9d01b7bc        0x4 
+
+.R2_CHK_VAR     0xa00083c4       0x5c
+ *(.r2_chk_var)
+ .r2_chk_var    0xa00083c4       0x58 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+                0xa00083c4                safety_variables
+ *(.r2_chk_var.*)
+                0xa0008420                . = ALIGN (0x8)
+ *fill*         0xa000841c        0x4 
+
+.R2_NCHK_VAR    0xa0008420        0x0
+ *(.r2_nchk_var)
+ .r2_nchk_var   0xa0008420        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+                0xa0008420                no_checked_variables
+ *(.r2_nchk_var.*)
+                0xa0008420                . = ALIGN (0x8)
+
+.R1_CST         0x9d01b7c0        0x0
+ *(.r1_cst)
+ *(.r1_cst.*)
+                0x9d01b7c0                . = ALIGN (0x8)
+
+.R1_FN          0x9d01b7c0     0x4f3c
+                0x9d07e000                _end_r1_fn = (ORIGIN (kseg0_application_program_mem) + 0x64bbc)
+                [0x9d0206fc]                _end_r1_fn = (_end_r1_fn - 0x5d904)
+                0x9d0206fc                . = _end_r1_fn
+ *fill*         0x9d01b7c0     0x4f3c 
+
+.R1_CHK_VAR     0xa0008420       0x60
+                0xa000847c                . = (. + SIZEOF (.R2_CHK_VAR))
+ *fill*         0xa0008420       0x5c 
+                0xa0008480                . = ALIGN (0x8)
+ *fill*         0xa000847c        0x4 
+
+.R1_NCHK_VAR    0xa0008480        0x0
+                0xa0008480                . = (. + SIZEOF (.R2_NCHK_VAR))
+                0xa0008480                . = ALIGN (0x8)
+
+.FREE_FLASH_SPACE
+                0x9d0206fc    0x5d904
+                0x9d07e000                _end_flash_space = (ORIGIN (kseg0_application_program_mem) + 0x64bbc)
+                0x9d07e000                . = _end_flash_space
+ *fill*         0x9d0206fc    0x5d904 
+                0x9d07e000                . = ALIGN (0x8)
+
+.FREE_RAM_SPACE
+                0xa0008480    0x17b80
+                0xa0020000                _end_ram_space = (ORIGIN (kseg1_application_data_mem) + 0x17c3c)
+                0xa0020000                . = _end_ram_space
+ *fill*         0xa0008480    0x17b80 
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+START GROUP
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libsupc++.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a
+END GROUP
+LOAD c:/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+OUTPUT(C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\release/c_toolchain_2.elf elf32-tradlittlemips)
+LOAD stack
+LOAD data_init
+
+.debug_str      0x00000000       0x25
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .debug_str     0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .debug_str     0x00000000       0x25 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .debug_str     0x00000025        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .debug_str     0x00000025        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .debug_str     0x00000025        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .debug_str     0x00000025        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.gnu.attributes
+                0x00000000       0x10
+ .gnu.attributes
+                0x00000000       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+ .gnu.attributes
+                0x00000010       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+ .gnu.attributes
+                0x00000020       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+ .gnu.attributes
+                0x00000030       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+ .gnu.attributes
+                0x00000040       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+ .gnu.attributes
+                0x00000050       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+ .gnu.attributes
+                0x00000060       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+ .gnu.attributes
+                0x00000070       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+ .gnu.attributes
+                0x00000080       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+ .gnu.attributes
+                0x00000090       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+ .gnu.attributes
+                0x000000a0       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+ .gnu.attributes
+                0x000000b0       0x10 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.stack          0xa0000020       0x10
+ .stack         0xa0000020       0x10 stack
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_ctx_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_configuration_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\user_component_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\outputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\logic_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\inputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\g_types_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_no_checked_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\replica_2\c4b_constants.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\non_replicated\safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 C:\CSSP\CSSP_WORKSPACE\Square_gamb\bdp\..\\lang\dcc\Square_gamb\c_toolchain_2\build\kernel_app\link_to_kernel.o

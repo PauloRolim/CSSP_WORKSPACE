@@ -1,0 +1,57 @@
+/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    inputs_i
+REFINES
+    inputs
+SEES
+    g_types,
+    io_constants,
+    lchip_configuration,
+    lchip_interface
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    i_Obstacle_position_r,
+	i_Obstacle_position_l,
+	i_Detection_neighbours,
+	i_Comm_asnwer
+INVARIANT
+    i_Obstacle_position_r : uint8_t &
+	i_Obstacle_position_l : uint8_t &
+	i_Detection_neighbours : uint8_t &
+	i_Comm_asnwer : uint8_t
+INITIALISATION
+    i_Obstacle_position_r := IO_OFF;
+	i_Obstacle_position_l := IO_OFF;
+	i_Detection_neighbours := IO_OFF;
+	i_Comm_asnwer := IO_OFF
+OPERATIONS
+    read_inputs =
+    BEGIN
+        i_Obstacle_position_r <-- read_global_input(0);
+		i_Obstacle_position_l <-- read_global_input(1);
+		i_Detection_neighbours <-- read_global_input(2);
+		i_Comm_asnwer <-- read_global_input(3)
+    END;
+
+    po <-- get_i_Obstacle_position_r =
+	BEGIN
+		po := i_Obstacle_position_r
+	END;
+
+	po <-- get_i_Obstacle_position_l =
+	BEGIN
+		po := i_Obstacle_position_l
+	END;
+
+	po <-- get_i_Detection_neighbours =
+	BEGIN
+		po := i_Detection_neighbours
+	END;
+
+	po <-- get_i_Comm_asnwer =
+	BEGIN
+		po := i_Comm_asnwer
+	END
+END

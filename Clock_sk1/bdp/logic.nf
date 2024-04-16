@@ -1,0 +1,320 @@
+﻿Normalised(
+THEORY MagicNumberX IS
+  MagicNumber(Machine(logic))==(3.5)
+END
+&
+THEORY UpperLevelX IS
+  First_Level(Machine(logic))==(Machine(logic));
+  Level(Machine(logic))==(0)
+END
+&
+THEORY LoadedStructureX IS
+  Machine(logic)
+END
+&
+THEORY ListSeesX IS
+  List_Sees(Machine(logic))==(g_types,g_operators,io_constants,lchip_interface,user_ctx)
+END
+&
+THEORY ListUsesX IS
+  List_Uses(Machine(logic))==(?)
+END
+&
+THEORY ListIncludesX IS
+  Inherited_List_Includes(Machine(logic))==(?);
+  List_Includes(Machine(logic))==(?)
+END
+&
+THEORY ListPromotesX IS
+  List_Promotes(Machine(logic))==(?)
+END
+&
+THEORY ListExtendsX IS
+  List_Extends(Machine(logic))==(?)
+END
+&
+THEORY ListVariablesX IS
+  External_Context_List_Variables(Machine(logic))==(?);
+  Context_List_Variables(Machine(logic))==(?);
+  Abstract_List_Variables(Machine(logic))==(?);
+  Local_List_Variables(Machine(logic))==(O8,O7,O6,O5,O4,O3,O2,O1);
+  List_Variables(Machine(logic))==(O8,O7,O6,O5,O4,O3,O2,O1);
+  External_List_Variables(Machine(logic))==(O8,O7,O6,O5,O4,O3,O2,O1)
+END
+&
+THEORY ListVisibleVariablesX IS
+  Inherited_List_VisibleVariables(Machine(logic))==(?);
+  Abstract_List_VisibleVariables(Machine(logic))==(?);
+  External_List_VisibleVariables(Machine(logic))==(?);
+  Expanded_List_VisibleVariables(Machine(logic))==(?);
+  List_VisibleVariables(Machine(logic))==(?);
+  Internal_List_VisibleVariables(Machine(logic))==(?)
+END
+&
+THEORY ListInvariantX IS
+  Gluing_Seen_List_Invariant(Machine(logic))==(btrue);
+  Gluing_List_Invariant(Machine(logic))==(btrue);
+  Expanded_List_Invariant(Machine(logic))==(btrue);
+  Abstract_List_Invariant(Machine(logic))==(btrue);
+  Context_List_Invariant(Machine(logic))==(ms_tick: uint32_t);
+  List_Invariant(Machine(logic))==(O1: uint8_t & O2: uint8_t & O3: uint8_t & O4: uint8_t & O5: uint8_t & O6: uint8_t & O7: uint8_t & O8: uint8_t)
+END
+&
+THEORY ListAssertionsX IS
+  Expanded_List_Assertions(Machine(logic))==(btrue);
+  Abstract_List_Assertions(Machine(logic))==(btrue);
+  Context_List_Assertions(Machine(logic))==(Convert_Bool: BOOL +-> uint8_t & Convert_Bool: BOOL +-> uint16_t & Convert_Bool: BOOL +-> uint32_t);
+  List_Assertions(Machine(logic))==(btrue)
+END
+&
+THEORY ListCoverageX IS
+  List_Coverage(Machine(logic))==(btrue)
+END
+&
+THEORY ListExclusivityX IS
+  List_Exclusivity(Machine(logic))==(btrue)
+END
+&
+THEORY ListInitialisationX IS
+  Expanded_List_Initialisation(Machine(logic))==(@(O1$0).(O1$0: uint8_t ==> O1:=O1$0) || @(O2$0).(O2$0: uint8_t ==> O2:=O2$0) || @(O3$0).(O3$0: uint8_t ==> O3:=O3$0) || @(O4$0).(O4$0: uint8_t ==> O4:=O4$0) || @(O5$0).(O5$0: uint8_t ==> O5:=O5$0) || @(O6$0).(O6$0: uint8_t ==> O6:=O6$0) || @(O7$0).(O7$0: uint8_t ==> O7:=O7$0) || @(O8$0).(O8$0: uint8_t ==> O8:=O8$0));
+  Context_List_Initialisation(Machine(logic))==(skip);
+  List_Initialisation(Machine(logic))==(O1:: uint8_t || O2:: uint8_t || O3:: uint8_t || O4:: uint8_t || O5:: uint8_t || O6:: uint8_t || O7:: uint8_t || O8:: uint8_t)
+END
+&
+THEORY ListParametersX IS
+  List_Parameters(Machine(logic))==(?)
+END
+&
+THEORY ListInstanciatedParametersX IS
+  List_Instanciated_Parameters(Machine(logic),Machine(g_types))==(?);
+  List_Instanciated_Parameters(Machine(logic),Machine(g_operators))==(?);
+  List_Instanciated_Parameters(Machine(logic),Machine(io_constants))==(?);
+  List_Instanciated_Parameters(Machine(logic),Machine(lchip_interface))==(?);
+  List_Instanciated_Parameters(Machine(logic),Machine(user_ctx))==(?)
+END
+&
+THEORY ListConstraintsX IS
+  List_Context_Constraints(Machine(logic))==(btrue);
+  List_Constraints(Machine(logic))==(btrue)
+END
+&
+THEORY ListOperationsX IS
+  Internal_List_Operations(Machine(logic))==(user_logic,get_O1,get_O2,get_O3,get_O4,get_O5,get_O6,get_O7,get_O8);
+  List_Operations(Machine(logic))==(user_logic,get_O1,get_O2,get_O3,get_O4,get_O5,get_O6,get_O7,get_O8)
+END
+&
+THEORY ListInputX IS
+  List_Input(Machine(logic),user_logic)==(?);
+  List_Input(Machine(logic),get_O1)==(?);
+  List_Input(Machine(logic),get_O2)==(?);
+  List_Input(Machine(logic),get_O3)==(?);
+  List_Input(Machine(logic),get_O4)==(?);
+  List_Input(Machine(logic),get_O5)==(?);
+  List_Input(Machine(logic),get_O6)==(?);
+  List_Input(Machine(logic),get_O7)==(?);
+  List_Input(Machine(logic),get_O8)==(?)
+END
+&
+THEORY ListOutputX IS
+  List_Output(Machine(logic),user_logic)==(?);
+  List_Output(Machine(logic),get_O1)==(po);
+  List_Output(Machine(logic),get_O2)==(po);
+  List_Output(Machine(logic),get_O3)==(po);
+  List_Output(Machine(logic),get_O4)==(po);
+  List_Output(Machine(logic),get_O5)==(po);
+  List_Output(Machine(logic),get_O6)==(po);
+  List_Output(Machine(logic),get_O7)==(po);
+  List_Output(Machine(logic),get_O8)==(po)
+END
+&
+THEORY ListHeaderX IS
+  List_Header(Machine(logic),user_logic)==(user_logic);
+  List_Header(Machine(logic),get_O1)==(po <-- get_O1);
+  List_Header(Machine(logic),get_O2)==(po <-- get_O2);
+  List_Header(Machine(logic),get_O3)==(po <-- get_O3);
+  List_Header(Machine(logic),get_O4)==(po <-- get_O4);
+  List_Header(Machine(logic),get_O5)==(po <-- get_O5);
+  List_Header(Machine(logic),get_O6)==(po <-- get_O6);
+  List_Header(Machine(logic),get_O7)==(po <-- get_O7);
+  List_Header(Machine(logic),get_O8)==(po <-- get_O8)
+END
+&
+THEORY ListOperationGuardX END
+&
+THEORY ListPreconditionX IS
+  List_Precondition(Machine(logic),user_logic)==(btrue);
+  List_Precondition(Machine(logic),get_O1)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O2)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O3)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O4)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O5)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O6)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O7)==(po: uint8_t);
+  List_Precondition(Machine(logic),get_O8)==(po: uint8_t)
+END
+&
+THEORY ListSubstitutionX IS
+  Expanded_List_Substitution(Machine(logic),get_O8)==(po: uint8_t | po:=O8);
+  Expanded_List_Substitution(Machine(logic),get_O7)==(po: uint8_t | po:=O7);
+  Expanded_List_Substitution(Machine(logic),get_O6)==(po: uint8_t | po:=O6);
+  Expanded_List_Substitution(Machine(logic),get_O5)==(po: uint8_t | po:=O5);
+  Expanded_List_Substitution(Machine(logic),get_O4)==(po: uint8_t | po:=O4);
+  Expanded_List_Substitution(Machine(logic),get_O3)==(po: uint8_t | po:=O3);
+  Expanded_List_Substitution(Machine(logic),get_O2)==(po: uint8_t | po:=O2);
+  Expanded_List_Substitution(Machine(logic),get_O1)==(po: uint8_t | po:=O1);
+  Expanded_List_Substitution(Machine(logic),user_logic)==(btrue | @(O1$1,O2$1).(O1$1: uint8_t & O2$1: uint8_t & not(O1$1 = O2$1) ==> O1,O2:=O1$1,O2$1));
+  List_Substitution(Machine(logic),user_logic)==(O1,O2: (O1: uint8_t & O2: uint8_t & not(O1 = O2)));
+  List_Substitution(Machine(logic),get_O1)==(po:=O1);
+  List_Substitution(Machine(logic),get_O2)==(po:=O2);
+  List_Substitution(Machine(logic),get_O3)==(po:=O3);
+  List_Substitution(Machine(logic),get_O4)==(po:=O4);
+  List_Substitution(Machine(logic),get_O5)==(po:=O5);
+  List_Substitution(Machine(logic),get_O6)==(po:=O6);
+  List_Substitution(Machine(logic),get_O7)==(po:=O7);
+  List_Substitution(Machine(logic),get_O8)==(po:=O8)
+END
+&
+THEORY ListConstantsX IS
+  List_Valuable_Constants(Machine(logic))==(?);
+  Inherited_List_Constants(Machine(logic))==(?);
+  List_Constants(Machine(logic))==(?)
+END
+&
+THEORY ListSetsX IS
+  Context_List_Enumerated(Machine(logic))==(?);
+  Context_List_Defered(Machine(logic))==(?);
+  Context_List_Sets(Machine(logic))==(?);
+  List_Valuable_Sets(Machine(logic))==(?);
+  Inherited_List_Enumerated(Machine(logic))==(?);
+  Inherited_List_Defered(Machine(logic))==(?);
+  Inherited_List_Sets(Machine(logic))==(?);
+  List_Enumerated(Machine(logic))==(?);
+  List_Defered(Machine(logic))==(?);
+  List_Sets(Machine(logic))==(?)
+END
+&
+THEORY ListHiddenConstantsX IS
+  Abstract_List_HiddenConstants(Machine(logic))==(?);
+  Expanded_List_HiddenConstants(Machine(logic))==(?);
+  List_HiddenConstants(Machine(logic))==(?);
+  External_List_HiddenConstants(Machine(logic))==(?)
+END
+&
+THEORY ListPropertiesX IS
+  Abstract_List_Properties(Machine(logic))==(btrue);
+  Context_List_Properties(Machine(logic))==(uint32_t = 0..4294967295 & uint16_t = 0..65535 & uint8_t = 0..255 & STRUE: uint8_t & SFALSE: uint8_t & MAX_UINT32: uint32_t & MAX_UINT16: uint16_t & MAX_UINT8: uint8_t & STRUE: 0..MAX_UINT8 & SFALSE: 0..MAX_UINT8 & STRUE/=SFALSE & SBOOL = {STRUE,SFALSE} & STRUE<=2 & SFALSE<=2 & MAX_UINT32 = 4294967295 & MAX_UINT16 = 65535 & MAX_UINT8 = 255 & Convert_Bool = {TRUE|->STRUE,FALSE|->SFALSE} & bitwise_sll_uint32: uint32_t*uint8_t --> uint32_t & bitwise_srl_uint32: uint32_t*uint8_t --> uint32_t & bitwise_not_uint32: uint32_t --> uint32_t & bitwise_and_uint32: uint32_t*uint32_t --> uint32_t & bitwise_xor_uint32: uint32_t*uint32_t --> uint32_t & bitwise_or_uint32: uint32_t*uint32_t --> uint32_t & bitwise_sll_uint16: uint16_t*uint8_t --> uint16_t & bitwise_srl_uint16: uint16_t*uint8_t --> uint16_t & bitwise_not_uint16: uint16_t --> uint16_t & bitwise_and_uint16: uint16_t*uint16_t --> uint16_t & bitwise_xor_uint16: uint16_t*uint16_t --> uint16_t & bitwise_or_uint16: uint16_t*uint16_t --> uint16_t & bitwise_sll_uint8: uint8_t*uint8_t --> uint8_t & bitwise_srl_uint8: uint8_t*uint8_t --> uint8_t & bitwise_not_uint8: uint8_t --> uint8_t & bitwise_and_uint8: uint8_t*uint8_t --> uint8_t & bitwise_xor_uint8: uint8_t*uint8_t --> uint8_t & bitwise_or_uint8: uint8_t*uint8_t --> uint8_t & add_uint32: uint32_t*uint32_t --> uint32_t & sub_uint32: uint32_t*uint32_t --> uint32_t & mul_uint32: uint32_t*uint32_t --> uint32_t & add_uint16: uint16_t*uint16_t --> uint16_t & sub_uint16: uint16_t*uint16_t --> uint16_t & mul_uint16: uint16_t*uint16_t --> uint16_t & add_uint8: uint8_t*uint8_t --> uint8_t & sub_uint8: uint8_t*uint8_t --> uint8_t & mul_uint8: uint8_t*uint8_t --> uint8_t & bitwise_sll_uint32 = %(x1,x2).(x1: uint32_t & x2: uint8_t | x1*2**x2 mod (MAX_UINT32+1)) & bitwise_sll_uint16 = %(x1,x2).(x1: uint16_t & x2: uint8_t | x1*2**x2 mod (MAX_UINT16+1)) & bitwise_sll_uint8 = %(x1,x2).(x1: uint8_t & x2: uint8_t | x1*2**x2 mod (MAX_UINT8+1)) & bitwise_srl_uint32 = %(x1,x2).(x1: uint32_t & x2: uint8_t | x1/2**x2) & bitwise_srl_uint16 = %(x1,x2).(x1: uint16_t & x2: uint8_t | x1/2**x2) & bitwise_srl_uint8 = %(x1,x2).(x1: uint8_t & x2: uint8_t | x1/2**x2) & add_uint32 = %(x1,x2).(x1: uint32_t & x2: uint32_t | (x1+x2) mod (MAX_UINT32+1)) & sub_uint32 = %(x1,x2).(x1: uint32_t & x2: uint32_t | (x1-x2+MAX_UINT32+1) mod (MAX_UINT32+1)) & mul_uint32 = %(x1,x2).(x1: uint32_t & x2: uint32_t | x1*x2 mod (MAX_UINT32+1)) & add_uint16 = %(y1,y2).(y1: uint16_t & y2: uint16_t | (y1+y2) mod (MAX_UINT16+1)) & sub_uint16 = %(y1,y2).(y1: uint16_t & y2: uint16_t | (y1-y2+MAX_UINT16+1) mod (MAX_UINT16+1)) & mul_uint16 = %(y1,y2).(y1: uint16_t & y2: uint16_t | y1*y2 mod (MAX_UINT16+1)) & add_uint8 = %(y1,y2).(y1: uint8_t & y2: uint8_t | (y1+y2) mod (MAX_UINT8+1)) & sub_uint8 = %(y1,y2).(y1: uint8_t & y2: uint8_t | (y1-y2+MAX_UINT8+1) mod (MAX_UINT8+1)) & mul_uint8 = %(y1,y2).(y1: uint8_t & y2: uint8_t | y1*y2 mod (MAX_UINT8+1)) & !(ui1,ui2).(ui1: uint16_t & ui2: uint16_t => bitwise_and_uint16(ui1|->ui2)<=ui2) & !(ui1,ui2).(ui1: uint32_t & ui2: uint32_t => bitwise_and_uint32(ui1|->ui2)<=ui2) & TIME = uint32_t & IO_STATE = uint8_t & IO_ON: uint8_t & IO_OFF: uint8_t & IO_ON/=IO_OFF & IO_ON: IO_STATE & IO_OFF: IO_STATE & delta_t: uint32_t & not(delta_t = 0) & delta_t1: uint32_t & not(delta_t1 = 0));
+  Inherited_List_Properties(Machine(logic))==(btrue);
+  List_Properties(Machine(logic))==(btrue)
+END
+&
+THEORY ListSeenInfoX IS
+  Seen_Internal_List_Operations(Machine(logic),Machine(user_ctx))==(?);
+  Seen_Context_List_Enumerated(Machine(logic))==(?);
+  Seen_Context_List_Invariant(Machine(logic))==(btrue);
+  Seen_Context_List_Assertions(Machine(logic))==(Convert_Bool: BOOL +-> uint8_t & Convert_Bool: BOOL +-> uint16_t & Convert_Bool: BOOL +-> uint32_t);
+  Seen_Context_List_Properties(Machine(logic))==(uint32_t = 0..4294967295 & uint16_t = 0..65535 & uint8_t = 0..255 & STRUE: uint8_t & SFALSE: uint8_t & MAX_UINT32: uint32_t & MAX_UINT16: uint16_t & MAX_UINT8: uint8_t & STRUE: 0..MAX_UINT8 & SFALSE: 0..MAX_UINT8 & STRUE/=SFALSE & SBOOL = {STRUE,SFALSE} & STRUE<=2 & SFALSE<=2 & MAX_UINT32 = 4294967295 & MAX_UINT16 = 65535 & MAX_UINT8 = 255 & Convert_Bool = {TRUE|->STRUE,FALSE|->SFALSE} & MAX_NB_MODULES: uint8_t & MAX_NB_INPUTS: uint8_t & MAX_NB_OUTPUTS: uint8_t & MAX_NB_MODULES = 1 & MAX_NB_INPUTS = 20 & MAX_NB_OUTPUTS = 8 & TIME = uint32_t & IO_STATE = uint8_t & IO_ON: uint8_t & IO_OFF: uint8_t & IO_ON/=IO_OFF & IO_ON: IO_STATE & IO_OFF: IO_STATE);
+  Seen_List_Constraints(Machine(logic))==(btrue);
+  Seen_List_Operations(Machine(logic),Machine(user_ctx))==(?);
+  Seen_Expanded_List_Invariant(Machine(logic),Machine(user_ctx))==(btrue);
+  Seen_Internal_List_Operations(Machine(logic),Machine(lchip_interface))==(print_global_inputs,read_global_input,write_global_output,get_replica_id,get_processor_id,get_ms_tick,print_uint8);
+  Seen_List_Precondition(Machine(logic),print_uint8)==(tag: uint8_t & value: uint8_t);
+  Seen_Expanded_List_Substitution(Machine(logic),print_uint8)==(skip);
+  Seen_List_Precondition(Machine(logic),get_ms_tick)==(out: uint32_t);
+  Seen_Expanded_List_Substitution(Machine(logic),get_ms_tick)==(out:=ms_tick);
+  Seen_List_Precondition(Machine(logic),get_processor_id)==(out: uint8_t);
+  Seen_Expanded_List_Substitution(Machine(logic),get_processor_id)==(@(out$0).(out$0: uint8_t ==> out:=out$0));
+  Seen_List_Precondition(Machine(logic),get_replica_id)==(out: uint8_t);
+  Seen_Expanded_List_Substitution(Machine(logic),get_replica_id)==(@(out$0).(out$0: uint8_t ==> out:=out$0));
+  Seen_List_Precondition(Machine(logic),write_global_output)==(output_id: uint8_t & output_id<MAX_NB_OUTPUTS & state: uint8_t);
+  Seen_Expanded_List_Substitution(Machine(logic),write_global_output)==(skip);
+  Seen_List_Precondition(Machine(logic),read_global_input)==(input_id: uint8_t & input_id<MAX_NB_INPUTS & state: uint8_t);
+  Seen_Expanded_List_Substitution(Machine(logic),read_global_input)==(@(state$1).(state$1: uint8_t & (state$1 = IO_ON or state$1 = IO_OFF) ==> state:=state$1));
+  Seen_List_Precondition(Machine(logic),print_global_inputs)==(btrue);
+  Seen_Expanded_List_Substitution(Machine(logic),print_global_inputs)==(skip);
+  Seen_List_Operations(Machine(logic),Machine(lchip_interface))==(print_global_inputs,read_global_input,write_global_output,get_replica_id,get_processor_id,get_ms_tick,print_uint8);
+  Seen_Expanded_List_Invariant(Machine(logic),Machine(lchip_interface))==(btrue);
+  Seen_Internal_List_Operations(Machine(logic),Machine(io_constants))==(?);
+  Seen_List_Operations(Machine(logic),Machine(io_constants))==(?);
+  Seen_Expanded_List_Invariant(Machine(logic),Machine(io_constants))==(btrue);
+  Seen_Internal_List_Operations(Machine(logic),Machine(g_operators))==(?);
+  Seen_List_Operations(Machine(logic),Machine(g_operators))==(?);
+  Seen_Expanded_List_Invariant(Machine(logic),Machine(g_operators))==(btrue);
+  Seen_Internal_List_Operations(Machine(logic),Machine(g_types))==(?);
+  Seen_List_Operations(Machine(logic),Machine(g_types))==(?);
+  Seen_Expanded_List_Invariant(Machine(logic),Machine(g_types))==(btrue)
+END
+&
+THEORY ListANYVarX IS
+  List_ANY_Var(Machine(logic),user_logic)==(?);
+  List_ANY_Var(Machine(logic),get_O1)==(?);
+  List_ANY_Var(Machine(logic),get_O2)==(?);
+  List_ANY_Var(Machine(logic),get_O3)==(?);
+  List_ANY_Var(Machine(logic),get_O4)==(?);
+  List_ANY_Var(Machine(logic),get_O5)==(?);
+  List_ANY_Var(Machine(logic),get_O6)==(?);
+  List_ANY_Var(Machine(logic),get_O7)==(?);
+  List_ANY_Var(Machine(logic),get_O8)==(?)
+END
+&
+THEORY ListOfIdsX IS
+  List_Of_Ids(Machine(logic)) == (? | ? | O8,O7,O6,O5,O4,O3,O2,O1 | ? | user_logic,get_O1,get_O2,get_O3,get_O4,get_O5,get_O6,get_O7,get_O8 | ? | seen(Machine(g_types)),seen(Machine(g_operators)),seen(Machine(io_constants)),seen(Machine(lchip_interface)),seen(Machine(user_ctx)) | ? | logic);
+  List_Of_HiddenCst_Ids(Machine(logic)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(logic)) == (?);
+  List_Of_VisibleVar_Ids(Machine(logic)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(logic)) == (?: ?);
+  List_Of_Ids(Machine(user_ctx)) == (delta_t,delta_t1 | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | user_ctx);
+  List_Of_HiddenCst_Ids(Machine(user_ctx)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(user_ctx)) == (delta_t,delta_t1);
+  List_Of_VisibleVar_Ids(Machine(user_ctx)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(user_ctx)) == (?: ?);
+  List_Of_Ids(Machine(g_types)) == (uint32_t,uint16_t,uint8_t,STRUE,SFALSE,MAX_UINT32,MAX_UINT16,MAX_UINT8 | ? | ? | ? | ? | ? | ? | ? | g_types);
+  List_Of_HiddenCst_Ids(Machine(g_types)) == (SBOOL,Convert_Bool | ?);
+  List_Of_VisibleCst_Ids(Machine(g_types)) == (uint32_t,uint16_t,uint8_t,STRUE,SFALSE,MAX_UINT32,MAX_UINT16,MAX_UINT8);
+  List_Of_VisibleVar_Ids(Machine(g_types)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(g_types)) == (?: ?);
+  List_Of_Ids(Machine(lchip_interface)) == (? | ? | ms_tick | ? | print_global_inputs,read_global_input,write_global_output,get_replica_id,get_processor_id,get_ms_tick,print_uint8 | ? | seen(Machine(g_types)),seen(Machine(lchip_configuration)),seen(Machine(io_constants)) | ? | lchip_interface);
+  List_Of_HiddenCst_Ids(Machine(lchip_interface)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(lchip_interface)) == (?);
+  List_Of_VisibleVar_Ids(Machine(lchip_interface)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(lchip_interface)) == (?: ?);
+  List_Of_Ids(Machine(io_constants)) == (IO_ON,IO_OFF | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | io_constants);
+  List_Of_HiddenCst_Ids(Machine(io_constants)) == (IO_STATE,TIME | ?);
+  List_Of_VisibleCst_Ids(Machine(io_constants)) == (IO_ON,IO_OFF);
+  List_Of_VisibleVar_Ids(Machine(io_constants)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(io_constants)) == (?: ?);
+  List_Of_Ids(Machine(lchip_configuration)) == (MAX_NB_MODULES,MAX_NB_INPUTS,MAX_NB_OUTPUTS | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | lchip_configuration);
+  List_Of_HiddenCst_Ids(Machine(lchip_configuration)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(lchip_configuration)) == (MAX_NB_MODULES,MAX_NB_INPUTS,MAX_NB_OUTPUTS);
+  List_Of_VisibleVar_Ids(Machine(lchip_configuration)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(lchip_configuration)) == (?: ?);
+  List_Of_Ids(Machine(g_operators)) == (bitwise_sll_uint32,bitwise_srl_uint32,bitwise_not_uint32,bitwise_and_uint32,bitwise_xor_uint32,bitwise_or_uint32,bitwise_sll_uint16,bitwise_srl_uint16,bitwise_not_uint16,bitwise_and_uint16,bitwise_xor_uint16,bitwise_or_uint16,bitwise_sll_uint8,bitwise_srl_uint8,bitwise_not_uint8,bitwise_and_uint8,bitwise_xor_uint8,bitwise_or_uint8,add_uint32,sub_uint32,mul_uint32,add_uint16,sub_uint16,mul_uint16,add_uint8,sub_uint8,mul_uint8 | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | g_operators);
+  List_Of_HiddenCst_Ids(Machine(g_operators)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(g_operators)) == (bitwise_sll_uint32,bitwise_srl_uint32,bitwise_not_uint32,bitwise_and_uint32,bitwise_xor_uint32,bitwise_or_uint32,bitwise_sll_uint16,bitwise_srl_uint16,bitwise_not_uint16,bitwise_and_uint16,bitwise_xor_uint16,bitwise_or_uint16,bitwise_sll_uint8,bitwise_srl_uint8,bitwise_not_uint8,bitwise_and_uint8,bitwise_xor_uint8,bitwise_or_uint8,add_uint32,sub_uint32,mul_uint32,add_uint16,sub_uint16,mul_uint16,add_uint8,sub_uint8,mul_uint8);
+  List_Of_VisibleVar_Ids(Machine(g_operators)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(g_operators)) == (?: ?)
+END
+&
+THEORY VariablesEnvX IS
+  Variables(Machine(logic)) == (Type(O8) == Mvl(btype(INTEGER,?,?));Type(O7) == Mvl(btype(INTEGER,?,?));Type(O6) == Mvl(btype(INTEGER,?,?));Type(O5) == Mvl(btype(INTEGER,?,?));Type(O4) == Mvl(btype(INTEGER,?,?));Type(O3) == Mvl(btype(INTEGER,?,?));Type(O2) == Mvl(btype(INTEGER,?,?));Type(O1) == Mvl(btype(INTEGER,?,?)))
+END
+&
+THEORY OperationsEnvX IS
+  Operations(Machine(logic)) == (Type(get_O8) == Cst(btype(INTEGER,?,?),No_type);Type(get_O7) == Cst(btype(INTEGER,?,?),No_type);Type(get_O6) == Cst(btype(INTEGER,?,?),No_type);Type(get_O5) == Cst(btype(INTEGER,?,?),No_type);Type(get_O4) == Cst(btype(INTEGER,?,?),No_type);Type(get_O3) == Cst(btype(INTEGER,?,?),No_type);Type(get_O2) == Cst(btype(INTEGER,?,?),No_type);Type(get_O1) == Cst(btype(INTEGER,?,?),No_type);Type(user_logic) == Cst(No_type,No_type));
+  Observers(Machine(logic)) == (Type(get_O8) == Cst(btype(INTEGER,?,?),No_type);Type(get_O7) == Cst(btype(INTEGER,?,?),No_type);Type(get_O6) == Cst(btype(INTEGER,?,?),No_type);Type(get_O5) == Cst(btype(INTEGER,?,?),No_type);Type(get_O4) == Cst(btype(INTEGER,?,?),No_type);Type(get_O3) == Cst(btype(INTEGER,?,?),No_type);Type(get_O2) == Cst(btype(INTEGER,?,?),No_type);Type(get_O1) == Cst(btype(INTEGER,?,?),No_type))
+END
+&
+THEORY TCIntRdX IS
+  bxml_with_b0_typing == OK;
+  predB0 == OK;
+  extended_sees == KO;
+  B0check_tab == KO;
+  local_op == OK;
+  abstract_constants_visible_in_values == KO;
+  project_type == SOFTWARE_TYPE;
+  event_b_deadlockfreeness == KO;
+  variant_clause_mandatory == KO;
+  event_b_coverage == KO;
+  event_b_exclusivity == KO;
+  genFeasibilityPO == KO
+END
+)

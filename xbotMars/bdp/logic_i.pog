@@ -1,0 +1,2384 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+<Define name="B definitions" hash="920242389">
+<Exp_Comparison op="=">
+<Id value="NAT" typref="0"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1"/>
+<Id value="MAXINT" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT" typref="0"/>
+<Binary_Exp typref="0" op="..">
+<Id value="MININT" typref="1"/>
+<Id value="MAXINT" typref="1"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define name="ctx" hash="4122343204">
+<Exp_Comparison op="=">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:1:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:1:2:1"/>
+<Integer_Literal value="4294967295" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:1:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:2:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:2:2:1"/>
+<Integer_Literal value="65535" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:2:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:3:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:3:2:1"/>
+<Integer_Literal value="255" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:3:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:4:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:4:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:5:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:5:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:6:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:6:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:7:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:7:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:8:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:8:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:9:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:9:2:1"/>
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:9:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:10:1"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:10:2:1"/>
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:10:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:11:1"/>
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:11:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="SBOOL" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:12:1"/>
+<Nary_Exp typref="0" op="{">
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:12:2:1"/>
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:12:2:2"/>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:13:1"/>
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:13:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:14:1"/>
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:14:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:15:1"/>
+<Integer_Literal value="4294967295" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:15:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:16:1"/>
+<Integer_Literal value="65535" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:16:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:17:1"/>
+<Integer_Literal value="255" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:17:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="Convert_Bool" typref="2" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:18:1"/>
+<Nary_Exp typref="2" op="{">
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal value="TRUE" typref="4" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:18:2:1:1"/>
+<Id value="STRUE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:18:2:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal value="FALSE" typref="4" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:18:2:2:1"/>
+<Id value="SFALSE" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:3:1:18:2:2:2"/>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_sll_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:1:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:1:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:1:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:1:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_srl_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:2:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:2:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:2:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:2:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_not_uint32" typref="7" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:3:1"/>
+<Binary_Exp typref="8" op="-->">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:3:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:3:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_and_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:4:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:4:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:4:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:4:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_xor_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:5:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:5:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:5:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:5:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_or_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:6:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:6:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:6:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_sll_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:7:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:7:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:7:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:7:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_srl_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:8:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:8:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:8:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:8:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_not_uint16" typref="7" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:9:1"/>
+<Binary_Exp typref="8" op="-->">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:9:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:9:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_and_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:10:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:10:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:10:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:10:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_xor_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:11:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:11:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:11:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:11:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_or_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:12:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:12:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:12:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:12:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_sll_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:13:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:13:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:13:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:13:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_srl_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:14:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:14:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:14:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:14:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_not_uint8" typref="7" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:15:1"/>
+<Binary_Exp typref="8" op="-->">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:15:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:15:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_and_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:16:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:16:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:16:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:16:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_xor_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:17:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:17:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:17:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:17:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="bitwise_or_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:18:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:18:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:18:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:18:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="add_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:19:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:19:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:19:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:19:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="sub_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:20:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:20:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:20:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:20:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="mul_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:21:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:21:2:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:21:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:21:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="add_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:22:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:22:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:22:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:22:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="sub_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:23:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:23:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:23:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:23:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="mul_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:24:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:24:2:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:24:2:1:2"/>
+</Binary_Exp>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:24:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="add_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:25:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:25:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:25:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:25:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="sub_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:26:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:26:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:26:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:26:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="mul_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:27:1"/>
+<Binary_Exp typref="6" op="-->">
+<Binary_Exp typref="7" op="*s">
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:27:2:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:27:2:1:2"/>
+</Binary_Exp>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:27:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_sll_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:2:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:3:1:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:28:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_sll_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:2:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:3:1:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:29:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_sll_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:2:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:3:1:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:30:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_srl_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:2:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="/i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:3:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:3:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:31:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_srl_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:2:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="/i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:3:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:3:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:32:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="bitwise_srl_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:2:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="/i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:3:1:1"/>
+<Binary_Exp typref="1" op="**i">
+<Integer_Literal value="2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:3:1:2:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:33:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="add_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:2:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:2:1:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:3:1:1:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:34:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="sub_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:2:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:2:1:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="-i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:1:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:1:2"/>
+</Binary_Exp>
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:35:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="mul_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="x1" typref="1"/>
+<Id value="x2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:2:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:2:1:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="x1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:3:1:1:1"/>
+<Id value="x2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT32" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:36:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="add_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:2:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:2:1:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:3:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:37:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="sub_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:2:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:2:1:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="-i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:1:2"/>
+</Binary_Exp>
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:38:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="mul_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:2:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:2:1:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:3:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT16" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:39:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="add_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:2:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:3:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:40:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="sub_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:2:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="+i">
+<Binary_Exp typref="1" op="-i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:1:2"/>
+</Binary_Exp>
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:41:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="mul_uint8" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:1"/>
+<Quantified_Exp typref="5" type="%">
+<Variables>
+<Id value="y1" typref="1"/>
+<Id value="y2" typref="1"/>
+</Variables>
+<Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:2:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:2:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:2:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:2:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Pred>
+<Body>
+<Binary_Exp typref="1" op="mod">
+<Binary_Exp typref="1" op="*i">
+<Id value="y1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:3:1:1:1"/>
+<Id value="y2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:3:1:1:2"/>
+</Binary_Exp>
+<Binary_Exp typref="1" op="+i">
+<Id value="MAX_UINT8" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:3:1:2:1"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:42:2:3:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+</Body>
+</Quantified_Exp>
+</Exp_Comparison>
+<Quantified_Pred type="!">
+<Variables>
+<Id value="ui1" typref="1"/>
+<Id value="ui2" typref="1"/>
+</Variables>
+<Body>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="ui1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:1:1:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:1:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="&lt;=i">
+<Binary_Exp typref="1" op="(">
+<Id value="bitwise_and_uint16" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:1"/>
+<Binary_Exp typref="9" op="|->">
+<Id value="ui1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:2:1"/>
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:2:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:43:2:1:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+<Quantified_Pred type="!">
+<Variables>
+<Id value="ui1" typref="1"/>
+<Id value="ui2" typref="1"/>
+</Variables>
+<Body>
+<Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id value="ui1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:1:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="&lt;=i">
+<Binary_Exp typref="1" op="(">
+<Id value="bitwise_and_uint32" typref="5" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:1"/>
+<Binary_Exp typref="9" op="|->">
+<Id value="ui1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:2:1"/>
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:2:1:2:2"/>
+</Binary_Exp>
+</Binary_Exp>
+<Id value="ui2" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_operators.bxml:1:3:1:44:2:1:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Body>
+</Quantified_Pred>
+<Exp_Comparison op="=">
+<Id value="TIME" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_STATE" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:2:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:3:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:3:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:4:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:5:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:5:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:6:1"/>
+<Id value="IO_STATE" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:6:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:7:1"/>
+<Id value="IO_STATE" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\io_constants.bxml:1:4:1:7:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="delta_t" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:1:2"/>
+</Exp_Comparison>
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Id value="delta_t" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:2:1:1"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:2:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+<Exp_Comparison op=":">
+<Id value="delta_t1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:3:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:3:2"/>
+</Exp_Comparison>
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Id value="delta_t1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:4:1:1"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\user_ctx.bxml:1:3:1:4:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+</Define>
+<Define name="seext" hash="742681342">
+<Exp_Comparison op=":">
+<Id value="ms_tick" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:3:1:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:3:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="Obstacle" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:3:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:3:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="Convert_Bool" typref="2" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:1:1"/>
+<Binary_Exp typref="10" op="+->">
+<Id value="BOOL" typref="11" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:1:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="Convert_Bool" typref="2" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:2:1"/>
+<Binary_Exp typref="10" op="+->">
+<Id value="BOOL" typref="11" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:2:2:1"/>
+<Id value="uint16_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:2:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="Convert_Bool" typref="2" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:3:1"/>
+<Binary_Exp typref="10" op="+->">
+<Id value="BOOL" typref="11" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:3:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\g_types.bxml:1:5:1:3:2:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define name="mchcst" hash="0"/>
+<Define name="aprp" hash="0"/>
+<Define name="abs" hash="182114177">
+<Exp_Comparison op=":">
+<Id value="LinearVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:1:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:2:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:2:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:3:1"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:3:1:3:2"/>
+</Exp_Comparison>
+</Define>
+<Define name="inv" hash="1529661778">
+<Exp_Comparison op="=">
+<Id value="LinearVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+<Id suffix="1" value="LinearVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="AngularVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id suffix="1" value="AngularVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id suffix="1" value="LinearVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:1:1,"/>
+<Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:2:1,"/>
+<Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:2:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id suffix="1" value="prevObstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:3,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:3:2"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id suffix="1" value="tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1,"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Define>
+<Define name="ass" hash="0"/>
+<Define name="sets" hash="0"/>
+<Define name="imlprp" hash="0"/>
+<Define name="imprp" hash="0"/>
+<Define name="imext" hash="0"/>
+<Proof_Obligation goalHash="893269750">
+<Tag>Initialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:5:1:4:2:1"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation goalHash="3137860945">
+<Tag>Operation_user_logic</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Id suffix="1" value="obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:2:1:1,"/>
+<Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Id suffix="1" value="ms_tick_cycle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:2:1:1,"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Id suffix="1" value="s_tick_cycle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:2:1:1,"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op="=">
+<Id value="Obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:3,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:8:2:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:7:1:1"/>
+<Id value="IO_OFF" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:1:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:1:1:1,"/>
+<Id value="IO_ON" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:1:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="6">
+<Exp_Comparison op="=">
+<Id value="Obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:3,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:8:2:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:7:1:1"/>
+<Id value="IO_ON" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:1:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="7">
+<Exp_Comparison op="=">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:1:1:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:1:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="8">
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:1:1:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:1:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+</Local_Hyp>
+<Local_Hyp num="9">
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Id value="Obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:3,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:8:2:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:7:1:1"/>
+<Id value="IO_ON" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:1:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+</Local_Hyp>
+<Local_Hyp num="10">
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:1:1:1,"/>
+<Id value="IO_ON" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:1:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+</Local_Hyp>
+<Local_Hyp num="11">
+<Unary_Pred op="not">
+<Exp_Comparison op="=">
+<Id value="Obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:3,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:8:2:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\inputs.bxml:1:5:2:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:7:1:1"/>
+<Id value="IO_OFF" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:1:1:2"/>
+</Exp_Comparison>
+</Unary_Pred>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:2:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:2:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Nary_Pred op="or">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Nary_Pred op="or">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id suffix="1" value="LinearVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id suffix="1" value="LinearVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id suffix="1" value="LinearVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id suffix="1" value="LinearVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Ref_Hyp num="11"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Goal>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:2:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:2:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:2:1:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Nary_Pred op="or">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Nary_Pred op="or">
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:1:2:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:2:1:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:9:2:1:2:1"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:11:2:1:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Quantified_Pred type="#">
+<Variables>
+<Id suffix="1" value="COUNTER" typref="1"/>
+</Variables>
+<Body>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:1,"/>
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:2:2:2"/>
+</Exp_Comparison>
+</Binary_Pred>
+<Binary_Pred op="&lt;=>">
+<Exp_Comparison op="=">
+<Id suffix="1" value="COUNTER" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:1,"/>
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:10:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id suffix="1" value="AngularVel" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2"/>
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:2:2:2"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Body>
+</Quantified_Pred>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="0" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:5:1:2"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal value="1" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:3,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:1,,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:6:1:2"/>
+<Id value="uint8_t" typref="0" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:3:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:4,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:1," op="mod">
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Binary_Exp>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:4:1:4:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Goal>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="9"/>
+<Goal>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Refinement is correct</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op="=">
+<Id value="IO_OFF" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:1:2,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:1,,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:3:2,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:12:2:1:2:1:2:1"/>
+<Id value="IO_ON" typref="1" tag="C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\logic.bxml:1:5:1:1:1:2:1:4:2:2:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation goalHash="3163691833">
+<Tag>WellDefinedness_user_logic</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Id suffix="1" value="obstacle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:2:1:1,"/>
+<Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:1:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Id suffix="1" value="ms_tick_cycle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:2:1:1,"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:2:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Id suffix="1" value="s_tick_cycle" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:1:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:2:1:1,"/>
+<Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:3:2:1:2"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Operation is well defined</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Goal>
+<Exp_Comparison op="/=">
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+<Integer_Literal value="0" typref="1"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Operation is well defined</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Goal>
+<Exp_Comparison op="&lt;=i">
+<Integer_Literal value="0" typref="1"/>
+<Binary_Exp typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:1" op="/i">
+<Id value="ms_tick" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:1,C:/CSSP/CSSP_WORKSPACE/xbotMars/bdp\lchip_interface.bxml:1:5:6:3:1:2:1,C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:4:1:1"/>
+<Id value="delta_t1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:5:2:1:2"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0)"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Operation is well defined</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Goal>
+<Exp_Comparison op="&lt;=i">
+<Integer_Literal value="1" typref="1"/>
+<Integer_Literal value="2" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\xbotMars\bdp\logic_i.bxml:1:6:1:1:1:2:1:6:2:1:2"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="0">
+<Unary_Exp op="POW">
+<Id value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="1">
+<Id value="INTEGER"/>
+</Type>
+<Type id="2">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="4">
+<Id value="BOOL"/>
+</Type>
+<Type id="5">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="6">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="7">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="8">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="9">
+<Binary_Exp op="*">
+<Id value="INTEGER"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="10">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="11">
+<Unary_Exp op="POW">
+<Id value="BOOL"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

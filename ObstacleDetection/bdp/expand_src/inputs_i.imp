@@ -1,0 +1,30 @@
+﻿/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    inputs_i
+REFINES
+    inputs
+SEES
+    g_types ,
+    io_constants ,
+    user_configuration ,
+    lchip_interface
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    i_ObstacleI_obstacle
+INVARIANT
+    i_ObstacleI_obstacle : uint8_t
+INITIALISATION
+    i_ObstacleI_obstacle := IO_OFF
+OPERATIONS
+    read_inputs =
+    BEGIN
+        i_ObstacleI_obstacle <-- read_global_input ( 0 )
+    END ;
+
+    po <-- get_i_ObstacleI_obstacle =
+        BEGIN
+                po := i_ObstacleI_obstacle
+        END
+END

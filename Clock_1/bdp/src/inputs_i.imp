@@ -1,0 +1,27 @@
+﻿/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    inputs_i
+REFINES
+    inputs
+SEES
+    g_types ,
+    io_constants ,
+    lchip_configuration ,
+    lchip_interface
+
+    // pragma SAFETY_VARS
+//CONCRETE_VARIABLES
+
+//INVARIANT
+
+//INITIALISATION
+
+//OPERATIONS
+//    read_inputs =
+ //   BEGIN
+
+   // END;
+
+
+END

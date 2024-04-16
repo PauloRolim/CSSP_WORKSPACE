@@ -1,0 +1,394 @@
+<Machine name='user_configuration_i' type='implementation'>
+<Abstraction>user_configuration</Abstraction>
+<Sees>
+<Attr>
+<Pos l='7' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='8' c='5' s='7'/>
+</Attr>
+<Name>g_types</Name>
+</Referenced_Machine>
+<Referenced_Machine>
+<Attr>
+<Pos l='9' c='5' s='19'/>
+</Attr>
+<Name>lchip_configuration</Name>
+</Referenced_Machine>
+</Sees>
+<Values>
+<Attr>
+<Pos l='12' c='1' s='6'/>
+</Attr>
+<Valuation ident='NB_MODULES' typref='2701647786'>
+<Attr>
+<Pos l='13' c='5' s='10'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='13' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='NB_INPUTS' typref='2701647786'>
+<Attr>
+<Pos l='14' c='5' s='9'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='14' c='17' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='NB_OUTPUTS' typref='2701647786'>
+<Attr>
+<Pos l='15' c='5' s='10'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='15' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='module_secu_ids' typref='103245008'>
+<Attr>
+<Pos l='17' c='5' s='15'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='17' c='23' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='18' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='18' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4042322160' typref='2701647786'>
+<Attr>
+<Pos l='18' c='15' s='10'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='module_nb_inputs' typref='103245008'>
+<Attr>
+<Pos l='21' c='5' s='16'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='21' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='22' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='22' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='22' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='module_nb_outputs' typref='103245008'>
+<Attr>
+<Pos l='25' c='5' s='17'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='25' c='25' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='26' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='26' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='26' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='input_module_ids' typref='103245008'>
+<Attr>
+<Pos l='29' c='5' s='16'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='29' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='30' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='30' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='30' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='31' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='31' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='31' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='32' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='32' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='32' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='input_local_ids' typref='103245008'>
+<Attr>
+<Pos l='35' c='5' s='15'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='35' c='23' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='36' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='36' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='36' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='37' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='37' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='37' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='38' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='38' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='2701647786'>
+<Attr>
+<Pos l='38' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='output_module_ids' typref='103245008'>
+<Attr>
+<Pos l='41' c='5' s='17'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='41' c='25' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='42' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='42' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='42' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='43' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='43' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='43' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+<Valuation ident='output_local_ids' typref='103245008'>
+<Attr>
+<Pos l='46' c='5' s='16'/>
+<B0Type>
+<Binary_Exp op='--&gt;'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+<Nary_Exp op='{' typref='103245008'>
+<Attr>
+<Pos l='46' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='47' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='47' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='47' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='3672872563'>
+<Attr>
+<Pos l='48' c='11' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='48' c='9' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='48' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Valuation>
+</Values>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='103245008'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='3672872563'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

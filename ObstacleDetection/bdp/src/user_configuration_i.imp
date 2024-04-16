@@ -1,0 +1,89 @@
+﻿/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    user_configuration_i
+REFINES
+    user_configuration
+SEES
+    g_types ,
+    lchip_configuration
+
+    // pragma CONSTANTS
+VALUES
+    NB_MODULES = 1 ;
+    NB_INPUTS = 1 ;
+    NB_OUTPUTS = 8 ;
+
+    module_secu_ids = {
+                0 |-> 986880    } ;
+
+    module_nb_inputs = {
+                0 |-> 20 } ;
+
+    module_nb_outputs = {
+                0 |-> 8 } ;
+
+    input_module_ids = {
+                0 |-> 0 ,
+                1 |-> 255 ,
+                2 |-> 255 ,
+                3 |-> 255 ,
+                4 |-> 255 ,
+                5 |-> 255 ,
+                6 |-> 255 ,
+                7 |-> 255 ,
+                8 |-> 255 ,
+                9 |-> 255 ,
+                10 |-> 255 ,
+                11 |-> 255 ,
+                12 |-> 255 ,
+                13 |-> 255 ,
+                14 |-> 255 ,
+                15 |-> 255 ,
+                16 |-> 255 ,
+                17 |-> 255 ,
+                18 |-> 255 ,
+                19 |-> 255 } ;
+
+    input_local_ids = {
+                0 |-> 0 ,
+                1 |-> 255 ,
+                2 |-> 255 ,
+                3 |-> 255 ,
+                4 |-> 255 ,
+                5 |-> 255 ,
+                6 |-> 255 ,
+                7 |-> 255 ,
+                8 |-> 255 ,
+                9 |-> 255 ,
+                10 |-> 255 ,
+                11 |-> 255 ,
+                12 |-> 255 ,
+                13 |-> 255 ,
+                14 |-> 255 ,
+                15 |-> 255 ,
+                16 |-> 255 ,
+                17 |-> 255 ,
+                18 |-> 255 ,
+                19 |-> 255 } ;
+
+    output_module_ids = {
+                0 |-> 0 ,
+                1 |-> 0 ,
+                2 |-> 0 ,
+                3 |-> 0 ,
+                4 |-> 0 ,
+                5 |-> 0 ,
+                6 |-> 0 ,
+                7 |-> 0 } ;
+
+    output_local_ids = {
+                0 |-> 0 ,
+                1 |-> 1 ,
+                2 |-> 2 ,
+                3 |-> 3 ,
+                4 |-> 4 ,
+                5 |-> 5 ,
+                6 |-> 6 ,
+                7 |-> 7 }
+END

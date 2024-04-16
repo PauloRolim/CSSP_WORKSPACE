@@ -1,0 +1,20 @@
+THEORY ProofList
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((o_MovementI_move) : (uint8_t)) & ((o_MovementI_move_lv_0) : (uint8_t)) & ((o_MovementI_move_lv_1) : (uint8_t)) & ((o_MovementI_move_lv_2) : (uint8_t)) & ((o_MovementI_move_av_0) : (uint8_t)) & ((o_MovementI_move_av_1) : (uint8_t)) & ((o_MovementI_move_av_2) : (uint8_t)) & ((o_MovementI_stop) : (uint8_t));
+btrue;
+((o_MovementI_stop$1) : (uint8_t));
+((o_MovementI_move_av_2$1) : (uint8_t));
+((o_MovementI_move_av_1$1) : (uint8_t));
+((o_MovementI_move_av_0$1) : (uint8_t));
+((o_MovementI_move_lv_2$1) : (uint8_t));
+((o_MovementI_move_lv_1$1) : (uint8_t));
+((o_MovementI_move_lv_0$1) : (uint8_t));
+((o_MovementI_move$1) : (uint8_t));
+((po) : (uint8_t))
+END
+&
+THEORY EnumerateX
+END

@@ -1,0 +1,13 @@
+IMPLEMENTATION
+    user_ctx_i
+REFINES
+    user_ctx
+
+    // pragma CONSTANTS
+SEES
+    g_types
+    
+VALUES
+    delta_t = 1000;
+    delta_t1 = 2500
+END
