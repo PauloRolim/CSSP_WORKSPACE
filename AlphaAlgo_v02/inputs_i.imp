@@ -1,0 +1,201 @@
+/* WARNING : LCHIP system source file, do not edit */
+
+IMPLEMENTATION
+    inputs_i
+REFINES
+    inputs
+SEES
+    g_types,
+    io_constants,
+    lchip_configuration,
+    lchip_interface
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    I1,
+	I2,
+	I3,
+	I4,
+	I5,
+	I6,
+	I7,
+	I8,
+	I9,
+	I10,
+	I11,
+	I12,
+	I13,
+	I14,
+	I15,
+	I16,
+	I17,
+	I18,
+	I19,
+	I20
+INVARIANT
+    I1 : uint8_t &
+	I2 : uint8_t &
+	I3 : uint8_t &
+	I4 : uint8_t &
+	I5 : uint8_t &
+	I6 : uint8_t &
+	I7 : uint8_t &
+	I8 : uint8_t &
+	I9 : uint8_t &
+	I10 : uint8_t &
+	I11 : uint8_t &
+	I12 : uint8_t &
+	I13 : uint8_t &
+	I14 : uint8_t &
+	I15 : uint8_t &
+	I16 : uint8_t &
+	I17 : uint8_t &
+	I18 : uint8_t &
+	I19 : uint8_t &
+	I20 : uint8_t
+INITIALISATION
+    I1 := IO_OFF;
+	I2 := IO_OFF;
+	I3 := IO_OFF;
+	I4 := IO_OFF;
+	I5 := IO_OFF;
+	I6 := IO_OFF;
+	I7 := IO_OFF;
+	I8 := IO_OFF;
+	I9 := IO_OFF;
+	I10 := IO_OFF;
+	I11 := IO_OFF;
+	I12 := IO_OFF;
+	I13 := IO_OFF;
+	I14 := IO_OFF;
+	I15 := IO_OFF;
+	I16 := IO_OFF;
+	I17 := IO_OFF;
+	I18 := IO_OFF;
+	I19 := IO_OFF;
+	I20 := IO_OFF
+OPERATIONS
+    read_inputs =
+    BEGIN
+        I1 <-- read_global_input(0);
+		I2 <-- read_global_input(1);
+		I3 <-- read_global_input(2);
+		I4 <-- read_global_input(3);
+		I5 <-- read_global_input(4);
+		I6 <-- read_global_input(5);
+		I7 <-- read_global_input(6);
+		I8 <-- read_global_input(7);
+		I9 <-- read_global_input(8);
+		I10 <-- read_global_input(9);
+		I11 <-- read_global_input(10);
+		I12 <-- read_global_input(11);
+		I13 <-- read_global_input(12);
+		I14 <-- read_global_input(13);
+		I15 <-- read_global_input(14);
+		I16 <-- read_global_input(15);
+		I17 <-- read_global_input(16);
+		I18 <-- read_global_input(17);
+		I19 <-- read_global_input(18);
+		I20 <-- read_global_input(19)
+    END;
+
+    po <-- get_I1 =
+	BEGIN
+		po := I1
+	END;
+
+	po <-- get_I2 =
+	BEGIN
+		po := I2
+	END;
+
+	po <-- get_I3 =
+	BEGIN
+		po := I3
+	END;
+
+	po <-- get_I4 =
+	BEGIN
+		po := I4
+	END;
+
+	po <-- get_I5 =
+	BEGIN
+		po := I5
+	END;
+
+	po <-- get_I6 =
+	BEGIN
+		po := I6
+	END;
+
+	po <-- get_I7 =
+	BEGIN
+		po := I7
+	END;
+
+	po <-- get_I8 =
+	BEGIN
+		po := I8
+	END;
+
+	po <-- get_I9 =
+	BEGIN
+		po := I9
+	END;
+
+	po <-- get_I10 =
+	BEGIN
+		po := I10
+	END;
+
+	po <-- get_I11 =
+	BEGIN
+		po := I11
+	END;
+
+	po <-- get_I12 =
+	BEGIN
+		po := I12
+	END;
+
+	po <-- get_I13 =
+	BEGIN
+		po := I13
+	END;
+
+	po <-- get_I14 =
+	BEGIN
+		po := I14
+	END;
+
+	po <-- get_I15 =
+	BEGIN
+		po := I15
+	END;
+
+	po <-- get_I16 =
+	BEGIN
+		po := I16
+	END;
+
+	po <-- get_I17 =
+	BEGIN
+		po := I17
+	END;
+
+	po <-- get_I18 =
+	BEGIN
+		po := I18
+	END;
+
+	po <-- get_I19 =
+	BEGIN
+		po := I19
+	END;
+
+	po <-- get_I20 =
+	BEGIN
+		po := I20
+	END
+END

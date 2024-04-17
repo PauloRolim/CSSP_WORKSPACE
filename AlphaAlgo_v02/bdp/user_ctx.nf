@@ -1,0 +1,196 @@
+﻿Normalised(
+THEORY MagicNumberX IS
+  MagicNumber(Machine(user_ctx))==(3.5)
+END
+&
+THEORY UpperLevelX IS
+  First_Level(Machine(user_ctx))==(Machine(user_ctx));
+  Level(Machine(user_ctx))==(0)
+END
+&
+THEORY LoadedStructureX IS
+  Machine(user_ctx)
+END
+&
+THEORY ListSeesX IS
+  List_Sees(Machine(user_ctx))==(g_types)
+END
+&
+THEORY ListUsesX IS
+  List_Uses(Machine(user_ctx))==(?)
+END
+&
+THEORY ListIncludesX IS
+  Inherited_List_Includes(Machine(user_ctx))==(?);
+  List_Includes(Machine(user_ctx))==(?)
+END
+&
+THEORY ListPromotesX IS
+  List_Promotes(Machine(user_ctx))==(?)
+END
+&
+THEORY ListExtendsX IS
+  List_Extends(Machine(user_ctx))==(?)
+END
+&
+THEORY ListVariablesX IS
+  External_Context_List_Variables(Machine(user_ctx))==(?);
+  Context_List_Variables(Machine(user_ctx))==(?);
+  Abstract_List_Variables(Machine(user_ctx))==(?);
+  Local_List_Variables(Machine(user_ctx))==(?);
+  List_Variables(Machine(user_ctx))==(?);
+  External_List_Variables(Machine(user_ctx))==(?)
+END
+&
+THEORY ListVisibleVariablesX IS
+  Inherited_List_VisibleVariables(Machine(user_ctx))==(?);
+  Abstract_List_VisibleVariables(Machine(user_ctx))==(?);
+  External_List_VisibleVariables(Machine(user_ctx))==(?);
+  Expanded_List_VisibleVariables(Machine(user_ctx))==(?);
+  List_VisibleVariables(Machine(user_ctx))==(?);
+  Internal_List_VisibleVariables(Machine(user_ctx))==(?)
+END
+&
+THEORY ListInvariantX IS
+  Gluing_Seen_List_Invariant(Machine(user_ctx))==(btrue);
+  Gluing_List_Invariant(Machine(user_ctx))==(btrue);
+  Expanded_List_Invariant(Machine(user_ctx))==(btrue);
+  Abstract_List_Invariant(Machine(user_ctx))==(btrue);
+  Context_List_Invariant(Machine(user_ctx))==(btrue);
+  List_Invariant(Machine(user_ctx))==(btrue)
+END
+&
+THEORY ListAssertionsX IS
+  Expanded_List_Assertions(Machine(user_ctx))==(btrue);
+  Abstract_List_Assertions(Machine(user_ctx))==(btrue);
+  Context_List_Assertions(Machine(user_ctx))==(Convert_Bool: BOOL +-> uint8_t & Convert_Bool: BOOL +-> uint16_t & Convert_Bool: BOOL +-> uint32_t);
+  List_Assertions(Machine(user_ctx))==(btrue)
+END
+&
+THEORY ListCoverageX IS
+  List_Coverage(Machine(user_ctx))==(btrue)
+END
+&
+THEORY ListExclusivityX IS
+  List_Exclusivity(Machine(user_ctx))==(btrue)
+END
+&
+THEORY ListInitialisationX IS
+  Expanded_List_Initialisation(Machine(user_ctx))==(skip);
+  Context_List_Initialisation(Machine(user_ctx))==(skip);
+  List_Initialisation(Machine(user_ctx))==(skip)
+END
+&
+THEORY ListParametersX IS
+  List_Parameters(Machine(user_ctx))==(?)
+END
+&
+THEORY ListInstanciatedParametersX IS
+  List_Instanciated_Parameters(Machine(user_ctx),Machine(g_types))==(?)
+END
+&
+THEORY ListConstraintsX IS
+  List_Context_Constraints(Machine(user_ctx))==(btrue);
+  List_Constraints(Machine(user_ctx))==(btrue)
+END
+&
+THEORY ListOperationsX IS
+  Internal_List_Operations(Machine(user_ctx))==(?);
+  List_Operations(Machine(user_ctx))==(?)
+END
+&
+THEORY ListInputX END
+&
+THEORY ListOutputX END
+&
+THEORY ListHeaderX END
+&
+THEORY ListOperationGuardX END
+&
+THEORY ListPreconditionX END
+&
+THEORY ListSubstitutionX END
+&
+THEORY ListConstantsX IS
+  List_Valuable_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi);
+  Inherited_List_Constants(Machine(user_ctx))==(?);
+  List_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi)
+END
+&
+THEORY ListSetsX IS
+  Set_Definition(Machine(user_ctx),STATE)==({INIT,EXEC_1,EXEC_2});
+  Context_List_Enumerated(Machine(user_ctx))==(?);
+  Context_List_Defered(Machine(user_ctx))==(?);
+  Context_List_Sets(Machine(user_ctx))==(?);
+  List_Valuable_Sets(Machine(user_ctx))==(?);
+  Inherited_List_Enumerated(Machine(user_ctx))==(?);
+  Inherited_List_Defered(Machine(user_ctx))==(?);
+  Inherited_List_Sets(Machine(user_ctx))==(?);
+  List_Enumerated(Machine(user_ctx))==(STATE);
+  List_Defered(Machine(user_ctx))==(?);
+  List_Sets(Machine(user_ctx))==(STATE)
+END
+&
+THEORY ListHiddenConstantsX IS
+  Abstract_List_HiddenConstants(Machine(user_ctx))==(?);
+  Expanded_List_HiddenConstants(Machine(user_ctx))==(?);
+  List_HiddenConstants(Machine(user_ctx))==(?);
+  External_List_HiddenConstants(Machine(user_ctx))==(?)
+END
+&
+THEORY ListPropertiesX IS
+  Abstract_List_Properties(Machine(user_ctx))==(btrue);
+  Context_List_Properties(Machine(user_ctx))==(uint32_t = 0..4294967295 & uint16_t = 0..65535 & uint8_t = 0..255 & STRUE: uint8_t & SFALSE: uint8_t & MAX_UINT32: uint32_t & MAX_UINT16: uint16_t & MAX_UINT8: uint8_t & STRUE: 0..MAX_UINT8 & SFALSE: 0..MAX_UINT8 & STRUE/=SFALSE & SBOOL = {STRUE,SFALSE} & STRUE<=2 & SFALSE<=2 & MAX_UINT32 = 4294967295 & MAX_UINT16 = 65535 & MAX_UINT8 = 255 & Convert_Bool = {TRUE|->STRUE,FALSE|->SFALSE});
+  Inherited_List_Properties(Machine(user_ctx))==(btrue);
+  List_Properties(Machine(user_ctx))==(cycle_unit: uint32_t & SimSMovement_cycle_def: uint32_t & av: uint32_t & lv: uint32_t & pi: uint32_t & av: 1..7 & lv: 1..7 & STATE: FIN(INTEGER) & not(STATE = {}))
+END
+&
+THEORY ListSeenInfoX IS
+  Seen_Internal_List_Operations(Machine(user_ctx),Machine(g_types))==(?);
+  Seen_Context_List_Enumerated(Machine(user_ctx))==(?);
+  Seen_Context_List_Invariant(Machine(user_ctx))==(btrue);
+  Seen_Context_List_Assertions(Machine(user_ctx))==(btrue);
+  Seen_Context_List_Properties(Machine(user_ctx))==(btrue);
+  Seen_List_Constraints(Machine(user_ctx))==(btrue);
+  Seen_List_Operations(Machine(user_ctx),Machine(g_types))==(?);
+  Seen_Expanded_List_Invariant(Machine(user_ctx),Machine(g_types))==(btrue)
+END
+&
+THEORY ListANYVarX END
+&
+THEORY ListOfIdsX IS
+  List_Of_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi,STATE,INIT,EXEC_1,EXEC_2 | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | user_ctx);
+  List_Of_HiddenCst_Ids(Machine(user_ctx)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi);
+  List_Of_VisibleVar_Ids(Machine(user_ctx)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(user_ctx)) == (?: ?);
+  List_Of_Ids(Machine(g_types)) == (uint32_t,uint16_t,uint8_t,STRUE,SFALSE,MAX_UINT32,MAX_UINT16,MAX_UINT8 | ? | ? | ? | ? | ? | ? | ? | g_types);
+  List_Of_HiddenCst_Ids(Machine(g_types)) == (SBOOL,Convert_Bool | ?);
+  List_Of_VisibleCst_Ids(Machine(g_types)) == (uint32_t,uint16_t,uint8_t,STRUE,SFALSE,MAX_UINT32,MAX_UINT16,MAX_UINT8);
+  List_Of_VisibleVar_Ids(Machine(g_types)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(g_types)) == (?: ?)
+END
+&
+THEORY SetsEnvX IS
+  Sets(Machine(user_ctx)) == (Type(STATE) == Cst(SetOf(etype(STATE,0,2))))
+END
+&
+THEORY ConstantsEnvX IS
+  Constants(Machine(user_ctx)) == (Type(INIT) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?)))
+END
+&
+THEORY TCIntRdX IS
+  bxml_with_b0_typing == OK;
+  predB0 == OK;
+  extended_sees == KO;
+  B0check_tab == KO;
+  local_op == OK;
+  abstract_constants_visible_in_values == KO;
+  project_type == SOFTWARE_TYPE;
+  event_b_deadlockfreeness == KO;
+  variant_clause_mandatory == KO;
+  event_b_coverage == KO;
+  event_b_exclusivity == KO;
+  genFeasibilityPO == KO
+END
+)

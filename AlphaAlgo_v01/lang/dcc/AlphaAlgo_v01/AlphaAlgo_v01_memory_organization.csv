@@ -1,4 +1,4 @@
-Generated on Mon Apr 15 10:30:28 2024
+Generated on Tue Apr 16 15:32:07 2024
 
 Table des sections
 Bloc;Nom;Debut;Debut KSEG0;Debut KSEG1;Fin;Taille (octets);Utilise (octets);Provenance;Description;Commentaire
@@ -32,9 +32,9 @@ Fin;;;;;0x1d01243f;24
 Debut;;0x1d01b4ac;0x9d01b4ac;0xbd01b4ac
 4;.NR_S_FN;0x1d01b4ac;0x9d01b4ac;0xbd01b4ac;0x1d01b4cb;32;32;FLASH;Non Replicated shared functions
 4;.R_CST;0x1d01b4cc;0x9d01b4cc;0xbd01b4cc;0x1d01b537;108;100;FLASH;Replicas constants
-4;.R2_FN;0x1d01b538;0x9d01b538;0xbd01b538;0x1d01c46f;3896;3896;FLASH;Replica 2 functions
-4;.R1_FN;0x1d01c470;0x9d01c470;0xbd01c470;0x1d01f83f;13264;5072;FLASH;Replica 1 functions
-4;.FREE_FLASH_SPACE;0x1d01f840;0x9d01f840;0xbd01f840;0x1d07dfff;387008;0;FLASH;Empty area
+4;.R2_FN;0x1d01b538;0x9d01b538;0xbd01b538;0x1d01c4d7;4000;3996;FLASH;Replica 2 functions
+4;.R1_FN;0x1d01c4d8;0x9d01c4d8;0xbd01c4d8;0x1d01f92b;13396;5204;FLASH;Replica 1 functions
+4;.FREE_FLASH_SPACE;0x1d01f92c;0x9d01f92c;0xbd01f92c;0x1d07dfff;386772;0;FLASH;Empty area
 Fin;;;;;0x1d07dfff;404308
 
 Table des symboles
@@ -243,113 +243,113 @@ Debut;;0x1d01b538;0x9d01b538;0xbd01b538
 .R2_FN;L0^A;0x1d01bc4c;0x9d01bc4c;0xbd01bc4c;0x1d01bc4b;0;function;[C] elf file;oui
 .R2_FN;.LBB4;0x1d01bcb0;0x9d01bcb0;0xbd01bcb0;0x1d01bcaf;0;function;[C] elf file;oui
 .R2_FN;.LBE4;0x1d01bdfc;0x9d01bdfc;0xbd01bdfc;0x1d01bdfb;0;function;[C] elf file;oui
-.R2_FN;communication;0x1d01be14;0x9d01be14;0xbd01be14;0x1d01beef;220;function;[C] elf file;oui
+.R2_FN;communication;0x1d01be14;0x9d01be14;0xbd01be14;0x1d01beff;236;function;[C] elf file;oui
 .R2_FN;.LFB7;0x1d01be14;0x9d01be14;0xbd01be14;0x1d01be13;0;function;[C] elf file;oui
 .R2_FN;.LFE6;0x1d01be14;0x9d01be14;0xbd01be14;0x1d01be13;0;function;[C] elf file;oui
 .R2_FN;L0^A;0x1d01be14;0x9d01be14;0xbd01be14;0x1d01be13;0;function;[C] elf file;oui
-.R2_FN;user_logic;0x1d01bef0;0x9d01bef0;0xbd01bef0;0x1d01bfcf;224;function;[C] elf file;oui
-.R2_FN;.LFB8;0x1d01bef0;0x9d01bef0;0xbd01bef0;0x1d01beef;0;function;[C] elf file;oui
-.R2_FN;.LFE7;0x1d01bef0;0x9d01bef0;0xbd01bef0;0x1d01beef;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01bef0;0x9d01bef0;0xbd01bef0;0x1d01beef;0;function;[C] elf file;oui
-.R2_FN;.LBB5;0x1d01bf54;0x9d01bf54;0xbd01bf54;0x1d01bf53;0;function;[C] elf file;oui
-.R2_FN;.LBE5;0x1d01bfb8;0x9d01bfb8;0xbd01bfb8;0x1d01bfb7;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move;0x1d01bfd0;0x9d01bfd0;0xbd01bfd0;0x1d01c007;56;function;[C] elf file;oui
-.R2_FN;.LFB9;0x1d01bfd0;0x9d01bfd0;0xbd01bfd0;0x1d01bfcf;0;function;[C] elf file;oui
-.R2_FN;.LFE8;0x1d01bfd0;0x9d01bfd0;0xbd01bfd0;0x1d01bfcf;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01bfd0;0x9d01bfd0;0xbd01bfd0;0x1d01bfcf;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_lv_1;0x1d01c008;0x9d01c008;0xbd01c008;0x1d01c03f;56;function;[C] elf file;oui
-.R2_FN;.LFB10;0x1d01c008;0x9d01c008;0xbd01c008;0x1d01c007;0;function;[C] elf file;oui
-.R2_FN;.LFE9;0x1d01c008;0x9d01c008;0xbd01c008;0x1d01c007;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c008;0x9d01c008;0xbd01c008;0x1d01c007;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_lv_2;0x1d01c040;0x9d01c040;0xbd01c040;0x1d01c077;56;function;[C] elf file;oui
-.R2_FN;.LFB11;0x1d01c040;0x9d01c040;0xbd01c040;0x1d01c03f;0;function;[C] elf file;oui
-.R2_FN;.LFE10;0x1d01c040;0x9d01c040;0xbd01c040;0x1d01c03f;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c040;0x9d01c040;0xbd01c040;0x1d01c03f;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_lv_3;0x1d01c078;0x9d01c078;0xbd01c078;0x1d01c0af;56;function;[C] elf file;oui
-.R2_FN;.LFB12;0x1d01c078;0x9d01c078;0xbd01c078;0x1d01c077;0;function;[C] elf file;oui
-.R2_FN;.LFE11;0x1d01c078;0x9d01c078;0xbd01c078;0x1d01c077;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c078;0x9d01c078;0xbd01c078;0x1d01c077;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_av_1;0x1d01c0b0;0x9d01c0b0;0xbd01c0b0;0x1d01c0e7;56;function;[C] elf file;oui
-.R2_FN;.LFB13;0x1d01c0b0;0x9d01c0b0;0xbd01c0b0;0x1d01c0af;0;function;[C] elf file;oui
-.R2_FN;.LFE12;0x1d01c0b0;0x9d01c0b0;0xbd01c0b0;0x1d01c0af;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c0b0;0x9d01c0b0;0xbd01c0b0;0x1d01c0af;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_av_2;0x1d01c0e8;0x9d01c0e8;0xbd01c0e8;0x1d01c11f;56;function;[C] elf file;oui
-.R2_FN;.LFB14;0x1d01c0e8;0x9d01c0e8;0xbd01c0e8;0x1d01c0e7;0;function;[C] elf file;oui
-.R2_FN;.LFE13;0x1d01c0e8;0x9d01c0e8;0xbd01c0e8;0x1d01c0e7;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c0e8;0x9d01c0e8;0xbd01c0e8;0x1d01c0e7;0;function;[C] elf file;oui
-.R2_FN;get_o_Movement_move_av_3;0x1d01c120;0x9d01c120;0xbd01c120;0x1d01c157;56;function;[C] elf file;oui
-.R2_FN;.LFB15;0x1d01c120;0x9d01c120;0xbd01c120;0x1d01c11f;0;function;[C] elf file;oui
-.R2_FN;.LFE14;0x1d01c120;0x9d01c120;0xbd01c120;0x1d01c11f;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c120;0x9d01c120;0xbd01c120;0x1d01c11f;0;function;[C] elf file;oui
-.R2_FN;get_o_Comm_question;0x1d01c158;0x9d01c158;0xbd01c158;0x1d01c18f;56;function;[C] elf file;oui
-.R2_FN;.LFB16;0x1d01c158;0x9d01c158;0xbd01c158;0x1d01c157;0;function;[C] elf file;oui
-.R2_FN;.LFE15;0x1d01c158;0x9d01c158;0xbd01c158;0x1d01c157;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c158;0x9d01c158;0xbd01c158;0x1d01c157;0;function;[C] elf file;oui
-.R2_FN;outputs__initialisation;0x1d01c190;0x9d01c190;0xbd01c190;0x1d01c1af;32;function;[C] elf file;oui
-.R2_FN;.LFB0;0x1d01c190;0x9d01c190;0xbd01c190;0x1d01c18f;0;function;[C] elf file;oui
-.R2_FN;.LFE16;0x1d01c190;0x9d01c190;0xbd01c190;0x1d01c18f;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c190;0x9d01c190;0xbd01c190;0x1d01c18f;0;function;[C] elf file;oui
-.R2_FN;write_outputs;0x1d01c1b0;0x9d01c1b0;0xbd01c1b0;0x1d01c357;424;function;[C] elf file;oui
-.R2_FN;.LFB1;0x1d01c1b0;0x9d01c1b0;0xbd01c1b0;0x1d01c1af;0;function;[C] elf file;oui
-.R2_FN;.LFE0;0x1d01c1b0;0x9d01c1b0;0xbd01c1b0;0x1d01c1af;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c1b0;0x9d01c1b0;0xbd01c1b0;0x1d01c1af;0;function;[C] elf file;oui
-.R2_FN;user_component__initialisation;0x1d01c358;0x9d01c358;0xbd01c358;0x1d01c3ab;84;function;[C] elf file;oui
-.R2_FN;.LFB0;0x1d01c358;0x9d01c358;0xbd01c358;0x1d01c357;0;function;[C] elf file;oui
-.R2_FN;.LFE1;0x1d01c358;0x9d01c358;0xbd01c358;0x1d01c357;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c358;0x9d01c358;0xbd01c358;0x1d01c357;0;function;[C] elf file;oui
-.R2_FN;user_app;0x1d01c3ac;0x9d01c3ac;0xbd01c3ac;0x1d01c3f7;76;function;[C] elf file;oui
-.R2_FN;.LFB1;0x1d01c3ac;0x9d01c3ac;0xbd01c3ac;0x1d01c3ab;0;function;[C] elf file;oui
-.R2_FN;.LFE0;0x1d01c3ac;0x9d01c3ac;0xbd01c3ac;0x1d01c3ab;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c3ac;0x9d01c3ac;0xbd01c3ac;0x1d01c3ab;0;function;[C] elf file;oui
-.R2_FN;user_consistency_error_detection_test;0x1d01c3f8;0x9d01c3f8;0xbd01c3f8;0x1d01c42f;56;function;[C] elf file;oui
-.R2_FN;.LFB2;0x1d01c3f8;0x9d01c3f8;0xbd01c3f8;0x1d01c3f7;0;function;[C] elf file;oui
-.R2_FN;.LFE1;0x1d01c3f8;0x9d01c3f8;0xbd01c3f8;0x1d01c3f7;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c3f8;0x9d01c3f8;0xbd01c3f8;0x1d01c3f7;0;function;[C] elf file;oui
-.R2_FN;user_configuration__initialisation;0x1d01c430;0x9d01c430;0xbd01c430;0x1d01c44f;32;function;[C] elf file;oui
-.R2_FN;.LFB0;0x1d01c430;0x9d01c430;0xbd01c430;0x1d01c42f;0;function;[C] elf file;oui
-.R2_FN;.LFE2;0x1d01c430;0x9d01c430;0xbd01c430;0x1d01c42f;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c430;0x9d01c430;0xbd01c430;0x1d01c42f;0;function;[C] elf file;oui
-.R2_FN;user_ctx__initialisation;0x1d01c450;0x9d01c450;0xbd01c450;0x1d01c46f;32;function;[C] elf file;oui
-.R2_FN;.LFB0;0x1d01c450;0x9d01c450;0xbd01c450;0x1d01c44f;0;function;[C] elf file;oui
-.R2_FN;.LFE0;0x1d01c450;0x9d01c450;0xbd01c450;0x1d01c44f;0;function;[C] elf file;oui
-.R2_FN;L0^A;0x1d01c450;0x9d01c450;0xbd01c450;0x1d01c44f;0;function;[C] elf file;oui
-Fin;;;;;0x1d01c46f;3896
+.R2_FN;user_logic;0x1d01bf00;0x9d01bf00;0xbd01bf00;0x1d01c033;308;function;[C] elf file;oui
+.R2_FN;.LFB8;0x1d01bf00;0x9d01bf00;0xbd01bf00;0x1d01beff;0;function;[C] elf file;oui
+.R2_FN;.LFE7;0x1d01bf00;0x9d01bf00;0xbd01bf00;0x1d01beff;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01bf00;0x9d01bf00;0xbd01bf00;0x1d01beff;0;function;[C] elf file;oui
+.R2_FN;.LBB5;0x1d01bf18;0x9d01bf18;0xbd01bf18;0x1d01bf17;0;function;[C] elf file;oui
+.R2_FN;.LBE5;0x1d01c01c;0x9d01c01c;0xbd01c01c;0x1d01c01b;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move;0x1d01c034;0x9d01c034;0xbd01c034;0x1d01c06b;56;function;[C] elf file;oui
+.R2_FN;.LFB9;0x1d01c034;0x9d01c034;0xbd01c034;0x1d01c033;0;function;[C] elf file;oui
+.R2_FN;.LFE8;0x1d01c034;0x9d01c034;0xbd01c034;0x1d01c033;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c034;0x9d01c034;0xbd01c034;0x1d01c033;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_lv_1;0x1d01c06c;0x9d01c06c;0xbd01c06c;0x1d01c0a3;56;function;[C] elf file;oui
+.R2_FN;.LFB10;0x1d01c06c;0x9d01c06c;0xbd01c06c;0x1d01c06b;0;function;[C] elf file;oui
+.R2_FN;.LFE9;0x1d01c06c;0x9d01c06c;0xbd01c06c;0x1d01c06b;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c06c;0x9d01c06c;0xbd01c06c;0x1d01c06b;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_lv_2;0x1d01c0a4;0x9d01c0a4;0xbd01c0a4;0x1d01c0db;56;function;[C] elf file;oui
+.R2_FN;.LFB11;0x1d01c0a4;0x9d01c0a4;0xbd01c0a4;0x1d01c0a3;0;function;[C] elf file;oui
+.R2_FN;.LFE10;0x1d01c0a4;0x9d01c0a4;0xbd01c0a4;0x1d01c0a3;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c0a4;0x9d01c0a4;0xbd01c0a4;0x1d01c0a3;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_lv_3;0x1d01c0dc;0x9d01c0dc;0xbd01c0dc;0x1d01c113;56;function;[C] elf file;oui
+.R2_FN;.LFB12;0x1d01c0dc;0x9d01c0dc;0xbd01c0dc;0x1d01c0db;0;function;[C] elf file;oui
+.R2_FN;.LFE11;0x1d01c0dc;0x9d01c0dc;0xbd01c0dc;0x1d01c0db;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c0dc;0x9d01c0dc;0xbd01c0dc;0x1d01c0db;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_av_1;0x1d01c114;0x9d01c114;0xbd01c114;0x1d01c14b;56;function;[C] elf file;oui
+.R2_FN;.LFB13;0x1d01c114;0x9d01c114;0xbd01c114;0x1d01c113;0;function;[C] elf file;oui
+.R2_FN;.LFE12;0x1d01c114;0x9d01c114;0xbd01c114;0x1d01c113;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c114;0x9d01c114;0xbd01c114;0x1d01c113;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_av_2;0x1d01c14c;0x9d01c14c;0xbd01c14c;0x1d01c183;56;function;[C] elf file;oui
+.R2_FN;.LFB14;0x1d01c14c;0x9d01c14c;0xbd01c14c;0x1d01c14b;0;function;[C] elf file;oui
+.R2_FN;.LFE13;0x1d01c14c;0x9d01c14c;0xbd01c14c;0x1d01c14b;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c14c;0x9d01c14c;0xbd01c14c;0x1d01c14b;0;function;[C] elf file;oui
+.R2_FN;get_o_Movement_move_av_3;0x1d01c184;0x9d01c184;0xbd01c184;0x1d01c1bb;56;function;[C] elf file;oui
+.R2_FN;.LFB15;0x1d01c184;0x9d01c184;0xbd01c184;0x1d01c183;0;function;[C] elf file;oui
+.R2_FN;.LFE14;0x1d01c184;0x9d01c184;0xbd01c184;0x1d01c183;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c184;0x9d01c184;0xbd01c184;0x1d01c183;0;function;[C] elf file;oui
+.R2_FN;get_o_Comm_question;0x1d01c1bc;0x9d01c1bc;0xbd01c1bc;0x1d01c1f3;56;function;[C] elf file;oui
+.R2_FN;.LFB16;0x1d01c1bc;0x9d01c1bc;0xbd01c1bc;0x1d01c1bb;0;function;[C] elf file;oui
+.R2_FN;.LFE15;0x1d01c1bc;0x9d01c1bc;0xbd01c1bc;0x1d01c1bb;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c1bc;0x9d01c1bc;0xbd01c1bc;0x1d01c1bb;0;function;[C] elf file;oui
+.R2_FN;outputs__initialisation;0x1d01c1f4;0x9d01c1f4;0xbd01c1f4;0x1d01c213;32;function;[C] elf file;oui
+.R2_FN;.LFB0;0x1d01c1f4;0x9d01c1f4;0xbd01c1f4;0x1d01c1f3;0;function;[C] elf file;oui
+.R2_FN;.LFE16;0x1d01c1f4;0x9d01c1f4;0xbd01c1f4;0x1d01c1f3;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c1f4;0x9d01c1f4;0xbd01c1f4;0x1d01c1f3;0;function;[C] elf file;oui
+.R2_FN;write_outputs;0x1d01c214;0x9d01c214;0xbd01c214;0x1d01c3bb;424;function;[C] elf file;oui
+.R2_FN;.LFB1;0x1d01c214;0x9d01c214;0xbd01c214;0x1d01c213;0;function;[C] elf file;oui
+.R2_FN;.LFE0;0x1d01c214;0x9d01c214;0xbd01c214;0x1d01c213;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c214;0x9d01c214;0xbd01c214;0x1d01c213;0;function;[C] elf file;oui
+.R2_FN;user_component__initialisation;0x1d01c3bc;0x9d01c3bc;0xbd01c3bc;0x1d01c40f;84;function;[C] elf file;oui
+.R2_FN;.LFB0;0x1d01c3bc;0x9d01c3bc;0xbd01c3bc;0x1d01c3bb;0;function;[C] elf file;oui
+.R2_FN;.LFE1;0x1d01c3bc;0x9d01c3bc;0xbd01c3bc;0x1d01c3bb;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c3bc;0x9d01c3bc;0xbd01c3bc;0x1d01c3bb;0;function;[C] elf file;oui
+.R2_FN;user_app;0x1d01c410;0x9d01c410;0xbd01c410;0x1d01c45b;76;function;[C] elf file;oui
+.R2_FN;.LFB1;0x1d01c410;0x9d01c410;0xbd01c410;0x1d01c40f;0;function;[C] elf file;oui
+.R2_FN;.LFE0;0x1d01c410;0x9d01c410;0xbd01c410;0x1d01c40f;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c410;0x9d01c410;0xbd01c410;0x1d01c40f;0;function;[C] elf file;oui
+.R2_FN;user_consistency_error_detection_test;0x1d01c45c;0x9d01c45c;0xbd01c45c;0x1d01c493;56;function;[C] elf file;oui
+.R2_FN;.LFB2;0x1d01c45c;0x9d01c45c;0xbd01c45c;0x1d01c45b;0;function;[C] elf file;oui
+.R2_FN;.LFE1;0x1d01c45c;0x9d01c45c;0xbd01c45c;0x1d01c45b;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c45c;0x9d01c45c;0xbd01c45c;0x1d01c45b;0;function;[C] elf file;oui
+.R2_FN;user_configuration__initialisation;0x1d01c494;0x9d01c494;0xbd01c494;0x1d01c4b3;32;function;[C] elf file;oui
+.R2_FN;.LFB0;0x1d01c494;0x9d01c494;0xbd01c494;0x1d01c493;0;function;[C] elf file;oui
+.R2_FN;.LFE2;0x1d01c494;0x9d01c494;0xbd01c494;0x1d01c493;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c494;0x9d01c494;0xbd01c494;0x1d01c493;0;function;[C] elf file;oui
+.R2_FN;user_ctx__initialisation;0x1d01c4b4;0x9d01c4b4;0xbd01c4b4;0x1d01c4d3;32;function;[C] elf file;oui
+.R2_FN;.LFB0;0x1d01c4b4;0x9d01c4b4;0xbd01c4b4;0x1d01c4b3;0;function;[C] elf file;oui
+.R2_FN;.LFE0;0x1d01c4b4;0x9d01c4b4;0xbd01c4b4;0x1d01c4b3;0;function;[C] elf file;oui
+.R2_FN;L0^A;0x1d01c4b4;0x9d01c4b4;0xbd01c4b4;0x1d01c4b3;0;function;[C] elf file;oui
+.R2_FN;.LFE0;0x1d01c4d4;0x9d01c4d4;0xbd01c4d4;0x1d01c4d3;0;function;[C] elf file;oui
+Fin;;;;;0x1d01c4d7;4000
 
-Debut;;0x1d01c470;0x9d01c470;0xbd01c470
-.R1_FN;g_types__initialisation;0x1d01c470;0x9d01c470;0xbd01c470;0x1d01c4a7;56;function;[B] output mapping;oui
-.R1_FN;.LFE0;0x1d01c470;0x9d01c470;0xbd01c470;0x1d01c46f;0;function;[C] elf file;oui
-.R1_FN;inputs__initialisation;0x1d01c4a8;0x9d01c4a8;0xbd01c4a8;0x1d01c52f;136;function;[B] output mapping;oui
-.R1_FN;read_inputs;0x1d01c530;0x9d01c530;0xbd01c530;0x1d01c5d7;168;function;[B] output mapping;oui
-.R1_FN;get_i_Obstacle_position_r;0x1d01c5d8;0x9d01c5d8;0xbd01c5d8;0x1d01c623;76;function;[B] output mapping;oui
-.R1_FN;get_i_Obstacle_position_l;0x1d01c624;0x9d01c624;0xbd01c624;0x1d01c66f;76;function;[B] output mapping;oui
-.R1_FN;get_i_Detection_neighbours;0x1d01c670;0x9d01c670;0xbd01c670;0x1d01c6bb;76;function;[B] output mapping;oui
-.R1_FN;get_i_Comm_asnwer;0x1d01c6bc;0x9d01c6bc;0xbd01c6bc;0x1d01c707;76;function;[B] output mapping;oui
-.R1_FN;logic__initialisation;0x1d01c708;0x9d01c708;0xbd01c708;0x1d01c87b;372;function;[B] output mapping;oui
-.R1_FN;reset_outputs;0x1d01c87c;0x9d01c87c;0xbd01c87c;0x1d01c963;232;function;[B] output mapping;oui
-.R1_FN;move;0x1d01c964;0x9d01c964;0xbd01c964;0x1d01ca0b;168;function;[B] output mapping;oui
-.R1_FN;nat_3_bits_to_bin_3_bits;0x1d01ca0c;0x9d01ca0c;0xbd01ca0c;0x1d01cc47;572;function;[B] output mapping;oui
-.R1_FN;stop;0x1d01cc48;0x9d01cc48;0xbd01cc48;0x1d01cd17;208;function;[B] output mapping;oui
-.R1_FN;since;0x1d01cd18;0x9d01cd18;0xbd01cd18;0x1d01cd83;108;function;[B] output mapping;oui
-.R1_FN;state_machine;0x1d01cd84;0x9d01cd84;0xbd01cd84;0x1d01d00f;652;function;[B] output mapping;oui
-.R1_FN;communication;0x1d01d010;0x9d01d010;0xbd01d010;0x1d01d11f;272;function;[B] output mapping;oui
-.R1_FN;user_logic;0x1d01d120;0x9d01d120;0xbd01d120;0x1d01d277;344;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move;0x1d01d278;0x9d01d278;0xbd01d278;0x1d01d2c3;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_lv_1;0x1d01d2c4;0x9d01d2c4;0xbd01d2c4;0x1d01d30f;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_lv_2;0x1d01d310;0x9d01d310;0xbd01d310;0x1d01d35b;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_lv_3;0x1d01d35c;0x9d01d35c;0xbd01d35c;0x1d01d3a7;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_av_1;0x1d01d3a8;0x9d01d3a8;0xbd01d3a8;0x1d01d3f3;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_av_2;0x1d01d3f4;0x9d01d3f4;0xbd01d3f4;0x1d01d43f;76;function;[B] output mapping;oui
-.R1_FN;get_o_Movement_move_av_3;0x1d01d440;0x9d01d440;0xbd01d440;0x1d01d48b;76;function;[B] output mapping;oui
-.R1_FN;get_o_Comm_question;0x1d01d48c;0x9d01d48c;0xbd01d48c;0x1d01d4d7;76;function;[B] output mapping;oui
-.R1_FN;outputs__initialisation;0x1d01d4d8;0x9d01d4d8;0xbd01d4d8;0x1d01d4ff;40;function;[B] output mapping;oui
-.R1_FN;write_outputs;0x1d01d500;0x9d01d500;0xbd01d500;0x1d01d6c7;456;function;[B] output mapping;oui
-.R1_FN;user_component__initialisation;0x1d01d6c8;0x9d01d6c8;0xbd01d6c8;0x1d01d743;124;function;[B] output mapping;oui
-.R1_FN;user_app;0x1d01d744;0x9d01d744;0xbd01d744;0x1d01d7af;108;function;[B] output mapping;oui
-.R1_FN;user_consistency_error_detection_test;0x1d01d7b0;0x9d01d7b0;0xbd01d7b0;0x1d01d7ef;64;function;[B] output mapping;oui
-.R1_FN;user_configuration__initialisation;0x1d01d7f0;0x9d01d7f0;0xbd01d7f0;0x1d01d817;40;function;[B] output mapping;oui
-.R1_FN;user_ctx__initialisation;0x1d01d818;0x9d01d818;0xbd01d818;0x1d01d83f;40;function;[B] output mapping;oui
-Fin;;;;;0x1d01f83f;13264
+Debut;;0x1d01c4d8;0x9d01c4d8;0xbd01c4d8
+.R1_FN;g_types__initialisation;0x1d01c4d8;0x9d01c4d8;0xbd01c4d8;0x1d01c50f;56;function;[B] output mapping;oui
+.R1_FN;inputs__initialisation;0x1d01c510;0x9d01c510;0xbd01c510;0x1d01c597;136;function;[B] output mapping;oui
+.R1_FN;read_inputs;0x1d01c598;0x9d01c598;0xbd01c598;0x1d01c63f;168;function;[B] output mapping;oui
+.R1_FN;get_i_Obstacle_position_r;0x1d01c640;0x9d01c640;0xbd01c640;0x1d01c68b;76;function;[B] output mapping;oui
+.R1_FN;get_i_Obstacle_position_l;0x1d01c68c;0x9d01c68c;0xbd01c68c;0x1d01c6d7;76;function;[B] output mapping;oui
+.R1_FN;get_i_Detection_neighbours;0x1d01c6d8;0x9d01c6d8;0xbd01c6d8;0x1d01c723;76;function;[B] output mapping;oui
+.R1_FN;get_i_Comm_asnwer;0x1d01c724;0x9d01c724;0xbd01c724;0x1d01c76f;76;function;[B] output mapping;oui
+.R1_FN;logic__initialisation;0x1d01c770;0x9d01c770;0xbd01c770;0x1d01c8e3;372;function;[B] output mapping;oui
+.R1_FN;reset_outputs;0x1d01c8e4;0x9d01c8e4;0xbd01c8e4;0x1d01c9cb;232;function;[B] output mapping;oui
+.R1_FN;move;0x1d01c9cc;0x9d01c9cc;0xbd01c9cc;0x1d01ca73;168;function;[B] output mapping;oui
+.R1_FN;nat_3_bits_to_bin_3_bits;0x1d01ca74;0x9d01ca74;0xbd01ca74;0x1d01ccaf;572;function;[B] output mapping;oui
+.R1_FN;stop;0x1d01ccb0;0x9d01ccb0;0xbd01ccb0;0x1d01cd7f;208;function;[B] output mapping;oui
+.R1_FN;since;0x1d01cd80;0x9d01cd80;0xbd01cd80;0x1d01cdeb;108;function;[B] output mapping;oui
+.R1_FN;state_machine;0x1d01cdec;0x9d01cdec;0xbd01cdec;0x1d01d077;652;function;[B] output mapping;oui
+.R1_FN;communication;0x1d01d078;0x9d01d078;0xbd01d078;0x1d01d19b;292;function;[B] output mapping;oui
+.R1_FN;user_logic;0x1d01d19c;0x9d01d19c;0xbd01d19c;0x1d01d363;456;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move;0x1d01d364;0x9d01d364;0xbd01d364;0x1d01d3af;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_lv_1;0x1d01d3b0;0x9d01d3b0;0xbd01d3b0;0x1d01d3fb;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_lv_2;0x1d01d3fc;0x9d01d3fc;0xbd01d3fc;0x1d01d447;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_lv_3;0x1d01d448;0x9d01d448;0xbd01d448;0x1d01d493;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_av_1;0x1d01d494;0x9d01d494;0xbd01d494;0x1d01d4df;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_av_2;0x1d01d4e0;0x9d01d4e0;0xbd01d4e0;0x1d01d52b;76;function;[B] output mapping;oui
+.R1_FN;get_o_Movement_move_av_3;0x1d01d52c;0x9d01d52c;0xbd01d52c;0x1d01d577;76;function;[B] output mapping;oui
+.R1_FN;get_o_Comm_question;0x1d01d578;0x9d01d578;0xbd01d578;0x1d01d5c3;76;function;[B] output mapping;oui
+.R1_FN;outputs__initialisation;0x1d01d5c4;0x9d01d5c4;0xbd01d5c4;0x1d01d5eb;40;function;[B] output mapping;oui
+.R1_FN;write_outputs;0x1d01d5ec;0x9d01d5ec;0xbd01d5ec;0x1d01d7b3;456;function;[B] output mapping;oui
+.R1_FN;user_component__initialisation;0x1d01d7b4;0x9d01d7b4;0xbd01d7b4;0x1d01d82f;124;function;[B] output mapping;oui
+.R1_FN;user_app;0x1d01d830;0x9d01d830;0xbd01d830;0x1d01d89b;108;function;[B] output mapping;oui
+.R1_FN;user_consistency_error_detection_test;0x1d01d89c;0x9d01d89c;0xbd01d89c;0x1d01d8db;64;function;[B] output mapping;oui
+.R1_FN;user_configuration__initialisation;0x1d01d8dc;0x9d01d8dc;0xbd01d8dc;0x1d01d903;40;function;[B] output mapping;oui
+.R1_FN;user_ctx__initialisation;0x1d01d904;0x9d01d904;0xbd01d904;0x1d01d92b;40;function;[B] output mapping;oui
+Fin;;;;;0x1d01f92b;13396
 
-Debut;;0x1d01f840;0x9d01f840;0xbd01f840
-.FREE_FLASH_SPACE;_end_r1_fn;0x1d01f840;0x9d01f840;0xbd01f840;0x1d01f83f;0;;[C] elf file;non
-Fin;;;;;0x1d07dfff;387008
+Debut;;0x1d01f92c;0x9d01f92c;0xbd01f92c
+.FREE_FLASH_SPACE;_end_r1_fn;0x1d01f92c;0x9d01f92c;0xbd01f92c;0x1d01f92b;0;;[C] elf file;non
+Fin;;;;;0x1d07dfff;386772

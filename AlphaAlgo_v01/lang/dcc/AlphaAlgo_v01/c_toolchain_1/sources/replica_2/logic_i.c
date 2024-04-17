@@ -63,8 +63,8 @@ void SECTION_C4B_FUNCTION reset_outputs(void)
 void SECTION_C4B_FUNCTION move(uint32_t l_lv, uint32_t l_av)
 {
     o_Movement_move = IO_ON;
-    nat_3_bits_to_bin_3_bits(l_lv, &o_Movement_move_lv_1, &o_Movement_move_lv_2, &o_Movement_move_lv_3);
-    nat_3_bits_to_bin_3_bits(l_av, &o_Movement_move_av_1, &o_Movement_move_av_2, &o_Movement_move_av_3);
+    nat_3_bits_to_bin_3_bits(l_lv, &o_Movement_move_lv_3, &o_Movement_move_lv_2, &o_Movement_move_lv_1);
+    nat_3_bits_to_bin_3_bits(l_av, &o_Movement_move_av_3, &o_Movement_move_av_2, &o_Movement_move_av_1);
 }
 
 void SECTION_C4B_FUNCTION nat_3_bits_to_bin_3_bits(uint32_t nn, uint8_t *o2, uint8_t *o1, uint8_t *o0)
@@ -139,7 +139,7 @@ void SECTION_C4B_FUNCTION state_machine(void)
             uint8_t local_obstacle_r;
             
             get_i_Obstacle_position_l(&local_obstacle_l);
-            get_i_Obstacle_position_l(&local_obstacle_r);
+            get_i_Obstacle_position_r(&local_obstacle_r);
             if(local_obstacle_l == IO_ON)
             {
                 get_ms_tick(&MBC);
@@ -172,8 +172,9 @@ void SECTION_C4B_FUNCTION state_machine(void)
 
 void SECTION_C4B_FUNCTION communication(void)
 {
-    get_ms_tick(&ms_tick_cycle);
-    s_tick_cycle = ms_tick_cycle / MBC;
+    get_ms_tick(&MBC);
+    ms_tick_cycle = 1000;
+    s_tick_cycle = MBC / ms_tick_cycle;
     tick = s_tick_cycle % 2;
     if(tick == 0)
     {
@@ -187,27 +188,34 @@ void SECTION_C4B_FUNCTION communication(void)
 
 void SECTION_C4B_FUNCTION user_logic(void)
 {
-    if(first_time == true)
+    communication();
     {
-        reset_outputs();
-        state_machine();
-        get_ms_tick(&cycle_timer);
-        first_time = false;
-    }
-    else
-    {
+        uint32_t local_input;
+        uint32_t local_input2;
+        uint32_t local_input3;
+        
+        get_i_Obstacle_position_r(&local_input);
+        get_i_Obstacle_position_l(&local_input2);
+        get_i_Detection_neighbours(&local_input3);
+        if(local_input == IO_ON)
         {
-            uint32_t time_elapsed;
-            uint32_t cycle_duration;
-            
-            since(cycle_timer, &time_elapsed);
-            cycle_duration = SimSMovement_cycle_def * cycle_unit;
-            if(((cycle_duration) <= (time_elapsed)))
-            {
-                reset_outputs();
-                state_machine();
-                get_ms_tick(&cycle_timer);
-            }
+            move(0, av);
+        }
+        else if(local_input == IO_OFF)
+        {
+            stop();
+        }
+        if(local_input2 == IO_ON)
+        {
+            move(lv, 0);
+        }
+        else if(local_input2 == IO_OFF)
+        {
+            stop();
+        }
+        if(local_input3 == IO_ON)
+        {
+            reset_outputs();
         }
     }
 }
