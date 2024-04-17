@@ -1,0 +1,369 @@
+IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types,
+    g_operators,
+    io_constants,
+    lchip_interface,
+    user_ctx,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    O1,
+	 O2,
+	 O3,
+	 O4,
+	 O5,
+	 O6,
+	 O7,
+	 O8,
+	 
+	 smstate,
+    MBC,
+    
+    cycle_timer,
+    first_time,
+    
+    ms_tick_cycle,
+    s_tick_cycle,
+    tick
+    
+INVARIANT
+    O1 : uint8_t &
+	 O2 : uint8_t &
+	 O3 : uint8_t &
+	 O4 : uint8_t &
+	 O5 : uint8_t &
+	 O6 : uint8_t &
+	 O7 : uint8_t &
+	 O8 : uint8_t &
+	 
+	 smstate:STATE &
+    MBC:uint32_t &
+    
+    cycle_timer:uint32_t &
+    first_time: BOOL &
+    
+    ms_tick_cycle : uint32_t &
+    s_tick_cycle  : uint32_t &
+    tick          : uint32_t
+    
+INITIALISATION
+    O1 := IO_OFF;
+	 O2 := IO_OFF;
+	 O3 := IO_OFF;
+	 O4 := IO_OFF;
+	 O5 := IO_OFF;
+	 O6 := IO_OFF;
+	 O7 := IO_OFF;
+	 O8 := IO_OFF;
+	 
+	 smstate := INIT;
+    MBC := 0;
+    
+    cycle_timer := 0;
+    first_time := TRUE;
+    
+    ms_tick_cycle := 0;
+    s_tick_cycle  := 0;
+    tick          := 0
+    
+LOCAL_OPERATIONS
+
+    reset_outputs = 
+    BEGIN
+        O1 :: uint8_t ||
+        O2 :: uint8_t ||
+        O3 :: uint8_t ||
+        O4 :: uint8_t ||
+        O5 :: uint8_t ||
+        O6 :: uint8_t ||
+        O7 :: uint8_t ||
+        O8 :: uint8_t
+    END;
+    
+    move(l_lv, l_av) = 
+    PRE l_lv:uint32_t & l_lv:0..7 & l_av:uint32_t & l_av:0..7
+    THEN
+        O1 :: uint8_t ||
+        O2 :: uint8_t ||
+        O3 :: uint8_t ||
+        O4 :: uint8_t ||
+        O5 :: uint8_t ||
+        O6 :: uint8_t ||
+        O7 :: uint8_t 
+    END;
+    
+    stop = 
+    BEGIN
+        O1 :: uint8_t ||
+        O2 :: uint8_t ||
+        O3 :: uint8_t ||
+        O4 :: uint8_t ||
+        O5 :: uint8_t ||
+        O6 :: uint8_t ||
+        O7 :: uint8_t 
+    END;
+    
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
+    PRE nn:uint32_t & nn:0..7 
+        & o2:uint8_t & o1:uint8_t & o0:uint8_t
+    THEN
+        o2::uint8_t
+        || o1::uint8_t
+        || o0::uint8_t
+    END;
+    
+    elapsed <-- since(timer) = 
+    PRE timer:uint32_t & elapsed:uint32_t
+    THEN
+        elapsed::uint32_t
+    END;
+
+    state_machine = 
+    PRE 
+        MBC     : uint32_t & 
+        smstate : STATE &
+        cycle_timer : uint32_t &
+        lv:uint32_t & lv:0..7 &
+        av:uint32_t & av:0..7 &
+        O1 : uint8_t &
+        O2 : uint8_t &
+        O3 : uint8_t &
+        O4 : uint8_t &
+        O5 : uint8_t &
+        O6 : uint8_t &
+        O7 : uint8_t &
+        O8 : uint8_t
+    THEN
+        O1 :: uint8_t ||
+        O2 :: uint8_t ||
+        O3 :: uint8_t ||
+        O4 :: uint8_t ||
+        O5 :: uint8_t ||
+        O6 :: uint8_t ||
+        O7 :: uint8_t ||
+        O8 :: uint8_t ||
+        smstate :: STATE ||
+        MBC     :: uint32_t ||
+        cycle_timer :: uint32_t ||
+        first_time :: BOOL        
+    END;
+    
+    communication =
+    PRE ms_tick_cycle : uint32_t &
+        s_tick_cycle  : uint32_t &
+        tick          : uint32_t  
+    THEN
+        ms_tick_cycle :: uint32_t ||
+        s_tick_cycle  :: uint32_t ||
+        tick          :: uint32_t
+    END
+
+OPERATIONS
+    
+    reset_outputs = 
+    BEGIN
+        O1 := IO_OFF;
+        O2 := IO_OFF;
+        O3 := IO_OFF;
+        O4 := IO_OFF;
+        O5 := IO_OFF;
+        O6 := IO_OFF;
+        O7 := IO_OFF;
+        O8 := IO_OFF
+    END;
+    
+    stop = 
+    BEGIN
+        O1 := IO_OFF;
+        O2 := IO_OFF;
+        O3 := IO_OFF;
+        O4 := IO_OFF;
+        O5 := IO_OFF;
+        O6 := IO_OFF;
+        O7 := IO_OFF 
+    END;
+    
+    move(l_lv, l_av) = 
+    BEGIN
+        O1 := IO_ON;
+        O4,
+        O3,
+        O2 <-- nat_3_bits_to_bin_3_bits(l_lv);
+        O7,
+        O6,
+        O5 <-- nat_3_bits_to_bin_3_bits(l_av)
+    END;
+    
+    // Transforms 3 bits unsigned integers into 3 bits
+    o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
+    BEGIN
+        o2:(o2:uint8_t);
+        o1:(o1:uint8_t);
+        o0:(o0:uint8_t);
+        
+        VAR o_aux IN
+            o_aux:(o_aux:uint32_t);
+            
+            o_aux := nn mod 2;
+            IF (o_aux = 0) THEN 
+                o0 := IO_OFF
+            ELSE
+                o0 := IO_ON
+            END;
+                        
+            o_aux := (nn / 2);
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o1 := IO_OFF
+            ELSE
+                o1 := IO_ON
+            END;
+            
+            o_aux := (nn / 4);   
+            o_aux := o_aux mod 2;
+            IF (o_aux = 0) THEN 
+                o2 := IO_OFF
+            ELSE
+                o2 := IO_ON
+            END
+        END
+    END;
+    
+    elapsed <-- since(timer) = 
+    BEGIN
+        elapsed:(elapsed:uint32_t);
+        VAR local_time IN 
+            local_time:(local_time:uint32_t);
+            
+            local_time <-- get_ms_tick;
+            elapsed := sub_uint32(local_time, timer)
+        END        
+    END;
+    
+    state_machine = 
+    BEGIN
+        IF smstate = INIT THEN 
+            move(lv,0);
+            communication;
+            smstate := EXEC_1
+        ELSIF smstate = EXEC_1 THEN
+            VAR local_obstacle IN 
+                local_obstacle:(local_obstacle:uint8_t);
+                
+                local_obstacle <-- get_I1; 
+                IF local_obstacle = IO_ON THEN
+                    MBC <-- get_ms_tick;
+                    stop;
+                    move(0,av);
+                    communication;
+                    smstate := EXEC_2
+                ELSIF local_obstacle = IO_OFF THEN 
+                    smstate := EXEC_1
+                ELSE communication
+                END
+            END
+        ELSIF smstate = EXEC_2 THEN
+            VAR since_value IN 
+                since_value:(since_value:uint32_t);
+                
+                since_value <-- since(MBC);
+                VAR pi_div_av IN
+                    pi_div_av:(pi_div_av:uint32_t);
+                    pi_div_av := pi / av;
+                    IF since_value < pi_div_av THEN
+                        smstate := EXEC_2
+                    ELSIF pi_div_av <= since_value THEN
+                        move(lv,0);
+                        communication;
+                        smstate := EXEC_1
+                    ELSE communication
+                    END   
+                END
+            END
+        ELSE skip
+        END
+    END;
+    
+    communication = 
+        BEGIN 
+            MBC <-- get_ms_tick;
+            ms_tick_cycle := 1000;
+            s_tick_cycle := MBC / ms_tick_cycle;
+            tick := s_tick_cycle mod 2;
+            
+            IF tick = 0 THEN
+               O8 := IO_ON
+            ELSE
+               O8 := IO_OFF 
+            END   
+        END;
+    
+    user_logic = 
+    BEGIN
+        IF first_time = TRUE THEN
+            reset_outputs;
+            state_machine;
+            cycle_timer <-- get_ms_tick;            
+            first_time := FALSE
+        ELSE
+            VAR time_elapsed, cycle_duration IN 
+                time_elapsed:(time_elapsed:uint32_t);
+                cycle_duration:(cycle_duration:uint32_t);
+                
+                time_elapsed <-- since(cycle_timer);
+                cycle_duration := mul_uint32(SimSMovement_cycle_def,cycle_unit);
+                
+                IF (cycle_duration <= time_elapsed) THEN
+                    reset_outputs;
+                    state_machine;
+                    cycle_timer <-- get_ms_tick
+                END
+            END
+        END
+    END;
+
+    po <-- get_O1 =
+	BEGIN
+		po := O1
+	END;
+
+	po <-- get_O2 =
+	BEGIN
+		po := O2
+	END;
+
+	po <-- get_O3 =
+	BEGIN
+		po := O3
+	END;
+
+	po <-- get_O4 =
+	BEGIN
+		po := O4
+	END;
+
+	po <-- get_O5 =
+	BEGIN
+		po := O5
+	END;
+
+	po <-- get_O6 =
+	BEGIN
+		po := O6
+	END;
+
+	po <-- get_O7 =
+	BEGIN
+		po := O7
+	END;
+
+	po <-- get_O8 =
+	BEGIN
+		po := O8
+	END
+END

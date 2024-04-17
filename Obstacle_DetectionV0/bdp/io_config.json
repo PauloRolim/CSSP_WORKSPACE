@@ -1,0 +1,214 @@
+{
+    "global_inputs": [
+        {
+            "global_id": 0,
+            "local_id": 0,
+            "module_id": 0,
+            "name": "I1",
+            "used": true
+        },
+        {
+            "global_id": 1,
+            "local_id": 1,
+            "module_id": 0,
+            "name": "I2",
+            "used": true
+        },
+        {
+            "global_id": 2,
+            "local_id": 2,
+            "module_id": 0,
+            "name": "I3",
+            "used": true
+        },
+        {
+            "global_id": 3,
+            "local_id": 3,
+            "module_id": 0,
+            "name": "I4",
+            "used": true
+        },
+        {
+            "global_id": 4,
+            "local_id": 4,
+            "module_id": 0,
+            "name": "I5",
+            "used": true
+        },
+        {
+            "global_id": 5,
+            "local_id": 5,
+            "module_id": 0,
+            "name": "I6",
+            "used": true
+        },
+        {
+            "global_id": 6,
+            "local_id": 6,
+            "module_id": 0,
+            "name": "I7",
+            "used": true
+        },
+        {
+            "global_id": 7,
+            "local_id": 7,
+            "module_id": 0,
+            "name": "I8",
+            "used": true
+        },
+        {
+            "global_id": 8,
+            "local_id": 8,
+            "module_id": 0,
+            "name": "I9",
+            "used": true
+        },
+        {
+            "global_id": 9,
+            "local_id": 9,
+            "module_id": 0,
+            "name": "I10",
+            "used": true
+        },
+        {
+            "global_id": 10,
+            "local_id": 10,
+            "module_id": 0,
+            "name": "I11",
+            "used": true
+        },
+        {
+            "global_id": 11,
+            "local_id": 11,
+            "module_id": 0,
+            "name": "I12",
+            "used": true
+        },
+        {
+            "global_id": 12,
+            "local_id": 12,
+            "module_id": 0,
+            "name": "I13",
+            "used": true
+        },
+        {
+            "global_id": 13,
+            "local_id": 13,
+            "module_id": 0,
+            "name": "I14",
+            "used": true
+        },
+        {
+            "global_id": 14,
+            "local_id": 14,
+            "module_id": 0,
+            "name": "I15",
+            "used": true
+        },
+        {
+            "global_id": 15,
+            "local_id": 15,
+            "module_id": 0,
+            "name": "I16",
+            "used": true
+        },
+        {
+            "global_id": 16,
+            "local_id": 16,
+            "module_id": 0,
+            "name": "I17",
+            "used": true
+        },
+        {
+            "global_id": 17,
+            "local_id": 17,
+            "module_id": 0,
+            "name": "I18",
+            "used": true
+        },
+        {
+            "global_id": 18,
+            "local_id": 18,
+            "module_id": 0,
+            "name": "I19",
+            "used": true
+        },
+        {
+            "global_id": 19,
+            "local_id": 19,
+            "module_id": 0,
+            "name": "I20",
+            "used": true
+        }
+    ],
+    "global_outputs": [
+        {
+            "global_id": 0,
+            "local_id": 0,
+            "module_id": 0,
+            "name": "O1",
+            "used": true
+        },
+        {
+            "global_id": 1,
+            "local_id": 1,
+            "module_id": 0,
+            "name": "O2",
+            "used": true
+        },
+        {
+            "global_id": 2,
+            "local_id": 2,
+            "module_id": 0,
+            "name": "O3",
+            "used": true
+        },
+        {
+            "global_id": 3,
+            "local_id": 3,
+            "module_id": 0,
+            "name": "O4",
+            "used": true
+        },
+        {
+            "global_id": 4,
+            "local_id": 4,
+            "module_id": 0,
+            "name": "O5",
+            "used": true
+        },
+        {
+            "global_id": 5,
+            "local_id": 5,
+            "module_id": 0,
+            "name": "O6",
+            "used": true
+        },
+        {
+            "global_id": 6,
+            "local_id": 6,
+            "module_id": 0,
+            "name": "O7",
+            "used": true
+        },
+        {
+            "global_id": 7,
+            "local_id": 7,
+            "module_id": 0,
+            "name": "O8",
+            "used": true
+        }
+    ],
+    "max_nb_inputs": 20,
+    "max_nb_modules": 1,
+    "max_nb_outputs": 8,
+    "modules": [
+        {
+            "global_id": 0,
+            "nb_inputs": 20,
+            "nb_outputs": 8,
+            "secu_id": "0xF0F00"
+        }
+    ],
+    "modulesType": 2
+}

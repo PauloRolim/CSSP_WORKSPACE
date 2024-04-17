@@ -188,6 +188,8 @@ void SECTION_C4B_FUNCTION communication(void)
 
 void SECTION_C4B_FUNCTION user_logic(void)
 {
+    reset_outputs();
+    move(0, av);
     {
         uint32_t local_input;
         uint32_t local_input2;
@@ -196,15 +198,11 @@ void SECTION_C4B_FUNCTION user_logic(void)
         get_I3(&local_input2);
         if(local_input == IO_ON)
         {
-            move(lv, 0);
-        }
-        else if(local_input2 == IO_ON)
-        {
-            move(0, av);
-        }
-        else if(local_input2 == IO_OFF)
-        {
             reset_outputs();
+        }
+        if(local_input2 == IO_ON)
+        {
+            move(lv, 0);
         }
     }
 }

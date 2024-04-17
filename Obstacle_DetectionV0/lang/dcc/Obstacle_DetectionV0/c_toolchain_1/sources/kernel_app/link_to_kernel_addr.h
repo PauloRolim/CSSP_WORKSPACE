@@ -1,0 +1,32 @@
+// Auto-generated file
+#ifndef LINK_TO_KERNEL_ADDR_H
+#define LINK_TO_KERNEL_ADDR_H
+
+#define g_operators__initialisation_addr 0x9d01043c
+#define g_standard_types__initialisation_addr 0x9d01045c
+#define IO_ON_addr 0x9d0123cf
+#define IO_OFF_addr 0x9d0123d0
+#define user_struct_safety_variables_size_minus_1_addr 0x9d0123e4
+#define ru_c__module_secu_ids_ptr_addr 0x9d0123e8
+#define ru_c__module_nb_inputs_ptr_addr 0x9d0123ec
+#define ru_c__module_nb_outputs_ptr_addr 0x9d0123f0
+#define ru_c__input_module_ids_ptr_addr 0x9d0123f4
+#define ru_c__input_local_ids_ptr_addr 0x9d0123f8
+#define ru_c__output_module_ids_ptr_addr 0x9d0123fc
+#define ru_c__output_local_ids_ptr_addr 0x9d012400
+#define ru_c__NB_MODULES_ptr_addr 0x9d012404
+#define ru_c__NB_INPUTS_ptr_addr 0x9d012408
+#define ru_c__NB_OUTPUTS_ptr_addr 0x9d01240c
+#define r2__user_configuration__initialisation_ptr_addr 0x9d012428
+#define r2__user_safety_variables__initialisation_ptr_addr 0x9d01242c
+#define r2__user_safety_variables_array_ptr_addr 0x9d012430
+#define r2__user_component__initialisation_ptr_addr 0x9d012434
+#define r2__user_app_ptr_addr 0x9d012438
+#define r2__user_consistency_error_detection_test_ptr_addr 0x9d01243c
+#define io_constants__initialisation_addr 0x9d013d74
+#define get_ms_tick_addr 0x9d014080
+#define read_global_input_addr 0x9d0140b8
+#define write_global_output_addr 0x9d014100
+#define print_uint8_addr 0x9d014150
+
+#endif

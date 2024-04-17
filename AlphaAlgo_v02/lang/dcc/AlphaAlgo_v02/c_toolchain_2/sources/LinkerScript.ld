@@ -11,7 +11,7 @@ ENTRY(_reset)
 * _APP_DATA_MEM_ORIGIN                           = 0xa00083fc
 * _APP_DATA_MEM_LENGTH                           = 97284
 *
-* _R1_FN_ADJUST                                  = 0x5d8d0
+* _R1_FN_ADJUST                                  = 0x5d914
 *
 * have to be replaced by their corresponding values befor running the linkerscript
 * WARNING : those values have to be multiple of 4 for alignment contrainst
@@ -246,7 +246,7 @@ SECTIONS
 	{
 		_end_r1_fn = ORIGIN(kseg0_application_program_mem) + LENGTH(kseg0_application_program_mem);
 		_end_r1_fn = _end_r1_fn -
-		0x5d8d0;
+		0x5d914;
 		. = _end_r1_fn;
 	} > kseg0_application_program_mem
 

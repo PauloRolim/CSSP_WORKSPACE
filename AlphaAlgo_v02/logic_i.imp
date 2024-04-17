@@ -296,7 +296,8 @@ OPERATIONS
     
     user_logic = 
         BEGIN
-            
+            reset_outputs;
+            move(0,av);
            VAR local_input, 
                local_input2
                
@@ -308,15 +309,12 @@ OPERATIONS
                local_input <-- get_I2;
                local_input2 <-- get_I3;
                
-               
                IF  local_input = IO_ON THEN
-                  move(lv,0)
-               ELSIF  
-                   local_input2 = IO_ON THEN
-                  move(0,av)
-               ELSIF local_input2 = IO_OFF THEN
-                   reset_outputs
-                   
+                  reset_outputs
+               END;
+               
+               IF  local_input2 = IO_ON THEN
+                  move(lv,0)                   
                END
                
                

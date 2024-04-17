@@ -1,44 +1,16 @@
 ﻿THEORY BalanceX IS
-  logic_i,36,0,0,23,0,0,0;
-  Operation_user_logic,36,0,0,23,0,0,0
+  logic_i,8,0,0,0,0,0,0;
+  Operation_user_logic,8,0,0,0,0,0,0
 END
 &
 THEORY ProofState IS
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Unproved;
-  Unproved;
-  Proved(0);
-  Proved(0);
-  Unproved;
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Unproved;
-  Unproved;
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Unproved;
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
   Unproved;
   Unproved;
   Unproved;
   Unproved;
   Unproved;
   Unproved;
-  Proved(0);
+  Unproved;
   Unproved
 END
 &
@@ -49,74 +21,18 @@ THEORY MethodList IS
   pr;
   ?;
   ?;
-  pr;
-  pr;
   ?;
-  pr;
-  pr;
-  pr;
-  ?;
-  ?;
-  pr;
-  pr;
-  pr;
-  pr;
-  pr;
-  pr;
-  ?;
-  pr;
-  pr;
-  pr;
-  pr;
-  pr;
-  pr;
-  pr;
-  ?;
-  ?;
-  ?;
-  ?;
-  ?;
-  ?;
-  pr;
   ?
 END
 &
 THEORY PassList IS
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),(?;0);
-  Force(0),(?;0);
-  Force(0),?;
-  Force(0),?;
-  Force(0),(?;0);
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),(?;0);
-  Force(0),(?;0);
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),(?;0);
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
   Force(0),(?;0);
   Force(0),(?;0);
   Force(0),(?;0);
   Force(0),(?;0);
   Force(0),(?;0);
   Force(0),(?;0);
-  Force(0),?;
+  Force(0),(?;0);
   Force(0),(?;0)
 END
 &

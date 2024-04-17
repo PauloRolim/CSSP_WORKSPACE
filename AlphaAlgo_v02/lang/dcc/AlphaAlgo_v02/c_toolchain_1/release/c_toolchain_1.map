@@ -95,7 +95,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xa0 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
  .debug_ranges  0x00000000       0x90 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
- .debug_line    0x00000000      0x1fc C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_line    0x00000000      0x1f9 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
  .comment       0x00000000       0x3c C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
  .debug_frame   0x00000000      0x210 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
  .reginfo       0x00000000       0x18 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\outputs_i.o
@@ -344,7 +344,7 @@ LOAD C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\b
  *(.r2_cst.*)
                 0x9d01b538                . = ALIGN (0x8)
 
-.R2_FN          0x9d01b538     0x1600
+.R2_FN          0x9d01b538     0x15d8
  *(.r2_fn)
  .r2_fn         0x9d01b538       0x38 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\g_types_i.o
                 0x9d01b538                g_types__initialisation
@@ -371,31 +371,30 @@ LOAD C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\b
                 0x9d01bd78                get_I18
                 0x9d01bdb0                get_I19
                 0x9d01bde8                get_I20
- .r2_fn         0x9d01be20      0xa34 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
+ .r2_fn         0x9d01be20      0xa10 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\logic_i.o
                 0x9d01be20                logic__initialisation
                 0x9d01c5c0                user_logic
-                0x9d01c694                get_O1
-                0x9d01c6cc                get_O2
-                0x9d01c704                get_O3
-                0x9d01c73c                get_O4
-                0x9d01c774                get_O5
-                0x9d01c7ac                get_O6
-                0x9d01c7e4                get_O7
-                0x9d01c81c                get_O8
- .r2_fn         0x9d01c854      0x1c8 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\outputs_i.o
-                0x9d01c854                outputs__initialisation
-                0x9d01c874                write_outputs
- .r2_fn         0x9d01ca1c       0xd8 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_component_i.o
-                0x9d01ca1c                user_component__initialisation
-                0x9d01ca70                user_app
-                0x9d01cabc                user_consistency_error_detection_test
- .r2_fn         0x9d01caf4       0x20 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_configuration_i.o
-                0x9d01caf4                user_configuration__initialisation
- .r2_fn         0x9d01cb14       0x20 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_ctx_i.o
-                0x9d01cb14                user_ctx__initialisation
+                0x9d01c670                get_O1
+                0x9d01c6a8                get_O2
+                0x9d01c6e0                get_O3
+                0x9d01c718                get_O4
+                0x9d01c750                get_O5
+                0x9d01c788                get_O6
+                0x9d01c7c0                get_O7
+                0x9d01c7f8                get_O8
+ .r2_fn         0x9d01c830      0x1c8 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\outputs_i.o
+                0x9d01c830                outputs__initialisation
+                0x9d01c850                write_outputs
+ .r2_fn         0x9d01c9f8       0xd8 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_component_i.o
+                0x9d01c9f8                user_component__initialisation
+                0x9d01ca4c                user_app
+                0x9d01ca98                user_consistency_error_detection_test
+ .r2_fn         0x9d01cad0       0x20 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_configuration_i.o
+                0x9d01cad0                user_configuration__initialisation
+ .r2_fn         0x9d01caf0       0x20 C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\build\replica_2\user_ctx_i.o
+                0x9d01caf0                user_ctx__initialisation
  *(.r2_fn.*)
-                0x9d01cb38                . = ALIGN (0x8)
- *fill*         0x9d01cb34        0x4 
+                0x9d01cb10                . = ALIGN (0x8)
 
 .R2_CHK_VAR     0xa00083fc       0x3c
  *(.r2_chk_var)
@@ -411,16 +410,16 @@ LOAD C:/CSSP/CSSP_WORKSPACE/AlphaAlgo_v02/lang/dcc\AlphaAlgo_v02\c_toolchain_1\b
  *(.r2_nchk_var.*)
                 0xa0008438                . = ALIGN (0x8)
 
-.R1_CST         0x9d01cb38        0x0
+.R1_CST         0x9d01cb10        0x0
  *(.r1_cst)
  *(.r1_cst.*)
-                0x9d01cb38                . = ALIGN (0x8)
+                0x9d01cb10                . = ALIGN (0x8)
 
-.R1_FN          0x9d01cb38    0x614c8
+.R1_FN          0x9d01cb10    0x614f0
                 0x9d07e000                _end_r1_fn = (ORIGIN (kseg0_application_program_mem) + 0x62b64)
                 [0x9d07e000]                _end_r1_fn = (_end_r1_fn - 0x0)
                 0x9d07e000                . = _end_r1_fn
- *fill*         0x9d01cb38    0x614c8 
+ *fill*         0x9d01cb10    0x614f0 
 
 .R1_CHK_VAR     0xa0008438       0x40
                 0xa0008474                . = (. + SIZEOF (.R2_CHK_VAR))
