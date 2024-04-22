@@ -1,0 +1,25 @@
+IMPLEMENTATION
+    user_ctx_i
+REFINES
+    user_ctx
+
+    // pragma CONSTANTS
+SEES
+    g_types
+VALUES
+    // Translation constants
+    cycle_unit = 100; // miliseconds
+    
+    // Model Constants
+    SimSMovement_cycle_def = 1;
+    av = 2;
+    lv = 2;
+    
+    
+    // We want the car to turn for 1000 ms
+    pi = 7000;
+    
+    zero = 0;
+    
+    alpha = 1
+END
