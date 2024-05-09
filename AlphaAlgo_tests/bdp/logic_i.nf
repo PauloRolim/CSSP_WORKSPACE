@@ -44,8 +44,8 @@ THEORY ListVisibleVariablesX IS
   Abstract_List_VisibleVariables(Implementation(logic_i))==(?);
   External_List_VisibleVariables(Implementation(logic_i))==(?);
   Expanded_List_VisibleVariables(Implementation(logic_i))==(?);
-  List_VisibleVariables(Implementation(logic_i))==(obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1);
-  Internal_List_VisibleVariables(Implementation(logic_i))==(obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1)
+  List_VisibleVariables(Implementation(logic_i))==(obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,my_clock,current_time,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1);
+  Internal_List_VisibleVariables(Implementation(logic_i))==(obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,my_clock,current_time,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1)
 END
 &
 THEORY ListInvariantX IS
@@ -53,7 +53,7 @@ THEORY ListInvariantX IS
   Expanded_List_Invariant(Implementation(logic_i))==(btrue);
   Abstract_List_Invariant(Implementation(logic_i))==(board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t);
   Context_List_Invariant(Implementation(logic_i))==(ms_tick: uint32_t & board_0_I1: uint8_t & board_0_I2: uint8_t & board_0_I3: uint8_t & board_0_I4: uint8_t & board_0_I5: uint8_t & board_0_I6: uint8_t & board_0_I7: uint8_t & board_0_I8: uint8_t & board_0_I9: uint8_t & board_0_I10: uint8_t & board_0_I11: uint8_t & board_0_I12: uint8_t & board_0_I13: uint8_t & board_0_I14: uint8_t & board_0_I15: uint8_t & board_0_I16: uint8_t & board_0_I17: uint8_t & board_0_I18: uint8_t & board_0_I19: uint8_t & board_0_I20: uint8_t);
-  List_Invariant(Implementation(logic_i))==(board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t & smstate: STATE & MBC: uint32_t & cycle_timer: uint32_t & first_time: BOOL & ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t & obst_position: POSITION)
+  List_Invariant(Implementation(logic_i))==(board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t & smstate: STATE & MBC: uint32_t & current_time: uint32_t & my_clock: uint8_t & cycle_timer: uint32_t & first_time: BOOL & ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t & obst_position: POSITION)
 END
 &
 THEORY ListAssertionsX IS
@@ -72,9 +72,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Implementation(logic_i))==((IO_OFF: INT | board_0_O1:=IO_OFF);(IO_OFF: INT | board_0_O2:=IO_OFF);(IO_OFF: INT | board_0_O3:=IO_OFF);(IO_OFF: INT | board_0_O4:=IO_OFF);(IO_OFF: INT | board_0_O5:=IO_OFF);(IO_OFF: INT | board_0_O6:=IO_OFF);(IO_OFF: INT | board_0_O7:=IO_OFF);(IO_OFF: INT | board_0_O8:=IO_OFF);smstate:=INIT;(0: INT | MBC:=0);(0: INT | cycle_timer:=0);first_time:=TRUE;(0: INT | ms_tick_cycle:=0);(0: INT | s_tick_cycle:=0);(0: INT | tick:=0);obst_position:=LEFT);
+  Expanded_List_Initialisation(Implementation(logic_i))==((IO_OFF: INT | board_0_O1:=IO_OFF);(IO_OFF: INT | board_0_O2:=IO_OFF);(IO_OFF: INT | board_0_O3:=IO_OFF);(IO_OFF: INT | board_0_O4:=IO_OFF);(IO_OFF: INT | board_0_O5:=IO_OFF);(IO_OFF: INT | board_0_O6:=IO_OFF);(IO_OFF: INT | board_0_O7:=IO_OFF);(IO_OFF: INT | board_0_O8:=IO_OFF);smstate:=INIT;(0: INT | MBC:=0);(0: INT | current_time:=0);(0: INT | my_clock:=0);(0: INT | cycle_timer:=0);first_time:=TRUE;(0: INT | ms_tick_cycle:=0);(0: INT | s_tick_cycle:=0);(0: INT | tick:=0);obst_position:=LEFT);
   Context_List_Initialisation(Implementation(logic_i))==(skip);
-  List_Initialisation(Implementation(logic_i))==(board_0_O1:=IO_OFF;board_0_O2:=IO_OFF;board_0_O3:=IO_OFF;board_0_O4:=IO_OFF;board_0_O5:=IO_OFF;board_0_O6:=IO_OFF;board_0_O7:=IO_OFF;board_0_O8:=IO_OFF;smstate:=INIT;MBC:=0;cycle_timer:=0;first_time:=TRUE;ms_tick_cycle:=0;s_tick_cycle:=0;tick:=0;obst_position:=LEFT)
+  List_Initialisation(Implementation(logic_i))==(board_0_O1:=IO_OFF;board_0_O2:=IO_OFF;board_0_O3:=IO_OFF;board_0_O4:=IO_OFF;board_0_O5:=IO_OFF;board_0_O6:=IO_OFF;board_0_O7:=IO_OFF;board_0_O8:=IO_OFF;smstate:=INIT;MBC:=0;current_time:=0;my_clock:=0;cycle_timer:=0;first_time:=TRUE;ms_tick_cycle:=0;s_tick_cycle:=0;tick:=0;obst_position:=LEFT)
 END
 &
 THEORY ListParametersX IS
@@ -96,18 +96,19 @@ THEORY ListConstraintsX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,nat_3_bits_to_bin_3_bits,move,state_machine,communication,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8);
-  List_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,nat_3_bits_to_bin_3_bits,move,state_machine,communication,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8)
+  Internal_List_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,land,nat_3_bits_to_bin_3_bits,move,read_master_clock,MovimentAndAvoidance,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8);
+  List_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,land,nat_3_bits_to_bin_3_bits,move,read_master_clock,MovimentAndAvoidance,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8)
 END
 &
 THEORY ListInputX IS
   List_Input(Implementation(logic_i),reset_outputs)==(?);
   List_Input(Implementation(logic_i),avoid)==(?);
   List_Input(Implementation(logic_i),since)==(timer);
+  List_Input(Implementation(logic_i),land)==(pp,qq);
   List_Input(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn);
   List_Input(Implementation(logic_i),move)==(l_lv,l_av);
-  List_Input(Implementation(logic_i),state_machine)==(?);
-  List_Input(Implementation(logic_i),communication)==(?);
+  List_Input(Implementation(logic_i),read_master_clock)==(?);
+  List_Input(Implementation(logic_i),MovimentAndAvoidance)==(?);
   List_Input(Implementation(logic_i),infoNeighbours)==(?);
   List_Input(Implementation(logic_i),user_logic)==(?);
   List_Input(Implementation(logic_i),get_board_0_O1)==(?);
@@ -124,10 +125,11 @@ THEORY ListOutputX IS
   List_Output(Implementation(logic_i),reset_outputs)==(?);
   List_Output(Implementation(logic_i),avoid)==(?);
   List_Output(Implementation(logic_i),since)==(elapsed);
+  List_Output(Implementation(logic_i),land)==(result);
   List_Output(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2,o1,o0);
   List_Output(Implementation(logic_i),move)==(?);
-  List_Output(Implementation(logic_i),state_machine)==(?);
-  List_Output(Implementation(logic_i),communication)==(?);
+  List_Output(Implementation(logic_i),read_master_clock)==(?);
+  List_Output(Implementation(logic_i),MovimentAndAvoidance)==(?);
   List_Output(Implementation(logic_i),infoNeighbours)==(neighboursNumber);
   List_Output(Implementation(logic_i),user_logic)==(?);
   List_Output(Implementation(logic_i),get_board_0_O1)==(po);
@@ -144,10 +146,11 @@ THEORY ListHeaderX IS
   List_Header(Implementation(logic_i),reset_outputs)==(reset_outputs);
   List_Header(Implementation(logic_i),avoid)==(avoid);
   List_Header(Implementation(logic_i),since)==(elapsed <-- since(timer));
+  List_Header(Implementation(logic_i),land)==(result <-- land(pp,qq));
   List_Header(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2,o1,o0 <-- nat_3_bits_to_bin_3_bits(nn));
   List_Header(Implementation(logic_i),move)==(move(l_lv,l_av));
-  List_Header(Implementation(logic_i),state_machine)==(state_machine);
-  List_Header(Implementation(logic_i),communication)==(communication);
+  List_Header(Implementation(logic_i),read_master_clock)==(read_master_clock);
+  List_Header(Implementation(logic_i),MovimentAndAvoidance)==(MovimentAndAvoidance);
   List_Header(Implementation(logic_i),infoNeighbours)==(neighboursNumber <-- infoNeighbours);
   List_Header(Implementation(logic_i),user_logic)==(user_logic);
   List_Header(Implementation(logic_i),get_board_0_O1)==(po <-- get_board_0_O1);
@@ -167,14 +170,16 @@ THEORY ListPreconditionX IS
   List_Precondition(Implementation(logic_i),avoid)==(btrue);
   Own_Precondition(Implementation(logic_i),since)==(btrue);
   List_Precondition(Implementation(logic_i),since)==(timer: uint32_t & elapsed: uint32_t);
+  Own_Precondition(Implementation(logic_i),land)==(btrue);
+  List_Precondition(Implementation(logic_i),land)==(pp: BOOL & qq: BOOL & result: BOOL);
   Own_Precondition(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(btrue);
   List_Precondition(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn: uint32_t & nn: -4..3 & o2: uint8_t & o1: uint8_t & o0: uint8_t);
   Own_Precondition(Implementation(logic_i),move)==(btrue);
   List_Precondition(Implementation(logic_i),move)==(l_lv: uint32_t & l_lv: 0..3 & l_av: uint32_t & l_av: -4..3);
-  Own_Precondition(Implementation(logic_i),state_machine)==(btrue);
-  List_Precondition(Implementation(logic_i),state_machine)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: 0..3 & av: uint32_t & av: 0..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t);
-  Own_Precondition(Implementation(logic_i),communication)==(btrue);
-  List_Precondition(Implementation(logic_i),communication)==(ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t);
+  Own_Precondition(Implementation(logic_i),read_master_clock)==(btrue);
+  List_Precondition(Implementation(logic_i),read_master_clock)==(btrue);
+  Own_Precondition(Implementation(logic_i),MovimentAndAvoidance)==(btrue);
+  List_Precondition(Implementation(logic_i),MovimentAndAvoidance)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t);
   Own_Precondition(Implementation(logic_i),infoNeighbours)==(btrue);
   List_Precondition(Implementation(logic_i),infoNeighbours)==(neighboursNumber: uint8_t);
   Own_Precondition(Implementation(logic_i),user_logic)==(btrue);
@@ -206,24 +211,26 @@ THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Implementation(logic_i),get_board_0_O3)==(po: uint8_t & board_0_O3: INT | po:=board_0_O3);
   Expanded_List_Substitution(Implementation(logic_i),get_board_0_O2)==(po: uint8_t & board_0_O2: INT | po:=board_0_O2);
   Expanded_List_Substitution(Implementation(logic_i),get_board_0_O1)==(po: uint8_t & board_0_O1: INT | po:=board_0_O1);
-  Expanded_List_Substitution(Implementation(logic_i),user_logic)==(btrue | @local_obs.(@(local_obs$2).(local_obs$2: uint8_t ==> local_obs:=local_obs$2);(local_obs: uint8_t | local_obs:=board_0_I1);(local_obs = IO_ON ==> (0: uint32_t & 0: 0..3 & av: uint32_t & av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0)) [] not(local_obs = IO_ON) ==> (btrue | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0)))));
+  Expanded_List_Substitution(Implementation(logic_i),user_logic)==(btrue | first_time = TRUE ==> ((btrue | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0));(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0) || @(smstate$0).(smstate$0: STATE ==> smstate:=smstate$0) || @(MBC$0).(MBC$0: uint32_t ==> MBC:=MBC$0) || @(cycle_timer$0).(cycle_timer$0: uint32_t ==> cycle_timer:=cycle_timer$0) || @(first_time$0).(first_time$0: BOOL ==> first_time:=first_time$0));(cycle_timer: uint32_t | cycle_timer:=ms_tick);first_time:=FALSE) [] not(first_time = TRUE) ==> @(time_elapsed,cycle_duration).(@(time_elapsed$2).(time_elapsed$2: uint32_t ==> time_elapsed:=time_elapsed$2);@(cycle_duration$2).(cycle_duration$2: uint32_t ==> cycle_duration:=cycle_duration$2);(cycle_timer: uint32_t & time_elapsed: uint32_t | @(elapsed$0).(elapsed$0: uint32_t ==> time_elapsed:=elapsed$0));(mul_uint32(SimSMovement_cycle_def,cycle_unit): INT & SimSMovement_cycle_def,cycle_unit: dom(mul_uint32) | cycle_duration:=mul_uint32(SimSMovement_cycle_def,cycle_unit));(cycle_duration<=time_elapsed ==> ((btrue | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0));(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0) || @(smstate$0).(smstate$0: STATE ==> smstate:=smstate$0) || @(MBC$0).(MBC$0: uint32_t ==> MBC:=MBC$0) || @(cycle_timer$0).(cycle_timer$0: uint32_t ==> cycle_timer:=cycle_timer$0) || @(first_time$0).(first_time$0: BOOL ==> first_time:=first_time$0));(cycle_timer: uint32_t | cycle_timer:=ms_tick)) [] not(cycle_duration<=time_elapsed) ==> skip)));
   Expanded_List_Substitution(Implementation(logic_i),infoNeighbours)==(neighboursNumber: uint8_t | @local_input.(@(local_input$2).(local_input$2: uint8_t ==> local_input:=local_input$2);(local_input: uint8_t | local_input:=board_0_I3);(local_input = IO_ON ==> (add_uint8(neighboursNumber,1): INT & neighboursNumber,1: dom(add_uint8) | neighboursNumber:=add_uint8(neighboursNumber,1)) [] not(local_input = IO_ON) ==> skip)));
-  Expanded_List_Substitution(Implementation(logic_i),communication)==(ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t | (MBC: uint32_t | MBC:=ms_tick);(1000: INT | ms_tick_cycle:=1000);(MBC/ms_tick_cycle: INT & MBC: INT & ms_tick_cycle: INT & not(ms_tick_cycle = 0) | s_tick_cycle:=MBC/ms_tick_cycle);(s_tick_cycle mod 2: INT & s_tick_cycle mod 2: NAT & s_tick_cycle: NAT & 2: NAT1 | tick:=s_tick_cycle mod 2);(tick = 0 ==> (IO_ON: INT | board_0_O8:=IO_ON) [] not(tick = 0) ==> (IO_OFF: INT | board_0_O8:=IO_OFF)));
-  Expanded_List_Substitution(Implementation(logic_i),state_machine)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: 0..3 & av: uint32_t & av: 0..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | smstate = INIT ==> ((lv: uint32_t & lv: 0..3 & 0: uint32_t & 0: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=DMove;(smstate = DMove ==> @(local_obstacle_l,local_obstacle_r).(@(local_obstacle_l$2).(local_obstacle_l$2: uint8_t ==> local_obstacle_l:=local_obstacle_l$2);@(local_obstacle_r$2).(local_obstacle_r$2: uint8_t ==> local_obstacle_r:=local_obstacle_r$2);(local_obstacle_l: uint8_t | local_obstacle_l:=board_0_I1);(local_obstacle_r: uint8_t | local_obstacle_r:=board_0_I2);(local_obstacle_l = IO_ON ==> (obst_position:=LEFT;smstate:=Avoid) [] not(local_obstacle_l = IO_ON) ==> (local_obstacle_r = IO_ON ==> (obst_position:=RIGHT;smstate:=Avoid) [] not(local_obstacle_r = IO_ON) ==> skip))) [] not(smstate = DMove) ==> smstate:=DMove);(smstate = Avoid ==> (obst_position = LEFT ==> ((0: uint32_t & 0: 0..3 & av: uint32_t & av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=Wait) [] not(obst_position = LEFT) ==> (obst_position = RIGHT ==> ((0: uint32_t & 0: 0..3 & av: uint32_t & av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=Wait) [] not(obst_position = RIGHT) ==> skip)) [] not(smstate = Avoid) ==> skip);(smstate = Wait ==> skip [] not(smstate = Wait) ==> smstate:=INIT)) [] not(smstate = INIT) ==> skip);
+  Expanded_List_Substitution(Implementation(logic_i),MovimentAndAvoidance)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | smstate = INIT ==> ((0: INT | MBC:=0);(lv: uint32_t & lv: 0..3 & 0: uint32_t & 0: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=DMove;(smstate = DMove ==> @(since_MBC_clock,local_obstacle_l,local_obstacle_r).(@(since_MBC_clock$2).(since_MBC_clock$2: uint32_t ==> since_MBC_clock:=since_MBC_clock$2);@(local_obstacle_l$2).(local_obstacle_l$2: uint8_t ==> local_obstacle_l:=local_obstacle_l$2);@(local_obstacle_r$2).(local_obstacle_r$2: uint8_t ==> local_obstacle_r:=local_obstacle_r$2);(MBC: uint32_t & since_MBC_clock: uint32_t | @(elapsed$0).(elapsed$0: uint32_t ==> since_MBC_clock:=elapsed$0));(local_obstacle_l: uint8_t | local_obstacle_l:=board_0_I1);(local_obstacle_r: uint8_t | local_obstacle_r:=board_0_I2);(local_obstacle_l = IO_ON ==> (obst_position:=LEFT;smstate:=Avoid) [] not(local_obstacle_l = IO_ON) ==> (local_obstacle_r = IO_ON ==> (obst_position:=RIGHT;smstate:=Avoid) [] not(local_obstacle_r = IO_ON) ==> skip))) [] not(smstate = DMove) ==> smstate:=DMove);(smstate = Avoid ==> (obst_position = LEFT ==> ((0: uint32_t & 0: 0..3 & av: uint32_t & av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=Wait) [] not(obst_position = LEFT) ==> (obst_position = RIGHT ==> ((0: uint32_t & 0: 0..3 & av: uint32_t & av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));smstate:=Wait) [] not(obst_position = RIGHT) ==> skip)) [] not(smstate = Avoid) ==> skip);(smstate = Wait ==> skip [] not(smstate = Wait) ==> smstate:=INIT)) [] not(smstate = INIT) ==> skip);
+  Expanded_List_Substitution(Implementation(logic_i),read_master_clock)==(btrue | @master_clock.(@(master_clock$2).(master_clock$2: uint8_t ==> master_clock:=master_clock$2);(master_clock: uint8_t | master_clock:=board_0_I10);(master_clock = my_clock ==> skip [] not(master_clock = my_clock) ==> ((add_uint32(current_time,1): INT & current_time,1: dom(add_uint32) | current_time:=add_uint32(current_time,1));(master_clock: INT | my_clock:=master_clock)))));
   Expanded_List_Substitution(Implementation(logic_i),move)==(l_lv: uint32_t & l_lv: 0..3 & l_av: uint32_t & l_av: -4..3 | (l_lv: uint32_t & l_lv: -4..3 & board_0_O3: uint8_t & board_0_O2: uint8_t & board_0_O1: uint8_t | @(o2$0).(o2$0: uint8_t ==> board_0_O3:=o2$0) || @(o1$0).(o1$0: uint8_t ==> board_0_O2:=o1$0) || @(o0$0).(o0$0: uint8_t ==> board_0_O1:=o0$0));(l_av: uint32_t & l_av: -4..3 & board_0_O6: uint8_t & board_0_O5: uint8_t & board_0_O4: uint8_t | @(o2$0).(o2$0: uint8_t ==> board_0_O6:=o2$0) || @(o1$0).(o1$0: uint8_t ==> board_0_O5:=o1$0) || @(o0$0).(o0$0: uint8_t ==> board_0_O4:=o0$0)));
   Expanded_List_Substitution(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn: uint32_t & nn: -4..3 & o2: uint8_t & o1: uint8_t & o0: uint8_t | @(o2$1).(o2$1: uint8_t ==> o2:=o2$1);@(o1$1).(o1$1: uint8_t ==> o1:=o1$1);@(o0$1).(o0$1: uint8_t ==> o0:=o0$1);@o_aux.(@(o_aux$2).(o_aux$2: uint32_t ==> o_aux:=o_aux$2);(nn = 0 ==> ((IO_OFF: INT | o2:=IO_OFF);(IO_OFF: INT | o1:=IO_OFF);(IO_OFF: INT | o0:=IO_OFF)) [] not(nn = 0) ==> skip);(nn<0 ==> ((IO_ON: INT | o2:=IO_ON);(sub_uint32(0,nn): INT & 0,nn: dom(sub_uint32) | o_aux:=sub_uint32(0,nn));(o_aux mod 2: INT & o_aux mod 2: NAT & o_aux: NAT & 2: NAT1 | o_aux:=o_aux mod 2);(o_aux = 0 ==> (IO_OFF: INT | o0:=IO_OFF) [] not(o_aux = 0) ==> (IO_ON: INT | o0:=IO_ON));(nn/2: INT & nn: INT & 2: INT & not(2 = 0) | o_aux:=nn/2);(o_aux mod 2: INT & o_aux mod 2: NAT & o_aux: NAT & 2: NAT1 | o_aux:=o_aux mod 2);(o_aux = 0 ==> (IO_OFF: INT | o1:=IO_OFF) [] not(o_aux = 0) ==> (IO_ON: INT | o1:=IO_ON))) [] not(nn<0) ==> skip);(0<nn ==> ((IO_OFF: INT | o2:=IO_OFF);(nn mod 2: INT & nn mod 2: NAT & nn: NAT & 2: NAT1 | o_aux:=nn mod 2);(o_aux = 0 ==> (IO_OFF: INT | o0:=IO_OFF) [] not(o_aux = 0) ==> (IO_ON: INT | o0:=IO_ON));(nn/2: INT & nn: INT & 2: INT & not(2 = 0) | o_aux:=nn/2);(o_aux mod 2: INT & o_aux mod 2: NAT & o_aux: NAT & 2: NAT1 | o_aux:=o_aux mod 2);(o_aux = 0 ==> (IO_OFF: INT | o1:=IO_OFF) [] not(o_aux = 0) ==> (IO_ON: INT | o1:=IO_ON))) [] not(0<nn) ==> skip)));
+  Expanded_List_Substitution(Implementation(logic_i),land)==(pp: BOOL & qq: BOOL & result: BOOL | result:=FALSE;(pp = TRUE ==> (qq = TRUE ==> result:=TRUE [] not(qq = TRUE) ==> skip) [] not(pp = TRUE) ==> skip));
   Expanded_List_Substitution(Implementation(logic_i),since)==(timer: uint32_t & elapsed: uint32_t | @(elapsed$1).(elapsed$1: uint32_t ==> elapsed:=elapsed$1);@local_time.(@(local_time$2).(local_time$2: uint32_t ==> local_time:=local_time$2);(local_time: uint32_t | local_time:=ms_tick);(sub_uint32(local_time,timer): INT & local_time,timer: dom(sub_uint32) | elapsed:=sub_uint32(local_time,timer))));
   Expanded_List_Substitution(Implementation(logic_i),avoid)==(btrue & IO_ON: INT | board_0_O7:=IO_ON);
   Expanded_List_Substitution(Implementation(logic_i),reset_outputs)==(btrue | (IO_OFF: INT | board_0_O1:=IO_OFF);(IO_OFF: INT | board_0_O2:=IO_OFF);(IO_OFF: INT | board_0_O3:=IO_OFF);(IO_OFF: INT | board_0_O4:=IO_OFF);(IO_OFF: INT | board_0_O5:=IO_OFF);(IO_OFF: INT | board_0_O6:=IO_OFF);(IO_OFF: INT | board_0_O7:=IO_OFF);(IO_OFF: INT | board_0_O8:=IO_OFF));
   List_Substitution(Implementation(logic_i),reset_outputs)==(board_0_O1:=IO_OFF;board_0_O2:=IO_OFF;board_0_O3:=IO_OFF;board_0_O4:=IO_OFF;board_0_O5:=IO_OFF;board_0_O6:=IO_OFF;board_0_O7:=IO_OFF;board_0_O8:=IO_OFF);
   List_Substitution(Implementation(logic_i),avoid)==(board_0_O7:=IO_ON);
   List_Substitution(Implementation(logic_i),since)==(elapsed: (elapsed: uint32_t);VAR local_time IN local_time: (local_time: uint32_t);local_time <-- get_ms_tick;elapsed:=sub_uint32(local_time,timer) END);
+  List_Substitution(Implementation(logic_i),land)==(result:=FALSE;IF pp = TRUE THEN IF qq = TRUE THEN result:=TRUE END END);
   List_Substitution(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2: (o2: uint8_t);o1: (o1: uint8_t);o0: (o0: uint8_t);VAR o_aux IN o_aux: (o_aux: uint32_t);IF nn = 0 THEN o2:=IO_OFF;o1:=IO_OFF;o0:=IO_OFF END;IF nn<0 THEN o2:=IO_ON;o_aux:=sub_uint32(0,nn);o_aux:=o_aux mod 2;IF o_aux = 0 THEN o0:=IO_OFF ELSE o0:=IO_ON END;o_aux:=nn/2;o_aux:=o_aux mod 2;IF o_aux = 0 THEN o1:=IO_OFF ELSE o1:=IO_ON END END;IF 0<nn THEN o2:=IO_OFF;o_aux:=nn mod 2;IF o_aux = 0 THEN o0:=IO_OFF ELSE o0:=IO_ON END;o_aux:=nn/2;o_aux:=o_aux mod 2;IF o_aux = 0 THEN o1:=IO_OFF ELSE o1:=IO_ON END END END);
   List_Substitution(Implementation(logic_i),move)==(board_0_O3,board_0_O2,board_0_O1 <-- nat_3_bits_to_bin_3_bits(l_lv);board_0_O6,board_0_O5,board_0_O4 <-- nat_3_bits_to_bin_3_bits(l_av));
-  List_Substitution(Implementation(logic_i),state_machine)==(IF smstate = INIT THEN move(lv,0);smstate:=DMove;IF smstate = DMove THEN VAR local_obstacle_l,local_obstacle_r IN local_obstacle_l: (local_obstacle_l: uint8_t);local_obstacle_r: (local_obstacle_r: uint8_t);local_obstacle_l <-- get_board_0_I1;local_obstacle_r <-- get_board_0_I2;IF local_obstacle_l = IO_ON THEN obst_position:=LEFT;smstate:=Avoid ELSIF local_obstacle_r = IO_ON THEN obst_position:=RIGHT;smstate:=Avoid ELSE skip END END ELSE smstate:=DMove END;IF smstate = Avoid THEN IF obst_position = LEFT THEN move(0,av);smstate:=Wait ELSIF obst_position = RIGHT THEN move(0,av);smstate:=Wait ELSE skip END END;IF smstate = Wait THEN skip ELSE smstate:=INIT END END);
-  List_Substitution(Implementation(logic_i),communication)==(MBC <-- get_ms_tick;ms_tick_cycle:=1000;s_tick_cycle:=MBC/ms_tick_cycle;tick:=s_tick_cycle mod 2;IF tick = 0 THEN board_0_O8:=IO_ON ELSE board_0_O8:=IO_OFF END);
+  List_Substitution(Implementation(logic_i),read_master_clock)==(VAR master_clock IN master_clock: (master_clock: uint8_t);master_clock <-- get_board_0_I10;IF master_clock = my_clock THEN skip ELSE current_time:=add_uint32(current_time,1);my_clock:=master_clock END END);
+  List_Substitution(Implementation(logic_i),MovimentAndAvoidance)==(IF smstate = INIT THEN MBC:=0;move(lv,0);smstate:=DMove;IF smstate = DMove THEN VAR since_MBC_clock,local_obstacle_l,local_obstacle_r IN since_MBC_clock: (since_MBC_clock: uint32_t);local_obstacle_l: (local_obstacle_l: uint8_t);local_obstacle_r: (local_obstacle_r: uint8_t);since_MBC_clock <-- since(MBC);local_obstacle_l <-- get_board_0_I1;local_obstacle_r <-- get_board_0_I2;IF local_obstacle_l = IO_ON THEN obst_position:=LEFT;smstate:=Avoid ELSIF local_obstacle_r = IO_ON THEN obst_position:=RIGHT;smstate:=Avoid ELSE skip END END ELSE smstate:=DMove END;IF smstate = Avoid THEN IF obst_position = LEFT THEN move(0,av);smstate:=Wait ELSIF obst_position = RIGHT THEN move(0,av);smstate:=Wait ELSE skip END END;IF smstate = Wait THEN skip ELSE smstate:=INIT END END);
   List_Substitution(Implementation(logic_i),infoNeighbours)==(VAR local_input IN local_input: (local_input: uint8_t);local_input <-- get_board_0_I3;IF local_input = IO_ON THEN neighboursNumber:=add_uint8(neighboursNumber,1) END END);
-  List_Substitution(Implementation(logic_i),user_logic)==(VAR local_obs IN local_obs: (local_obs: uint8_t);local_obs <-- get_board_0_I1;IF local_obs = IO_ON THEN move(0,av) ELSE reset_outputs END END);
+  List_Substitution(Implementation(logic_i),user_logic)==(IF first_time = TRUE THEN reset_outputs;MovimentAndAvoidance;cycle_timer <-- get_ms_tick;first_time:=FALSE ELSE VAR time_elapsed,cycle_duration IN time_elapsed: (time_elapsed: uint32_t);cycle_duration: (cycle_duration: uint32_t);time_elapsed <-- since(cycle_timer);cycle_duration:=mul_uint32(SimSMovement_cycle_def,cycle_unit);IF cycle_duration<=time_elapsed THEN reset_outputs;MovimentAndAvoidance;cycle_timer <-- get_ms_tick END END END);
   List_Substitution(Implementation(logic_i),get_board_0_O1)==(po:=board_0_O1);
   List_Substitution(Implementation(logic_i),get_board_0_O2)==(po:=board_0_O2);
   List_Substitution(Implementation(logic_i),get_board_0_O3)==(po:=board_0_O3);
@@ -363,7 +370,7 @@ THEORY ListIncludedOperationsX IS
 END
 &
 THEORY InheritedEnvX IS
-  VisibleVariables(Implementation(logic_i))==(Type(board_0_O1) == Mvv(btype(INTEGER,?,?));Type(board_0_O2) == Mvv(btype(INTEGER,?,?));Type(board_0_O3) == Mvv(btype(INTEGER,?,?));Type(board_0_O4) == Mvv(btype(INTEGER,?,?));Type(board_0_O5) == Mvv(btype(INTEGER,?,?));Type(board_0_O6) == Mvv(btype(INTEGER,?,?));Type(board_0_O7) == Mvv(btype(INTEGER,?,?));Type(board_0_O8) == Mvv(btype(INTEGER,?,?));Type(smstate) == Mvv(etype(STATE,?,?));Type(MBC) == Mvv(btype(INTEGER,?,?));Type(cycle_timer) == Mvv(btype(INTEGER,?,?));Type(first_time) == Mvv(btype(BOOL,?,?));Type(ms_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(s_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(tick) == Mvv(btype(INTEGER,?,?));Type(obst_position) == Mvv(etype(POSITION,?,?)));
+  VisibleVariables(Implementation(logic_i))==(Type(board_0_O1) == Mvv(btype(INTEGER,?,?));Type(board_0_O2) == Mvv(btype(INTEGER,?,?));Type(board_0_O3) == Mvv(btype(INTEGER,?,?));Type(board_0_O4) == Mvv(btype(INTEGER,?,?));Type(board_0_O5) == Mvv(btype(INTEGER,?,?));Type(board_0_O6) == Mvv(btype(INTEGER,?,?));Type(board_0_O7) == Mvv(btype(INTEGER,?,?));Type(board_0_O8) == Mvv(btype(INTEGER,?,?));Type(smstate) == Mvv(etype(STATE,?,?));Type(MBC) == Mvv(btype(INTEGER,?,?));Type(current_time) == Mvv(btype(INTEGER,?,?));Type(my_clock) == Mvv(btype(INTEGER,?,?));Type(cycle_timer) == Mvv(btype(INTEGER,?,?));Type(first_time) == Mvv(btype(BOOL,?,?));Type(ms_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(s_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(tick) == Mvv(btype(INTEGER,?,?));Type(obst_position) == Mvv(etype(POSITION,?,?)));
   Operations(Implementation(logic_i))==(Type(get_board_0_O8) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O7) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O6) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O5) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O4) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O3) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O2) == Cst(btype(INTEGER,?,?),No_type);Type(get_board_0_O1) == Cst(btype(INTEGER,?,?),No_type);Type(user_logic) == Cst(No_type,No_type))
 END
 &
@@ -381,10 +388,10 @@ THEORY ListVisibleStaticX IS
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Implementation(logic_i)) == (? | ? | ? | ? | reset_outputs,avoid,since,nat_3_bits_to_bin_3_bits,move,state_machine,communication,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8,refinement_of_infoNeighbours,refinement_of_communication,refinement_of_state_machine,refinement_of_move,refinement_of_nat_3_bits_to_bin_3_bits,refinement_of_since,refinement_of_avoid,refinement_of_reset_outputs | ? | seen(Machine(g_types)),seen(Machine(g_operators)),seen(Machine(io_constants)),seen(Machine(lchip_interface)),seen(Machine(user_ctx)),seen(Machine(inputs)) | ? | logic_i);
+  List_Of_Ids(Implementation(logic_i)) == (? | ? | ? | ? | reset_outputs,avoid,since,land,nat_3_bits_to_bin_3_bits,move,read_master_clock,MovimentAndAvoidance,infoNeighbours,user_logic,get_board_0_O1,get_board_0_O2,get_board_0_O3,get_board_0_O4,get_board_0_O5,get_board_0_O6,get_board_0_O7,get_board_0_O8,refinement_of_infoNeighbours,refinement_of_MovimentAndAvoidance,refinement_of_read_master_clock,refinement_of_move,refinement_of_nat_3_bits_to_bin_3_bits,refinement_of_land,refinement_of_since,refinement_of_avoid,refinement_of_reset_outputs | ? | seen(Machine(g_types)),seen(Machine(g_operators)),seen(Machine(io_constants)),seen(Machine(lchip_interface)),seen(Machine(user_ctx)),seen(Machine(inputs)) | ? | logic_i);
   List_Of_HiddenCst_Ids(Implementation(logic_i)) == (? | ?);
   List_Of_VisibleCst_Ids(Implementation(logic_i)) == (?);
-  List_Of_VisibleVar_Ids(Implementation(logic_i)) == (obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1 | ?);
+  List_Of_VisibleVar_Ids(Implementation(logic_i)) == (obst_position,tick,s_tick_cycle,ms_tick_cycle,first_time,cycle_timer,my_clock,current_time,MBC,smstate,board_0_O8,board_0_O7,board_0_O6,board_0_O5,board_0_O4,board_0_O3,board_0_O2,board_0_O1 | ?);
   List_Of_Ids_SeenBNU(Implementation(logic_i)) == (?: ?);
   List_Of_Ids(Machine(inputs)) == (? | ? | board_0_I20,board_0_I19,board_0_I18,board_0_I17,board_0_I16,board_0_I15,board_0_I14,board_0_I13,board_0_I12,board_0_I11,board_0_I10,board_0_I9,board_0_I8,board_0_I7,board_0_I6,board_0_I5,board_0_I4,board_0_I3,board_0_I2,board_0_I1 | ? | read_inputs,get_board_0_I1,get_board_0_I2,get_board_0_I3,get_board_0_I4,get_board_0_I5,get_board_0_I6,get_board_0_I7,get_board_0_I8,get_board_0_I9,get_board_0_I10,get_board_0_I11,get_board_0_I12,get_board_0_I13,get_board_0_I14,get_board_0_I15,get_board_0_I16,get_board_0_I17,get_board_0_I18,get_board_0_I19,get_board_0_I20 | ? | seen(Machine(g_types)) | ? | inputs);
   List_Of_HiddenCst_Ids(Machine(inputs)) == (? | ?);
@@ -424,15 +431,16 @@ THEORY ListOfIdsX IS
 END
 &
 THEORY VisibleVariablesEnvX IS
-  VisibleVariables(Implementation(logic_i)) == (Type(obst_position) == Mvv(etype(POSITION,?,?));Type(tick) == Mvv(btype(INTEGER,?,?));Type(s_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(ms_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(first_time) == Mvv(btype(BOOL,?,?));Type(cycle_timer) == Mvv(btype(INTEGER,?,?));Type(MBC) == Mvv(btype(INTEGER,?,?));Type(smstate) == Mvv(etype(STATE,?,?));Type(board_0_O8) == Mvv(btype(INTEGER,?,?));Type(board_0_O7) == Mvv(btype(INTEGER,?,?));Type(board_0_O6) == Mvv(btype(INTEGER,?,?));Type(board_0_O5) == Mvv(btype(INTEGER,?,?));Type(board_0_O4) == Mvv(btype(INTEGER,?,?));Type(board_0_O3) == Mvv(btype(INTEGER,?,?));Type(board_0_O2) == Mvv(btype(INTEGER,?,?));Type(board_0_O1) == Mvv(btype(INTEGER,?,?)))
+  VisibleVariables(Implementation(logic_i)) == (Type(obst_position) == Mvv(etype(POSITION,?,?));Type(tick) == Mvv(btype(INTEGER,?,?));Type(s_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(ms_tick_cycle) == Mvv(btype(INTEGER,?,?));Type(first_time) == Mvv(btype(BOOL,?,?));Type(cycle_timer) == Mvv(btype(INTEGER,?,?));Type(my_clock) == Mvv(btype(INTEGER,?,?));Type(current_time) == Mvv(btype(INTEGER,?,?));Type(MBC) == Mvv(btype(INTEGER,?,?));Type(smstate) == Mvv(etype(STATE,?,?));Type(board_0_O8) == Mvv(btype(INTEGER,?,?));Type(board_0_O7) == Mvv(btype(INTEGER,?,?));Type(board_0_O6) == Mvv(btype(INTEGER,?,?));Type(board_0_O5) == Mvv(btype(INTEGER,?,?));Type(board_0_O4) == Mvv(btype(INTEGER,?,?));Type(board_0_O3) == Mvv(btype(INTEGER,?,?));Type(board_0_O2) == Mvv(btype(INTEGER,?,?));Type(board_0_O1) == Mvv(btype(INTEGER,?,?)))
 END
 &
 THEORY VariablesLocEnvX IS
   Variables_Loc(Implementation(logic_i),since, 1) == (Type(local_time) == Lvl(btype(INTEGER,?,?)));
   Variables_Loc(Implementation(logic_i),nat_3_bits_to_bin_3_bits, 1) == (Type(o_aux) == Lvl(btype(INTEGER,?,?)));
-  Variables_Loc(Implementation(logic_i),state_machine, 1) == (Type(local_obstacle_l) == Lvl(btype(INTEGER,?,?));Type(local_obstacle_r) == Lvl(btype(INTEGER,?,?)));
+  Variables_Loc(Implementation(logic_i),read_master_clock, 1) == (Type(master_clock) == Lvl(btype(INTEGER,?,?)));
+  Variables_Loc(Implementation(logic_i),MovimentAndAvoidance, 1) == (Type(since_MBC_clock) == Lvl(btype(INTEGER,?,?));Type(local_obstacle_l) == Lvl(btype(INTEGER,?,?));Type(local_obstacle_r) == Lvl(btype(INTEGER,?,?)));
   Variables_Loc(Implementation(logic_i),infoNeighbours, 1) == (Type(local_input) == Lvl(btype(INTEGER,?,?)));
-  Variables_Loc(Implementation(logic_i),user_logic, 1) == (Type(local_obs) == Lvl(btype(INTEGER,?,?)))
+  Variables_Loc(Implementation(logic_i),user_logic, 1) == (Type(time_elapsed) == Lvl(btype(INTEGER,?,?));Type(cycle_duration) == Lvl(btype(INTEGER,?,?)))
 END
 &
 THEORY TCIntRdX IS
@@ -451,17 +459,18 @@ THEORY TCIntRdX IS
 END
 &
 THEORY ListLocalOperationsX IS
-  List_Local_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,nat_3_bits_to_bin_3_bits,move,state_machine,communication,infoNeighbours)
+  List_Local_Operations(Implementation(logic_i))==(reset_outputs,avoid,since,land,nat_3_bits_to_bin_3_bits,move,read_master_clock,MovimentAndAvoidance,infoNeighbours)
 END
 &
 THEORY ListLocalInputX IS
   List_Local_Input(Implementation(logic_i),reset_outputs)==(?);
   List_Local_Input(Implementation(logic_i),avoid)==(?);
   List_Local_Input(Implementation(logic_i),since)==(timer);
+  List_Local_Input(Implementation(logic_i),land)==(pp,qq);
   List_Local_Input(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn);
   List_Local_Input(Implementation(logic_i),move)==(l_lv,l_av);
-  List_Local_Input(Implementation(logic_i),state_machine)==(?);
-  List_Local_Input(Implementation(logic_i),communication)==(?);
+  List_Local_Input(Implementation(logic_i),read_master_clock)==(?);
+  List_Local_Input(Implementation(logic_i),MovimentAndAvoidance)==(?);
   List_Local_Input(Implementation(logic_i),infoNeighbours)==(?)
 END
 &
@@ -469,10 +478,11 @@ THEORY ListLocalOutputX IS
   List_Local_Output(Implementation(logic_i),reset_outputs)==(?);
   List_Local_Output(Implementation(logic_i),avoid)==(?);
   List_Local_Output(Implementation(logic_i),since)==(elapsed);
+  List_Local_Output(Implementation(logic_i),land)==(result);
   List_Local_Output(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2,o1,o0);
   List_Local_Output(Implementation(logic_i),move)==(?);
-  List_Local_Output(Implementation(logic_i),state_machine)==(?);
-  List_Local_Output(Implementation(logic_i),communication)==(?);
+  List_Local_Output(Implementation(logic_i),read_master_clock)==(?);
+  List_Local_Output(Implementation(logic_i),MovimentAndAvoidance)==(?);
   List_Local_Output(Implementation(logic_i),infoNeighbours)==(neighboursNumber)
 END
 &
@@ -480,10 +490,11 @@ THEORY ListLocalHeaderX IS
   List_Local_Header(Implementation(logic_i),reset_outputs)==(reset_outputs);
   List_Local_Header(Implementation(logic_i),avoid)==(avoid);
   List_Local_Header(Implementation(logic_i),since)==(elapsed <-- since(timer));
+  List_Local_Header(Implementation(logic_i),land)==(result <-- land(pp,qq));
   List_Local_Header(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2,o1,o0 <-- nat_3_bits_to_bin_3_bits(nn));
   List_Local_Header(Implementation(logic_i),move)==(move(l_lv,l_av));
-  List_Local_Header(Implementation(logic_i),state_machine)==(state_machine);
-  List_Local_Header(Implementation(logic_i),communication)==(communication);
+  List_Local_Header(Implementation(logic_i),read_master_clock)==(read_master_clock);
+  List_Local_Header(Implementation(logic_i),MovimentAndAvoidance)==(MovimentAndAvoidance);
   List_Local_Header(Implementation(logic_i),infoNeighbours)==(neighboursNumber <-- infoNeighbours)
 END
 &
@@ -491,44 +502,48 @@ THEORY ListLocalPreconditionX IS
   List_Local_Precondition(Implementation(logic_i),reset_outputs)==(btrue);
   List_Local_Precondition(Implementation(logic_i),avoid)==(btrue);
   List_Local_Precondition(Implementation(logic_i),since)==(timer: uint32_t & elapsed: uint32_t);
+  List_Local_Precondition(Implementation(logic_i),land)==(pp: BOOL & qq: BOOL & result: BOOL);
   List_Local_Precondition(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn: uint32_t & nn: -4..3 & o2: uint8_t & o1: uint8_t & o0: uint8_t);
   List_Local_Precondition(Implementation(logic_i),move)==(l_lv: uint32_t & l_lv: 0..3 & l_av: uint32_t & l_av: -4..3);
-  List_Local_Precondition(Implementation(logic_i),state_machine)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: 0..3 & av: uint32_t & av: 0..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t);
-  List_Local_Precondition(Implementation(logic_i),communication)==(ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t);
+  List_Local_Precondition(Implementation(logic_i),read_master_clock)==(btrue);
+  List_Local_Precondition(Implementation(logic_i),MovimentAndAvoidance)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t);
   List_Local_Precondition(Implementation(logic_i),infoNeighbours)==(neighboursNumber: uint8_t)
 END
 &
 THEORY ListLocalSubstitutionX IS
   Expanded_List_Local_Substitution(Implementation(logic_i),infoNeighbours)==(neighboursNumber: uint8_t | @(neighboursNumber$0).(neighboursNumber$0: uint8_t ==> neighboursNumber:=neighboursNumber$0));
-  Expanded_List_Local_Substitution(Implementation(logic_i),communication)==(ms_tick_cycle: uint32_t & s_tick_cycle: uint32_t & tick: uint32_t | @(ms_tick_cycle$0).(ms_tick_cycle$0: uint32_t ==> ms_tick_cycle:=ms_tick_cycle$0) || @(s_tick_cycle$0).(s_tick_cycle$0: uint32_t ==> s_tick_cycle:=s_tick_cycle$0) || @(tick$0).(tick$0: uint32_t ==> tick:=tick$0));
-  Expanded_List_Local_Substitution(Implementation(logic_i),state_machine)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: 0..3 & av: uint32_t & av: 0..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0) || @(smstate$0).(smstate$0: STATE ==> smstate:=smstate$0) || @(MBC$0).(MBC$0: uint32_t ==> MBC:=MBC$0) || @(cycle_timer$0).(cycle_timer$0: uint32_t ==> cycle_timer:=cycle_timer$0) || @(first_time$0).(first_time$0: BOOL ==> first_time:=first_time$0));
+  Expanded_List_Local_Substitution(Implementation(logic_i),MovimentAndAvoidance)==(MBC: uint32_t & smstate: STATE & cycle_timer: uint32_t & lv: uint32_t & lv: -3..3 & av: uint32_t & av: -3..3 & board_0_O1: uint8_t & board_0_O2: uint8_t & board_0_O3: uint8_t & board_0_O4: uint8_t & board_0_O5: uint8_t & board_0_O6: uint8_t & board_0_O7: uint8_t & board_0_O8: uint8_t | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0) || @(smstate$0).(smstate$0: STATE ==> smstate:=smstate$0) || @(MBC$0).(MBC$0: uint32_t ==> MBC:=MBC$0) || @(cycle_timer$0).(cycle_timer$0: uint32_t ==> cycle_timer:=cycle_timer$0) || @(first_time$0).(first_time$0: BOOL ==> first_time:=first_time$0));
+  Expanded_List_Local_Substitution(Implementation(logic_i),read_master_clock)==(btrue | @(current_time$0).(current_time$0: uint32_t ==> current_time:=current_time$0) || @(my_clock$0).(my_clock$0: uint8_t ==> my_clock:=my_clock$0));
   Expanded_List_Local_Substitution(Implementation(logic_i),move)==(l_lv: uint32_t & l_lv: 0..3 & l_av: uint32_t & l_av: -4..3 | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0));
   Expanded_List_Local_Substitution(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(nn: uint32_t & nn: -4..3 & o2: uint8_t & o1: uint8_t & o0: uint8_t | @(o2$0).(o2$0: uint8_t ==> o2:=o2$0) || @(o1$0).(o1$0: uint8_t ==> o1:=o1$0) || @(o0$0).(o0$0: uint8_t ==> o0:=o0$0));
+  Expanded_List_Local_Substitution(Implementation(logic_i),land)==(pp: BOOL & qq: BOOL & result: BOOL | @(result$0).(result$0: BOOL ==> result:=result$0));
   Expanded_List_Local_Substitution(Implementation(logic_i),since)==(timer: uint32_t & elapsed: uint32_t | @(elapsed$0).(elapsed$0: uint32_t ==> elapsed:=elapsed$0));
   Expanded_List_Local_Substitution(Implementation(logic_i),avoid)==(btrue | @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0));
   Expanded_List_Local_Substitution(Implementation(logic_i),reset_outputs)==(btrue | @(board_0_O1$0).(board_0_O1$0: uint8_t ==> board_0_O1:=board_0_O1$0) || @(board_0_O2$0).(board_0_O2$0: uint8_t ==> board_0_O2:=board_0_O2$0) || @(board_0_O3$0).(board_0_O3$0: uint8_t ==> board_0_O3:=board_0_O3$0) || @(board_0_O4$0).(board_0_O4$0: uint8_t ==> board_0_O4:=board_0_O4$0) || @(board_0_O5$0).(board_0_O5$0: uint8_t ==> board_0_O5:=board_0_O5$0) || @(board_0_O6$0).(board_0_O6$0: uint8_t ==> board_0_O6:=board_0_O6$0) || @(board_0_O7$0).(board_0_O7$0: uint8_t ==> board_0_O7:=board_0_O7$0) || @(board_0_O8$0).(board_0_O8$0: uint8_t ==> board_0_O8:=board_0_O8$0));
   List_Local_Substitution(Implementation(logic_i),reset_outputs)==(board_0_O1:: uint8_t || board_0_O2:: uint8_t || board_0_O3:: uint8_t || board_0_O4:: uint8_t || board_0_O5:: uint8_t || board_0_O6:: uint8_t || board_0_O7:: uint8_t || board_0_O8:: uint8_t);
   List_Local_Substitution(Implementation(logic_i),avoid)==(board_0_O7:: uint8_t);
   List_Local_Substitution(Implementation(logic_i),since)==(elapsed:: uint32_t);
+  List_Local_Substitution(Implementation(logic_i),land)==(result:: BOOL);
   List_Local_Substitution(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(o2:: uint8_t || o1:: uint8_t || o0:: uint8_t);
   List_Local_Substitution(Implementation(logic_i),move)==(board_0_O1:: uint8_t || board_0_O2:: uint8_t || board_0_O3:: uint8_t || board_0_O4:: uint8_t || board_0_O5:: uint8_t || board_0_O6:: uint8_t);
-  List_Local_Substitution(Implementation(logic_i),state_machine)==(board_0_O1:: uint8_t || board_0_O2:: uint8_t || board_0_O3:: uint8_t || board_0_O4:: uint8_t || board_0_O5:: uint8_t || board_0_O6:: uint8_t || board_0_O7:: uint8_t || board_0_O8:: uint8_t || smstate:: STATE || MBC:: uint32_t || cycle_timer:: uint32_t || first_time:: BOOL);
-  List_Local_Substitution(Implementation(logic_i),communication)==(ms_tick_cycle:: uint32_t || s_tick_cycle:: uint32_t || tick:: uint32_t);
+  List_Local_Substitution(Implementation(logic_i),read_master_clock)==(current_time:: uint32_t || my_clock:: uint8_t);
+  List_Local_Substitution(Implementation(logic_i),MovimentAndAvoidance)==(board_0_O1:: uint8_t || board_0_O2:: uint8_t || board_0_O3:: uint8_t || board_0_O4:: uint8_t || board_0_O5:: uint8_t || board_0_O6:: uint8_t || board_0_O7:: uint8_t || board_0_O8:: uint8_t || smstate:: STATE || MBC:: uint32_t || cycle_timer:: uint32_t || first_time:: BOOL);
   List_Local_Substitution(Implementation(logic_i),infoNeighbours)==(neighboursNumber:: uint8_t)
 END
 &
 THEORY TypingPredicateX IS
-  TypingPredicate(Implementation(logic_i))==(board_0_O1: INTEGER & board_0_O2: INTEGER & board_0_O3: INTEGER & board_0_O4: INTEGER & board_0_O5: INTEGER & board_0_O6: INTEGER & board_0_O7: INTEGER & board_0_O8: INTEGER & smstate: STATE & MBC: INTEGER & cycle_timer: INTEGER & first_time: BOOL & ms_tick_cycle: INTEGER & s_tick_cycle: INTEGER & tick: INTEGER & obst_position: POSITION)
+  TypingPredicate(Implementation(logic_i))==(board_0_O1: INTEGER & board_0_O2: INTEGER & board_0_O3: INTEGER & board_0_O4: INTEGER & board_0_O5: INTEGER & board_0_O6: INTEGER & board_0_O7: INTEGER & board_0_O8: INTEGER & smstate: STATE & MBC: INTEGER & current_time: INTEGER & my_clock: INTEGER & cycle_timer: INTEGER & first_time: BOOL & ms_tick_cycle: INTEGER & s_tick_cycle: INTEGER & tick: INTEGER & obst_position: POSITION)
 END
 &
 THEORY ImportedVariablesListX END
 &
 THEORY ListLocalOpInvariantX IS
   LocalOp_Expanded_Invariant(Implementation(logic_i),infoNeighbours)==(btrue);
-  LocalOp_Expanded_Invariant(Implementation(logic_i),communication)==(btrue);
-  LocalOp_Expanded_Invariant(Implementation(logic_i),state_machine)==(btrue);
+  LocalOp_Expanded_Invariant(Implementation(logic_i),MovimentAndAvoidance)==(btrue);
+  LocalOp_Expanded_Invariant(Implementation(logic_i),read_master_clock)==(btrue);
   LocalOp_Expanded_Invariant(Implementation(logic_i),move)==(btrue);
   LocalOp_Expanded_Invariant(Implementation(logic_i),nat_3_bits_to_bin_3_bits)==(btrue);
+  LocalOp_Expanded_Invariant(Implementation(logic_i),land)==(btrue);
   LocalOp_Expanded_Invariant(Implementation(logic_i),since)==(btrue);
   LocalOp_Expanded_Invariant(Implementation(logic_i),avoid)==(btrue);
   LocalOp_Expanded_Invariant(Implementation(logic_i),reset_outputs)==(btrue)

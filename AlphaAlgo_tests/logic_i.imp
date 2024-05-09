@@ -13,38 +13,42 @@ SEES
     // pragma SAFETY_VARS
 CONCRETE_VARIABLES
     board_0_O1,
-	 board_0_O2,
-	 board_0_O3,
-	 board_0_O4,
-	 board_0_O5,
-	 board_0_O6,
-	 board_0_O7,
-	 board_0_O8,
+	board_0_O2,
+	board_0_O3,
+	board_0_O4,
+	board_0_O5,
+	board_0_O6,
+	board_0_O7,
+	board_0_O8,
 	
-	 smstate,
-    MBC,
+	smstate,
+    MBC, //model variable
+    current_time, // Counts time according to the master clock
+    my_clock,     // stores the last signal (IO_ON or IO_OFF) received
     
     cycle_timer,
     first_time,
     
-    ms_tick_cycle,
+    ms_tick_cycle,//translate variables
     s_tick_cycle,
     tick,
     
-    obst_position
+    obst_position //model variable
     
 INVARIANT
     board_0_O1 : uint8_t &
-	 board_0_O2 : uint8_t &
-	 board_0_O3 : uint8_t &
-	 board_0_O4 : uint8_t &
-	 board_0_O5 : uint8_t &
-	 board_0_O6 : uint8_t &
-	 board_0_O7 : uint8_t &
-	 board_0_O8 : uint8_t &
+	board_0_O2 : uint8_t &
+	board_0_O3 : uint8_t &
+	board_0_O4 : uint8_t &
+	board_0_O5 : uint8_t &
+	board_0_O6 : uint8_t &
+	board_0_O7 : uint8_t &
+	board_0_O8 : uint8_t &
 	
-	 smstate:STATE &
+	smstate:STATE &
     MBC:uint32_t &
+    current_time:uint32_t &
+    my_clock:uint8_t&
     
     cycle_timer:uint32_t &
     first_time: BOOL &
@@ -57,16 +61,18 @@ INVARIANT
     
 INITIALISATION
     board_0_O1 := IO_OFF;
-	 board_0_O2 := IO_OFF;
-	 board_0_O3 := IO_OFF;
-	 board_0_O4 := IO_OFF;
-	 board_0_O5 := IO_OFF;
-	 board_0_O6 := IO_OFF;
-	 board_0_O7 := IO_OFF;
-	 board_0_O8 := IO_OFF;
+	board_0_O2 := IO_OFF;
+	board_0_O3 := IO_OFF;
+	board_0_O4 := IO_OFF;
+	board_0_O5 := IO_OFF;
+	board_0_O6 := IO_OFF;
+	board_0_O7 := IO_OFF;
+	board_0_O8 := IO_OFF;
 	
-	 smstate := INIT;
+	smstate := INIT;
     MBC := 0;
+    current_time := 0;
+    my_clock := 0;
     
     cycle_timer := 0;
     first_time := TRUE;
@@ -83,13 +89,13 @@ LOCAL_OPERATIONS
     reset_outputs = 
     BEGIN
        board_0_O1 :: uint8_t ||
-	    board_0_O2 :: uint8_t ||
-	    board_0_O3 :: uint8_t ||
-	    board_0_O4 :: uint8_t ||
-	    board_0_O5 :: uint8_t ||
-	    board_0_O6 :: uint8_t ||
-	    board_0_O7 :: uint8_t ||
-	    board_0_O8 :: uint8_t 
+	   board_0_O2 :: uint8_t ||
+	   board_0_O3 :: uint8_t ||
+	   board_0_O4 :: uint8_t ||
+	   board_0_O5 :: uint8_t ||
+	   board_0_O6 :: uint8_t ||
+	   board_0_O7 :: uint8_t ||
+	   board_0_O8 :: uint8_t 
     END;    
     
     avoid = 
@@ -101,6 +107,14 @@ LOCAL_OPERATIONS
     PRE timer:uint32_t & elapsed:uint32_t
     THEN
         elapsed::uint32_t
+    END;
+    
+    
+    // Logical and (&)
+    result <-- land(pp,qq) = 
+    PRE pp:BOOL & qq:BOOL & result:BOOL
+    THEN
+        result::BOOL
     END;
     
     o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
@@ -124,14 +138,19 @@ LOCAL_OPERATIONS
                
     END;
     
+    read_master_clock = 
+    BEGIN
+        current_time::uint32_t ||
+        my_clock::uint8_t
+    END;
     
-    state_machine = 
+    MovimentAndAvoidance = 
     PRE 
         MBC     : uint32_t & 
         smstate : STATE &
         cycle_timer : uint32_t &
-        lv:uint32_t & lv:0..3 &
-        av:uint32_t & av:0..3 &
+        lv:uint32_t & lv:(-3..3) &
+        av:uint32_t & av:(-3..3) &
         board_0_O1 : uint8_t &
         board_0_O2 : uint8_t &
         board_0_O3 : uint8_t &
@@ -155,7 +174,7 @@ LOCAL_OPERATIONS
         first_time :: BOOL        
     END;
     
-    communication =
+    /*communication =
     PRE ms_tick_cycle : uint32_t &
         s_tick_cycle  : uint32_t &
         tick          : uint32_t  
@@ -163,7 +182,7 @@ LOCAL_OPERATIONS
         ms_tick_cycle :: uint32_t ||
         s_tick_cycle  :: uint32_t ||
         tick          :: uint32_t
-    END;
+    END;*/
     
     neighboursNumber <-- infoNeighbours = 
     PRE neighboursNumber : uint8_t
@@ -201,6 +220,16 @@ OPERATIONS
         END        
     END;    
     
+    // Logical and (&)
+    result <-- land(pp,qq) = 
+    BEGIN
+        result := FALSE;
+        IF (pp = TRUE) THEN 
+            IF (qq = TRUE) THEN
+                result := TRUE
+            END
+        END
+    END;
     
     // Transforms 3 bits unsigned integers into 3 bits
     o2, o1, o0 <-- nat_3_bits_to_bin_3_bits(nn) = 
@@ -221,7 +250,7 @@ OPERATIONS
             IF (nn < 0) THEN
             o2 := IO_ON;
             
-                o_aux := sub_uint32(0,nn);    
+                o_aux := sub_uint32(0,nn); //try to convert an negative interger into positive
                 o_aux := o_aux mod 2;    
                 IF (o_aux = 0) THEN 
                     o0 := IO_OFF
@@ -272,22 +301,41 @@ OPERATIONS
         board_0_O4 <-- nat_3_bits_to_bin_3_bits(l_av)
     END;
     
-   
+    read_master_clock = 
+    BEGIN
+        VAR master_clock IN
+            master_clock:(master_clock:uint8_t);
+            
+            master_clock <-- get_board_0_I10;
+            
+            IF master_clock = my_clock THEN
+                skip
+            ELSE
+                current_time := add_uint32(current_time, 1);
+                my_clock := master_clock
+            END                
+        END
+    END;
     
-    state_machine = 
+    MovimentAndAvoidance = 
     BEGIN
         IF smstate = INIT THEN //Start of state machinte
-            //MBC must be reset!
+            MBC:= 0;//MBC must be reset!
             move(lv,0); //SMove state
             smstate := DMove;
             
             IF smstate = DMove THEN //DMove state
                 
-                VAR local_obstacle_l,
-                    local_obstacle_r IN
+                VAR since_MBC_clock,
+                    local_obstacle_l,
+                    local_obstacle_r     IN
+                    
+                    since_MBC_clock:(since_MBC_clock:uint32_t);
                     
                     local_obstacle_l:(local_obstacle_l:uint8_t);
                     local_obstacle_r:(local_obstacle_r:uint8_t);
+                
+                    since_MBC_clock <-- since(MBC);
                     
                     local_obstacle_l <-- get_board_0_I1;
                     local_obstacle_r <-- get_board_0_I2;
@@ -329,11 +377,10 @@ OPERATIONS
             END
             
         END
-   
     END;
        
     
-    communication = 
+    /*communication = 
         BEGIN 
             MBC <-- get_ms_tick;
             ms_tick_cycle := 1000;
@@ -345,9 +392,9 @@ OPERATIONS
             ELSE
                board_0_O8 := IO_OFF 
             END   
-        END;
+        END;*/
         
-    neighboursNumber <-- infoNeighbours = //funcao de deteccao de vizinhos
+    neighboursNumber <-- infoNeighbours = //function to detect neighbours
         BEGIN
             VAR local_input IN 
                 local_input:(local_input:uint8_t);
@@ -361,9 +408,9 @@ OPERATIONS
     
     user_logic = 
         BEGIN
-           /* IF first_time = TRUE THEN
+           IF first_time = TRUE THEN
                 reset_outputs;
-                state_machine;
+                MovimentAndAvoidance;
                 cycle_timer <-- get_ms_tick;
                 first_time := FALSE
             ELSE
@@ -376,21 +423,11 @@ OPERATIONS
                 
                     IF (cycle_duration <= time_elapsed) THEN
                         reset_outputs;
-                        state_machine;
+                        MovimentAndAvoidance;
                         cycle_timer <-- get_ms_tick
                     END
                 END
-            END */
-            VAR local_obs IN 
-                local_obs:(local_obs:uint8_t);
-                
-                local_obs <-- get_board_0_I1; 
-                IF local_obs = IO_ON THEN
-                    move(0,av)
-                ELSE 
-                    reset_outputs
-                END
-             END    
+            END 
         END;
 
     po <-- get_board_0_O1 =
