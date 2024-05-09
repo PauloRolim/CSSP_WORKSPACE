@@ -1,0 +1,93 @@
+<Machine name='user_ctx_i' type='implementation'>
+<Abstraction>user_ctx</Abstraction>
+<Sees>
+<Attr>
+<Pos l='7' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='8' c='5' s='7'/>
+</Attr>
+<Name>g_types</Name>
+</Referenced_Machine>
+</Sees>
+<Values>
+<Attr>
+<Pos l='9' c='1' s='6'/>
+</Attr>
+<Valuation ident='cycle_unit' typref='2701647786'>
+<Attr>
+<Pos l='11' c='5' s='10'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='100' typref='2701647786'>
+<Attr>
+<Pos l='11' c='18' s='3'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='SimSMovement_cycle_def' typref='2701647786'>
+<Attr>
+<Pos l='14' c='5' s='22'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='1' typref='2701647786'>
+<Attr>
+<Pos l='14' c='30' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='av' typref='2701647786'>
+<Attr>
+<Pos l='15' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='15' c='10' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='lv' typref='2701647786'>
+<Attr>
+<Pos l='16' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='3' typref='2701647786'>
+<Attr>
+<Pos l='16' c='10' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='pi' typref='2701647786'>
+<Attr>
+<Pos l='20' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='7000' typref='2701647786'>
+<Attr>
+<Pos l='20' c='10' s='4'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+</Values>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
+</TypeInfos>
+
+</Machine>

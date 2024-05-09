@@ -51,14 +51,42 @@
 </Id>
 </Enumerated_Values>
 </Set>
+<Set>
+<Id value='POSITION' typref='6'>
+<Attr>
+<Pos l='8' c='5' s='8'/>
+<B0Type>
+<Id value='POSITION'/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='LEFT' typref='7'>
+<Attr>
+<Pos l='8' c='17' s='4'/>
+<B0Type>
+<Id value='POSITION'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='RIGHT' typref='7'>
+<Attr>
+<Pos l='8' c='23' s='5'/>
+<B0Type>
+<Id value='POSITION'/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
 </Sets>
 <Concrete_Constants>
 <Attr>
-<Pos l='9' c='1' s='18'/>
+<Pos l='10' c='1' s='18'/>
 </Attr>
 <Id value='cycle_unit' typref='1'>
 <Attr>
-<Pos l='11' c='5' s='10'/>
+<Pos l='12' c='5' s='10'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -66,7 +94,7 @@
 </Id>
 <Id value='SimSMovement_cycle_def' typref='1'>
 <Attr>
-<Pos l='14' c='5' s='22'/>
+<Pos l='15' c='5' s='22'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -74,7 +102,7 @@
 </Id>
 <Id value='av' typref='1'>
 <Attr>
-<Pos l='15' c='5' s='2'/>
+<Pos l='16' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -82,7 +110,7 @@
 </Id>
 <Id value='lv' typref='1'>
 <Attr>
-<Pos l='16' c='5' s='2'/>
+<Pos l='17' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -90,15 +118,7 @@
 </Id>
 <Id value='pi' typref='1'>
 <Attr>
-<Pos l='17' c='5' s='2'/>
-<B0Type>
-<Id value='INTEGER'/>
-</B0Type>
-</Attr>
-</Id>
-<Id value='zero' typref='1'>
-<Attr>
-<Pos l='18' c='5' s='4'/>
+<Pos l='18' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -106,7 +126,23 @@
 </Id>
 <Id value='alpha' typref='1'>
 <Attr>
-<Pos l='21' c='5' s='5'/>
+<Pos l='22' c='5' s='5'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='MB' typref='1'>
+<Attr>
+<Pos l='23' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='wait' typref='1'>
+<Attr>
+<Pos l='24' c='5' s='4'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -115,16 +151,16 @@
 </Concrete_Constants>
 <Properties>
 <Attr>
-<Pos l='23' c='1' s='10'/>
+<Pos l='26' c='1' s='10'/>
 </Attr>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='25' c='15' s='1'/>
+<Pos l='28' c='15' s='1'/>
 </Attr>
 <Id value='cycle_unit' typref='1'>
 <Attr>
-<Pos l='25' c='5' s='10'/>
+<Pos l='28' c='5' s='10'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -132,7 +168,7 @@
 </Id>
 <Id value='uint32_t' typref='2'>
 <Attr>
-<Pos l='25' c='16' s='8'/>
+<Pos l='28' c='16' s='8'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -144,11 +180,11 @@
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='28' c='27' s='1'/>
+<Pos l='31' c='27' s='1'/>
 </Attr>
 <Id value='SimSMovement_cycle_def' typref='1'>
 <Attr>
-<Pos l='28' c='5' s='22'/>
+<Pos l='31' c='5' s='22'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -156,7 +192,7 @@
 </Id>
 <Id value='uint32_t' typref='2'>
 <Attr>
-<Pos l='28' c='28' s='8'/>
+<Pos l='31' c='28' s='8'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -168,11 +204,11 @@
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='29' c='7' s='1'/>
+<Pos l='32' c='7' s='1'/>
 </Attr>
 <Id value='av' typref='1'>
 <Attr>
-<Pos l='29' c='5' s='2'/>
+<Pos l='32' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -180,7 +216,7 @@
 </Id>
 <Id value='uint32_t' typref='2'>
 <Attr>
-<Pos l='29' c='8' s='8'/>
+<Pos l='32' c='8' s='8'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -192,11 +228,11 @@
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='30' c='7' s='1'/>
+<Pos l='33' c='7' s='1'/>
 </Attr>
 <Id value='lv' typref='1'>
 <Attr>
-<Pos l='30' c='5' s='2'/>
+<Pos l='33' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -204,7 +240,7 @@
 </Id>
 <Id value='uint32_t' typref='2'>
 <Attr>
-<Pos l='30' c='8' s='8'/>
+<Pos l='33' c='8' s='8'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -216,11 +252,11 @@
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='31' c='7' s='1'/>
+<Pos l='34' c='7' s='1'/>
 </Attr>
 <Id value='pi' typref='1'>
 <Attr>
-<Pos l='31' c='5' s='2'/>
+<Pos l='34' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -228,7 +264,7 @@
 </Id>
 <Id value='uint32_t' typref='2'>
 <Attr>
-<Pos l='31' c='8' s='8'/>
+<Pos l='34' c='8' s='8'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -240,35 +276,11 @@
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='32' c='9' s='1'/>
-</Attr>
-<Id value='zero' typref='1'>
-<Attr>
-<Pos l='32' c='5' s='4'/>
-<B0Type>
-<Id value='INTEGER'/>
-</B0Type>
-</Attr>
-</Id>
-<Id value='uint32_t' typref='2'>
-<Attr>
-<Pos l='32' c='10' s='8'/>
-<B0Type>
-<Binary_Exp op='..'>
-<Integer_Literal value='0'/>
-<Integer_Literal value='4294967295'/>
-</Binary_Exp>
-</B0Type>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='35' c='7' s='1'/>
+<Pos l='37' c='7' s='1'/>
 </Attr>
 <Id value='av' typref='1'>
 <Attr>
-<Pos l='35' c='5' s='2'/>
+<Pos l='37' c='5' s='2'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -276,55 +288,55 @@
 </Id>
 <Binary_Exp op='..' typref='2'>
 <Attr>
-<Pos l='35' c='11' s='2'/>
-</Attr>
-<Integer_Literal value='-3' typref='1'>
-<Attr>
-<Pos l='35' c='10' s='1'/>
-</Attr>
-</Integer_Literal>
-<Integer_Literal value='3' typref='1'>
-<Attr>
-<Pos l='35' c='13' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='36' c='7' s='1'/>
-</Attr>
-<Id value='lv' typref='1'>
-<Attr>
-<Pos l='36' c='5' s='2'/>
-<B0Type>
-<Id value='INTEGER'/>
-</B0Type>
-</Attr>
-</Id>
-<Binary_Exp op='..' typref='2'>
-<Attr>
-<Pos l='36' c='9' s='2'/>
+<Pos l='37' c='9' s='2'/>
 </Attr>
 <Integer_Literal value='0' typref='1'>
 <Attr>
-<Pos l='36' c='8' s='1'/>
+<Pos l='37' c='8' s='1'/>
 </Attr>
 </Integer_Literal>
-<Integer_Literal value='3' typref='1'>
+<Integer_Literal value='1' typref='1'>
 <Attr>
-<Pos l='36' c='11' s='1'/>
+<Pos l='37' c='11' s='1'/>
 </Attr>
 </Integer_Literal>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='38' c='10' s='1'/>
+<Pos l='38' c='7' s='1'/>
+</Attr>
+<Id value='lv' typref='1'>
+<Attr>
+<Pos l='38' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='2'>
+<Attr>
+<Pos l='38' c='9' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='1'>
+<Attr>
+<Pos l='38' c='8' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='38' c='11' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='40' c='10' s='1'/>
 </Attr>
 <Id value='alpha' typref='1'>
 <Attr>
-<Pos l='38' c='5' s='5'/>
+<Pos l='40' c='5' s='5'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
@@ -332,7 +344,55 @@
 </Id>
 <Id value='uint8_t' typref='2'>
 <Attr>
-<Pos l='38' c='11' s='7'/>
+<Pos l='40' c='11' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='41' c='7' s='1'/>
+</Attr>
+<Id value='MB' typref='1'>
+<Attr>
+<Pos l='41' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='2'>
+<Attr>
+<Pos l='41' c='8' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='42' c='9' s='1'/>
+</Attr>
+<Id value='wait' typref='1'>
+<Attr>
+<Pos l='42' c='5' s='4'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='2'>
+<Attr>
+<Pos l='42' c='10' s='7'/>
 <B0Type>
 <Binary_Exp op='..'>
 <Integer_Literal value='0'/>
@@ -373,6 +433,14 @@
 </Type>
 <Type id='5'>
 <Id value='STATE'/>
+</Type>
+<Type id='6'>
+<Unary_Exp op='POW'>
+<Id value='POSITION'/>
+</Unary_Exp>
+</Type>
+<Type id='7'>
+<Id value='POSITION'/>
 </Type>
 </TypeInfos>
 

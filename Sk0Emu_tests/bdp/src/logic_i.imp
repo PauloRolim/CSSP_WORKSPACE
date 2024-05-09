@@ -1,0 +1,232 @@
+﻿IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types ,
+    g_operators ,
+    io_constants ,
+    lchip_interface ,
+    user_ctx ,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    board_0_O1 ,
+        board_0_O2 ,
+
+    MBC ,
+
+    cycle_timer ,
+    first_time ,
+
+    ms_tick_cycle ,
+    s_tick_cycle ,
+    tick
+
+INVARIANT
+    board_0_O1 : uint8_t &
+        board_0_O2 : uint8_t &
+
+    MBC : uint32_t &
+
+    cycle_timer : uint32_t &
+    first_time : BOOL &
+
+    ms_tick_cycle : uint32_t &
+    s_tick_cycle  : uint32_t &
+    tick          : uint32_t
+
+INITIALISATION
+    board_0_O1 := IO_OFF ;
+        board_0_O2 := IO_OFF ;
+
+    MBC := 0 ;
+
+    cycle_timer := 0 ;
+    first_time := TRUE ;
+
+    ms_tick_cycle := 0 ;
+    s_tick_cycle  := 0 ;
+    tick          := 0
+
+LOCAL_OPERATIONS
+
+    reset_outputs =
+    BEGIN
+        board_0_O1 :: uint8_t ||
+            board_0_O2 :: uint8_t
+    END ;
+
+    avoid =
+    BEGIN
+        board_0_O1 :: uint8_t
+    END ;
+
+    elapsed <-- since ( timer ) =
+    PRE timer : uint32_t & elapsed : uint32_t
+    THEN
+        elapsed :: uint32_t
+    END ;
+
+    o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
+    PRE nn : uint32_t & nn : ( 0 .. 3 )
+        & o1 : uint8_t & o0 : uint8_t
+    THEN
+        o0 :: uint8_t ||
+        o1 :: uint8_t
+    END ;
+
+    moveForward ( l_linear ) =
+    PRE l_linear : uint32_t & l_linear : 0 .. 1
+    THEN
+         board_0_O1 :: uint8_t ||
+         board_0_O2 :: uint8_t
+    END ;
+
+    turn ( l_angular ) =
+    PRE l_angular : uint32_t & l_angular : 0 .. 1
+    THEN
+        board_0_O1 :: uint8_t ||
+        board_0_O2 :: uint8_t
+    END ;
+
+
+    communication =
+    PRE ms_tick_cycle : uint32_t &
+        s_tick_cycle  : uint32_t &
+        tick          : uint32_t
+    THEN
+        ms_tick_cycle :: uint32_t ||
+        s_tick_cycle  :: uint32_t ||
+        tick          :: uint32_t
+    END ;
+
+    neighboursNumber <-- infoNeighbours =
+    PRE neighboursNumber : uint8_t
+    THEN
+        neighboursNumber :: uint8_t
+    END
+
+OPERATIONS
+     reset_outputs =
+    BEGIN
+        board_0_O1 := IO_OFF ;
+            board_0_O2 := IO_OFF
+
+    END ;
+
+    avoid =
+    BEGIN
+        board_0_O1 := IO_ON
+    END ;
+
+    elapsed <-- since ( timer ) =
+    BEGIN
+        elapsed : ( elapsed : uint32_t ) ;
+        VAR local_time IN
+            local_time : ( local_time : uint32_t ) ;
+
+            local_time <-- get_ms_tick ;
+            elapsed := sub_uint32 ( local_time , timer )
+        END
+    END ;
+
+
+    // Transforms 2 bits unsigned integers into 2 bits
+    o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
+    BEGIN
+
+        o1 : ( o1 : uint8_t ) ;
+        o0 : ( o0 : uint8_t ) ;
+
+       VAR o_aux IN
+            o_aux : ( o_aux : uint32_t ) ;
+
+            o_aux := nn mod 2 ;
+            IF ( o_aux = 0 ) THEN
+                o0 := IO_OFF
+            ELSE
+                o0 := IO_ON
+            END ;
+
+            o_aux := ( nn / 2 ) ;
+            o_aux := o_aux mod 2 ;
+            IF ( o_aux = 0 ) THEN
+                o1 := IO_OFF
+            ELSE
+                o1 := IO_ON
+            END
+
+        END
+    END ;
+
+    moveForward ( l_linear ) =
+    BEGIN
+        board_0_O1 ,
+        board_0_O2 <-- nat_2_bits_to_bin_2_bits ( l_linear )
+    END ;
+
+    turn ( l_angular ) =
+    BEGIN
+        board_0_O1 ,
+        board_0_O2 <-- nat_2_bits_to_bin_2_bits ( l_angular )
+    END ;
+
+
+    communication =
+        BEGIN
+            MBC <-- get_ms_tick ;
+            ms_tick_cycle := 1000 ;
+            s_tick_cycle := MBC / ms_tick_cycle ;
+            tick := s_tick_cycle mod 2 ;
+
+            IF tick = 0 THEN
+               board_0_O2 := IO_ON
+            ELSE
+               board_0_O2 := IO_OFF
+            END
+        END ;
+
+    neighboursNumber <-- infoNeighbours = //funcao de deteccao de vizinhos
+        BEGIN
+            VAR local_input IN
+                local_input : ( local_input : uint8_t ) ;
+
+                local_input <-- get_board_0_I3 ;
+                IF local_input = IO_ON THEN
+                   neighboursNumber := add_uint8 ( neighboursNumber , 1 )
+                END
+            END
+        END ;
+
+    user_logic =
+        BEGIN
+            VAR local_i1 IN
+                local_i1 : ( local_i1 : uint8_t ) ;
+
+
+                local_i1 <-- get_board_0_I1 ;
+
+
+                IF  local_i1 = IO_ON THEN
+
+                    turn ( av )
+                ELSIF local_i1 = IO_OFF THEN
+                    reset_outputs
+                END
+
+            END
+
+        END ;
+
+    po <-- get_board_0_O1 =
+        BEGIN
+                po := board_0_O1
+        END ;
+
+        po <-- get_board_0_O2 =
+        BEGIN
+                po := board_0_O2
+        END
+END

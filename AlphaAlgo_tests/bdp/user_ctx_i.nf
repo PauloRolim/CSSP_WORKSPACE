@@ -106,24 +106,25 @@ THEORY ListPreconditionX END
 THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha);
-  Inherited_List_Constants(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha);
+  List_Valuable_Constants(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait);
+  Inherited_List_Constants(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait);
   List_Constants(Implementation(user_ctx_i))==(?)
 END
 &
 THEORY ListSetsX IS
-  Set_Definition(Implementation(user_ctx_i),STATE)==({INIT,EXEC_1,EXEC_2});
+  Set_Definition(Implementation(user_ctx_i),POSITION)==({LEFT,RIGHT});
   Context_List_Enumerated(Implementation(user_ctx_i))==(?);
   Context_List_Defered(Implementation(user_ctx_i))==(?);
   Context_List_Sets(Implementation(user_ctx_i))==(?);
-  List_Own_Enumerated(Implementation(user_ctx_i))==(STATE);
+  List_Own_Enumerated(Implementation(user_ctx_i))==(STATE,POSITION);
   List_Valuable_Sets(Implementation(user_ctx_i))==(?);
-  Inherited_List_Enumerated(Implementation(user_ctx_i))==(STATE);
+  Inherited_List_Enumerated(Implementation(user_ctx_i))==(STATE,POSITION);
   Inherited_List_Defered(Implementation(user_ctx_i))==(?);
-  Inherited_List_Sets(Implementation(user_ctx_i))==(STATE);
+  Inherited_List_Sets(Implementation(user_ctx_i))==(STATE,POSITION);
   List_Enumerated(Implementation(user_ctx_i))==(?);
   List_Defered(Implementation(user_ctx_i))==(?);
-  List_Sets(Implementation(user_ctx_i))==(?)
+  List_Sets(Implementation(user_ctx_i))==(?);
+  Set_Definition(Implementation(user_ctx_i),STATE)==({INIT,EXEC_1,EXEC_2})
 END
 &
 THEORY ListHiddenConstantsX IS
@@ -134,7 +135,7 @@ THEORY ListHiddenConstantsX IS
 END
 &
 THEORY ListPropertiesX IS
-  Abstract_List_Properties(Implementation(user_ctx_i))==(cycle_unit: uint32_t & SimSMovement_cycle_def: uint32_t & av: uint32_t & lv: uint32_t & pi: uint32_t & zero: uint32_t & av: -3..3 & lv: 0..3 & alpha: uint8_t & STATE: FIN(INTEGER) & not(STATE = {}));
+  Abstract_List_Properties(Implementation(user_ctx_i))==(cycle_unit: uint32_t & SimSMovement_cycle_def: uint32_t & av: uint32_t & lv: uint32_t & pi: uint32_t & av: 0..1 & lv: 0..1 & alpha: uint8_t & MB: uint8_t & wait: uint8_t & STATE: FIN(INTEGER) & not(STATE = {}) & POSITION: FIN(INTEGER) & not(POSITION = {}));
   Context_List_Properties(Implementation(user_ctx_i))==(uint32_t = 0..4294967295 & uint16_t = 0..65535 & uint8_t = 0..255 & STRUE: uint8_t & SFALSE: uint8_t & MAX_UINT32: uint32_t & MAX_UINT16: uint16_t & MAX_UINT8: uint8_t & STRUE: 0..MAX_UINT8 & SFALSE: 0..MAX_UINT8 & STRUE/=SFALSE & SBOOL = {STRUE,SFALSE} & STRUE<=2 & SFALSE<=2 & MAX_UINT32 = 4294967295 & MAX_UINT16 = 65535 & MAX_UINT8 = 255 & Convert_Bool = {TRUE|->STRUE,FALSE|->SFALSE});
   Inherited_List_Properties(Implementation(user_ctx_i))==(btrue);
   List_Properties(Implementation(user_ctx_i))==(btrue)
@@ -142,8 +143,8 @@ END
 &
 THEORY ListValuesX IS
   Precond_Valued_Objects(Implementation(user_ctx_i))==(btrue);
-  Values_Subs(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha: 100,1,2,2,7000,0,1);
-  List_Values(Implementation(user_ctx_i))==(cycle_unit = 100;SimSMovement_cycle_def = 1;av = 2;lv = 2;pi = 7000;zero = 0;alpha = 1)
+  Values_Subs(Implementation(user_ctx_i))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait: 100,1,1,1,7000,1,0,3);
+  List_Values(Implementation(user_ctx_i))==(cycle_unit = 100;SimSMovement_cycle_def = 1;av = 1;lv = 1;pi = 7000;alpha = 1;MB = 0;wait = 3)
 END
 &
 THEORY ListSeenInfoX IS
@@ -160,7 +161,7 @@ END
 THEORY ListIncludedOperationsX END
 &
 THEORY InheritedEnvX IS
-  Constants(Implementation(user_ctx_i))==(Type(INIT) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(zero) == Cst(btype(INTEGER,?,?));Type(alpha) == Cst(btype(INTEGER,?,?)))
+  Constants(Implementation(user_ctx_i))==(Type(INIT) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(LEFT) == Cst(etype(POSITION,0,1));Type(RIGHT) == Cst(etype(POSITION,0,1));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(alpha) == Cst(btype(INTEGER,?,?));Type(MB) == Cst(btype(INTEGER,?,?));Type(wait) == Cst(btype(INTEGER,?,?)))
 END
 &
 THEORY ListVisibleStaticX IS
@@ -182,11 +183,11 @@ THEORY ListOfIdsX IS
 END
 &
 THEORY SetsEnvX IS
-  Sets(Implementation(user_ctx_i)) == (Type(STATE) == Cst(SetOf(etype(STATE,0,2))))
+  Sets(Implementation(user_ctx_i)) == (Type(POSITION) == Cst(SetOf(etype(POSITION,0,1)));Type(STATE) == Cst(SetOf(etype(STATE,0,2))))
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Implementation(user_ctx_i)) == (Type(alpha) == Cst(btype(INTEGER,?,?));Type(zero) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(INIT) == Cst(etype(STATE,0,2)))
+  Constants(Implementation(user_ctx_i)) == (Type(wait) == Cst(btype(INTEGER,?,?));Type(MB) == Cst(btype(INTEGER,?,?));Type(alpha) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(RIGHT) == Cst(etype(POSITION,0,1));Type(LEFT) == Cst(etype(POSITION,0,1));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(INIT) == Cst(etype(STATE,0,2)))
 END
 &
 THEORY TCIntRdX IS

@@ -1,0 +1,134 @@
+THEORY BalanceX IS
+logic_i,37,0,0,22,0,0,0;
+Initialisation,1,0,0,1,0,0,0;
+LocalOperation_communication,11,0,0,3,0,0,0;
+LocalOperation_infoNeighbours,2,0,0,2,0,0,0;
+LocalOperation_moveForward,3,0,0,3,0,0,0;
+LocalOperation_since,1,0,0,1,0,0,0;
+LocalOperation_turn,3,0,0,3,0,0,0;
+Operation_user_logic,1,0,0,0,0,0,0;
+WellDefinedness_communication,3,0,0,2,0,0,0;
+WellDefinedness_infoNeighbours,2,0,0,1,0,0,0;
+WellDefinedness_nat_2_bits_to_bin_2_bits,8,0,0,5,0,0,0;
+WellDefinedness_since,2,0,0,1,0,0,0
+END
+&
+THEORY ProofState IS
+Unproved;
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Unproved;
+Unproved;
+Unproved;
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0);
+Unproved;
+Unproved;
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0)
+END
+&
+THEORY MethodList IS
+?;
+pr;
+pr;
+?;
+pr;
+pr;
+pr;
+?;
+?;
+pr;
+pr;
+pr;
+?;
+?;
+pr;
+pr;
+pr;
+?;
+?;
+?;
+?;
+pr;
+pr;
+?;
+pr;
+?;
+?;
+?;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+?;
+pr
+END
+&
+THEORY PassList IS
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),?;
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),(?; 0);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0);
+Force(0),?
+END

@@ -24,6 +24,8 @@ CONCRETE_VARIABLES
         smstate ,
     MBC ,
 
+    position ,
+
     cycle_timer ,
     first_time ,
 
@@ -44,6 +46,8 @@ INVARIANT
         smstate : STATE &
     MBC : uint32_t &
 
+    position : POSITION & //posicao do obstaculo
+
     cycle_timer : uint32_t &
     first_time : BOOL &
 
@@ -63,6 +67,8 @@ INITIALISATION
 
         smstate := INIT ;
     MBC := 0 ;
+
+    position := LEFT ;
 
     cycle_timer := 0 ;
     first_time := TRUE ;
@@ -97,13 +103,13 @@ LOCAL_OPERATIONS
         elapsed :: uint32_t
     END ;
 
-    o2 , o1 , o0 <-- nat_3_bits_to_bin_3_bits ( nn ) =
-    PRE nn : uint32_t & nn : ( 0 .. 3 )
-        & o2 : uint8_t & o1 : uint8_t & o0 : uint8_t
+    o2 , o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
+    PRE nn : uint32_t & nn : ( - 4 .. 3 )
+       & o2 : uint8_t & o1 : uint8_t & o0 : uint8_t
     THEN
-        o2 :: uint8_t
-        || o1 :: uint8_t
-        || o0 :: uint8_t
+         o2 :: uint8_t ||
+         o1 :: uint8_t ||
+         o0 :: uint8_t
     END ;
 
     moveForward ( l_linear ) =
@@ -200,8 +206,8 @@ OPERATIONS
     END ;
 
 
-    // Transforms 3 bits unsigned integers into 3 bits
-    o2 , o1 , o0 <-- nat_3_bits_to_bin_3_bits ( nn ) =
+    // Transforms 2 bits signed integers into 2 bits
+    o2 , o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
     BEGIN
         o2 : ( o2 : uint8_t ) ;
         o1 : ( o1 : uint8_t ) ;
@@ -209,6 +215,8 @@ OPERATIONS
 
        VAR o_aux IN
             o_aux : ( o_aux : uint32_t ) ;
+
+
 
             o_aux := nn mod 2 ;
             IF ( o_aux = 0 ) THEN
@@ -223,54 +231,65 @@ OPERATIONS
                 o1 := IO_OFF
             ELSE
                 o1 := IO_ON
-            END ;
-
-            o_aux := ( nn / 4 ) ;
-            o_aux := o_aux mod 2 ;
-            IF ( o_aux = 0 ) THEN
-                o2 := IO_OFF
-            ELSE
-                o2 := IO_ON
             END
+
+
         END
     END ;
 
     moveForward ( l_linear ) =
     BEGIN
-        board_0_O3 ,
+        board_0_O1 ,
         board_0_O2 ,
-        board_0_O1 <-- nat_3_bits_to_bin_3_bits ( l_linear )
+        board_0_O3 <-- nat_2_bits_to_bin_2_bits ( l_linear )
     END ;
 
     turn ( l_angular ) =
     BEGIN
         board_0_O6 ,
         board_0_O5 ,
-        board_0_O4 <-- nat_3_bits_to_bin_3_bits ( l_angular )
+        board_0_O4 <-- nat_2_bits_to_bin_2_bits ( l_angular )
     END ;
 
     state_machine =
     BEGIN
         IF smstate = INIT THEN
             moveForward ( lv ) ;
-            smstate := EXEC_1
-        ELSIF smstate = EXEC_1 THEN
-            VAR local_obstacle IN
-                local_obstacle : ( local_obstacle : uint8_t ) ;
 
-                local_obstacle <-- get_board_0_I1 ;
-                IF local_obstacle = IO_ON THEN
-                    MBC <-- get_ms_tick ;
-                    avoid ;
-                    turn ( av ) ;
+            VAR local_obstacle_r ,
+                local_obstacle_l IN
 
-                    smstate := EXEC_2
-                ELSIF local_obstacle = IO_OFF THEN
-                    smstate := EXEC_1
+                local_obstacle_r : ( local_obstacle_r : uint8_t ) ;
+                local_obstacle_l : ( local_obstacle_l : uint8_t ) ;
+
+                local_obstacle_r <-- get_board_0_I1 ;
+                local_obstacle_l <-- get_board_0_I2 ;
+
+                IF local_obstacle_r = IO_ON THEN
+                   MBC <-- get_ms_tick ;
+                   //Adequacao Tecnica
+                   board_0_O4 := IO_ON ;
+                       board_0_O5 := IO_ON ;
+                       board_0_O6 := IO_OFF ;
+                       smstate := EXEC_1
+
+                    ELSIF local_obstacle_l = IO_ON THEN
+                          MBC <-- get_ms_tick ;
+                          turn ( av ) ;
+                          smstate := EXEC_1
+
+                    ELSIF local_obstacle_r = IO_OFF THEN
+                          smstate := INIT
+
+                    ELSIF local_obstacle_l = IO_OFF THEN
+                          smstate := INIT
+
                 ELSE skip
                 END
+
             END
-        ELSIF smstate = EXEC_2 THEN
+
+        ELSIF smstate = EXEC_1 THEN
             VAR since_value IN
                 since_value : ( since_value : uint32_t ) ;
 
@@ -283,6 +302,8 @@ OPERATIONS
                     ELSIF pi_div_av <= since_value THEN
                         moveForward ( lv ) ;
                         smstate := EXEC_1
+
+
                     ELSE skip
                     END
                 END

@@ -49,7 +49,7 @@
 <Id value='INTEGER'/>
 </B0Type>
 </Attr>
-<Integer_Literal value='2' typref='1'>
+<Integer_Literal value='1' typref='1'>
 <Attr>
 <Pos l='15' c='10' s='1'/>
 </Attr>
@@ -62,7 +62,7 @@
 <Id value='INTEGER'/>
 </B0Type>
 </Attr>
-<Integer_Literal value='2' typref='1'>
+<Integer_Literal value='1' typref='1'>
 <Attr>
 <Pos l='16' c='10' s='1'/>
 </Attr>
@@ -81,29 +81,42 @@
 </Attr>
 </Integer_Literal>
 </Valuation>
-<Valuation ident='zero' typref='1'>
-<Attr>
-<Pos l='22' c='5' s='4'/>
-<B0Type>
-<Id value='INTEGER'/>
-</B0Type>
-</Attr>
-<Integer_Literal value='0' typref='1'>
-<Attr>
-<Pos l='22' c='12' s='1'/>
-</Attr>
-</Integer_Literal>
-</Valuation>
 <Valuation ident='alpha' typref='1'>
 <Attr>
-<Pos l='24' c='5' s='5'/>
+<Pos l='23' c='5' s='5'/>
 <B0Type>
 <Id value='INTEGER'/>
 </B0Type>
 </Attr>
 <Integer_Literal value='1' typref='1'>
 <Attr>
-<Pos l='24' c='13' s='1'/>
+<Pos l='23' c='13' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='MB' typref='1'>
+<Attr>
+<Pos l='24' c='5' s='2'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='0' typref='1'>
+<Attr>
+<Pos l='24' c='10' s='1'/>
+</Attr>
+</Integer_Literal>
+</Valuation>
+<Valuation ident='wait' typref='1'>
+<Attr>
+<Pos l='25' c='5' s='4'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='25' c='12' s='1'/>
 </Attr>
 </Integer_Literal>
 </Valuation>

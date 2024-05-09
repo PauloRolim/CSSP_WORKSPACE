@@ -140,13 +140,20 @@
             </Binary_Exp>
         </Exp_Comparison>
     </Define>
-    <Define name="lprp" hash="3636421964">
+    <Define name="lprp" hash="1994728659">
         <Set>
             <Id value="STATE" typref="7"/>
             <Enumerated_Values>
                 <Id value="INIT" typref="8"/>
                 <Id value="EXEC_1" typref="8"/>
                 <Id value="EXEC_2" typref="8"/>
+            </Enumerated_Values>
+        </Set>
+        <Set>
+            <Id value="POSITION" typref="9"/>
+            <Enumerated_Values>
+                <Id value="LEFT" typref="10"/>
+                <Id value="RIGHT" typref="10"/>
             </Enumerated_Values>
         </Set>
         <Exp_Comparison op=":">
@@ -170,26 +177,30 @@
             <Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:5:2"/>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="zero" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:6:1"/>
-            <Id value="uint32_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:6:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op=":">
-            <Id value="av" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:1"/>
+            <Id value="av" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:6:1"/>
             <Binary_Exp op=".." typref="0">
-                <Integer_Literal value="-3" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:2:1"/>
-                <Integer_Literal value="3" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:2:2"/>
+                <Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:6:2:1"/>
+                <Integer_Literal value="1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:6:2:2"/>
             </Binary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="lv" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:8:1"/>
+            <Id value="lv" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:1"/>
             <Binary_Exp op=".." typref="0">
-                <Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:8:2:1"/>
-                <Integer_Literal value="3" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:8:2:2"/>
+                <Integer_Literal value="0" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:2:1"/>
+                <Integer_Literal value="1" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:7:2:2"/>
             </Binary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="alpha" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:9:1"/>
+            <Id value="alpha" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:8:1"/>
+            <Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:8:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="MB" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:9:1"/>
             <Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:9:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="wait" typref="1" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:10:1"/>
+            <Id value="uint8_t" typref="0" tag="C:\CSSP\CSSP_WORKSPACE\AlphaAlgo_tests\bdp\user_ctx.bxml:1:4:1:10:2"/>
         </Exp_Comparison>
     </Define>
     <Define name="inprp" hash="0"/>
@@ -197,13 +208,20 @@
     <Define name="inv" hash="0"/>
     <Define name="ass" hash="0"/>
     <Define name="cst" hash="0"/>
-    <Define name="sets" hash="1905343646">
+    <Define name="sets" hash="1539189486">
         <Set>
             <Id value="STATE" typref="7"/>
             <Enumerated_Values>
                 <Id value="INIT" typref="8"/>
                 <Id value="EXEC_1" typref="8"/>
                 <Id value="EXEC_2" typref="8"/>
+            </Enumerated_Values>
+        </Set>
+        <Set>
+            <Id value="POSITION" typref="9"/>
+            <Enumerated_Values>
+                <Id value="LEFT" typref="10"/>
+                <Id value="RIGHT" typref="10"/>
             </Enumerated_Values>
         </Set>
     </Define>
@@ -255,6 +273,14 @@
         </Type>
         <Type id="8">
             <Id value="STATE"/>
+        </Type>
+        <Type id="9">
+            <Unary_Exp op="POW">
+                <Id value="POSITION"/>
+            </Unary_Exp>
+        </Type>
+        <Type id="10">
+            <Id value="POSITION"/>
         </Type>
     </TypeInfos>
 </Proof_Obligations>

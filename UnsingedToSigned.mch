@@ -7,7 +7,7 @@ INVARIANT  xx: NAT & yy: NAT & zz: NAT
 INITIALISATION xx:= 0 || yy:= 0 || zz:= 0 
                             
 OPERATIONS
-out2, out1, out0 <-- nat_3_bits(nn) =
+out2, out1, out0 <-- nat_2_bits(nn) =
 PRE  nn : INT
 THEN
          VAR aux IN aux:(aux:INT);
