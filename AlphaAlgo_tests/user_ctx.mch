@@ -4,7 +4,7 @@ SEES
     g_types
 
 SETS
-    STATE = {INIT, EXEC_1, EXEC_2};
+    STATE = {INIT, EXEC_1, EXEC_2, DMove, Avoid, Wait};
     POSITION = {LEFT, RIGHT}
     
 CONCRETE_CONSTANTS
@@ -16,12 +16,10 @@ CONCRETE_CONSTANTS
     av, 
     lv, 
     pi,
-   
+    zero,
     
     // Alpha Algorithm
-    alpha,
-    MB,
-    wait
+    alpha  
     
 PROPERTIES
     // Translation constants
@@ -32,12 +30,11 @@ PROPERTIES
     av:uint32_t & 
     lv:uint32_t &
     pi:uint32_t &
-   
+    zero:uint32_t&
+      
     // Plataform restrictions (we only have 3 bits for each output)
-    av:0..1 & 
-    lv:0..1 &
+    av:(-3..3) & 
+    lv:(-3..3) &
     
-    alpha:uint8_t &
-    MB:uint8_t &
-    wait:uint8_t
+    alpha:uint8_t
 END

@@ -13,76 +13,76 @@ SEES
     // pragma SAFETY_VARS
 CONCRETE_VARIABLES
     board_0_O1 ,
-        board_0_O2 ,
-        board_0_O3 ,
-        board_0_O4 ,
-        board_0_O5 ,
-        board_0_O6 ,
-        board_0_O7 ,
-        board_0_O8 ,
+         board_0_O2 ,
+         board_0_O3 ,
+         board_0_O4 ,
+         board_0_O5 ,
+         board_0_O6 ,
+         board_0_O7 ,
+         board_0_O8 ,
 
-        smstate ,
+         smstate ,
     MBC ,
-
-    position ,
 
     cycle_timer ,
     first_time ,
 
     ms_tick_cycle ,
     s_tick_cycle ,
-    tick
+    tick ,
+
+    obst_position
 
 INVARIANT
     board_0_O1 : uint8_t &
-        board_0_O2 : uint8_t &
-        board_0_O3 : uint8_t &
-        board_0_O4 : uint8_t &
-        board_0_O5 : uint8_t &
-        board_0_O6 : uint8_t &
-        board_0_O7 : uint8_t &
-        board_0_O8 : uint8_t &
+         board_0_O2 : uint8_t &
+         board_0_O3 : uint8_t &
+         board_0_O4 : uint8_t &
+         board_0_O5 : uint8_t &
+         board_0_O6 : uint8_t &
+         board_0_O7 : uint8_t &
+         board_0_O8 : uint8_t &
 
-        smstate : STATE &
+         smstate : STATE &
     MBC : uint32_t &
-
-    position : POSITION & //posicao do obstaculo
 
     cycle_timer : uint32_t &
     first_time : BOOL &
 
     ms_tick_cycle : uint32_t &
     s_tick_cycle  : uint32_t &
-    tick          : uint32_t
+    tick          : uint32_t &
+
+    obst_position : POSITION
 
 INITIALISATION
     board_0_O1 := IO_OFF ;
-        board_0_O2 := IO_OFF ;
-        board_0_O3 := IO_OFF ;
-        board_0_O4 := IO_OFF ;
-        board_0_O5 := IO_OFF ;
-        board_0_O6 := IO_OFF ;
-        board_0_O7 := IO_OFF ;
-        board_0_O8 := IO_OFF ;
+         board_0_O2 := IO_OFF ;
+         board_0_O3 := IO_OFF ;
+         board_0_O4 := IO_OFF ;
+         board_0_O5 := IO_OFF ;
+         board_0_O6 := IO_OFF ;
+         board_0_O7 := IO_OFF ;
+         board_0_O8 := IO_OFF ;
 
-        smstate := INIT ;
+         smstate := INIT ;
     MBC := 0 ;
-
-    position := LEFT ;
 
     cycle_timer := 0 ;
     first_time := TRUE ;
 
     ms_tick_cycle := 0 ;
     s_tick_cycle  := 0 ;
-    tick          := 0
+    tick          := 0 ;
+
+    obst_position := LEFT
 
 
 LOCAL_OPERATIONS
 
     reset_outputs =
     BEGIN
-        board_0_O1 :: uint8_t ||
+       board_0_O1 :: uint8_t ||
             board_0_O2 :: uint8_t ||
             board_0_O3 :: uint8_t ||
             board_0_O4 :: uint8_t ||
@@ -103,31 +103,27 @@ LOCAL_OPERATIONS
         elapsed :: uint32_t
     END ;
 
-    o2 , o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
+    o2 , o1 , o0 <-- nat_3_bits_to_bin_3_bits ( nn ) =
     PRE nn : uint32_t & nn : ( - 4 .. 3 )
-       & o2 : uint8_t & o1 : uint8_t & o0 : uint8_t
+        & o2 : uint8_t & o1 : uint8_t & o0 : uint8_t
     THEN
-         o2 :: uint8_t ||
-         o1 :: uint8_t ||
-         o0 :: uint8_t
+        o2 :: uint8_t
+        || o1 :: uint8_t
+        || o0 :: uint8_t
     END ;
 
-    moveForward ( l_linear ) =
-    PRE l_linear : uint32_t & l_linear : 0 .. 3
+    move ( l_lv , l_av ) =
+    PRE l_lv : uint32_t & l_lv : 0 .. 3 & l_av : uint32_t & l_av : ( - 4 .. 3 )
     THEN
          board_0_O1 :: uint8_t ||
          board_0_O2 :: uint8_t ||
-         board_0_O3 :: uint8_t
-    END ;
-
-    turn ( l_angular ) =
-    PRE l_angular : uint32_t & l_angular : 0 .. 3
-    THEN
-        board_0_O4 :: uint8_t ||
-        board_0_O5 :: uint8_t ||
-        board_0_O6 :: uint8_t
+         board_0_O3 :: uint8_t ||
+         board_0_O4 :: uint8_t ||
+         board_0_O5 :: uint8_t ||
+         board_0_O6 :: uint8_t
 
     END ;
+
 
     state_machine =
     PRE
@@ -206,8 +202,8 @@ OPERATIONS
     END ;
 
 
-    // Transforms 2 bits signed integers into 2 bits
-    o2 , o1 , o0 <-- nat_2_bits_to_bin_2_bits ( nn ) =
+    // Transforms 3 bits unsigned integers into 3 bits
+    o2 , o1 , o0 <-- nat_3_bits_to_bin_3_bits ( nn ) =
     BEGIN
         o2 : ( o2 : uint8_t ) ;
         o1 : ( o1 : uint8_t ) ;
@@ -216,100 +212,124 @@ OPERATIONS
        VAR o_aux IN
             o_aux : ( o_aux : uint32_t ) ;
 
-
-
-            o_aux := nn mod 2 ;
-            IF ( o_aux = 0 ) THEN
+            IF ( nn = 0 ) THEN
+                o2 := IO_OFF ;
+                o1 := IO_OFF ;
                 o0 := IO_OFF
-            ELSE
-                o0 := IO_ON
             END ;
 
-            o_aux := ( nn / 2 ) ;
-            o_aux := o_aux mod 2 ;
-            IF ( o_aux = 0 ) THEN
-                o1 := IO_OFF
-            ELSE
-                o1 := IO_ON
-            END
+            IF ( nn < 0 ) THEN
+            o2 := IO_ON ;
 
+                o_aux := sub_uint32 ( 0 , nn ) ;
+                o_aux := o_aux mod 2 ;
+                IF ( o_aux = 0 ) THEN
+                    o0 := IO_OFF
+                ELSE
+                    o0 := IO_ON
+                END ;
+
+                o_aux := ( nn / 2 ) ;
+                o_aux := o_aux mod 2 ;
+                IF ( o_aux = 0 ) THEN
+                    o1 := IO_OFF
+                ELSE
+                    o1 := IO_ON
+                END
+
+            END ;
+
+            IF ( 0 < nn ) THEN
+            o2 := IO_OFF ;
+
+            o_aux := nn mod 2 ;
+                IF ( o_aux = 0 ) THEN
+                    o0 := IO_OFF
+                ELSE
+                    o0 := IO_ON
+                END ;
+
+                o_aux := ( nn / 2 ) ;
+                o_aux := o_aux mod 2 ;
+                IF ( o_aux = 0 ) THEN
+                    o1 := IO_OFF
+                ELSE
+                    o1 := IO_ON
+                END
+
+            END
 
         END
     END ;
 
-    moveForward ( l_linear ) =
+    move ( l_lv , l_av ) =
     BEGIN
-        board_0_O1 ,
+        board_0_O3 ,
         board_0_O2 ,
-        board_0_O3 <-- nat_2_bits_to_bin_2_bits ( l_linear )
-    END ;
-
-    turn ( l_angular ) =
-    BEGIN
+        board_0_O1 <-- nat_3_bits_to_bin_3_bits ( l_lv ) ;
         board_0_O6 ,
         board_0_O5 ,
-        board_0_O4 <-- nat_2_bits_to_bin_2_bits ( l_angular )
+        board_0_O4 <-- nat_3_bits_to_bin_3_bits ( l_av )
     END ;
+
+
 
     state_machine =
     BEGIN
-        IF smstate = INIT THEN
-            moveForward ( lv ) ;
+        IF smstate = INIT THEN //Start of state machinte
+            //MBC must be reset!
+            move ( lv , 0 ) ; //SMove state
+            smstate := DMove ;
 
-            VAR local_obstacle_r ,
-                local_obstacle_l IN
+            IF smstate = DMove THEN //DMove state
 
-                local_obstacle_r : ( local_obstacle_r : uint8_t ) ;
-                local_obstacle_l : ( local_obstacle_l : uint8_t ) ;
+                VAR local_obstacle_l ,
+                    local_obstacle_r IN
 
-                local_obstacle_r <-- get_board_0_I1 ;
-                local_obstacle_l <-- get_board_0_I2 ;
+                    local_obstacle_l : ( local_obstacle_l : uint8_t ) ;
+                    local_obstacle_r : ( local_obstacle_r : uint8_t ) ;
 
-                IF local_obstacle_r = IO_ON THEN
-                   MBC <-- get_ms_tick ;
-                   //Adequacao Tecnica
-                   board_0_O4 := IO_ON ;
-                       board_0_O5 := IO_ON ;
-                       board_0_O6 := IO_OFF ;
-                       smstate := EXEC_1
+                    local_obstacle_l <-- get_board_0_I1 ;
+                    local_obstacle_r <-- get_board_0_I2 ;
 
-                    ELSIF local_obstacle_l = IO_ON THEN
-                          MBC <-- get_ms_tick ;
-                          turn ( av ) ;
-                          smstate := EXEC_1
+                    IF local_obstacle_l = IO_ON THEN //Junction decision
+                       obst_position := LEFT ;
+                       smstate := Avoid
 
-                    ELSIF local_obstacle_r = IO_OFF THEN
-                          smstate := INIT
-
-                    ELSIF local_obstacle_l = IO_OFF THEN
-                          smstate := INIT
-
-                ELSE skip
-                END
-
-            END
-
-        ELSIF smstate = EXEC_1 THEN
-            VAR since_value IN
-                since_value : ( since_value : uint32_t ) ;
-
-                since_value <-- since ( MBC ) ;
-                VAR pi_div_av IN
-                    pi_div_av : ( pi_div_av : uint32_t ) ;
-                    pi_div_av := pi / av ;
-                    IF since_value < pi_div_av THEN
-                        smstate := EXEC_2
-                    ELSIF pi_div_av <= since_value THEN
-                        moveForward ( lv ) ;
-                        smstate := EXEC_1
-
+                    ELSIF local_obstacle_r = IO_ON THEN //Junction decision
+                       obst_position := RIGHT ;
+                       smstate := Avoid
 
                     ELSE skip
                     END
-                END
+                 END
+
+            ELSE
+              smstate := DMove //return to Dmove itself
+            END ;
+
+            IF smstate = Avoid THEN //Avoid state
+
+               IF obst_position = LEFT THEN
+                  move ( 0 , av ) ; //action of Avoid
+                  smstate := Wait
+
+               ELSIF obst_position = RIGHT THEN
+                   move ( 0 , av ) ; //negative value of av must be set, in some way...
+                   smstate := Wait
+               ELSE skip
+               END
+
+            END ;
+
+            IF smstate = Wait THEN
+               skip
+            ELSE
+               smstate := INIT
             END
-        ELSE skip
+
         END
+
     END ;
 
 
@@ -341,26 +361,36 @@ OPERATIONS
 
     user_logic =
         BEGIN
-            IF first_time = TRUE THEN
-                reset_outputs ;
-                state_machine ;
-                cycle_timer <-- get_ms_tick ;
+           /* IF first_time = TRUE THEN
+                reset_outputs;
+                state_machine;
+                cycle_timer <-- get_ms_tick;
                 first_time := FALSE
             ELSE
-                VAR time_elapsed , cycle_duration IN
-                    time_elapsed : ( time_elapsed : uint32_t ) ;
-                    cycle_duration : ( cycle_duration : uint32_t ) ;
-
-                    time_elapsed <-- since ( cycle_timer ) ;
-                    cycle_duration := mul_uint32 ( SimSMovement_cycle_def , cycle_unit ) ;
-
-                    IF ( cycle_duration <= time_elapsed ) THEN
-                        reset_outputs ;
-                        state_machine ;
+                VAR time_elapsed, cycle_duration IN 
+                    time_elapsed:(time_elapsed:uint32_t);
+                    cycle_duration:(cycle_duration:uint32_t);
+                
+                    time_elapsed <-- since(cycle_timer);
+                    cycle_duration := mul_uint32(SimSMovement_cycle_def,cycle_unit);
+                
+                    IF (cycle_duration <= time_elapsed) THEN
+                        reset_outputs;
+                        state_machine;
                         cycle_timer <-- get_ms_tick
                     END
                 END
-            END
+            END */
+            VAR local_obs IN
+                local_obs : ( local_obs : uint8_t ) ;
+
+                local_obs <-- get_board_0_I1 ;
+                IF local_obs = IO_ON THEN
+                    move ( 0 , av )
+                ELSE
+                    reset_outputs
+                END
+             END
         END ;
 
     po <-- get_board_0_O1 =

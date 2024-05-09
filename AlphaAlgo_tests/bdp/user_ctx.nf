@@ -112,13 +112,13 @@ THEORY ListPreconditionX END
 THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait);
+  List_Valuable_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha);
   Inherited_List_Constants(Machine(user_ctx))==(?);
-  List_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait)
+  List_Constants(Machine(user_ctx))==(cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha)
 END
 &
 THEORY ListSetsX IS
-  Set_Definition(Machine(user_ctx),STATE)==({INIT,EXEC_1,EXEC_2});
+  Set_Definition(Machine(user_ctx),STATE)==({INIT,EXEC_1,EXEC_2,DMove,Avoid,Wait});
   Context_List_Enumerated(Machine(user_ctx))==(?);
   Context_List_Defered(Machine(user_ctx))==(?);
   Context_List_Sets(Machine(user_ctx))==(?);
@@ -143,7 +143,7 @@ THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(user_ctx))==(btrue);
   Context_List_Properties(Machine(user_ctx))==(uint32_t = 0..4294967295 & uint16_t = 0..65535 & uint8_t = 0..255 & STRUE: uint8_t & SFALSE: uint8_t & MAX_UINT32: uint32_t & MAX_UINT16: uint16_t & MAX_UINT8: uint8_t & STRUE: 0..MAX_UINT8 & SFALSE: 0..MAX_UINT8 & STRUE/=SFALSE & SBOOL = {STRUE,SFALSE} & STRUE<=2 & SFALSE<=2 & MAX_UINT32 = 4294967295 & MAX_UINT16 = 65535 & MAX_UINT8 = 255 & Convert_Bool = {TRUE|->STRUE,FALSE|->SFALSE});
   Inherited_List_Properties(Machine(user_ctx))==(btrue);
-  List_Properties(Machine(user_ctx))==(cycle_unit: uint32_t & SimSMovement_cycle_def: uint32_t & av: uint32_t & lv: uint32_t & pi: uint32_t & av: 0..1 & lv: 0..1 & alpha: uint8_t & MB: uint8_t & wait: uint8_t & STATE: FIN(INTEGER) & not(STATE = {}) & POSITION: FIN(INTEGER) & not(POSITION = {}))
+  List_Properties(Machine(user_ctx))==(cycle_unit: uint32_t & SimSMovement_cycle_def: uint32_t & av: uint32_t & lv: uint32_t & pi: uint32_t & zero: uint32_t & av: -3..3 & lv: -3..3 & alpha: uint8_t & STATE: FIN(INTEGER) & not(STATE = {}) & POSITION: FIN(INTEGER) & not(POSITION = {}))
 END
 &
 THEORY ListSeenInfoX IS
@@ -160,9 +160,9 @@ END
 THEORY ListANYVarX END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait,STATE,POSITION,INIT,EXEC_1,EXEC_2,LEFT,RIGHT | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | user_ctx);
+  List_Of_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha,STATE,POSITION,INIT,EXEC_1,EXEC_2,DMove,Avoid,Wait,LEFT,RIGHT | ? | ? | ? | ? | ? | seen(Machine(g_types)) | ? | user_ctx);
   List_Of_HiddenCst_Ids(Machine(user_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi,alpha,MB,wait);
+  List_Of_VisibleCst_Ids(Machine(user_ctx)) == (cycle_unit,SimSMovement_cycle_def,av,lv,pi,zero,alpha);
   List_Of_VisibleVar_Ids(Machine(user_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(user_ctx)) == (?: ?);
   List_Of_Ids(Machine(g_types)) == (uint32_t,uint16_t,uint8_t,STRUE,SFALSE,MAX_UINT32,MAX_UINT16,MAX_UINT8 | ? | ? | ? | ? | ? | ? | ? | g_types);
@@ -173,11 +173,11 @@ THEORY ListOfIdsX IS
 END
 &
 THEORY SetsEnvX IS
-  Sets(Machine(user_ctx)) == (Type(STATE) == Cst(SetOf(etype(STATE,0,2)));Type(POSITION) == Cst(SetOf(etype(POSITION,0,1))))
+  Sets(Machine(user_ctx)) == (Type(STATE) == Cst(SetOf(etype(STATE,0,5)));Type(POSITION) == Cst(SetOf(etype(POSITION,0,1))))
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Machine(user_ctx)) == (Type(INIT) == Cst(etype(STATE,0,2));Type(EXEC_1) == Cst(etype(STATE,0,2));Type(EXEC_2) == Cst(etype(STATE,0,2));Type(LEFT) == Cst(etype(POSITION,0,1));Type(RIGHT) == Cst(etype(POSITION,0,1));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(alpha) == Cst(btype(INTEGER,?,?));Type(MB) == Cst(btype(INTEGER,?,?));Type(wait) == Cst(btype(INTEGER,?,?)))
+  Constants(Machine(user_ctx)) == (Type(INIT) == Cst(etype(STATE,0,5));Type(EXEC_1) == Cst(etype(STATE,0,5));Type(EXEC_2) == Cst(etype(STATE,0,5));Type(DMove) == Cst(etype(STATE,0,5));Type(Avoid) == Cst(etype(STATE,0,5));Type(Wait) == Cst(etype(STATE,0,5));Type(LEFT) == Cst(etype(POSITION,0,1));Type(RIGHT) == Cst(etype(POSITION,0,1));Type(cycle_unit) == Cst(btype(INTEGER,?,?));Type(SimSMovement_cycle_def) == Cst(btype(INTEGER,?,?));Type(av) == Cst(btype(INTEGER,?,?));Type(lv) == Cst(btype(INTEGER,?,?));Type(pi) == Cst(btype(INTEGER,?,?));Type(zero) == Cst(btype(INTEGER,?,?));Type(alpha) == Cst(btype(INTEGER,?,?)))
 END
 &
 THEORY TCIntRdX IS
