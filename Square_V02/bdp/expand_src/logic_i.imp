@@ -1,0 +1,444 @@
+﻿IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types ,
+    g_operators ,
+    io_constants ,
+    lchip_interface ,
+    user_ctx ,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    board_0_O1 ,
+        board_0_O2 ,
+        board_0_O3 ,
+        board_0_O4 ,
+        board_0_O5 ,
+        board_0_O6 ,
+        board_0_O7 ,
+        board_0_O8 ,
+
+        segment ,
+        C_ ,
+    D_ ,
+    clock_memo ,
+
+    // Translation variables
+    current_time , // Counts time according to the master clock
+    my_clock ,    // stores the last signal (IO_ON or IO_OFF) received
+    decision      // Current state 
+
+
+
+INVARIANT
+    board_0_O1 : uint8_t &
+        board_0_O2 : uint8_t &
+        board_0_O3 : uint8_t &
+        board_0_O4 : uint8_t &
+        board_0_O5 : uint8_t &
+        board_0_O6 : uint8_t &
+        board_0_O7 : uint8_t &
+        board_0_O8 : uint8_t &
+
+        segment : uint8_t    &
+        C_ : uint32_t        &
+        D_ : uint32_t        &
+        clock_memo : uint32_t &
+
+        current_time : uint32_t &
+        my_clock : uint32_t  &
+        decision : STATE
+
+INITIALISATION
+    board_0_O1 := IO_OFF ;
+        board_0_O2 := IO_OFF ;
+        board_0_O3 := IO_OFF ;
+        board_0_O4 := IO_OFF ;
+        board_0_O5 := IO_OFF ;
+        board_0_O6 := IO_OFF ;
+        board_0_O7 := IO_OFF ;
+        board_0_O8 := IO_OFF ;
+
+        segment := 0 ; //initial value of segment variable
+
+        C_ := 0 ;
+        D_ := 0 ;
+        clock_memo := 0 ;
+
+        current_time := 0 ;
+        my_clock := 0 ;
+        decision := NONE
+
+LOCAL_OPERATIONS
+
+    moveFoward ( i_linear ) = //translate rule01: add an "i_" before a parameter
+        PRE i_linear : uint8_t
+        THEN
+            skip
+        END ;
+
+    turn ( i_angular ) =
+        PRE i_angular : uint8_t
+        THEN skip
+        END ;
+
+    avoid = skip ;
+
+    enableCollisionDetection = skip ;
+
+    disableCollisionDetection = skip ;
+
+
+    elapsed <-- since ( timer ) =
+    PRE timer : uint32_t & elapsed : uint32_t
+    THEN
+        elapsed :: uint32_t
+    END ;
+
+    read_master_clock =
+    BEGIN
+        current_time :: uint32_t ||
+        my_clock :: uint8_t
+    END ;
+
+     // Logical and (&)
+    result <-- land ( pp , qq ) =
+    PRE pp : BOOL & qq : BOOL & result : BOOL
+    THEN
+        result :: BOOL
+    END ;
+
+    // Logical or (or)
+    result <-- lor ( pp , qq ) =
+    PRE pp : BOOL & qq : BOOL & result : BOOL
+    THEN
+        result :: BOOL
+    END ;
+
+    // Logical not (not)
+    result <-- lnot ( pp ) =
+    PRE pp : BOOL & result : BOOL
+    THEN
+        result :: BOOL
+    END ;
+
+    result <-- ldiff ( pp , qq ) =
+    PRE pp : uint8_t & result : BOOL & qq : uint8_t
+    THEN
+        result :: BOOL
+    END ;
+
+    OP_MoveForward = skip ;
+
+    OP_SObserving = skip ;
+
+    OP_DObserving = skip ;
+
+    OP_STurning = skip ;
+
+    OP_DTurning = skip ;
+
+    OP_EObserving = skip ;
+
+    OP_SCollision = skip ;
+
+    OP_Waiting = skip
+
+OPERATIONS
+    moveFoward ( i_linear ) = BEGIN skip END ; //set exit to MoveForward
+
+    turn ( i_angular ) = BEGIN skip END ; //set exits to turn
+
+    avoid = skip ; //set exit to avoid
+
+    enableCollisionDetection = skip ; //set exit to enable collision
+
+    disableCollisionDetection = skip ; //set exit to disable collision
+
+    elapsed <-- since ( timer ) =
+    BEGIN
+        elapsed : ( elapsed : uint32_t ) ;
+        VAR local_time IN
+            local_time : ( local_time : uint32_t ) ;
+
+            local_time := current_time ;
+            elapsed := sub_uint32 ( local_time , timer )
+        END
+    END ;
+
+    read_master_clock =
+    BEGIN
+        VAR master_clock IN
+            master_clock : ( master_clock : uint8_t ) ;
+
+            master_clock <-- get_board_0_I1 ;
+
+            IF master_clock = my_clock THEN
+                skip
+            ELSE
+                current_time := add_uint32 ( current_time , 1 ) ;
+                my_clock := master_clock
+            END
+        END
+    END ;
+
+    // Logical and (&)
+    result <-- land ( pp , qq ) =
+    BEGIN
+        result := FALSE ;
+        IF ( pp = TRUE ) THEN
+            IF ( qq = TRUE ) THEN
+                result := TRUE
+            END
+        END
+    END ;
+
+    // Logical or (or)
+    result <-- lor ( pp , qq ) =
+    BEGIN
+        result := TRUE ;
+        IF ( pp = FALSE ) THEN
+            IF ( qq = FALSE ) THEN
+                result := FALSE
+            END
+        END
+    END ;
+
+    // Logical not (not)
+    result <-- lnot ( pp ) =
+    BEGIN
+        result := FALSE ;
+        IF ( pp = FALSE ) THEN
+            result := TRUE
+        END
+    END ;
+
+    // Logical different (diff)
+    result <-- ldiff ( pp , qq ) =
+    BEGIN
+        IF ( pp = qq ) THEN
+           result := FALSE
+        ELSE
+           result := TRUE
+        END
+    END ;
+
+    OP_MoveForward =
+        BEGIN
+             moveFoward ( linear ) ;
+             decision := SObserving
+        END ;
+
+    OP_SObserving =
+        BEGIN
+            enableCollisionDetection ;
+            decision := DObserving
+        END ;
+
+    OP_DObserving =
+        BEGIN
+            VAR local_collisionDetected ,
+            C_5 ,
+            Segment4 ,
+            Since_C IN
+            local_collisionDetected : ( local_collisionDetected : uint8_t ) ;
+            C_5 : ( C_5 : BOOL ) ;
+            Segment4 : ( Segment4 : BOOL ) ;
+            Since_C : ( Since_C : uint32_t ) ;
+
+
+            local_collisionDetected <-- get_board_0_I1 ;
+            C_5 <-- ldiff ( C_ , 5 ) ;
+            Segment4 <-- ldiff ( segment , 4 ) ;
+            Since_C <-- since ( C_ ) ;
+
+            IF ( local_collisionDetected = IO_OFF ) THEN //nao permite 'not' nem '/=' normalizacao
+                       IF ( 3 <= Since_C ) THEN //funcao since
+                         IF ( C_5 = TRUE ) THEN
+                           IF ( 4 <= segment ) THEN
+                              IF ( C_5 = TRUE ) THEN
+                                  IF ( Segment4 = TRUE ) THEN
+                                      decision := DObserving
+                                 END
+                              END
+                           END
+                         END
+                       END
+                   END ;
+
+                 IF ( C_5 = TRUE ) THEN
+                     IF ( segment < 4 ) THEN
+                        disableCollisionDetection ;
+                        segment := add_uint8 ( segment , 1 ) ;
+                        decision := STurning
+                     END
+                 END ;
+
+                 IF ( local_collisionDetected = IO_ON ) THEN
+                     IF ( 3 <= C_ ) THEN
+                        decision := EObserving
+                     END
+                 END ;
+
+               IF ( Since_C = 5 ) THEN
+               IF ( segment = 4 ) THEN
+                 //stop
+                 board_0_O8 := IO_ON ;
+                 //Fin
+                 decision := Final
+                END
+
+            END
+         END
+    END ;
+
+    OP_STurning =
+     BEGIN
+        //STurning
+         //stop
+         board_0_O8 := IO_ON ;
+         turn ( angular ) ;
+         decision := DTurning ;
+         clock_memo := current_time
+         //DTurning_clock save
+     END ;
+
+     OP_DTurning =
+     BEGIN
+         VAR time_elapsed IN
+                     time_elapsed : ( time_elapsed : uint32_t ) ;
+
+                     time_elapsed := sub_uint32 ( current_time , clock_memo ) ;
+
+                     IF ( time_elapsed < 2 ) THEN
+                         decision := DTurning
+                     ELSE
+                         IF ( time_elapsed = 2 ) THEN
+                             C_ := 0 ;
+                             decision := SMovingForward
+                         END
+                     END
+                 END
+     END ;
+
+    OP_EObserving =
+     BEGIN
+         disableCollisionDetection ;
+         decision := SCollision
+     END ;
+
+    OP_SCollision =
+    BEGIN
+        avoid ;
+        D_ := 0 ;
+        decision := Waiting
+    END ;
+
+    OP_Waiting =
+    BEGIN
+       VAR Since_D IN
+           Since_D : ( Since_D : uint32_t ) ;
+
+           Since_D <-- since ( D_ ) ;
+
+           IF ( Since_D < 2 ) THEN
+               decision := Waiting
+           ELSE
+               IF ( 2 <= Since_D ) THEN
+                   decision := SObserving
+               END
+           END
+       END
+
+    END ;
+
+    user_logic =
+        BEGIN
+        //collisionDetected = board_0_I1
+        //stop = board_0_O8
+
+
+            IF ( decision = NONE ) THEN
+                decision := SMovingForward
+            END ;
+
+            IF ( decision = SMovingForward ) THEN
+               OP_MoveForward
+            END ;
+
+            IF ( decision = SObserving ) THEN
+                OP_SObserving
+            END ;
+
+            IF decision = DObserving THEN
+                 OP_DObserving
+            END ;
+
+            IF ( decision = STurning ) THEN
+                 OP_STurning
+
+             END ;
+
+            IF ( decision = DTurning ) THEN
+                OP_DTurning
+
+            END ;
+
+            IF ( decision = EObserving ) THEN
+                OP_EObserving
+
+                 END ;
+
+            IF ( decision = SCollision ) THEN
+                     OP_SCollision
+                 END ;
+
+                 IF ( decision = Waiting ) THEN
+                     OP_Waiting
+                 END
+
+        END ;
+
+    po <-- get_board_0_O1 =
+        BEGIN
+                po := board_0_O1
+        END ;
+
+        po <-- get_board_0_O2 =
+        BEGIN
+                po := board_0_O2
+        END ;
+
+        po <-- get_board_0_O3 =
+        BEGIN
+                po := board_0_O3
+        END ;
+
+        po <-- get_board_0_O4 =
+        BEGIN
+                po := board_0_O4
+        END ;
+
+        po <-- get_board_0_O5 =
+        BEGIN
+                po := board_0_O5
+        END ;
+
+        po <-- get_board_0_O6 =
+        BEGIN
+                po := board_0_O6
+        END ;
+
+        po <-- get_board_0_O7 =
+        BEGIN
+                po := board_0_O7
+        END ;
+
+        po <-- get_board_0_O8 =
+        BEGIN
+                po := board_0_O8
+        END
+END

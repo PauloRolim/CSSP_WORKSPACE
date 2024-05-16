@@ -1,0 +1,214 @@
+{
+    "global_inputs": [
+        {
+            "global_id": 0,
+            "local_id": 0,
+            "module_id": 0,
+            "name": "board_0_I1",
+            "used": true
+        },
+        {
+            "global_id": 1,
+            "local_id": 1,
+            "module_id": 0,
+            "name": "board_0_I2",
+            "used": true
+        },
+        {
+            "global_id": 2,
+            "local_id": 2,
+            "module_id": 0,
+            "name": "board_0_I3",
+            "used": true
+        },
+        {
+            "global_id": 3,
+            "local_id": 3,
+            "module_id": 0,
+            "name": "board_0_I4",
+            "used": true
+        },
+        {
+            "global_id": 4,
+            "local_id": 4,
+            "module_id": 0,
+            "name": "board_0_I5",
+            "used": true
+        },
+        {
+            "global_id": 5,
+            "local_id": 5,
+            "module_id": 0,
+            "name": "board_0_I6",
+            "used": true
+        },
+        {
+            "global_id": 6,
+            "local_id": 6,
+            "module_id": 0,
+            "name": "board_0_I7",
+            "used": true
+        },
+        {
+            "global_id": 7,
+            "local_id": 7,
+            "module_id": 0,
+            "name": "board_0_I8",
+            "used": true
+        },
+        {
+            "global_id": 8,
+            "local_id": 8,
+            "module_id": 0,
+            "name": "board_0_I9",
+            "used": true
+        },
+        {
+            "global_id": 9,
+            "local_id": 9,
+            "module_id": 0,
+            "name": "board_0_I10",
+            "used": true
+        },
+        {
+            "global_id": 10,
+            "local_id": 10,
+            "module_id": 0,
+            "name": "board_0_I11",
+            "used": true
+        },
+        {
+            "global_id": 11,
+            "local_id": 11,
+            "module_id": 0,
+            "name": "board_0_I12",
+            "used": true
+        },
+        {
+            "global_id": 12,
+            "local_id": 12,
+            "module_id": 0,
+            "name": "board_0_I13",
+            "used": true
+        },
+        {
+            "global_id": 13,
+            "local_id": 13,
+            "module_id": 0,
+            "name": "board_0_I14",
+            "used": true
+        },
+        {
+            "global_id": 14,
+            "local_id": 14,
+            "module_id": 0,
+            "name": "board_0_I15",
+            "used": true
+        },
+        {
+            "global_id": 15,
+            "local_id": 15,
+            "module_id": 0,
+            "name": "board_0_I16",
+            "used": true
+        },
+        {
+            "global_id": 16,
+            "local_id": 16,
+            "module_id": 0,
+            "name": "board_0_I17",
+            "used": true
+        },
+        {
+            "global_id": 17,
+            "local_id": 17,
+            "module_id": 0,
+            "name": "board_0_I18",
+            "used": true
+        },
+        {
+            "global_id": 18,
+            "local_id": 18,
+            "module_id": 0,
+            "name": "board_0_I19",
+            "used": true
+        },
+        {
+            "global_id": 19,
+            "local_id": 19,
+            "module_id": 0,
+            "name": "board_0_I20",
+            "used": true
+        }
+    ],
+    "global_outputs": [
+        {
+            "global_id": 0,
+            "local_id": 0,
+            "module_id": 0,
+            "name": "board_0_O1",
+            "used": true
+        },
+        {
+            "global_id": 1,
+            "local_id": 1,
+            "module_id": 0,
+            "name": "board_0_O2",
+            "used": true
+        },
+        {
+            "global_id": 2,
+            "local_id": 2,
+            "module_id": 0,
+            "name": "board_0_O3",
+            "used": true
+        },
+        {
+            "global_id": 3,
+            "local_id": 3,
+            "module_id": 0,
+            "name": "board_0_O4",
+            "used": true
+        },
+        {
+            "global_id": 4,
+            "local_id": 4,
+            "module_id": 0,
+            "name": "board_0_O5",
+            "used": true
+        },
+        {
+            "global_id": 5,
+            "local_id": 5,
+            "module_id": 0,
+            "name": "board_0_O6",
+            "used": true
+        },
+        {
+            "global_id": 6,
+            "local_id": 6,
+            "module_id": 0,
+            "name": "board_0_O7",
+            "used": true
+        },
+        {
+            "global_id": 7,
+            "local_id": 7,
+            "module_id": 0,
+            "name": "board_0_O8",
+            "used": true
+        }
+    ],
+    "max_nb_inputs": 20,
+    "max_nb_modules": 1,
+    "max_nb_outputs": 8,
+    "modules": [
+        {
+            "global_id": 0,
+            "nb_inputs": 20,
+            "nb_outputs": 8,
+            "secu_id": "0xF0F00"
+        }
+    ],
+    "modulesType": 2
+}

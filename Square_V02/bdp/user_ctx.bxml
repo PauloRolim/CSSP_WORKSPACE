@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='user_ctx' type='abstraction' position='true' semantic='true' b0check='true'>
+<Sees>
+<Attr>
+<Pos l='3' c='1' s='4'/>
+</Attr>
+<Referenced_Machine>
+<Attr>
+<Pos l='4' c='5' s='7'/>
+</Attr>
+<Name>g_types</Name>
+</Referenced_Machine>
+</Sees>
+<Sets>
+<Attr>
+<Pos l='6' c='1' s='4'/>
+</Attr>
+<Set>
+<Id value='STATE' typref='4'>
+<Attr>
+<Pos l='8' c='3' s='5'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='NONE' typref='5'>
+<Attr>
+<Pos l='8' c='11' s='4'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='SMovingForward' typref='5'>
+<Attr>
+<Pos l='8' c='17' s='14'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='SObserving' typref='5'>
+<Attr>
+<Pos l='8' c='33' s='10'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='DObserving' typref='5'>
+<Attr>
+<Pos l='8' c='45' s='10'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='STurning' typref='5'>
+<Attr>
+<Pos l='8' c='57' s='8'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='DTurning' typref='5'>
+<Attr>
+<Pos l='8' c='67' s='8'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='Waiting' typref='5'>
+<Attr>
+<Pos l='8' c='77' s='7'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='EObserving' typref='5'>
+<Attr>
+<Pos l='8' c='86' s='10'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='SCollision' typref='5'>
+<Attr>
+<Pos l='8' c='98' s='10'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='Final' typref='5'>
+<Attr>
+<Pos l='8' c='110' s='5'/>
+<B0Type>
+<Id value='STATE'/>
+</B0Type>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Sets>
+<Concrete_Constants>
+<Attr>
+<Pos l='10' c='1' s='18'/>
+</Attr>
+<Id value='linear' typref='1'>
+<Attr>
+<Pos l='11' c='2' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='angular' typref='1'>
+<Attr>
+<Pos l='12' c='2' s='7'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Properties>
+<Attr>
+<Pos l='14' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='15' c='9' s='1'/>
+</Attr>
+<Id value='linear' typref='1'>
+<Attr>
+<Pos l='15' c='2' s='6'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='2'>
+<Attr>
+<Pos l='15' c='11' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='16' c='10' s='1'/>
+</Attr>
+<Id value='angular' typref='1'>
+<Attr>
+<Pos l='16' c='2' s='7'/>
+<B0Type>
+<Id value='INTEGER'/>
+</B0Type>
+</Attr>
+</Id>
+<Id value='uint8_t' typref='2'>
+<Attr>
+<Pos l='16' c='12' s='7'/>
+<B0Type>
+<Binary_Exp op='..'>
+<Integer_Literal value='0'/>
+<Integer_Literal value='255'/>
+</Binary_Exp>
+</B0Type>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='4'>
+<Unary_Exp op='POW'>
+<Id value='STATE'/>
+</Unary_Exp>
+</Type>
+<Type id='5'>
+<Id value='STATE'/>
+</Type>
+</TypeInfos>
+
+</Machine>
